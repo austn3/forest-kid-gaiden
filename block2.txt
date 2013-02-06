@@ -1,0 +1,3505 @@
+﻿//GAME NAME:		Legendary Hero Wataru (NES)
+//BLOCK #000 NAME:		Block 2 p1 (POINTER)
+
+#VAR(dialogue, TABLE)
+#ADDTBL("eng.tbl", dialogue)
+#ACTIVETBL(dialogue)
+
+#HDR($10)
+#VAR(B2Ptr, CUSTOMPOINTER)
+#CREATEPTR(B2Ptr, "LINEAR", $4000, 16)
+#EMBTYPE("LINEAR", 16, $4000)
+
+#JMP($2C4B0)
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C100)//C378
+N[B0-2]
+#EMBSET(700)
+#WRITE(B2Ptr, $2C102)//C379
+n
+#EMBWRITE(700)
+omad[END]
+
+#WRITE(B2Ptr, $2C226)//C40B
+#WRITE(B2Ptr, $2C104)//C37A
+D[B0-2]
+#EMBSET(701)
+#WRITE(B2Ptr, $2C106)//C37B
+d
+#EMBWRITE(701)
+ragon[END]
+
+#WRITE(B2Ptr, $2C108)//C37C
+Tower[NL][END]
+
+#WRITE(B2Ptr, $2C10A)//C37D
+Shop[END]
+
+#WRITE(B2Ptr, $2C10C)//C37E
+House[END]
+
+#WRITE(B2Ptr, $2C10E)//C37F
+fight[END]
+
+#WRITE(B2Ptr, $2C110)//C380
+protect[END]
+
+#WRITE(B2Ptr, $2C112)//C381
+Sokaizan[END]
+
+#WRITE(B2Ptr, $2C114)//C382
+Merchanton[END]
+
+#WRITE(B2Ptr, $2C116)//C383
+This is [END]
+
+#WRITE(B2Ptr, $2C118)//C384
+the [END]
+
+#WRITE(B2Ptr, $2C11A) //C385
+D[B0-2]
+#EMBSET(702)
+#WRITE(B2Ptr, $2C11C)//C386
+d
+#EMBWRITE(702)
+ungeon[END]
+
+#WRITE(B2Ptr, $2C11E)//C387
+Forest Inn[NL][END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C010)//C300
+//コンチヤスそうげん[END]
+Grassy[NL]Plains[END]
+
+#WRITE(B2Ptr,$2C012)//C301
+//ミブル(ひょうげん)[NL][END]
+Icefield[NL][END]
+
+#WRITE(B2Ptr, $2C014)//C302
+//ザナミ-かいがん[END]
+Zanami[NL]Coast[END]
+
+#WRITE(B2Ptr, $2C016)//C303
+//カガサス ジャングル[END]
+Kagasas[NL]Jungle[END]
+
+#WRITE(B2Ptr, $2C018)//C304
+//ツキノさばく[END]
+Desert of[NL](the )Moon[END]
+
+#WRITE(B2Ptr, $2C01A)//C305
+//ダボ-ドさんみゃく[END]
+Dabord[NL](Mountain)s[END]
+
+#WRITE(B2Ptr, $2C01C)//C306
+//(ゆうぼくみん)のむら[NL][END]
+(Nomad) Camp[NL][END]
+
+#WRITE(B2Ptr, $2C01E)//C307
+//(にじのくに)[NL][END]
+(Spectrum)[NL][END]
+
+#WRITE(B2Ptr, $2C020)//C308
+//(セカンドガン)の[NL](ダンジョン)[NL]ちか1かい[END]
+(2nd-Gun)'s[NL](Dungeon)[NL]Lv 1[END]
+
+#WRITE(B2Ptr, $2C022)//C309
+//(セカンドガン)の[NL](ダンジョン)[NL]ちか2かい[END]
+(2nd-Gun)'s[NL](Dungeon)[NL]Lv 2[END]
+
+#WRITE(B2Ptr, $2C024)//C30A
+//(かぜのくに[NL])やどや[END]
+(Gale[NL])(Inn)[END]
+
+#WRITE(B2Ptr, $2C026)//C30B
+//ふみきりハウス[END]
+Last Stop[NL][END]
+
+#WRITE(B2Ptr, $2C028)//C30C
+//きたへのどうくつ[END]
+North Cave[END]
+
+#WRITE(B2Ptr, $2C02A)//C30D
+//(しょうにん)のむら[NL][END]
+(Merchanton)[NL][END]
+
+#WRITE(B2Ptr, $2C02C)//C30E
+//(しょうにんのむら[NL])やどや[END]
+(Merchanton[NL])(Inn)[END]
+
+#WRITE(B2Ptr, $2C02E)//C30F
+//(しょうにんのむら[NL])いえ[END]
+(Merchanton[NL])(House)[END]
+
+#WRITE(B2Ptr, $2C030)//C310
+#WRITE(B2Ptr, $2C032)//C311
+//(しょうにんのむら[NL])どうぐや[END]
+(Merchanton[NL])(Shop)[END]
+
+#WRITE(B2Ptr, $2C034)//C312
+//(ゆうぼくみんのむら[NL])どうぐや[END]
+(Nomad Camp[NL])Shop[END]
+
+#WRITE(B2Ptr, $2C036)//C313
+//(ゆうぼくみんのむら[NL])やどや[END]
+(Nomad Camp[NL])(Inn)[END]
+
+
+#WRITE(B2Ptr, $2C038)//C314
+//(ゆうぼくみんのむら[NL])テント[END]
+(Nomad Camp[NL])Tent[END]
+
+#WRITE(B2Ptr, $2C03A)//C315
+//おにいさんのいえ[END]
+Guy's[NL](House)[END]
+
+#WRITE(B2Ptr, $2C03C)//C316
+//(にじのくに[NL])どうぐや[END]
+(Spectrum[NL])(Shop)[END]
+
+#WRITE(B2Ptr, $2C03E)//C317
+//(ひょうげん)(のやど)[END]
+(Icefield[NL])(Inn)[END]
+
+#WRITE(B2Ptr, $2C040)//C318
+//どうぐやの2かい[END]
+(Shop) 2F[END]
+
+#WRITE(B2Ptr, $2C042)//C319
+//チャップスぬま[NL][END]
+Chop's[NL]Swamp[NL][END]
+
+#WRITE(B2Ptr, $2C044)//C31A
+//(ひょうげん)のとう[NL][A2-1]<$03>1かい[END]
+(Icefield[NL])(Tower[NL])
+[A2-1]<$03>1F[END]
+
+#WRITE(B2Ptr, $2C046)//C31B
+//(ひょうげん)のとう[NL][A2-1]<$03>2かい[END]
+(Icefield[NL])(Tower[NL])
+[A2-1]<$03>2F[END]
+
+#WRITE(B2Ptr, $2C048)//C31C
+//(ひょうげん)のとう[NL][A2-1]<$03>3かい[END]
+(Icefield[NL])(Tower[NL])
+[A2-1]<$03>3F[END]
+
+#WRITE(B2Ptr, $2C04A)//C31D
+//(ひょうげん)のとう[NL][A2-1]<$03>4かい[END]
+(Icefield[NL])(Tower[NL])
+[A2-1]<$03>4F[END]
+
+#WRITE(B2Ptr, $2C04C)//C31E
+//プロロ-グ[END]
+Prologue[END]
+
+#WRITE(B2Ptr, $2C04E)//C31F
+//ふっかつのいずみ[END]
+Recovery[NL]Spring[END]
+
+#WRITE(B2Ptr, $2C050)//C320
+//つうこうどめのいえ[NL][END]
+Dead End[NL]House[NL][END]
+
+#WRITE(B2Ptr, $2C052)//C321
+//(にじのくに[NL])じょうない[END]
+(Spectrum[NL])Castle[END]
+
+#WRITE(B2Ptr, $2C054)//C322                     --huh?
+//(みなとまち)シャバン[NL][END]
+(Port Town)[NL][END]
+
+#WRITE(B2Ptr, $2C056)//C323
+//のろいのいずみ[END]
+Cursed[NL]Spring[END]
+
+#WRITE(B2Ptr, $2C058)//C324
+#WRITE(B2Ptr, $2C05C)//C326
+#WRITE(B2Ptr, $2C05E)//C327
+#WRITE(B2Ptr, $2C060)//C328
+#WRITE(B2Ptr, $2C062)//C329
+#WRITE(B2Ptr, $2C0C8)//C35C
+//(にじのくに[NL])いえ[END]
+(Spectrum[NL])(House)[END]
+
+#WRITE(B2Ptr, $2C05A)//C325
+//(にじのくに[NL])やどや[END]
+(Spectrum[NL])(Inn)[END]
+
+//#WRITE(B2Ptr, $2C064)//C32A
+//(うつくしむら)[NL][END]
+
+#WRITE(B2Ptr, $2C066)//C32B
+//かくれざと[NL][END]
+(Isola)[NL][END]
+
+#WRITE(B2Ptr, $2C068)//C32C
+//しっちの(ダンジョン)[NL]ちか1かい[END]
+Wetlands[NL](Dungeon)[NL]
+1F[END]
+
+#WRITE(B2Ptr, $2C06A)//C32D
+//しっちの(ダンジョン)[NL]ちか2かい[END]
+Wetlands[NL](Dungeon)[NL]
+2F[END]
+
+#WRITE(B2Ptr, $2C06C)//C32E
+//(ドラゴン)ル-ム[END]
+(Dragon)[NL]Room[END]
+
+#WRITE(B2Ptr, $2C06E)//C32F
+//うみのやどや[END]
+Sea (Inn)[END]
+
+//#WRITE(B2Ptr, $2C070)//C330
+//けんじやのいえ[END]
+
+#WRITE(B2Ptr, $2C072)//C331
+//(ミブルひょうげん[NL])(ダンジョン)[END]
+(Icefield[NL])(Dungeon)[END]
+
+#WRITE(B2Ptr, $2C074)//C332
+//(つうこうどめのいえ[NL])1かい[END]
+(Dead End[NL]House[NL])
+1F[END]
+
+#WRITE(B2Ptr, $2C076)//C333
+//(つうこうどめのいえ[NL])2かい[END]
+(Dead End[NL]House[NL])
+2F[END]
+
+#WRITE(B2Ptr, $2C078)//C334
+//うみの(ダンジョン)[END]
+Sea (Dungeon)[END]
+
+#WRITE(B2Ptr, $2C07A)//C335
+//(みなとまちシャバン[NL])やどや[END]
+(Port Town[NL])(Inn)[END]
+
+#WRITE(B2Ptr, $2C07C)//C336
+#WRITE(B2Ptr, $2C080)//C338
+#WRITE(B2Ptr, $2C082)//C339
+//(みなとまちシャバン[NL])いえ[END]
+(Port Town[NL])(House)[END]
+
+#WRITE(B2Ptr, $2C07E)//C337
+//(みなとまちシャバン[NL])どうぐや[END]
+(Port Town[NL])(Shop)[END]
+
+#WRITE(B2Ptr, $2C084)//C33A
+//さいごのとう1かい[END]
+Last Tower[NL]
+1F[END]
+
+#WRITE(B2Ptr, $2C086)//C33B
+//さいごのとう2かい[END]
+Last Tower[NL]
+2F[END]
+
+#WRITE(B2Ptr, $2C088)//C33C
+//さいごのとう3かい[END]
+Last Tower[NL]
+3F[END]
+
+#WRITE(B2Ptr, $2C08A)//C33D
+//さいごのとう4かい[END]
+Last Tower[NL]
+4F[END]
+
+//#WRITE(B2Ptr, $2C08C)//C33E
+//#WRITE(B2Ptr, $2C08E)//C33F
+//(うつくしむら[NL])いえ[END]
+
+//#WRITE(B2Ptr, $2C090)//C340
+//(うつくしむら[NL])どうぐや[END]
+
+//#WRITE(B2Ptr, $2C092)//C341
+//(うつくしむら[NL])やどや[END]
+
+#WRITE(B2Ptr, $2C094)//C342
+//(かくれざと[NL])やどや[END]
+(Isola[NL])(Inn)[END]
+
+#WRITE(B2Ptr, $2C096)//C343
+//(かくれざと[NL])どうぐや[END]
+(Isola[NL])(Shop)[END]
+
+#WRITE(B2Ptr, $2C09A)//C345
+//(かくれざと[NL])いえ 1かい[END]
+(Isola[NL])(House)[NL]
+1F[END]
+
+#WRITE(B2Ptr, $2C09C)//C346
+//(かくれざと[NL])いえ 2かい[END]
+(Isola[NL])(House)[NL]
+2F[END]
+
+#WRITE(B2Ptr, $2C098)//C344
+#WRITE(B2Ptr, $2C09E)//C347
+#WRITE(B2Ptr, $2C0A0)//C348
+//(かくれざと[NL])いえ[END]
+(Isola[NL])(House)[END]
+
+#WRITE(B2Ptr, $2C0A2)//C349
+//(かくれざと[NL])ちかつうろ[END]
+(Isola[NL])Passage[END]
+
+#WRITE(B2Ptr, $2C0A4)//C34A
+//(オアシス)のいえ[END]
+(Oasis)[NL](House)[END]
+
+#WRITE(B2Ptr, $2C0A6)//C34B
+//(ピラミッド) 1かい[END]
+Pyramid[NL]
+1F[END]
+
+#WRITE(B2Ptr, $2C0A8)//C34C
+//(ピラミッド) 2かい[END]
+Pyramid[NL]
+2F[END]
+
+#WRITE(B2Ptr, $2C0AA)//C34D
+//(ドラゴン)タワ-[NL]1かい[END]
+(Dragon)[NL](Tower[NL])
+1F[END]
+
+#WRITE(B2Ptr, $2C0AC)//C34E
+//(ドラゴン)タワ-[NL]2かい[END]
+(Dragon)[NL](Tower[NL])
+2F[END]
+
+#WRITE(B2Ptr, $2C0AE)//C34F
+//(ドラゴン)タワ-[NL]3かい[END]
+(Dragon)[NL](Tower[NL])
+3F[END]
+
+#WRITE(B2Ptr, $2C0B0)//C350
+//(ドラゴン)タワ-[NL]4かい[END]
+(Dragon)[NL](Tower[NL])
+4F[END]
+
+#WRITE(B2Ptr, $2C0B2)//C351
+#WRITE(B2Ptr, $2C0B4)//C352
+//うみのどうくつ[END]
+Sea Cave[END]
+
+#WRITE(B2Ptr, $2C0B6)//C353
+//らいじんの エりア[END]
+Thunder[NL]God Area[END]
+
+#WRITE(B2Ptr, $2C0B8)//C354
+//らいじんの[NL](ダンジョン)[END]
+Thunder[NL]God[NL](Dungeon)[END]
+
+#WRITE(B2Ptr, $2C0BA)//C355
+//(しょくりょう)[NL]ちょぞうこ[NL]ちか1かい[END]
+Food[NL]Storehouse[NL]
+B1[END]
+
+#WRITE(B2Ptr, $2C0BC)//C356
+//(しょくりょう)[NL]ちょぞうこ[NL]ちか2かい[END]
+Food[NL]Storehouse[NL]
+B2[END]
+
+#WRITE(B2Ptr, $2C0BE)//C357
+//らいじんのいえ[END]
+(Thunder)[NL]God's[NL]House[END]
+
+//#WRITE(B2Ptr, $2C0C0)//C358
+//ワ-プや[END]
+
+#WRITE(B2Ptr, $2C0C2)//C359
+//やまの(ダンジョン)[END]
+(Mountain)[NL](Dungeon)[END]
+
+#WRITE(B2Ptr, $2C0C4)//C35A
+//やまぼくみん[NL][END]
+Mountain[NL]Clan[NL][END]
+
+#WRITE(B2Ptr, $2C0C6)//C35B
+//やまのどうくつ[END]
+(Mountain)[NL]Cave[END]
+
+
+
+#WRITE(B2Ptr, $2C0CA)//C35D
+//(かぜのくに[NL])どうぐや[END]
+(Gale[NL])Shop[END]
+
+#WRITE(B2Ptr, $2C0CC)//C35E
+//マウンテイン ウェイ[END]
+(Mountain)[NL]Way[END]
+
+#WRITE(B2Ptr, $2C0CE)//C35F
+//サンダ- ロ-ド[END]
+(Thunder)[NL]Road[END]
+
+#WRITE(B2Ptr, $2C0D0)//C360
+//ラスト (ダンジョン)[END]
+Last[NL](Dungeon)[END]
+
+#WRITE(B2Ptr, $2C0D2)//C361
+//デザ-ト ウェイ[END]
+Desert Way[END]
+
+#WRITE(B2Ptr, $2C0D4)//C362
+//ダンプ ロ-ド[END]
+Dump Road[END]
+
+//#WRITE(B2Ptr, $2C0D6)//C363
+//(うつくしむら[NL])ちかしつ[END]
+// basement
+
+#WRITE(B2Ptr, $2C0D8)//C364
+//さいごの どうくつ[END]
+Final Cave[END]
+
+#WRITE(B2Ptr, $2C0DA)//C365
+//もり(のやど)[END]
+Forest (Inn)[END]
+
+#WRITE(B2Ptr, $2C0DC)//C366 * this one
+#WRITE(B2Ptr, $2C0E4)//C36A
+//(かぜのくに)[NL]
+(Gale)[NL][END]
+
+#WRITE(B2Ptr, $2C0DE)//C367
+//(やまぼくみん)どうぐや[END]
+(Mountain[NL]Clan[NL])(Shop)[END]
+
+#WRITE(B2Ptr, $2C0E0)//C368
+//(やまぼくみん)やどや[END]
+(Mountain[NL]Clan[NL])(Inn)[END]
+
+#WRITE(B2Ptr, $2C0E2)//C369
+//(やまぼくみん)いえ[END]
+(Mountain[NL]Clan[NL])(House)[END]
+
+#WRITE(B2Ptr, $2C0E6)//C36B
+//(かぜのくに[NL])じょうない[END]
+(Gale[NL])Castle[END]
+
+#WRITE(B2Ptr, $2C0E8)//C36C
+#WRITE(B2Ptr, $2C0EA)//C36D
+#WRITE(B2Ptr, $2C0EC)//C36E
+#WRITE(B2Ptr, $2C0EE)//C36F
+#WRITE(B2Ptr, $2C0F0)//C370
+#WRITE(B2Ptr, $2C0F2)//C371
+//(かぜのくに[NL])いえ[END]
+(Gale[NL])(House)[END]
+
+#WRITE(B2Ptr, $2C0F4)//C372
+//しっちの(ダンジョン)[NL]ちか3かい[END]
+Swamp[NL](Dungeon)[NL]3F[END]
+
+#WRITE(B2Ptr, $2C0F6)//C373
+//(いずみ)の すいろ[END]
+Spring[NL]Canal[END]
+
+#WRITE(B2Ptr, $2C0F8)//C374
+//エンディング[END]
+Ending[END]
+
+#WRITE(B2Ptr, $2C0FA)//C375
+//(かぜのくに[NL])ちかどう[END]
+(Gale[NL])Tunnel[END]
+
+#WRITE(B2Ptr, $2C0FC)//C376
+//(ジャングル)ロ-ド[END]
+Jungle[NL]Road[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C1F0)//C3F0
+//(ゆうぼくみん)[NL](ワ-プショップ)[END]
+(Nomad Camp[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C1F2)//C3F1
+//(しょうにん)のむら[NL](ワ-プショップ)[END]
+(Merchanton[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C1F4)//C3F2
+//(にじのくに)[NL](ワ-プショップ)[END]
+(Spectrum[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C1F6)//C3F3
+//もり(のやど)[NL](ワ-プショップ)[END]
+(Forest Inn[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C1F8)//C3F4
+//(みなとまち)[NL](ワ-プショップ)[END]
+(Port Town[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C1FA)//C3F5
+//(うつくしむら)[NL](ワ-プショップ)[END]
+pvtty[NL](Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C1FC)//C3F6
+//(かくれざと)[NL](ワ-プショップ)[END]
+(Isola[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C1FE)//C3F7
+//うみ(のやど)[NL](ワ-プショップ)[END]
+Sea (Inn)[NL](Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C200)//C3F8
+//(オアシス)[NL](ワ-プショップ)[END]
+(Oasis)[NL](Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C202)//C3F9
+//(かぜのくに)[NL](ワ-プショップ)[END]
+(Gale)[NL](Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C204)//C3FA
+//ふみきりハウス[NL](ワ-プショップ)[END]
+(Last Stop[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C206)//C3FB
+//やまぼくみん[NL](ワ-プショップ)[END]
+(Mountain[NL]Clan[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C208)//C3FC
+//(ひょうげんのやど)[NL](ワ-プショップ)[END]
+(Icefield[NL])(Warp Shop)[END]
+
+#WRITE(B2Ptr, $2C20A)//C3FD
+01[END]
+
+#WRITE(B2Ptr, $2C20C)//C3FE
+02[END]
+
+#WRITE(B2Ptr, $2C20E)//C3FF
+//みしらぬばしょ[END]
+Strange[NL]Place[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C210)//C400
+//あなた[END]
+You[END]
+
+//#WRITE(B2Ptr, $2C212)//C401
+//ありがとう[END]
+//Thanks[END]
+
+//#WRITE(B2Ptr, $2C214)//C402
+//いかが[END]
+
+//#WRITE(B2Ptr, $2C216)//C403
+//いらっしゃい[END]
+//Welcome[END]
+
+//#WRITE(B2Ptr, $2C218)//C404
+//いられる[END]
+
+//#WRITE(B2Ptr, $2C21A)//C405
+//うつくしむら[END]
+
+//#WRITE(B2Ptr, $2C21C)//C406
+//ちょうせん[END]
+
+//#WRITE(B2Ptr, $2C21E)//C407
+//きゅうせいしゅ[END]
+
+//#WRITE(B2Ptr, $2C220)//C408
+//おうさま[END]
+
+//#WRITE(B2Ptr, $2C222)//C409
+//おお [END]
+
+//#WRITE(B2Ptr, $2C224)//C40A
+//おおきな[END]
+
+//#WRITE(B2Ptr, $2C228)//C40C
+//これは[END]
+
+#WRITE(B2Ptr, $2C22A)//C40D
+//おしろ[END]
+Castle[END]
+
+//#WRITE(B2Ptr, $2C22C)//C40E
+//おとうさん[END]
+
+//#WRITE(B2Ptr, $2C22E)//C40F
+//おとこ[END]
+
+#WRITE(B2Ptr, $2C230)//C410
+//やどや[END]
+Inn[END]
+
+//#WRITE(B2Ptr, $2C232)//C411
+//おまえ[END]
+
+#WRITE(B2Ptr, $2C234)//C412
+//オアシス[END]
+Oasis[END]
+
+//#WRITE(B2Ptr, $2C236)//C413
+//かい?[END]
+
+#WRITE(B2Ptr, $2C238)//C414
+//かくれざと[END]
+Isola[END]
+
+#WRITE(B2Ptr, $2C23A)//C415
+//かぜのくに[END]
+Gale[END]
+
+//#WRITE(B2Ptr, $2C23C)//C416
+//かんけい[END]
+
+//#WRITE(B2Ptr, $2C23E)//C417
+//きたの[END]
+
+//#WRITE(B2Ptr, $2C240)//C418
+//1000ゴ-ルド[END]
+
+//#WRITE(B2Ptr, $2C242)//C419
+//けんじゃ[END]
+
+//#WRITE(B2Ptr, $2C244)//C41A
+//こおり[END]
+
+//#WRITE(B2Ptr, $2C246)//C41B
+//ござい[END]
+
+#WRITE(B2Ptr, $2C248)//C41C
+//しょくりょう[END]
+Food[END]
+
+#WRITE(B2Ptr, $2C24A)//C41D
+[NAME][END]
+
+#WRITE(B2Ptr, $2C24C)//C41E
+//さばく[END]
+desert[END]
+
+//#WRITE(B2Ptr, $2C24E)//C41F
+//しかし[END]
+
+//#WRITE(B2Ptr, $2C250)//C420
+//しない[END]
+
+//#WRITE(B2Ptr, $2C252)//C421
+//の かたちの くぼみがあります[END]
+
+//#WRITE(B2Ptr, $2C254)//C422
+//さんは[END]
+
+//#WRITE(B2Ptr, $2C256)//C423
+//しんでん[END]
+
+//#WRITE(B2Ptr, $2C258)//C424
+//せんか?[END]
+
+//#WRITE(B2Ptr, $2C25A)//C425
+//ゆうしゃ[END]
+
+//#WRITE(B2Ptr, $2C25C)//C426
+//だけど[END]
+
+//#WRITE(B2Ptr, $2C25E)//C427
+//たちは[END]
+
+//#WRITE(B2Ptr, $2C260)//C428
+//たって[END]
+
+//#WRITE(B2Ptr, $2C262)//C429 --replaced
+//ダンジョン[END]
+
+//#WRITE(B2Ptr, $2C264)//C42A
+//ちかく[END]
+
+//#WRITE(B2Ptr, $2C266)//C42B
+//ちかごろ[END]
+
+//#WRITE(B2Ptr, $2C268)//C42C
+//ちゃん[END]
+
+//#WRITE(B2Ptr, $2C26A)//C42D
+//つづく[END]
+
+//#WRITE(B2Ptr, $2C26C)//C42E
+//ですか?[END]
+
+//#WRITE(B2Ptr, $2C26E)//C42F
+//という[END]
+
+#WRITE(B2Ptr, $2C270)//C430
+//ところ[END]
+place[END]
+
+//#WRITE(B2Ptr, $2C272)//C431
+//ないか?[END]
+
+//#WRITE(B2Ptr, $2C274)//C432
+//なにか[END]
+
+#WRITE(B2Ptr, $2C276)//C433
+//にじのくに[END]
+Spectrum[END]
+
+///#WRITE(B2Ptr, $2C278)//C434
+//セカンドガン[END]
+//2nd-Gun[END]
+
+//#WRITE(B2Ptr, $2C27A)//C435
+//ひがし[END]
+
+//#WRITE(B2Ptr, $2C27C)//C436
+//ひとり[END]
+
+//#WRITE(B2Ptr, $2C27E)//C437
+//ひょうげん[END]
+
+//#WRITE(B2Ptr, $2C280)//C438
+//ほうに[END]
+
+//#WRITE(B2Ptr, $2C282)//C439
+//おうじょ[END]
+
+//#WRITE(B2Ptr, $2C284)//C43A
+//ました[END]
+
+//#WRITE(B2Ptr, $2C286)//C43B
+//ますか?[END]
+
+#WRITE(B2Ptr, $2C288)//C43C
+//サザビ-[END]
+Sazabi[END]
+
+//#WRITE(B2Ptr, $2C28A)//C43D
+//まったく[END]
+
+//#WRITE(B2Ptr, $2C28C)//C43E
+//まどうしょ[END]
+
+//#WRITE(B2Ptr, $2C28E)//C43F
+//まほう[END]
+
+#WRITE(B2Ptr, $2C290)//C440
+//みずうみ[END]
+lake[END]
+
+//#WRITE(B2Ptr, $2C292)//C441
+//ボタン[END]
+
+#WRITE(B2Ptr, $2C294)//C442
+//ここは[END]
+Here is[END]
+
+//#WRITE(B2Ptr, $2C296)//C443
+//もどって[END]
+
+//#WRITE(B2Ptr, $2C298)//C444 -- replaced
+//ゆうぼくみん[END]
+
+#WRITE(B2Ptr, $2C29A)//C445
+//しょうにん[END]
+merchant[END]
+
+#WRITE(B2Ptr, $2C29C)//C446
+//ワ-プショップ[END]
+Warp Shop[END]
+
+//#WRITE(B2Ptr, $2C29E)//C447
+//らしい[END]
+
+//#WRITE(B2Ptr, $2C2A0)//C448
+//わたし[END]
+
+//#WRITE(B2Ptr, $2C2A2)//C449
+//-ん![END]
+
+//#WRITE(B2Ptr, $2C2A4)//C44A
+//......[END]
+
+#WRITE(B2Ptr, $2C2A6)//C44B
+//サ-ぺント[END]
+Serpent[END]
+
+//#WRITE(B2Ptr, $2C2A8)//C44C
+//さまの[END]
+
+//#WRITE(B2Ptr, $2C2AA)//C44D
+//しょう[END]
+
+//#WRITE(B2Ptr, $2C2AC)//C44E
+//うって[END]
+
+//#WRITE(B2Ptr, $2C2AE)//C44F
+//のやど[END]
+
+//#WRITE(B2Ptr, $2C2B0)//C450
+//こんにちは[END]
+
+#WRITE(B2Ptr, $2C2B2)//C451
+//ワタル[END]
+Wataru[END]
+
+#WRITE(B2Ptr, $2C2B4)//C452
+//ドアクダ-[END]
+Dakdar[END]
+
+//#WRITE(B2Ptr, $2C2B6)//C453
+//りゅうじんまる[END]
+//Ryujinmaru[END]
+
+//#WRITE(B2Ptr, $2C2B8)//C454
+//ここに[END]
+
+#WRITE(B2Ptr, $2C2BA)//C455
+//いずみ[END]
+spring[END]
+
+#WRITE(B2Ptr, $2C2BC)//C456
+//ヒミコ[END]
+Himiko[END]
+
+#WRITE(B2Ptr, $2C2BE)//C457
+//シバラク[END]
+Shibaraku[END]
+
+//#WRITE(B2Ptr, $2C2C0)//C458
+//くうじんまる[END]
+//Kujinmaru[END]
+
+#WRITE(B2Ptr, $2C2C2)//C459
+//りンクス[END]
+Links[END]
+
+//#WRITE(B2Ptr, $2C2C4)//C45A
+//しょうねん[END]
+
+#WRITE(B2Ptr, $2C2C6)//C45B
+//マシン[END]
+Mashin[END]
+
+#WRITE(B2Ptr, $2C2C8)//C45C
+//せんじんまる[END]
+Senjinmaru[END]
+
+//#WRITE(B2Ptr, $2C2CA)//C45D
+//せっしゃ[END]
+
+//#WRITE(B2Ptr, $2C2CC)//C45E
+//もっと[END]
+
+//#WRITE(B2Ptr, $2C2CE)//C45F
+//けっこん[END]
+
+#WRITE(B2Ptr, $2C2D0)//C460
+//ブりキントン[END]
+Blinkinton[END]
+
+#WRITE(B2Ptr, $2C2D2)//C461
+//みなとまち[END]
+Port Town[END]
+
+//#WRITE(B2Ptr, $2C2D4)//C462
+//むらが[END]
+
+//#WRITE(B2Ptr, $2C2D6)//C463
+//でんせつ[END]
+
+//#WRITE(B2Ptr, $2C2D8)//C464
+//つうこうしょう[END]
+
+#WRITE(B2Ptr, $2C2DA)//C465
+//ジャングル[END]
+Jungle[END]
+
+#WRITE(B2Ptr, $2C2DC)//C466
+//ピラミッド[END]
+Pyramid[END]
+
+//#WRITE(B2Ptr, $2C2DE)//C467
+//あんた[END]
+
+//#WRITE(B2Ptr, $2C2E0)//C468
+//#WRITE(B2Ptr, $2C2E2)//C469
+//#WRITE(B2Ptr, $2C2E4)//C46A
+//#WRITE(B2Ptr, $2C2E6)//C46B
+//#WRITE(B2Ptr, $2C2E8)//C46C
+//#WRITE(B2Ptr, $2C2EA)//C46D
+//#WRITE(B2Ptr, $2C2EC)//C46E
+//#WRITE(B2Ptr, $2C2EE)//C46F
+//あいうえお[END]
+
+//------------------------------------------------------------------
+//                      Nomad Village
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C2F0)//C470//nomad guy by the horse
+[B1-3]<$20>
+#EMBSET(200)
+
+//みなみには ふっかつと のろいの ふたつの[NL]
+//(いずみ)が あるんだ そこを まもって[NL]
+//いらっしゃるのが (サザビ-)さまなんだ[END]
+In the south there are two[NL]
+springs. One'll cure you,[NL]
+other's cursed.[PAU][CLR]
+You'll find Sazabi there,[NL]
+standing watch.[END]
+
+#EMBWRITE(200)
+//(サザビ-)さまが いなくなっちゃったんだ なんでも[NL]
+//やまに いったらしいけど[END]
+I heard Sazabi disappeared[NL]
+again. Went to the[NL]
+mountains they say.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C2F2)//C471//nomad entrance guy
+[B1-3]<$20>
+#EMBSET(201)
+
+//(わたし)(たちは) (ゆうぼくみん)です (わたし)たちが[NL]
+//こうして ぶじくらせるのは (サザビ-)(さまの)[NL]
+//(まほう)のちからに まもられているからです[END]
+We are (nomad)s. We live in[NL]
+peace, protected by the[NL]
+power of (Sazabi)'s magic.[END]
+
+#EMBWRITE(201)
+//[NAME]さん (サザビ-)さまから でんごんがあります[NL]
+//(ワタル)さんの のろいをとく ひみつは[NL]
+//やまの しんでんにあると おっしゃって(ました)[END]
+[NAME], (Sazabi) left a message[NL]
+for you. He said the secret[NL]
+to breaking (Wataru)'s curse[PAU][CLR]
+is in the mountain temple.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C2F4)//C472//nomad girl outside the tent
+[B1-3]<$20>
+#EMBSET(202)
+[AF-3]<$70>
+#EMBSET(0)
+
+//この そうかいざん ちゅう2かいそうの へいわを[NL]
+//とりもどしてください (ドアクダー)のために[NL]
+//どれだけ おおくのひとが くるしんでいるか![END]
+Please return peace to our[NL]
+second layer of Sokaizan.[PAU][CLR]
+How long must so many[NL]
+suffer at the hands of[NL]
+the evil Dakdar?[END]
+
+#EMBWRITE(202)
+//(サザビ-)さまは ひとりで やまの(しんでん)に[NL]
+//むかわれたのです [NAME]さんが きてくれることを[NL]
+//のぞんで いらしたようですよ[END]
+Sazabi went alone to the[NL]
+mountain temple. He wanted[NL]
+you to come too.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C2F6)//C473//nomad girl by the horse
+[AF-3]<$70>
+#EMBSET(895)
+
+//たいへん!(いずみ)には いきものの すがたをかえる[NL]
+//おそろしいちからが あるのよ[END]
+It's awful! They say the[NL]
+spring has the power to[NL]
+transform living things![END]
+
+#EMBWRITE(0)
+#EMBWRITE(895)
+//きをつけていってください[END]
+Please be careful.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C2F8)//C474//nomad horse
+//ひひひ(-ん!)[END]
+I'm a horse![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C2FA)//C475//nomad inn
+//え-っ (やどや)でございます[BF0100]
+(Welcome) to the (Inn).[BF0100]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C2FC)//C476//nomad tent woman
+[B1-3]<$20>
+#EMBSET(203)
+[AF-3]<$70>
+#EMBSET(1)
+//[B3-3]<$01>
+//#EMBSET(300)
+
+//えっ! (ワタル)さんが つかまった?[PAU][CLR]
+//それじゃ みなみの(ほうに)むかった ひとたちが[NL]
+//(ワタル)さんをつれさったんだわ[END]
+Wha-! (Wataru)'s been taken?[PAU][CLR]
+Hmm, I bet the guys who[NL]
+took him headed south.[END]
+
+//[B4-1]<$01>[END]
+//#EMBWRITE(300)
+//(ワタル)さんをたすけてください[END]
+//Please save (Wataru).[END]
+
+#EMBWRITE(1)
+//まにあわなかったのですね? いま このせかいの[NL]
+//うんめいは (あなた)のかたに かかっているのです[NL]
+//がんばってください[END]
+You weren't in time?[PAU][CLR]
+I guess the fate of this[NL]
+world rests on your[NL]
+shoulders now.[END]
+
+#EMBWRITE(203)
+//(しんでん)には いのりのさいだん というのがあって[NL]
+//そこに(ワタル)さんを はこんでいけば のろいを[NL]
+//とくことが できるそうです[END]
+In the temple you will find[NL]
+the altar of prayers.[PAU][CLR]
+If you take (Wataru) there[NL]
+the curse will be broken.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C2FE)//C477//nomad tent man
+[AF-3]<$70>
+#EMBSET(2)
+
+//(きゅうせいしゅ)の (ワタル)(さんは) きょうあくな[NL]
+//(ドアクダー)から せかいを まもるために たたかって[NL]
+//いたのです それが つかまって しまうなんて(......)[END]
+Wataru was fighting to[NL]
+protect the world from the[NL]
+evil Dakdar.[PAU][CLR]
+If he's been captured...[END]
+
+#EMBWRITE(2)
+//きをつけて いってください せかいを すくえるのは[NL]
+//(あなた)しかいないのですから(......)[END]
+Take care of yourself.[NL]
+You're our only hope now.[END]
+
+//------------------------------------------------------------------
+//  Merchanton
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C300)//C478//merchanton old man
+[AF-3]<$61>
+#EMBSET(3)
+[B1-3]<$03>
+#EMBSET(896)
+
+//(ちかごろ) (ダンジョン)から (セカンドガン)が でて[NL]
+//こまっているんです[PAU][CLR]
+Recently (2nd-Gun) has[NL]
+been leaving his dungeon.[PAU][CLR]
+[B1-3]<$02>
+#EMBSET(204)
+
+//みんな すっかりおびえてしまって(......)[NL]
+//[NAME]さん (あなた)の つよいところを[NL]
+//みせてもらえま(せんか?)[END]
+Everyone is scared. We[NL]
+don't know what to do.[NL]
+[NAME], please help us![END]
+
+#EMBWRITE(204)
+[CLR]
+//えっ?[NL]
+//(マシン)を たおして くださったのですか![NL]
+//おれいに (にじのくに)にはいれる (つうこうしょう)を[NL]
+//さしあげます
+What?[NL]
+You defeated (2nd-Gun)![PAU][CLR]
+Please take this (Spectrum[NL])
+(Gate Pass) as our thanks.
+[B5-3]<$61>
+#EMBSET(400)
+[END]
+
+#EMBWRITE(400)
+[PAU][CLR]
+//おや?それいじょう なにも もてないようじゃ[NL]
+//また あとにしま(しょう)[END]
+Oh? You can't hold anything[NL]
+else? Well come back later[NL]
+then.[END]
+
+#EMBWRITE(3)
+#EMBWRITE(896)
+//(ありがとう)(ござい)(ました)[NL]
+//みな ぶじにくらすことが できます[END]
+(Thank you), [NAME]![NL]
+Now we can live in peace.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C302)//C479//nomad shop
+//なにが いりようかな?[BF0000]
+Need anything?[BF0000]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C304)//C47A//merchanton shop boy
+[B1-3]<$02>
+#EMBSET(205)
+
+//(きたの) (ダンジョン)の (セカンドガン)のせいで[NL]
+//しなものが とどかなくて こまってるんだ[END]
+(2nd-Gun)'s minions in the[NL]
+north are hurting our[NL]
+trade.[END]
+
+#EMBWRITE(205)
+//[NAME]さん [C4]<$C8>[END]
+[NAME], [C4]<$C8>[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C306)//C47B//merchanton weapon shop counter
+[B1-3]<$02>
+#EMBSET(206)
+
+//(にじのくに)に いったきり[NL]
+//(おとうさん)が (もどって)こないんだ [END]
+Dad only went to (Spectrum),[NL]
+but he hasn't come back...[END]
+
+#EMBWRITE(206)
+//[NAME] (ありがとう)![BF0002]
+[NAME], Thanks![BF0002]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C308)//C47C//merchanton weapon shop girl
+[B1-3]<$02>
+#EMBSET(207)
+
+//(マシン)が あばれてるんで うみからの[NL]
+//しなものが ぜんぜん とどかないんだ(......)[END]
+Because of the attacks[NL]
+nothing is being delivered[NL]
+by sea...[END]
+
+#EMBWRITE(207)
+//(あんた)のおかげで また しょうばいが できるぞ![NL]
+//(ありがとう)![END]
+Because of you we are back[NL]
+in business! Thanks![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C30A)//C47D//merchanton inn
+//みんなの(やどや)です [BF0101]
+Everyone's welcome.[BF0101]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C30C)//C47E//merchanton house woman
+[B1-3]<$02>
+#EMBSET(208)
+
+//(わたし)はまいにち こうして しゅじんの[NL]
+//かえりをまっているんです[PAU][CLR]
+//むすこも ちちおやが かえっくるのを[NL]
+//まちのぞんで いるのですが(......)[END]
+Every day I wait for my[NL]
+husband to return.[PAU][CLR]
+Our son too. He just[NL]
+wants his father back...[END]
+
+#EMBWRITE(208)
+//しゅじんが ぶじ だったんです!いま(にじのくに)に[NL]
+//There is a space at the end of this lineいるそうなんです 
+My husband's safe![NL]
+He's in (Spectrum) now.[NL]
+[B0-2]
+#EMBSET(997)
+//[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C30E)//C47F//merchanton house woman
+[B1-3]<$02>
+#EMBSET(996)
+
+//いくら (にじのくに)に はいれたって (セカンドガン)が[NL]
+//いるんじゃ なんにもならないわ(......)[END]
+How much to enter (Spectrum)?[NL]
+With (2nd-Gun) around,[NL]
+there's no way...[END]
+
+//------------------------------------------------------------------
+//  Spectrum
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C310)//C480//spectrum princess
+[B3-3]<$01>
+#EMBSET(322)
+[B1-3]<$0A>
+#EMBSET(209)
+[B1-3]<$08>
+#EMBSET(210)
+
+//ああ このままでは[NL]
+//むりやり (けっこん) させられて[NL]
+//しまう(......)(......)[PAU][CLR]
+//(あなた)のような ひとが おうじに[NL]
+//なってくれればいのに(......)[PAU][NL]
+//だめかしら?[B2-1]<$07>[B4-1]<$01>[END]
+Ahh! I don't want to be[NL]
+forced to get married like[NL]
+this![PAU][CLR]
+If only someone like you[NL]
+could become a prince...[PAU][CLR]
+That couldn't happen.[NL]
+Could it?[B2-1]<$07>[B4-1]<$01>[END]
+
+#EMBWRITE(322)
+//おねがい! (ブりキントン)を やっつけて![END]
+Please defeat the Tinbot![END]
+
+#EMBWRITE(209)
+//[NAME]さま[NL]
+//いつまでも おまちしております[END]
+[NAME],[NL]
+I'll wait for you always.[END]
+
+#EMBWRITE(210)
+//(ありがとう)[NAME]![NL]
+//(ブりキントン)を やっつけてくれて![NL]
+//(わたし) [NAME]のことわすれないわ[END]
+[NAME], thank you![NL]
+You defeated the (Tinbot)![NL]
+I'll never forget you![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C312)//C481//spectrum tin knight
+[B1-3]<$07>
+#EMBSET(211)
+
+//そとの(おとこ)の ちゅうこくを きかなかったのか?[NL]
+//ワタシは (ブりキントン)などでは ないんだぞ[END]
+You didn't listen to that[NL]
+boy outside did you? I'm[NL]
+not a (Tinbot) or whatever...[END]
+
+#EMBWRITE(211)
+//(にじのくに)と (おうじょ)を とりかえすために[NL]
+//このワタシに たたかいをいどむ つもりか?[NL]
+//    たたかう  たたかわない
+Will you fight me to save[NL]
+(Spectrum) and the princess?[NL]
+[A2-1]<$03>Fight[A2-1]<$03>Don't
+[B6-4]<$02><$0A>
+#EMBSET(500)
+[B8-3]<$08><$6E><$00>[END]
+
+#EMBWRITE(500)
+[CLR]
+//フッ こしぬけめ[END]
+Ha! Coward.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C314)//C482//spectrum ???
+//[B1-3]<$08>
+//#EMBSET(995)
+(where is this person?)[END]
+//おわかいの どうか この (にじのくに)を[NL]
+//すくってくれんかね?[END]
+//Young one, somehow you[NL]
+//must save (Spectrum).[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C316)//C483//spectrum ne house former prince
+[B1-3]<$08>
+#EMBSET(212)
+[B3-3]<$01>
+#EMBSET(323)
+
+//おれは この(にじのくに)の おうじだったんだ でも[NL]
+//ちょいとばかり けんかっぱやくて おやじに[NL]
+//おいだされちまった [PAU][CLR]
+//だが はなしをきいて (もどって)きたんだが[NL]
+//(マシン)なしじゃ はがたたないんだ (ブりキントン)を[NL]
+//おれのかわりに ブッとばしてやってくれ![B4-1]<$01>[END]
+I used to be the prince[NL]
+until my quick tempered[NL]
+old man threw me out.[PAU][CLR]
+I heard that he might take[NL]
+me back if I defeat that[NL]
+(Tinbot) guy.[PAU][CLR]
+But without a (Mashin) I[NL]
+don't stand a chance. You[NL]
+have to beat him for me![B4-1]<$01>[END]
+
+#EMBWRITE(323)
+//ボーッとしてねぇで たのむぜ![END]
+I'm still in a daze,[NL]
+I'm begging you![END]
+
+#EMBWRITE(212)
+//いもうとを たすけてくれて (ありがとう)よ![NL]
+//ところで おやじには あったか?[END]
+Thank you for saving my[NL]
+sister! By the way, did[NL]
+you talk to my dad?[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C318)//C484//spectrum guards
+[B1-3]<$13>
+#EMBSET(213)
+[B1-3]<$08>
+#EMBSET(214)
+[B1-3]<$03>
+#EMBSET(215)
+
+//(おまえ)はだれだ![NL]
+//(つうこうしょう)は もっているのか[NL]
+//  もってる   もっていない
+Who goes there?[NL]
+Do you have a (Gate Pass)?[NL]
+[A2-1]<$03>Yes[A2-1]<$03>No
+[B6-4]<$02><$08>
+#EMBSET(501)
+[AF-3]<$61>
+#EMBSET(4)
+
+#EMBWRITE(501)
+[CLR]
+//(つうこうしょう)を もたぬものなど とおしたことが[NL]
+//ばれたら (ブりキントン)のヤツに ころされるぞ![NL]
+//かえれっ![END]
+If anyone slips in without[NL]
+a pass, they'll be kiilled[NL]
+by that (Tinbot) guy.[PAU][CLR]
+Get out of here![END]
+
+#EMBWRITE(4)
+[CLR]
+//なに?[PAU][NL]
+//もっているなら はやくいえ[B2-1]<$03>[B4-1]<$01>
+Oh you have a pass.[PAU][NL]
+Should have said so sooner.[B2-1]<$03>[B4-1]<$01>
+[B9-3]<$61>
+#EMBSET(600)
+[END]
+
+#EMBWRITE(215)
+#EMBWRITE(600)
+//(ブりキントン)のヤツには ちかづかんほうが いいぞ[B4-1]<$01>[END]
+That (Tinbot) guy better[NL]
+not come around here![B4-1]<$01>[END]
+
+#EMBWRITE(214)
+//いままでの ごぶれい どうか おゆるしください![B2-1]<$13>[B4-1]<$01>[END]
+Please forgive my rudeness[NL]
+before![B2-1]<$13>[B4-1]<$01>[END]
+
+#EMBWRITE(213)
+//[NAME]さま どうぞ おとおりください[B4-1]<$01>[END]
+[NAME],[NL]
+Right this way please.[B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C31A)//C485
+//(まどうしょ)は もらったかい? このせかいには[NL]
+//11の (まどうしょ)が あるんだって[END]
+(where is this person?)[END]
+//You got a spell? I heard[NL]
+//there are only 11 in the[NL]
+//whole world.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C31C)//C486//spectrum shop man
+//ああ (あなた)が(セカンドガン)を たおしてくれたので[NL]
+//つまと こどものもとに かえることができます![END]
+Because you defeated[NL]
+(2nd-Gun) I can return to[NL]
+my wife and son![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C31E)//C487//spectrum nw house fire boy
+//もういちど だけで いいから あの[NL]
+//(こおり)のだいちを あるいてみたい[END]
+Just one more time, I feel[NL]
+like walking that frozen[NL]
+land.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C320)//C488//spectrum nw house counter
+//へへ[PAU][CLR]
+//ぼく タタル(ちゃん)です[NL]
+//さいきん ぼくの なまえを かたる やつが[NL]
+//(ひがし)の (ほうに) あらわれたらしいよ[END]
+Hehe.[PAU][CLR]
+I'm Tataru. I heard some[NL]
+guy has shown up in the[NL]
+east mentioning my name.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C322)//C489//spectrum nw house fire girl
+//あら?[NL]
+//うちのタタル(ちゃん) みませんでした?[NL]
+//ちょっと めをはなすと[PAU][CLR]
+//ちのはて だってすぐに いくこなんで[END]
+Oh?[NL]
+Did you see our little[NL]
+Tataru?[PAU][CLR]
+If I take my eyes off that[NL]
+boy for a second, he's gone[NL]
+to the ends of the earth.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C324)//C48A//merchanton shop
+//(いらっしゃい)[BF0001]
+(Welcome).[BF0001]
+
+//------------------------------------------------------------------
+//
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C326)//C48B
+//[AF-3]<$60>
+//#EMBSET(5)
+//はなのしたを かきわけると キラりとひかる ものが[NL]
+//あった!よくみるとそれは カギだった!
+//[B5-3]<$60>
+//#EMBSET(401)
+//[END]
+//#EMBWRITE(5)
+//みどりのはなを みつめていると くさもちが[NL]
+//たべたくなってしまった(......)[END]
+//#EMBWRITE(401)
+//[CLR]
+//でももてないので そのままに しておくことにした[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C328)//C48C
+//[B1-3]<$12>
+//#EMBSET(216)
+//わしはふなのり ハイホハイホ[END]
+//#EMBWRITE(216)
+//[AF-3]<$68>
+//#EMBSET(6)
+//[B1-3]<$0D>
+//#EMBSET(6)
+//[B3-3]<$01>
+//#EMBSET(301)
+//[NAME]さんよ ふねを だしてほしいそうじゃな?[NL]
+//もう そとに よういしてある すきにつかって[NL]
+//くだせい[B4-1]<$01>[B2-1]<$DF>[END]
+//#EMBWRITE(301)
+//まあ えんりょなさるな[END]
+//#EMBWRITE(6)
+//もうふねは だせませんのじゃ もうしわけない[NL]
+//[NAME]どの[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C32A)//C48D
+//[AF-3]<$68>
+//#EMBSET(7)
+//[B1-3]<$0D>
+//#EMBSET(7)
+//(サ-ぺント)は こころの ただしいひとには かならず[NL]
+//むくいてくれるはずじゃ[END]
+//#EMBWRITE(7)
+//おぬしというヤツは(......) たいしたものじゃ[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C32C)//C48E//merchanton inn boy
+[B1-3]<$03>
+#EMBSET(8)
+[AF-3]<$61>
+#EMBSET(628)
+[B1-3]<$02>
+#EMBSET(217)
+
+//そとの ちょうろうがさ しんようの おけないヒトには[NL]
+//(つうこうしょう)は はっこうできません[PAU] な-んて[NL]
+//ぬかしやがるんだ 
+The old man outside won't[NL]
+give (Gate Pass)es to[NL]
+people he doesn't trust.[PAU][CLR]
+Hey! What's that supposed[NL]
+to mean!?[END]
+
+#EMBWRITE(217)
+//[PAU][CLR]
+//えっ?(セカンドガン)を やっつけた![NL]
+//それなら 
+What? You beat (2nd-Gun)![NL]
+He'll give you a (Gate Pass)[NL]
+for sure now.[END] 
+
+#EMBWRITE(8)
+#EMBWRITE(628)
+//(つうこうしょう)を もらったんだな![NL]
+//うらやましいなぁ(......)[END]
+You got a (Gate Pass)![NL]
+I'm so jealous...[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C32E)//C48F
+//(わたし)は (くうじんま)(......) たましいとなった[NL]
+//(わたし)を つれていってください きっと おやくに[NL]
+//たてるでしょう[B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C330)//C490
+//えらばれたるものよ みなのくらしを まもるために[NL]
+//このせかいを まもるために[NL]
+//[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C332)//C491//sazabi by cursed spring
+[AF-3]<$70>
+#EMBSET(9)
+
+//(ワタル)?[PAU][CLR]
+//おそかったな いま つれていかれたぞ もし[NL]
+//おいかけると いうなら この (サザビ-)の[NL]
+//(まどうしょ)を もっていくがいい
+(Wataru)?[PAU][CLR]
+You're too late. But if you[NL]
+are going after him you can[NL]
+take this magic spell.
+
+[B5-3]<$70>
+#EMBSET(402)
+[END]
+
+#EMBWRITE(402)
+[PAU][CLR]
+//おや? もてないようじゃの[NL]
+//でなおしてくるがよい[NL][END]
+Oh! You can't carry[NL]
+anything else.[END]
+
+#EMBWRITE(9)
+//もう なにもいうことはない[PAU][NL]
+//じぶんの しんずるみちを ゆけ[END]
+I have nothing more to say.[PAU][NL]
+Follow the path you[NL]
+believe in.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C334)//C492//boy by restore spring
+[B1-3]<$20>
+#EMBSET(218)
+[AF-3]<$70>
+#EMBSET(10)
+
+//(サザビ-)さまに ようかい?[NL]
+//なら ちかにある のろいの (いずみ)にいってくれ[NL]
+//(ここは) ふっかつの (いずみ)だからね[END]
+Looking for Sazabi?[PAU][CLR]
+If so, you need to go to[NL]
+Cursed Spring below. This[NL]
+is the Recovery Spring.[END]
+
+#EMBWRITE(10)
+//(まどうしょ) もらったのか![NL]
+//だったら もう ここにいる ひつようはないね[NL]
+//きたをめざしたら どうだい[END]
+You got a spell!?[PAU][CLR]
+No need to hang around[NL]
+here. Why don't you head[NL]
+north.[END]
+
+#EMBWRITE(218)
+//(サザビ-)さまは やまに いってしまわれたんだ[END]
+Sazabi went into the[NL]
+mountains.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C336)//C493//passage house guy
+[B1-3]<$20>
+#EMBSET(219)
+[B1-3]<$01>
+#EMBSET(220)
+
+//ボクは (サザビ-)さまから キミみたいな コドモを[NL]
+//とおすなって もうしつけられているんだ[NL]
+I've been orderd by (Sazabi)[NL]
+not to let kids like you[NL]
+through.
+[AF-3]<$70>
+#EMBSET(11)
+//もっとも (まどうしょ)でも あるんなら べつだけどね[END]
+[PAU][CLR]
+But if you could use a[NL]
+powerful magic spell, that[NL]
+might be different.[END]
+
+#EMBWRITE(11)
+[PAU][CLR]
+//えっ (サザビ-)さまから (まどうしょ)を さずかったって![NL]
+//これはしつれいし(ました)[B2-1]<$01>[B4-1]<$01>[END]
+Oh, Sazabi gave you a[NL]
+spell! Please excuse me.[B2-1]<$01>[B4-1]<$01>[END]
+
+#EMBWRITE(220)
+//(ゆうしゃ)どの[NL]
+//さあ おとおりください[END]
+Brave hero,[NL]
+this way please.[END]
+
+#EMBWRITE(219)
+//[NAME]どの! おねがいです[NL]
+//(サザビ-)さまのちからに なってください![END]
+Brave [NAME]! Please help[NL]
+(Sazabi)![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C338)//C494//shibaraku icefield tower
+[B1-3]<$04>
+#EMBSET(221)
+[B3-3]<$01>
+#EMBSET(302)
+[B3-3]<$04>
+#EMBSET(303)
+
+//(せっしゃ) (シバラク) ともうすもの (ワタル)が ここに[NL]
+//いるときいたので きてみたら つれさられて いたのだ[PAU][CLR]
+I'm (Shibaraku). I heard[NL]
+(Wataru) was being held[NL]
+here.[PAU][CLR]
+But he had already been[NL]
+taken away when I arrived.[PAU][CLR]
+
+#EMBWRITE(303)
+//おまけに とじこめられて しまったのだ とびらを[NL]
+//あけるのを てつだって くれんか?[NL]
+//   てつだう   ことわる
+What's worse, I've been[NL]
+locked up here.[PAU][CLR]
+Will you help me open this[NL]
+gate?
+[A2-1]<$03>Help[A2-1]<$03>Don't
+
+[B6-4]<$02><$09>
+#EMBSET(502)
+[CLR]
+#EMBWRITE(302)
+//ならば とびらの むこうにいってくれ[B4-1]<$01>[END]
+Ok, go to the other side[NL]
+of the gate.[B4-1]<$01>[END]
+
+#EMBWRITE(502)
+[CLR]
+//そんなっっ![NL]
+//おぬし ちと つめたすぎるのではないか?(......)[B4-1]<$04>[END]
+What!?[NL]
+That's a little cold[NL]
+hearted don't you think?[B4-1]<$04>[END]
+
+#EMBWRITE(221)
+//さぁっ いかれよ![END]
+Gah... Get out of here![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C33A)//C495//icefield inn man
+[B1-3]<$2A>
+#EMBSET(222)
+
+//エッへン! たびのひと![NL]
+//(ひょうげん)には とうが2ほん たってるんだ[NL]
+//よくしってるだろ? エッへン![END]
+Ahem! Traveler![NL]
+Did you know Icefield has[NL]
+two towers? Ahem![END]
+
+#EMBWRITE(222)
+//(ひがし)のとうに いくのかい? そろそろ くると[NL]
+//おもってたんだよ エッへン![END]
+Have you been to the east[NL]
+tower? You'll go soon[NL]
+enough I bet. Ahem![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C33C)//C496//guy by spectrum gate
+[B1-3]<$08>
+#EMBSET(223)
+[B1-3]<$03>
+#EMBSET(812)
+[AF-3]<$61>
+#EMBSET(12)
+
+//(ここは) (にじのくに) (ブりキントン)がきてから[NL]
+//(しょうにん)じゃないと いれてくれないんだ どうしても[NL]
+//はいりたいのなら にしの (しょうにん)のむらに[PAU][CLR]
+//いくことを おすすめするよ[END]
+This is (Spectrum). Since the[NL]
+(Tinbot) showed up, they're[NL]
+only leting merchants in.[PAU][CLR]
+If you want in, you better[NL]
+go west to (Merchanton)[NL]
+first.[END]
+
+#EMBWRITE(812)
+#EMBWRITE(12)
+//(しょうにん)に (つうこうしょう)を もらったんだね[END]
+You got a pass from[NL]
+(Merchanton), huh?[END]
+
+#EMBWRITE(223)
+//(ブりキントン)を やっつけるほど つよいんなら[NL]
+//(ひょうげん)のとうに いけるんじゃ ないのかなぁ[END]
+You were strong enough to[NL]
+defeat the (Tinbot).[PAU][CLR]
+I bet you could survive[NL]
+the Icefield Tower.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C33E)//C497//spectrum se house guards
+[B3-3]<$01>
+#EMBSET(304)
+
+//おめし ふねに のったことはあるか?[NL]
+Ever been on a boat kid?[B4-1]<$01>[END]
+
+#EMBWRITE(304)
+//スイス-イと たのしいぞ[END]
+So smooth, so great![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C340)//C498//spectrum king
+[AF-3]<$71>
+#EMBSET(13)
+[B1-3]<$08>
+#EMBSET(224)
+
+//[NAME]よ (おまえ)も (マシン)をもっているのか?[NL]
+//   もっている  もっていない
+[NAME], you have a Mashin[NL]
+too right?[NL]
+[A2-1]<$03>Yes[A2-1]<$03>No
+
+[B6-4]<$02><$08>
+#EMBSET(503)
+
+[CLR]
+//ならばこの (にじのくに)をすくってくれ![NL]
+//もし (ブりキントン)めを たおしたら[NL]
+//この(にじのくに)と (おうじょ)を (おまえ)にやろう![END]
+You must save (Spectrum) and[NL]
+defeat that (Tinbot) guy.[PAU][CLR]
+If you do, (Spectrum) and[NL]
+the princess are yours![END]
+
+#EMBWRITE(503)
+[CLR]
+//おぬしならと おもったのじゃが[NL]
+//とんだ みこみちがいの ようじゃな(......)[END]
+I thought you did.[NL]
+It seems I've made a[NL]
+huge mistake...[END]
+
+#EMBWRITE(224)
+[CLR]
+//おお! よくやってくれた [NAME]よ[NL]
+//では れいとして (まどうしょ)を さずけよう
+Oh! Well done [NAME]![NL]
+Please accept this spell[NL]
+as a token of our thanks.
+
+[B5-3]<$71>
+#EMBSET(403)
+
+[PAU][CLR]
+//そこで たのみがあるのだが わしのむすめの[NL]
+//ムコになってはくれぬか?[NL]
+//    なる  ことわる
+And as I promised, won't[NL]
+you marry my daughter?[NL]
+[A2-1]<$03>Accept[A2-1]<$03>Refuse
+
+[B6-4]<$02><$0B>
+#EMBSET(504)
+[CLR]
+//そうか!では[NAME]よ[NL]
+//たびがおわりしだい (けっこん)しきを[NL]
+//おこなう きをつけていくがいい[B2-1]<$0A>[END]
+Well then! We'll hold the[NL]
+wedding when your journey[NL]
+is over. Be careful![B2-1]<$0A>[END]
+
+#EMBWRITE(504)
+[CLR]
+//なんというやつ![NL]
+//(おまえ)の けんきょなたいど[NL]
+//ワシはきにいったぞ![END]
+What's that!?[NL]
+I've taken a liking to[NL]
+your modest attitude![END]
+
+#EMBWRITE(13)
+[CLR]
+//きをつけてまいれ[END]
+Take care.[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C342)//C499
+//[B1-3]<$0C>
+//#EMBSET(225)
+//みなみにのびた みさきに ちかへのつうろが[NL]
+//あるそうですよ そこからなみが きたらしいんですが[END]
+//#EMBWRITE(225)
+//(ありがとう)(ござい)(ました) (サ-ぺント)もきっと[NL]
+//(あなた)に かんしゃして いるでしょう[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C344)//C49A//icefield tower cell gate
+//[BA01-1]<$00>どうやら (ワタル)は うみのとうに いるようだ[NL]
+//(せっしゃ)は そちらにむかうから [NAME]どのは[NL]
+//さきにいかれよ[PAU][B4-1]<$02>[BA00][END]
+[BA01-1]<$00>Somehow it seems (Wataru) is[NL]
+in the sea tower so I'm[NL]
+headed there.[PAU][CLR]
+[NAME], you should go on[NL]
+ahead.[PAU][B4-1]<$02>[BA00][END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C346)//C49B
+//[B1-3]<$0C>
+//#EMBSET(226)
+//なんでもうみにすむ (サ-ぺント)が (ダンジョン)に[NL]
+//とじこめられて しまったらしいんだ[NL]
+//だっしゅつしようと あばれたときに[PAU][CLR]
+//おきた つなみで (みなとまち)は みずびたしさ[END]
+//#EMBWRITE(226)
+//(ありがとう)[NL]
+//きみのおかげで このまちはすくわれたんだ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C348)//C49C
+//ここから ふねが でるんですよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C34A)//C49D
+//[B3-3]<$01>
+//#EMBSET(305)
+//(わたし)が (サ-ぺント)だ(......)[NL]
+//(ドアクダー)のやつらに だまされて (ここに)[NL]
+//とじこめられてしまったのだ すまぬが[PAU][CLR]
+//#EMBWRITE(305)
+//すいもんの となりにある(ボタン)の みぎの[NL]
+//(ボタン)を おしてくれぬか?[B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C34C)//C49E
+//あしもとに ふたつの (ボタン)があります[NL]
+//  みぎをおす  ひだりをおす
+//[B6-4]<$01><$08>
+//#EMBSET(505)
+//[B2-1]<$0C>[END]
+//#EMBWRITE(505)
+//[CLR]
+//[NAME]! みぎだ みぎをおしてくれ![END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C34E)//C49F
+//[B1-3]<$30>
+//#EMBSET(14)
+//[AF-3]<$64>
+//#EMBSET(14)
+//どうにも したにある たからがとれんのじゃ[END]
+//#EMBWRITE(14)
+//ほお たいしたもんじゃ[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C350)//C4A0//icefield tower boatman
+[B3-3]<$01>
+#EMBSET(306)
+[B1-3]<$05>
+#EMBSET(227)
+
+//だめだめ そうかんたんには ふねにのせないよ//[PAU]
+Woah there. You can't just[NL]
+take a boat so easily.[PAU]
+
+[B1-3]<$E1>
+#EMBSET(848)
+[AF-3]<$41>
+#EMBSET(858)
+[B1-3]<$24>
+#EMBSET(898)
+
+[CLR]
+//(おまえ)も (ワタル)を さがしているのか?[NL]
+//(シバラク)とかいうやつも うえに いったんだが(......)[B2-1]<$24>
+Are you looking for (Wataru)[NL]
+too? A guy named (Shibaraku)[NL]
+went up the tower...[B2-1]<$24>
+
+#EMBWRITE(848)
+#EMBWRITE(858)
+#EMBWRITE(898)
+[B1-3]<$04>
+#EMBSET(228)
+[END]
+
+#EMBWRITE(228)
+[CLR]
+[B3-3]<$01>
+#EMBSET(366)
+
+//なに? (シバラク)なら さきにいったぞ ワシなりに[NL]
+//(ワタル)を さがすといっていたが(......)[PAU][CLR]
+//たいへんなようだから このフネに のせてやるよ[B4-1]<$01>[END]
+
+#EMBWRITE(366)
+#EMBWRITE(306)
+//はやく このフネに のりなよ[B4-1]<$01>[END]
+
+#EMBWRITE(227)
+//フネに のりたかったら いつでも いってくれ[B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C352)//C4A1//icefield inn woman
+#WRITE(B2Ptr, $2C354)//C4A2
+#WRITE(B2Ptr, $2C356)//C4A3
+//(シバラク)さんって ごぞんじかしら? ついこのあいだ[NL]
+//(ワタル)を みつけたといって (きたの) (ひょうげん)に[NL]
+//いったヒトなんですけど(......)[END]
+Do you know (Shibaraku)?[PAU][CLR]
+Just recently he said he[NL]
+found (Wataru) and headed[NL]
+north...[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C358)//C4A4//dead end house woman
+[B1-3]<$0B>
+#EMBSET(15)
+[AF-3]<$51>
+#EMBSET(897)
+
+//(1000ゴ-ルド)すら ないということは[NL]
+//たいした たびを していないということ[END]
+Without a (Gold Bar) you[NL]
+can't continue your[NL]
+important journey.[END]
+
+#EMBWRITE(15)
+#EMBWRITE(897)
+//ゆうかんなかた[NL]
+//ちからが (あなた)とともに ありますように![END]
+Brave hero,[NL]
+the power is with you![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C35A)//C4A5//dead end house man
+[B1-3]<$0B>
+#EMBSET(229)
+
+//とおりたきゃ (1000ゴ-ルド) おいていきな![NL]
+//    おいてく  ことわる
+If you want through hand[NL]
+over a (Gold Bar)![NL]
+[A2-1]<$03>Leave it[A2-1]<$03>Don't
+[B6-4]<$02><$0D>
+#EMBSET(506)
+[AF-3]<$51>
+#EMBSET(16)
+#EMBWRITE(506)
+[CLR]
+//だめだ かえりな[END]
+That's no good.[NL]
+Get out of here![END]
+
+#EMBWRITE(16)
+[CLR]
+//じゃ (きたの)いえにいきな (あんた)に あいたがってる[NL]
+//ひとがいるはずだ [B2-1]<$0B>[B4-1]<$01>
+[B9-3]<$51>
+#EMBSET(878)
+[END]
+
+#EMBWRITE(878)
+#EMBWRITE(229)
+//きをつけていきな[END]
+Be careful.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C35C)//C4A6//spectrum shop
+//(いらっしゃい)[BF0003]
+(Welcome).[BF0003]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C35E)//C4A7//icefield shop
+//(いらっしゃい)[BF0004]
+(Welcome).[BF0003]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C360)//C4A8//spectrum inn
+//こんちは! やすんでいきなよ[BF0102]
+Hello! Please make[NL]
+yourself at home.[BF0102]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C362)//C4A9
+//(いらっしゃい)! (やどや)です[BF0104]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C364)//C4AA
+//(いらっしゃい)! (やどや)です[BF0104]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C366)//C4AB
+//かねがあるなら だいかんげい[BF0005]
+
+//------------------------------------------------------------------
+//      Prologue
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C368)//C4AC
+//まてっ! (ワタル)[END]
+Stop! (Wataru)![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C36A)//C4AD
+//しまった![NL]
+//おいつめられたッ![END]
+Damn![NL]
+Trapped![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C36C)//C4AE
+//い-ち[END]
+One[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C36E)//C4AF
+//に-[END]
+Two[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C370)//C4B0
+//さ-ん[END]
+Three[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C372)//C4B1
+//[A4-1]<$02>し-っと[NL]
+//[A4-1]<$06>おいつめたぞ[NL]
+//(ワタル)[END]
+[A4-1]<$02>Fo-[NL]
+[A4-1]<$06>We've got you now (Wataru).[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C374)//C4B2
+//はなせ![END]
+Let go![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C376)//C4B3
+//はなせ![NL]
+//ちく(しょう)め![END]
+Let me go![NL]
+Damn it![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C378)//C4B4
+//おとなしくしろっ[END]
+Easy, kid.[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C37A)//C4B5
+//(ありがとう)[NL]
+//このれいは きっとしよう むらびとたちには[NL]
+//すまぬことをしたと いっておいてくれ[END]
+//[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C37C)//C4B6
+//(しょうにん)のむら[B2-1]<$F1>[END]
+(Merchanton)[B2-1]<$F1>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C37E)//C4B7
+//[AF-3]<$68>
+//#EMBSET(17)
+//[B3-3]<$01>
+//#EMBSET(307)
+//#EMBWRITE(307)
+//よくきたな [NAME]よ さあ この[NL]
+//(サ-ぺント)のなみだを もってゆくがいい[B4-1]<$01>
+//[B5-3]<$68>
+//#EMBSET(463)
+//[END]
+//#EMBWRITE(17)
+//どうした?はやくゆけ いっこくも はやくはなを[NL]
+//さかせてやるのだ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C380)//C4B8
+//[B5-3]<$09>
+//#EMBSET(404)
+//[B5-3]<$08>
+//#EMBSET(404)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C382)//C4B9
+//[B5-3]<$09>
+//#EMBSET(404)
+//[B5-3]<$08>
+//#EMBSET(404)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C384)//C4BA
+//(ここは) (うつくしむら)
+//[B1-3]<$0D>
+//#EMBSET(230)
+//(......) だったところです[NL]
+//きれいなはなが さいていたんですが [END]
+//#EMBWRITE(230)
+// はなのさくまちです![END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C386)//C4BB
+//みさき(のやど)[B2-1]<$F6>[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C388)//C4BC
+//(かくれざと)[B2-1]<$F7>[END]
+(Isola)[B2-1]<$F7>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C38A)//C4BD
+//(オアシス)[B2-1]<$F8>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C38C)//C4BE
+//(ゆうしゃ)(のやど)[B2-1]<$F9>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C38E)//C4BF
+//ぬま(のやど)[B2-1]<$FA>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C390)//C4C0
+//ふもと(のやど)[B2-1]<$FB>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C392)//C4C1
+//やまの(ゆうぼくみん)[B2-1]<$FC>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C394)//C4C2
+//なにがいるんだい?[BF0006]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C396)//C4C3
+//#WRITE(B2Ptr, $2C398)//C4C4
+//[B1-3]<$E2>
+//#EMBSET(231)
+//(おお)(あなた)は [NAME]どの (ひょうげん)では[NL]
+//おせわになりもうした (ワタル)のてがかりは[NL]
+//まだなのだが なかまの (ヒミコ)が[PAU][CLR]
+//(ジャングル)の(ほうに)いるらしいのだ[END]
+//#EMBWRITE(231)
+//[B1-3]<$E3>
+//#EMBSET(232)
+//[B1-3]<$E4>
+//#EMBSET(232)
+//それは げんじんまる! (ヒミコ)に あえたのですな?[END]
+//#EMBWRITE(232)
+//わたしの (せんじんまる)は げんきですか?[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C39A)//C4C5//spectrum kings guard left
+[B1-3]<$08>
+#EMBSET(994)
+
+//(シバラク)どのは (ワタル)をたすけるしか せかいをすくう[NL]
+//ことはできぬ! と(ひょうげん)に むかい(ました)[END]
+(Shibaraku) is only trying[NL]
+to rescue (Wataru), he can't[NL]
+save the world himself.[PAU][CLR]
+He went towards Icefield.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C39C)//C4C6//spectrum kings guard right
+[B1-3]<$08>
+#EMBSET(993)
+
+//(シバラク)というかたにも (ブりキントン)めを たおして[NL]
+//くださるように おねがいしたのですが この[NL]
+//せかいでは ちからがでないと いうことらしく[PAU][CLR]
+//まけて しまわれたのです![END]
+We begged (Shibaraku) to[NL]
+defeat that damn (Tinbot).[PAU][CLR]
+But he lost his power in[NL]
+this world.[PAU][NL]
+We're doomed![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C39E)//C4C7//spectrum girl outside castle
+[B1-3]<$08>
+#EMBSET(992)
+[B1-3]<$07>
+#EMBSET(233)
+
+//(おうじょ)さまが みつからないんです! さっきまで[NL]
+//(ここに)いらしたのですが (おうじょ)(さまの)みに なにか[NL]
+//あったら(......)[END]
+I can't find the princess![NL]
+I just saw her. I think she[NL]
+had something in her eye...[END]
+
+#EMBWRITE(233)
+//(おうじょ)さまに あったのですか![PAU][CLR]
+//でも はずかしがりの (おうじょ)さまが[NL]
+//(おとこ)のかたに こえを かけるなんて[NL]
+//ふしぎね[END]
+You met the princess?![PAU][NL]
+That's odd. Usually she is[NL]
+too shy to talk to boys.[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C3A0)//C4C8
+#EMBWRITE(992)
+#EMBWRITE(993)
+#EMBWRITE(994)
+#EMBWRITE(995)
+#EMBWRITE(996)
+#EMBWRITE(997)
+#EMBWRITE(998)
+#EMBWRITE(999)
+//(ありがとう)(ござい)(ました)[END]
+(Thank you)![END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3A2)//C4C9
+//[PAU][CLR]
+//でもはこべないようですね[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3A4)//C4CA
+//[PAU][CLR]
+//もちものを せいりしてこい[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3A6)//C4CB
+//#EMBWRITE(404)
+//[PAU][CLR]
+//でも にもつがおおくて もてない[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C3A8)//C4CC
+#EMBWRITE(463)
+#EMBWRITE(464)
+#EMBWRITE(465)
+#EMBWRITE(466)
+#EMBWRITE(403)
+[PAU][CLR]
+//もてないなら せいりするまで まっているぞ[END]
+I'll wait till you've made[NL]
+room.[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3AA)//C4CD
+//いかがかな?[BF0007]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3AC)//C4CE
+//すぐに ゲンキに なりますよ[BF0105]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3AE)//C4CF
+//[AF-3]<$60>
+//#EMBSET(18)
+//[B1-3]<$0D>
+//#EMBSET(234)
+//たいせつなカギを みどりの はなのところに[NL]
+//うめたのですが (......)[B4-1]<$01>[END]
+//#EMBWRITE(234)
+//[C4]<$C8>[NL]
+//このこが おおきくなる ころには もっと はなが[NL]
+//さいて いるでしょう[END]
+//#EMBWRITE(18)
+//カギは (あなた)が おつかいください みなみの(ほうに)[NL]
+//(ジャングル)への つうろが あったはずです[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3B0)//C4D0
+//[B1-3]<$0D>
+//#EMBSET(235)
+//あんなに さいていたはなも いどが ひあがって[NL]
+//ぜんぶ かれてしまったんだ もう にどとはなは[NL]
+//さかないんだろうか(......)[B4-1]<$02>[END]
+//#EMBWRITE(235)
+//みどりのはなは ごらんになり(ました)?[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3B2)//C4D1
+//[B3-3]<$03>
+//#EMBSET(308)
+//[B3-3]<$01>
+//#EMBSET(309)
+//[B3-3]<$02>
+//#EMBSET(310)
+//う-ん ムニャムニャ(......)[END]
+//#EMBWRITE(309)
+//みなみに とびらが あるんだけど カギがないんで[NL]
+//あそべないんだ (......)[END]
+//#EMBWRITE(310)
+//(サ-ぺント)って しってる? このうみの ぬしなんだ[END]
+//#EMBWRITE(308)
+//(みなとまち)で ふねにのった ことがあるんだ[NL]
+//そのとき どこかのしまに (サ-ぺント)
+//#EMBWRITE(238)
+//がいたよ!(......)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3B4)//C4D2
+//[B1-3]<$0D>
+//#EMBSET(236)
+//[AF-3]<$68>
+//#EMBSET(19)
+//[B1-3]<$0C>
+//#EMBSET(237)
+//(サ-ぺント)を たすけてくれんか?(......)[END]
+//#EMBWRITE(237)
+//かれたはなを さかせるには (サ-ぺント)の[NL]
+//なみだがひつようなんだ (みなとまち)の ふなのりが[NL]
+//ちからになって くれるはずだ[B2-1]<$12>[END]
+//#EMBWRITE(19)
+//はやくその (サ-ぺント)のなみだを いどのなかに![END]
+//#EMBWRITE(236)
+//[C4]<$C8>[NL]
+//みなみの(ほうに) ちかへの いりぐちが あるそうですよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3B6)//C4D3
+//きずをおってちゃ たたかえないよ[BF0106]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3B8)//C4D4
+//うちの しなものは いいよ[BF0008]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3BA)//C4D5
+//(いらっしゃい)![BF0009]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3BC)//C4D6
+//わ-い (ゆうしゃ)の おにいちゃんだ![END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3BE)//C4D7
+//[B1-3]<$2F>
+//#EMBSET(238)
+//とうさんが みせたいものが あるから[NL]
+//うえにきてくれっていってたよ[END]
+//がんばってね![END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3C0)//C4D8
+//(まほう)が つかえるの?[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3C2)//C4D9
+//かっこいいな-[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3C4)//C4DA
+//[B1-3]<$2F>
+//#EMBSET(239)
+//(あんた)が ガンバって (ゆうしゃ)を やってるから[NL]
+//この いのちのくすりを あげたくなったんでぇ[NL]
+//しにかけたら つかってくんねぇ
+//[B5-3]<$52>
+//#EMBSET(404)
+//[B2-1]<$2F>[END]
+//#EMBWRITE(239)
+//もう あげるモンはねぇが きをつけて いってくれ[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C3C6)//C4DB
+//[A4-1]<$02>おう![NAME]よ [NL]
+//おれは [NAME]の ごせんぞさまよ[PAU][NL]
+[A4-1]<$02>Hey! [NAME][NL]
+I'm your ancestor.[PAU][NL]
+[B1-3]<$E4>
+#EMBSET(20)
+[AF-3]<$44>
+#EMBSET(820)
+[AF-3]<$78>
+#EMBSET(21)
+
+//この (ダンジョン)を ぬけて[PAU][CLR]
+//(まどうしょ) とって きやがったら[NL]
+//てめえに おニュ-の (マシン)を くれてやるぜ[END]
+If you bring me the spell[PAU][CLR]
+to escape this (dungeon)[NL]
+I'll give you a new (Mashin).[END]
+
+#EMBWRITE(21)
+[PAU][CLR]
+//よし!(おまえ)には ちょっとサイバ-な[NL]
+//ライジンまるを やろう![B2-1]<$E4>[END]
+Great! Heres a little[NL]
+cyber (Raijin-Maru).[B2-1]<$E4>[END]
+
+#EMBWRITE(20)
+#EMBWRITE(820)
+//いつまでも ちまちま[NL]
+//たたかってんじゃねぇぞ[END]
+[PAU][CLR]
+forever little[NL]
+battles.[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3C8)//C4DC
+//AF-3 POINTERS HERE WERE A BIT STRANGE!
+//わしは けんじゃをやってる (りンクス)というものじゃ[PAU][CLR]
+//[B3-3]<$01>
+//#EMBSET(#311)
+//(ワタル)を たすけたくば (ドラゴン)の よっつの[NL]
+//ひほうをあつめ うみにある (ドラゴン)のへやに[NL]
+//いくがいい[PAU][CLR]
+//If you are going to save (Wataru)
+//you must find (the )4 (dragon) treasures and
+//go to (the )(dragon)'s lair in (the )sea.
+//ひとつは さばくに のこりのみっつは しっちと うみ[NL]
+//そして (ゆうぼくみん)の ちかくにある[B4-1]<$01>
+//[AF-3]<$76>
+//#EMBSET(22)
+//[AF-3]<$6B>
+//#EMBSET(23)
+//[END]
+//#EMBWRITE(23)
+//[PAU][CLR]
+//ムッ! [NAME]よ それはむかし ワシがなくした[NL]
+//(まどうしょ) それをみつけるとは ラッキ-なやつ[NL]
+//もとどおりに してやるから もっていくがいい
+//[B9-3]<$6B>
+//#EMBSET(601)
+//#EMBWRITE(601)
+//[B5-3]<$76>
+//#EMBSET(464)
+//#EMBWRITE(22)
+//[END]
+//#EMBWRITE(311)
+//しってることは これだけじゃ きをつけていくがよい[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C3CA)//C4DD//2nd Gun
+//キサマ (しょうにん)どもに たのまれてきたのか?[NL]
+//この (セカンドガン)を たおすつもりだろうが[NL]
+//せいぎをきどると はやじにするものだぞ![PAU][B8-3]<$02><$1F><$00>[END]
+This child dares to[NL]
+disturb (2nd-Gun)?[PAU][CLR]
+Playing the hero and trying[NL]
+to defeat me will earn you[NL]
+a quick death![PAU][B8-3]<$02><$1F><$00>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3CC)//C4DE
+//[B1-3]<$11>
+//#EMBSET(240)
+//[B1-3]<$0B>
+//#EMBSET(241)
+//#EMBWRITE(240)
+//ん-っ ひさしぶりの おきゃくだね![BF0103]
+//[END]
+//#EMBWRITE(241)
+//(あんた) (1000ゴ-ルド)はらったひとだね[NL]
+//だったらどうぞ[B4-1]<$01>[BA00][END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3CE)//C4DF
+//ハ-ト(の かたちの くぼみがあります)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3D0)//C4E0
+//め(の かたちの くぼみがあります)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3D2)//C4E1
+//きば(の かたちの くぼみがあります)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3D4)//C4E2
+//つばさ(の かたちの くぼみがあります)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3D6)//C4E3
+//[B1-3]<$E2>
+//#EMBSET(999)
+//お おなかが(......)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3D8)//C4E4
+//このあいだまで (ひがし)にある (いずみ)に けんじゃ[NL]
+//(りンクス)さまが きていらしたんだけど[NL]
+//さいきん どうなさって いるのかしら[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3DA)//C4E5
+//(りンクス)さまは(いずみ)で (まどうしょ)を[NL]
+//なくしたらしい[END]
+//[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3DC)//C4E6//himiko?
+//[B1-3]<$E2>
+//#EMBSET(24)
+//[AF-3]<$42>
+//#EMBSET(24)
+//[AF-3]<$69>
+//#EMBSET(25)
+//アチシが(ヒミコ)だよ アチシが メシくいすぎて[NL]
+//みんな ハラぺコなのだ アチシのかわりに[NL]
+//メシ とってきたら いいもの やるんだけどな[END]
+//#EMBWRITE(25)
+//[NAME] よくやったのだ おれいに あちしの[NL]
+//げんじんまる あげちゃうのだ![B2-1]<$E2>
+//[B9-3]<$69>
+//#EMBSET(602)
+//#EMBWRITE(602)
+//[END]
+//#EMBWRITE(24)
+//そういえば (ワタル) さがしてるヒト ほかにもいたヨ[NL]
+//アチシと (シバラク)の オッチャンの ぶんまで[NL]
+//ガンバってね! [END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3DE)//C4E7
+//[B1-3]<$E2>
+//#EMBSET(998)
+//ハラへって しにそうだよ(......)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3E0)//C4E8
+//[B1-3]<$E2>
+//#EMBSET(242)
+//(しょくりょう)ちょぞうこは (きたの)(ほうに)あるはずよ![END]
+//#EMBWRITE(242)
+//たびを つづけるのでしたら にしの (さばく)には[NL]
+//いかないほうが いいですよ あぶないですから(......)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3E2)//C4E9
+//[B1-3]<$E2>
+//#EMBSET(243)
+//この (ジャングル)のどこかに むかし つかっていた[NL]
+//(しょくりょう)ちょぞうこが あるの[PAU][CLR]
+//そこからたべものを もってくることが できたら[NL]
+//みんな げんきに なるのに(......)[END]
+//#EMBWRITE(243)
+//(ありがとう) [NAME]さん ところで (ピラミッド)に[NL]
+//(まどうしょ)があるって きいたことがあるわ[NL]
+//その (まほう)で いわをこわせるらしいわ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3E4)//C4EA
+//[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3E6)//C4EB
+//スフィンクスって しってる?[NL]
+//けっこう あまのじゃくなんだぜ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3E8)//C4EC
+//うちはただの(やどや)です[BF0107]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3EA)//C4ED
+//ほっと ひといきついてください [BF0108]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C3EC)//C4EE
+//(いらっしゃい)[BF000B]
+(Welcome).[BF000B]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3EE)//C4EF
+//あしもとが ミシミシいってる [B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3F0)//C4F0
+//にしにある (ピラミッド)には  いなずまをよぶ[NL]
+//(まどうしょ)が あるそうよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3F2)//C4F1
+//みずのなかに ふるぼけた (まどうしょ)があった!
+//[B5-3]<$6B>
+//#EMBSET(404)
+//[B2-1]<$14>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3F4)//C4F2
+//だいじょうぶかい?[BF010A]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3F6)//C4F3
+//なにかな?[BF000A]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3F8)//C4F4
+//(きたの)(ダンジョン)には いってみた?あそこには[NL]
+//なにかあるってうわさよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3FA)//C4F5
+//とまってきな[BF0109]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3FC)//C4F6
+//[B1-3]<$2D>
+//#EMBSET(244)
+//[B1-3]<$0F>
+//#EMBSET(245)
+//[B1-3]<$10>
+//#EMBSET(246)
+//[END]
+//#EMBWRITE(245)
+//(わたし)が そうやすやすと ざいほうを わたすと[NL]
+//おもっていたのか?![CLR]
+//Did you think I would hand over
+//(the )treasure so easily?
+//[B0-2]
+//#EMBSET(101)
+//#EMBWRITE(246)
+//(わたし)がほんとうに まけたと おもっていたのか?![CLR]
+//#EMBWRITE(101)
+//やはり (おまえ)は おろかものだ![PAU][B8-3]<$2D><$F3><$00>[END]
+//#EMBWRITE(244)
+//ハッハッハッ (わたし)の かんぱいだ! [NAME][NL]
+//(ドラゴン)のひほうは しっちにも あるときいたぞ[NL]
+//いってみるがいい[END]
+//Hahaha 
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C3FE)//C4F7
+//[B1-3]<$E4>
+//#EMBSET(26)
+//[AF-3]<$44>
+//#EMBSET(26)
+//(マシン)はもらったかい?[END]
+//#EMBWRITE(26)
+//(おお)あたらしい (マシン)だね[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C400)//C4F8
+//ここほれ ワンワン![CLR]
+//[B3-3]<$01>
+//#EMBSET(312)
+//[B3-3]<$02>
+//#EMBSET(313)
+//[B3-3]<$03>
+//#EMBSET(314)
+//[END]
+//#EMBWRITE(312)
+//げんきそうがあった!
+//[B5-3]<$0D>
+//#EMBSET(404)
+//[END]
+//#EMBWRITE(313)
+//りスクのくすりがあった!
+//[B5-3]<$0E>
+//#EMBSET(404)
+//[END]
+//#EMBWRITE(314)
+//いのちのくすりがあった!
+//[B5-3]<$52>
+//#EMBSET(404)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C402)//C4F9
+//げんきそうがあった!
+//[B5-3]<$0D>
+//#EMBSET(404)
+//[B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C404)//C4FA
+//[B1-3]<$E2>
+//#EMBSET(247)
+//[AF-3]<$69>
+//#EMBSET(27)
+//[B3-3]<$01>
+//#EMBSET(315)
+//(おお)(かくれざと)から きたのか? だれも[NL]
+//こなくなってから ずいぶんたつから しんぱい[NL]
+//だったんだ[PAU][CLR]
+//とにかく 
+//#EMBWRITE(315)
+//(しょくりょう)を もっていくんだ[B4-1]<$01>
+//[B5-3]<$69>
+//#EMBSET(465)[END]
+//#EMBWRITE(27)
+//はやくいって (かくれざと)の みんなをたすけてこい[END]
+//#EMBWRITE(247)
+//よくやったぞ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C406)//C4FB
+//(わたし)はスフィンクス (わたし)の しつもんにただしく[NL]
+//こたえることが できたら とおしてやろう[PAU][CLR]
+//(おまえ)はつよいか?[NL]
+//   つよい   よわい
+//[B6-4]<$02><$08>
+//#EMBSET(507)
+//#EMBWRITE(507)
+//[CLR]
+//つぎ! (わたし)はつよいか?[NL]
+//   よわい  つよい
+//[B6-4]<$02><$07>
+//#EMBSET(508)
+//#EMBWRITE(508)
+//[CLR]
+//では(おまえ)と(わたし) どちらがつよい?[NL]
+//  スフィンクス  [NAME]
+//[B6-4]<$01><$09>
+//#EMBSET(509)
+//[CLR]
+//キサマ! こころにも ないことを!え-い![PAU][B4-1]<$02>[B8-3]<$10><$F3><$00>[END]
+//#EMBWRITE(509)
+//[CLR]
+//おのれのちからも しらぬやつに ようはない[NL]
+//さっさと いくがいい[B4-1]<$01>[BA00][END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C408)//C4FC//icefield bridge noise
+//ピキッ![B4-1]<$01>[END]
+(crack)[B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C40A)//C4FD
+//ちいさな あなのおくに スイッチのようなものが[NL]
+//みえるが てがとどきそうにもない
+//[AF-3]<$6C>
+//#EMBSET(28)
+//[END]
+//#EMBWRITE(28)
+//[PAU][CLR]
+//それなら ボクがいくよ[NL]
+//(ワタル)がそういって あなにはいっていった[PAU][B4-1]<$01>[B2-1]<$17>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C40C)//C4FE
+//[B3-3]<$02>
+//#EMBSET(316)
+//ボクは(ワタル) (ドアクダー)の (まほう)のちからで[NL]
+//びんに とじこめられて しまったんだ わるいけど[PAU][CLR]
+//#EMBWRITE(316)
+//ぼくを つれていってくれないかな[NL]
+//   つれていく  おいてく
+//[B6-4]<$02><$09>
+//#EMBSET(510)
+//[B5-3]<$6C>
+//#EMBSET(404)
+//[PAU][CLR]
+//(ありがとう) ちいさくなってしまった といっても[NL]
+//ぼくがいることで (りゅうじんまる)は いままでよりも[NL]
+//パワ-をだせるんだ[B4-1]<$01>[END]
+//#EMBWRITE(510)
+//[CLR]
+//そんなこといわないでさ おねがい![B4-1]<$02>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C40E)//C4FF
+//すいもんに さびついた レバ-が ついています[NL]
+//ひいてみますか?[NL]
+//  ひく  ひかない
+//[B6-4]<$01><$05>
+//#EMBSET(511)
+//[B2-1]<$1B>[END]
+//#EMBWRITE(511)
+//[CLR]
+//なにもおきない[END]
+//[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C410)//C500
+//[B1-3]<$22>
+//#EMBSET(248)
+//[C5]<$0F>
+//#EMBWRITE(248)
+//(ここは)(ゆうぼくみん)の (ワ-プショップ)だぜ[BF0200]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C412)//C501
+[B1-3]<$22>
+#EMBSET(249)
+[C5]<$0F>
+#EMBWRITE(249)
+//(ここは)(しょうにん)の (ワ-プショップ)だよ[BF0201]
+(This is )(the )(Merchanton) (Warp Shop).[BF0201]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C414)//C502
+//[B1-3]<$22>
+//#EMBSET(250)
+//[C5]<$0F>
+//#EMBWRITE(250)
+//(ここは)(にじのくに)の (ワ-プショップ)じゃ[BF0202]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C416)//C503
+//[B1-3]<$22>
+//#EMBSET(251)
+//[C5]<$0F>
+//#EMBWRITE(251)
+//(ここは)もり(のやど)の (ワ-プショップ)です[BF0203]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C418)//C504
+//[B1-3]<$22>
+//#EMBSET(252)
+//[C5]<$0F>
+//#EMBWRITE(252)
+//(ここは)(みなとまち)の (ワ-プショップ)です[BF0204]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C41A)//C505
+//[B1-3]<$22>
+//#EMBSET(253)
+//[C5]<$0F>
+//#EMBWRITE(253)
+//(ここは)(うつくしむら)の (ワ-プショップ)よ[HEART][BF0205]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C41C)//C506
+[B1-3]<$22>
+#EMBSET(254)
+[C5]<$0F>
+#EMBWRITE(254)
+//(ここは)(かくれざと)の (ワ-プショップ)ですよ![BF0206]
+(This is )(the )(Isola)(Warp Shop)![BF0206]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C41E)//C507
+//[B1-3]<$22>
+//#EMBSET(255)
+//[C5]<$0F>
+//#EMBWRITE(255)
+//(ここは)うみの (ワ-プショップ)だよ[BF0207]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C420)//C508
+//[B1-3]<$22>
+//#EMBSET(256)
+//[C5]<$0F>
+//#EMBWRITE($256)
+//(ここは)(オアシス)の (ワ-プショップ)です[BF0208]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C422)//C509
+[B1-3]<$22>
+#EMBSET(257)
+[C5]<$0F>
+#EMBWRITE(257)
+//(ここは)(かぜのくに)の (ワ-プショップ)[BF0209]
+(This is )(the )(Gale) (Warp Shop)[BF0209]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C424)//C50A
+//[B1-3]<$22>
+//#EMBSET(258)
+//[C5]<$0F>
+//#EMBWRITE(258)
+//(ここは)(ふみきりハウス)の (ワ-プショップ)です[BF020A]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C426)//C50B
+//[B1-3]<$22>
+//#EMBSET(259)
+//[C5]<$0F>
+//#EMBWRITE(259)
+//(ここは)(やまぼくみん)の (ワ-プショップ)です[BF020B]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C428)//C50C
+//(ひょうげんのやど)の (ワ-プショップ)です[BF020C]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C42A)//C50D
+//(ここは)の (ワ-プショップ)です(あなた)[C1]<$00>[BF020D]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C42C)//C50E
+//(ここは)[C4]<$C1>の (ワ-プショップ)です[BF020E]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C42E)//C50F
+//どこからともなく こえが キミにかたりかけてくる[NL]
+//  はじめて (ワ-プショップ)を[NL]
+//[A2-1]<$07>ごりようの みなさまへ[PAU][CLR]
+//Suddenly a voice calls to[NL]
+//you. This is 
+//ここ(ワ-プショップ)は みなさまの きおくを たよりに[NL]
+//あらゆるまちへ いくことができます ただし[NL]
+//とおくのまちほど おねだんは たかくなります(......)[PAU][CLR]
+//[B2-1]<$22>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C430)//C510
+//[B1-3]
+//#EMBSET(260)
+//<$AD>なんか さむくないですか?[NL]
+//かぜが ふいてるみたいで(......)[END]
+//#EMBWRITE(260)
+//いどが ガスを だしていたことは わかりましたが[NL]
+//(かぜのくに)の きたの かいだんは なんでしょう?[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C432)//C511
+//ガスでいえを ちいさくされて しまったんです[NL]
+//おかげでみんな いえにはいれなくなって(......)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C434)//C512
+//[B3-3]<$01>
+//#EMBSET(317)
+//[B1-3]<$1B>
+//#EMBSET(261)
+//だめだよ!いくらなんでも ネコのタマしかはいれないよ![END]
+//#EMBWRITE(261)
+//[C4]<$C8>[NL]
+//じつは ボク タタル(ちゃん)です ネコによろしく[END]
+//#EMBWRITE(317)
+//タマが おこるときは イヌのにおいが したときだよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C436)//C513
+//[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C438)//C514
+//こんにちは! (あなた)もいなずまの しょうたいを[NL]
+//あばこうという かたですか? (わたし)のオヤジも[NL]
+//しらべてたんですが (まほう)の ちからのようだって[PAU][CLR]
+//いってたんですよ よくワカンないですけど[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C43A)//C515
+//ネコ スキですか? このコたちも そとをじゆうに[NL]
+//あそばせたいんですけど (マシン)が こんなに[NL]
+//いるんじゃ あぶなくって[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C43C)//C516
+//ニャ-ン?[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C43E)//C517
+//ごちゅうもは なんですか?[BF000C]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C440)//C518
+//よっていきなよ![BF010B]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C442)//C519
+//ここのやまは むかしはね たんこうだったの[NL]
+//ここにくるときに せんろを みなかったかしら?[NL]
+//むかしはよく トロッコが はしってたのよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C444)//C51A
+//むかしは (しんでん)に いけたんですけどね[NL]
+//カミナりで ハシゴが こわされちゃったんですよ [END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C446)//C51B
+//[B1-3]<$15>
+//#EMBSET(262)
+//きみのおかげで たすかったよ おれいに[NL]
+//そこの かいだんを つかわせてあげよう そこから[NL]
+//しっちへ いけるはずだよ あんぜんの ほしょうは[PAU][CLR]
+//ぜんぜん ないけどね[B4-1]<$01>[BA00][END]
+//#EMBWRITE(262)
+//キミも(まほう)が つかえるようだね このまえ やまに[NL]
+//むかった (りンクス)という けんじゃも そうだったんだ[B2-1]<$29>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C448)//C51C
+//やっといえにはいれ(ました) (ありがとう)(ござい)ます[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C44A)//C51D
+//ここから (チャップスぬま)をこえ(ダボ-ドさんみゃく)にむかうなら (まどうしょ)はおろか (マシン)をそろえていないと きびしいぞ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C44C)//C51E
+//(かぜのくに)を こんなにした ガスは どうも[NL]
+//まちの どこかから ふきあげてるようなんだが[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C44E)//C51F
+//[B1-3]<$1B>
+//#EMBSET(263)
+//ナ-ゴ [END]
+//#EMBWRITE(263)
+//[AF-3]<$6A>
+//#EMBSET(29)
+//ナ-ゴ [END]
+//#EMBWRITE(29)
+//フ-![B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C450)//C520
+//きたの(ほうに) いしでかこまれた ところが あるんだな[NL]
+//そこにいくには おしろを とおらなければ[NL]
+//いけないんだよ もっとも おしろが あれじゃぁね[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C452)//C521
+//ここには かぜの(まほう)が ねむっているらしいよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C454)//C522
+//かぜの(まどうしょ)なら おしろのきたにあるって[NL]
+//きいたわ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C456)//C523
+//おかげで たすかり(ました)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C458)//C524
+//おうさまには あい(ました)か?[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C45A)//C525
+//(ゆうしゃ)[NAME]さま!がんばってください[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C45C)//C526
+//この(かぜのくに)のきたには ひみつの ばしょがあるんだ[NL]
+//もっとも そこにいけるのは おうさまだけなんだけど[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C45E)//C527
+//そこのかいだんは やどやだよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C460)//C528
+//フッフッフッ (マシン)がほしければ おれとたたかえ[PAU][B8-3]<$00><$A6><$00>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C462)//C529
+//フッフッフッ (マシン)がほしいなら おれとたたかえ[PAU][B8-3]<$00><$5C><$00>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C464)//C52A
+//ここからさきは さばくが ひろがっている[NL]
+//きをつけて いくんだぞ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C466)//C52B
+//[B1-3]<$1B>
+//#EMBSET(264)
+//どうやら このさきは にしにある のろいの[NL]
+//(いずみ)に つながってる らしいんだ[NL]
+//とちゅうにある すいもんを おろせば[PAU][CLR]
+//ガスがとまって (かぜのくに)も もとどおりになる[NL]
+//でも (マシン)がいるんで そうはいかないんだ[END]
+//#EMBWRITE(264)
+//よくやってくれた! (かぜのくに)も もとどおりだ![END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C468)//C52C
+//(おまえ)か! (ワタル)をたすけると いってるヤツは![PAU][NL]
+//わらわせるな! (おまえ)のような ふとどきものは[NL]
+//せいさいを くわえる![PAU][B8-3]<$19><$B1><$00>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C46A)//C52D
+//[B1-3]<$0D>
+//#EMBSET(265)
+//みなみにある (うつくしむら)の はながかれてしまって[NL]
+//みな かなしんで おるんじゃ きれいじゃったのに[END]
+//#EMBWRITE(265)
+//(ありがとう)よ おかげでまた (うつくしむら)のはなが[NL]
+//みれますよって[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C46C)//C52E
+//[B3-3]<$01>
+//#EMBSET(318)
+//(ゆうしゃ)[NAME] (ドラゴン)のとうは ごぞんじかな[NL]
+//このうみの ちゅうおうにあり (ドラゴン)がすんでおる[NL]
+//ただし とうはみずの そこにしずんで しまっておる[PAU][CLR]
+//どうしたら とうに いけるかまでは わしにもわからん[NL]
+//くわしいことは (ジャングル)にすんでいる けんじゃ[NL]
+//(りンクス)さまに きくがいい[PAU][CLR]
+//そこの ゆかは (りンクス)さまが ワ-プの(まほう)を[NL]
+//かけてくれてある ちょっといって みるのもよかろう[B2-1]<$1A>[B4-1]<$01>[END]
+//#EMBWRITE(318)
+//ん? なんじゃ?[NL]
+//そうなんども はなすことはないぞ[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C46E)//C52F//random forest guy
+[B3-3]<$04>
+#EMBSET(319)
+[B3-3]<$02>
+#EMBSET(819)
+[B3-3]<$01>
+#EMBSET(320)
+[B1-3]<$08>
+#EMBSET(266)
+
+//どこいくんだい にいちゃん[NL]
+//(ブりキントン)のやつらでも おいかけて いるのかい[NL]
+//やつらなら このうえを みぎにいったけどなぁ[B4-1]<$01>[END]
+Where're you headed kid?[NL]
+Chasing after (Tinbot)s?[PAU][CLR]
+There were some going[NL]
+northeast.[B4-1]<$01>[END]
+
+#EMBWRITE(266)
+//フ-ン[NL]
+//(あんた)のさがしてる ヤツじゃなかった みたいだな[B4-1]<$02>[END]
+Hmmm...[NL]
+Guess that wasn't the guy[NL]
+you were looking for.[B4-1]<$02>[END]
+
+#EMBWRITE(320)
+//とりあえず (にじのくに)を あたってみなよ[B4-1]<$04>[END]
+Check out (Spectrum) first.[B4-1]<$04>[END]
+
+#EMBWRITE(819)
+#EMBWRITE(319)
+//きをつけていってくれよ[END]
+Be careful, kid.[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C470)//C530
+//[B3-3]<$01>
+//#EMBSET(321)
+//(あんた)も ちょうじょうの (しんでん)に いくのかい?[NL]
+//   もちろん  そんなことない
+//[B6-4]<$02><$08>
+//#EMBSET(512)
+//[CLR]
+//だったら いいことを おしえてあげるよ[NL]
+//(しんでん)に のぼるには ふしぎなはしごが いるんだ[NL]
+//それを (サザビ-)とかいうひとが もってたけどな [B4-1]<$01>[END]
+//#EMBWRITE(512)
+//[CLR]
+//チェッ せっかくいいこと おしえてやろうと[NL]
+//おもったのにな[B4-1]<$01>[END]
+//#EMBWRITE(321)
+//もうなんにも いうことないよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C472)//C531
+//[B1-3]<$E3>
+//#EMBSET(267)
+//[AF-3]<$6C>
+//#EMBSET(30)
+//(ワタル)を たすけていないんなら いくだけむだだぜ[END]
+//[END]
+//#EMBWRITE(30)
+//(ワタル)をたすけたんだな![NL]
+//それなら (くうじんま)に あえるだろう[END]
+//#EMBWRITE(267)
+//(おお)(くうじんま)じゃないか それなら[NL]
+//このいきおいで いっきに やまの(ダンジョン)も[NL]
+//ぶっつぶしてやれ![END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C474)//C532
+//ここから ひだりは いらだちの かいろう[NL]
+//あせりや いらだちを すててかかれ(......)[NL]
+//と あしもとに はしりがきが あった [B4-1]<$01>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C476)//C533
+//[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C478)//C534
+//このさばくの どこかに ざいほうが あるはずなんだ[NL]
+//ずいぶんまえから さがしては いるんだが(......)
+//[AF-3]<$66>
+//#EMBSET(31)
+//[AF-3]<$74>
+//#EMBSET(32)
+//[END]
+//#EMBWRITE(31)
+//[PAU]
+//[CLR]
+//その(ドラゴン)のキバと おなじようなモノが[NL]
+//(ゆうぼくみん)のむらの ちかくに かくされている[NL]
+//というはなしを きいたことがある
+//[AF-3]<$74>
+//#EMBSET(32)
+//[END]
+//#EMBWRITE(32)
+//[PAU][CLR]
+//サンダ-はいわを くだいてくれる それがあれば[NL]
+//(ジャングル)を ぬけることができる
+//[AF-3]<$66>
+//#EMBSET(33)
+//[END]
+//#EMBWRITE(33)
+//[PAU][CLR]
+//ぜんぶ とられてしまったワケか トホホ(......)[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C47A)//C535
+//すなのなかに まきものがあった!
+//[B5-3]<$09>
+//#EMBSET(404)
+//[B2-1]<$1D>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C47C)//C536
+//[BB][A4-1]<$06>[NAME]よ! (おまえ)は(ドアクダー)さまに はむかい[NL]
+//(ワタル)を (ドラゴン)のとうから つれだしおった[NL]
+//そんな (おまえ)をいかしておく ワケにはいかん[PAU][CLR]
+//このばで あのよに おくってやるわ![PAU][B8-3]<$1E><$C2><$00>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C47E)//C537
+//[B1-3]<$25>
+//#EMBSET(268)
+//[B1-3]<$21>
+//#EMBSET(269)
+//(おお)(おまえ)は [NAME][PAU][NL]
+//わしもここまで きたのだが[NL]
+//このいわが こわせんのじゃ みなみの かいだんを[PAU]
+//[CLR]
+//おりたところに (まどうしょ)が あるはずじゃ[NL]
+//それをとって トロッコで だっしゅつするがいい[NL]
+//(おまえ)が きてくれると おもってな いわを[PAU][CLR]
+//パワ-の(まほう)で うごかしておいたぞ[PAU][CLR]
+//#EMBWRITE(269)
+//[AF-3]<$6D>
+//#EMBSET(34)
+//この ふしぎなハシゴを もってゆけ[B2-1]<$21>[B4-1]<$01>
+//[B5-3]<$6D>
+//#EMBSET(466)
+//[END]
+//#EMBWRITE(34)
+//[NAME]よ やまの(しんでん)に むかってくれ![END]
+//#EMBWRITE(268)
+//よくやった! きをつけて いくのだぞ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C480)//C538
+//[NAME]さん もどったほうが みのためですよ[BA00]![PAU][B8-3]<$00><$8E><$0D>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C482)//C539
+//なにをいそいで いるんですか?[PAU][B8-3]<$00><$10><$00>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C484)//C53A
+//むかしはここも むこうがわに とおれていたんだが[NL]
+//このいわのせいで とおれなくなって しまったんだ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C486)//C53B
+//[BB][A4-1]<$06>よくここまできた [NAME] (おまえ)が(ワタル)を[NL]
+//もとにもどすのを だまってみている わけにいかぬ[NL]
+//(ワタル)といっしょに あのよに おくってやるわっ![PAU][CLR]
+//いけっ ネオゴ-ストンッ![PAU][B8-3]<$1F><$DF><$00>[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C488)//C53C//spectrum boy next to well
+[B1-3]<$08>
+#EMBSET(270)
+
+//(あんた) (ブりキントン)と たたかうつもりじゃ[NL]
+//ないんだろうな?[PAU][CLR]
+//(ブりキントン)といっても ヤツは ナイトの[NL]
+//しょうごうを もつほどの つわものなんだよっ[END]
+You're going to fight the[NL]
+the (Tinbot)?[PAU][CLR]
+People call this guy a[NL]
+(Tinbot) but he's as much[NL]
+a warrior as any knight![END]
+
+#EMBWRITE(270)
+//へ-っ たいしたモンだな いや みごとみごと[END]
+Wow, that's amazing![NL]
+Very well done![END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C48A)//C53D//spectrum s red house man
+[B1-3]<$04>
+#EMBSET(271)
+
+//(あんた) (ワタル)さんの しりあいかい?[NL]
+//(シバラク)とかいうひとは (ひょうげん)の(ほうに)[NL]
+//いくって いってたけどなァ[END]
+Are you one of (Wataru)'s[NL]
+friends?[PAU][CLR]
+A guy called (Shibaraku)[NL]
+said he was on his way to[NL]
+Icefield.[END]
+
+#EMBWRITE(271)
+//(ワタル)さんに あえなかったの? ザンネンだったねェ[END]
+That's terrible about[NL]
+(Wataru).[NL]
+Really bad luck...[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C48C)//C53E
+//どこかのせんろのわきに ちかへのいりぐちがあったよ[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C48E)//C53F
+//おや? (サザビ-)さんのような ひとがいる[B2-1]<$20>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C490)//C540
+//ええ みんな こまっています <$FF>
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C492)//C541//spectrum n house boy
+//みぎのいえ あきやなのに ときどき こえがするんだ [END]
+The house next door is[NL]
+empty. But sometimes there[NL]
+are voices over there.[END]
+
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C494)//C542
+//[B1-3]<$0D>
+//#EMBSET(272)
+//(うつくしむら)にいったかい? むかしはキレイな[NL]
+//ところだったんだけどね [PAU]そういえば あそこに[NL]
+//カギをもってる おんなのヒトが いたけど(......)[END]
+//#EMBWRITE(272)
+//(あんた) (うつくしむら)のはなを さかせたのか![NL]
+//えらいッ! えらいぞッ![END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C496)//C543
+//いわのわれめを けとばすと くだけてしまった![B4-1]<$01>[BA00][END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C498)//C544
+//けんじゃ (サザビ-)のかきおきがあった[PAU][CLR]
+//ワシはこれから やまにいく にどと もどらぬかも[NL]
+//しれぬので あとのことは よろしくたのむ[NL]
+//(......)そう かいてあった[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C49A)//C545
+//ぐっ キサマが ネオゴ-ストンを たおすだけの[NL]
+//ちからを もっていようとはな(......)[NL]
+//(ワタル)を もどすことを くいとめられなかったが[PAU][CLR]
+//こんど あうときは (ワタル)を しまつしてやる[NL]
+//フッハッハッハッハ[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C49C)//C546//icefield tower guy 1f left
+[B1-3]<$04>
+#EMBSET(273)
+
+//(シバラク)さんも ふねにのりに きたんだが[NL]
+//しばらく まっててくれって いったんで[NL]
+//ふねをださずに まってるんだ[END]
+fix[END]
+
+#EMBWRITE(273)
+//(シバラク)さんも さっきここを いったよ[END]
+fix[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C49E)//C547//icefield tower guy 1f right
+//[B1-3]<$04>
+//#EMBSET(274)
+//みぎの みちをいくと ふねがあるよ[END]
+//#EMBWRITE(274)
+//もうふねに のれるね でも (ひょうげん)は のこらず[NL]
+//いってみたかい?[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C4A0)//C548//icefield inn
+//だいぶ おつかれですね?[BF010C]
+You're really tired[NL]
+aren't you?[BF010C]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C4A2)//C549//ryujin-maru prologue
+//(わたし)は (りゅうじんまる) (ワタル)とともに[NL]
+//(ドアクダー)と たたかっている もうすぐ (ドアクダー)の[NL]
+//もとにたどりつく というときに とつぜん[PAU]
+//[CLR]
+I am (Ryujin-Maru). I (fight)[NL]
+with (Wataru) to (protect)[NL]
+(Sokaizan) from (Dakdar).[PAU]
+[CLR]
+//このかいそうに とばされて しまったのだ[NL]
+//(わたし)と (ワタル)が ひきはなされた スキをついて[NL]
+//(ワタル)は (ドアクダー)に とらえられて しまったのだ[PAU]
+//[CLR]
+We just about had him[NL]
+when suddenly, we were[NL]
+thrown into this world.[PAU]
+[CLR]
+//そこで キミにてつだって ほしいのだ (ワタル)を[NL]
+//そしてこの そうかいざんの ききを すくうために
+We were separated[NL]
+and (Wataru) has been[NL]
+captured.[PAU]
+[CLR]
+[NAME], I need your help to[NL]
+save (Wataru)( and )(Sokaizan)[NL]
+from peril.
+#EMBWRITE(513)
+[PAU]
+[CLR]
+//いっしょに たたかって くれないだろうか?[NL]
+//   ひきうける  ことわる
+Will you fight with me?[NL]
+  Yes![A2-1]<$04>Umm...
+[B6-4]<$01><$09>
+#EMBSET(513)
+[CLR]
+//(ありがとう) もしたたかいに なったら[NL]
+//このつるぎで (わたし)を よんでほしい[NL]
+//たのむぞ![NAME]![END]
+(Thank you). If you are in[NL]
+trouble, you can call me[NL]
+with this sword.[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C4A4)//C54A
+//きさまも このみずの ひみつに かんづいたんだな?[NL]
+//だが のろいの(いずみ)との つながりが[NL]
+//わかったところで (おまえ)には どうすることもできん[PAU]
+//[CLR]
+//
+//どうせ オレに ころされるのだからなっ[PAU][B8-3]<$26><$E0><$00>[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C4A6)//C54B
+//[B1-3]<$E3>
+//#EMBSET(275)
+//[NAME]! ワシじゃ! (りンクス)じゃ![NL]
+//[B1-3]<$28>
+//#EMBSET(276)
+//(おまえ)は (くうじんま)に あっていないようだな[NL]
+//それならば ここを とおすわけにいかぬ (おまえ)を[PAU]
+//[CLR]
+//みすみす しにおいやるようなものだ[NL]
+//(ひょうげん)のとうに (ワタル)とともにいって[NL]
+//そこで (くうじんま)に あってくるがよい[END]
+//#EMBWRITE(276)
+//(くうじんま)を たすけたのか ならば (おまえ)の[NL]
+//(りゅうじんまる)は さいごのたたかいに そなえて[PAU][CLR]
+//
+//りゅうおうまるに なっているはず[NL]
+//#EMBWRITE(275)
+//いくがいい![NAME]よ[B2-1]<$E3>[END]
+//If it's true that (Kujin-Maru) saved you.
+//Your (Ryujin-Maru)
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C4A8)//C54C//spectrum red long house
+//(シバラク)ってひとが きたけど なかまの(ワタル)さんと[NL]
+//(ヒミコ)さんを さがしてるんだって[END]
+(Shibaraku)? He was here.[NL]
+Looking for his friends[NL]
+(Wataru) and (Himiko).[END]
+
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C4AA)//C54D
+#WRITE(B2Ptr, $2C4AC)//C54E
+#WRITE(B2Ptr, $2C4AE)//C54F
+//メッセ-ジがないよ[END]
+No message[END]
