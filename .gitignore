@@ -165,3 +165,4 @@ pip-log.txt
 # deb
 *.deb
 *.old.nes
+wataru.nes
