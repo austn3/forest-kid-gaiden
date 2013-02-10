@@ -37,7 +37,6 @@
 #W16($284E6)//C26B
 [END]
 
-#W16($281C8)//C0DC
 #W16($281CA)//C0DD
 #W16($281CC)//C0DE
 #W16($281CE)//C0DF
@@ -127,6 +126,9 @@ Thank you[END]
 
 #W16($281C6)//C0DB
 Welcome[END]
+
+#W16($281C8)//C0DC
+[NAME] opened the chest...[PAU][NL][END]
 
 //-------------------------------------------------------------------------
 #W16($28010)//C000
@@ -227,7 +229,7 @@ You sure?[NL]
 
 #W16($28032)//C011
 //[C0]<$3F>[A8-2]<$03><$02>どれをつかいます?[END]
-[C0]<$3F>[A8-2]<$03><$02> use which?[END]
+[C0]<$3F>[A8-2]<$03><$02>Use which?[END]
 
 #W16($28034)//C012
 //おきゃくさん あそばないでください.[NL]
@@ -710,10 +712,9 @@ This is an unusual place.[END]
 
 #W16($280F2)//C071
 //たからばこ を みつけた.[PAU][NL]
-//たからばこの なかには[NL]
-//[END]
-[NAME] opened the chest.[PAU][NL]
-Inside is a [END]
+//たからばこの なかには[NL][END]
+([NAME] opened the chest...[PAU][NL])
+inside is a [END]
 
 #W16($280F4)//C072
 //なにかの けはいを かんじる.[END]
@@ -722,8 +723,8 @@ Something is coming...[END]
 #W16($280F6)//C073
 //なにも はいっていなかった.[NL]
 //ざんねんでした.[END]
-nothing.[NL]
-Bad luck.[END]
+([NAME] opened the chest...[PAU][NL])
+but it's empty, damn.[END]
 
 #W16($280F8)//C074
 // が はいっていた.[END]
@@ -731,7 +732,8 @@ Bad luck.[END]
 
 #W16($280FA)//C075
 //[AD-4]<$E8><$63><$03><$06>(クレジット)[END]
-bag of [AD-4]<$E8><$63><$03><$06>[NL](coins)[END]
+([NAME] opened the chest...[PAU][NL])
+and found [AD-4]<$E8><$63><$03><$06> (coins)![END]
 
 #W16($280FC)//C076
 //[AE-4]<$02><$05><$1C><$03>[BB][A4-1]<$06>ばくはつとともに [NAME]は そとへなげだされ[NL]
@@ -832,7 +834,7 @@ Sleep Specs[END]
 
 #W16($2811C)//C086
 //インスタント(クレジット)[END]
-Coin Bag[END]
+Magic Coin[END]
 
 #W16($2811E)//C087
 //ひとりごとのオルゴ-ル[END]
@@ -1921,8 +1923,9 @@ Do you need any more money?[END]
 #W16($28372)//C1B1
 //(インスタント(クレジット))に おゆをかけた.[NL]
 //3ぷんまったら [AD-4]<$E8><$63><$03><$06>(クレジット)に なった.[END]
-Inside the Coin Bag [NAME][NL]
-found (# coins).[END]
+[NAME] poured hot water on[NL]
+the Magic Coin and waited.[NL]
+(# coins) appeared![END]
 
 #W16($28374)//C1B2
  <$05>[A7-2]<$0D><$06><$07><$05>[A7-2]<$0D><$06><$07>[END]

@@ -82,6 +82,17 @@ $3959F:  C0 25  ->  26 A0
 ; make [clr] wider
 $3CC1D:  1A  ->  1B
 
+; nothing in the treasure chest
+$3E07F:  F0  ->  EE
+$3E084:  F1  ->  EF
+$3E089:  F2  ->  F0
+
+; coins in treasure chest
+$3E104:  F0  ->  EE
+$3E109:  F1  ->  EF
+$3E10C:  C0  ->  A0
+$3E10E:  F2  ->  F0
+
 ; battle clear wider
 $3E324:  1A  ->  1B
 

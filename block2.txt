@@ -1906,7 +1906,7 @@ ahead.[PAU][B4-1]<$02>[BA00][END]
 
 //だめだめ そうかんたんには ふねにのせないよ//[PAU]
 Woah there. You can't just[NL]
-take a boat so easily.[PAU]
+take the boat like that.[PAU]
 
 [B1-3]<$E1>
 #EMBSET(848)
@@ -1986,11 +1986,12 @@ the power is with you![END]
 //    おいてく  ことわる
 If you want through hand[NL]
 over a (Gold Bar)![NL]
-[A2-1]<$03>Leave it[A2-1]<$03>Don't
-[B6-4]<$02><$0D>
+[A2-1]<$03>Give[A2-1]<$03>Don't
+[B6-4]<$02><$09>
 #EMBSET(506)
 [AF-3]<$51>
 #EMBSET(16)
+
 #EMBWRITE(506)
 [CLR]
 //だめだ かえりな[END]
@@ -2001,6 +2002,10 @@ Get out of here![END]
 [CLR]
 //じゃ (きたの)いえにいきな (あんた)に あいたがってる[NL]
 //ひとがいるはずだ [B2-1]<$0B>[B4-1]<$01>
+Well then, head to the[NL]
+house in the north.[PAU][CLR]
+There is someone there who[NL]
+surely wants to meet you.[B2-1]<$0B>[B4-1]<$01>
 [B9-3]<$51>
 #EMBSET(878)
 [END]
@@ -2218,7 +2223,7 @@ He went towards Icefield.[END]
 //まけて しまわれたのです![END]
 We begged (Shibaraku) to[NL]
 defeat that damn (Tinbot).[PAU][CLR]
-But he lost his power in[NL]
+But he's lost his power in[NL]
 this world.[PAU][NL]
 We're doomed![END]
 
@@ -3392,7 +3397,9 @@ are voices over there.[END]
 //(シバラク)さんも ふねにのりに きたんだが[NL]
 //しばらく まっててくれって いったんで[NL]
 //ふねをださずに まってるんだ[END]
-fix[END]
+(Shibaraku) already came by[NL]
+boat but he said to wait[NL]
+for him.[END]
 
 #EMBWRITE(273)
 //(シバラク)さんも さっきここを いったよ[END]
