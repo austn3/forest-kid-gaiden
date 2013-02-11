@@ -6,19 +6,16 @@
 #HDR($10)
 #JMP($28610)
 
-#W16($280CA)//C05D
-#W16($2815A)//C0A5
-#W16($2815A)//C0A5
 #W16($2815C)//C0A6
 #W16($2815E)//C0A7
-#W16($28160)//C0A8
-#W16($28162)//C0A9
-#W16($28164)//C0AA
-#W16($28166)//C0AB
 #W16($28168)//C0AC
 #W16($2816A)//C0AD
 #W16($2816C)//C0AE
 #W16($2816E)//C0AF
+#W16($28190)//C0C0
+#W16($2819A)//C0C5
+#W16($281A2)//C0C9
+#W16($281AA)//C0CD
 #W16($281D4)//C0E2
 #W16($283F8)//C1F4
 #W16($28400)//C1F8
@@ -37,6 +34,7 @@
 #W16($284E6)//C26B
 [END]
 
+#W16($281BA)//C0D5
 #W16($281CA)//C0DD
 #W16($281CC)//C0DE
 #W16($281CE)//C0DF
@@ -65,37 +63,40 @@ no data![END]
 //-------------------------------------------------------------------------
 
 #W16($28412)//C201
-M[B0-2]
-#EMBSET(500)
-
-#W16($2819A)//C0C5
-m
-#EMBWRITE(500)
 oney[END]
 
 #W16($280AE)//C04F
 Jump[END]
 
+#W16($280CA)//C05D
+Franken[END]
+
 #W16($280CC)//C05E
 Mecha [END]
 
 #W16($280CE)//C05F
-Green [END]
+that[END]
 
-#W16($28190)//C0C0
-Blue [END]
+#W16($2815A)//C0A5
+here[END]
+
+#W16($28160)//C0A8
+defeat[END]
+
+#W16($28162)//C0A9
+this[END]
+
+#W16($28164)//C0AA
+This[END]
+
+#W16($28166)//C0AB
+world[END]
 
 #W16($2819E)//C0C7
 Skull[END]
 
-#W16($281A2)//C0C9
-Death [END]
-
 #W16($281A4)//C0CA
 Warp [END]
-
-#W16($281AA)//C0CD
- and [END]
 
 #W16($281AC)//C0CE
 [NAME] used [END]
@@ -105,9 +106,6 @@ Mountain[END]
 
 #W16($281B8)//C0D4
 coins[END]
-
-#W16($281BA)//C0D5
-[C0]<$24>[C0]<$25>the[NL][END]
 
 #W16($281BC)//C0D6
 [NAME]( used )(the )[END]
@@ -129,6 +127,8 @@ Welcome[END]
 
 #W16($281C8)//C0DC
 [NAME] opened the chest...[PAU][NL][END]
+
+
 
 //-------------------------------------------------------------------------
 #W16($28010)//C000
@@ -180,14 +180,14 @@ Mmm feels great![END]
 
 #W16($28020)//C008
  <$05>[A7-2]<$0B><$06><$07><$05>[A7-2]<$0F><$06><$07> [NL]
- <$0B>[A2-1]<$0B><$0B><$0B> (Money): [A5-4]<$06><$68><$03><$06> <$0B> [NL]
+ <$0B>[A2-1]<$0B><$0B><$0B> M(oney): [A5-4]<$06><$68><$03><$06> <$0B> [NL]
  <$0B>[A2-1]<$0B><$0B><$0B> (Life) :[A5-4]<$0C><$68><$02><$03>-[A5-4]<$0E><$68><$02><$03> <$0B> [NL]
  <$0B>[A2-1]<$0B><$0B><$0B> (Magic):[A5-4]<$10><$68><$02><$03>-[A5-4]<$12><$68><$02><$03> <$0B> [NL]
 [AE-4]<$03><$01><$0A><$03>[A600][AE-4]<$00><$04><$20><$01> <$08>[A7-2]<$0B><$09><$0A><$08>[A7-2]<$0F><$09><$0A> [END]
 
 #W16($28022)//C009
 //そのほうこうには だれもいない.[END]
-Nobody there.[END]
+Nobody t(here).[END]
 
 #W16($28024)//C00A
 [AE-4]<$10><$0A><$0E><$04>[CLR]
@@ -195,7 +195,7 @@ Nobody there.[END]
 //よろしいですか?[NL]
 // はい[NL]
 // いいえ[END]
-  This right?[NL]
+  (This) right?[NL]
 [A2-1]<$04>Yes  No[END]
 
 //-------------------single box---------------------------------
@@ -327,7 +327,8 @@ pg:[A603-2]<$85><$00>[A603-2]<$86><$00> blok:[A603-2]<$87><$00>[A603-2]<$88><$00
 
 #W16($28058)//C024
 //[A4-1]<$01>[NAME] は [END]
-[A4-1]<$01>[NAME] [END]
+//[A4-1]<$01>[NAME] [END]
+(fix)[END]
 
 #W16($2805A)//C025
 // を[AB-1]<$09>すてちまった.[END]
@@ -360,7 +361,7 @@ Dropped the [END]
  AtkPwr:[NL]
  DefPwr:[NL]
 [A2-1]<$03>Force:[NL]
- (Money): [A5-4]<$06><$68><$03><$06>[NL]
+ M(oney): [A5-4]<$06><$68><$03><$06>[NL]
 [A2-1]<$03>Exp:[A5-4]<$09><$68><$03><$06>[NL]
 [C0]<$3D>[NL]
 [END]
@@ -404,8 +405,8 @@ no magic[NL] to use.[END]
 Sokaizan the mountain of [NL]
 the gods was conqured by [NL]
 an evil emperor Dakdar.  [NL]
-Darkness fell on the land[NL]
-and the joy and laughter [NL]
+Darkness fell on the l(and)[NL]
+(and) the joy (and) laughter [NL]
 vanished from the hearts [NL]
 of the people.           [NL]
 Then a hero (appeared).  [NL]
@@ -434,7 +435,7 @@ ate [END]
 
 #W16($28072)//C031
 //みにつけることが できない.[END]
-You can't wear that.[END]
+You can't wear (that).[END]
 
 #W16($28074)//C032
 //つかったが なにもおこらなかった.[END]
@@ -470,7 +471,7 @@ You don't have enough.[END]
 [AE-4]<$02><$01><$07><$03>[CLR]
 // しょじきん[NL]
 // [A5-4]<$06><$68><$03><$06>[END]
- (Money)[NL]
+ M(oney)[NL]
  [A5-4]<$06><$68><$03><$06>[END]
 
 #W16($28082)//C039
@@ -502,8 +503,8 @@ You don't have enough.[END]
 #W16($2808C)//C03E
 //このせかいの おかねのたんいは[NL]
 //(クレジット)なんだけどなぁ-[END]
-But the money in this[NL]
-world is called.[END]
+But the m(oney) in (this)[NL]
+(world) is called.[END]
 
 #W16($2808E)//C03F
  <$05>[A7-2]<$0B><$06><$07><$05>[A7-2]<$0F><$06><$07>[NL]
@@ -708,7 +709,7 @@ Aqua[END]
 
 #W16($280F0)//C070
 //とくに かわったところはない.[END]
-This is an unusual place.[END]
+(This) is an unusual place.[END]
 
 #W16($280F2)//C071
 //たからばこ を みつけた.[PAU][NL]
@@ -733,7 +734,7 @@ but it's empty, damn.[END]
 #W16($280FA)//C075
 //[AD-4]<$E8><$63><$03><$06>(クレジット)[END]
 ([NAME] opened the chest...[PAU][NL])
-and found [AD-4]<$E8><$63><$03><$06> (coins)![END]
+(and) found [AD-4]<$E8><$63><$03><$06> (coins)![END]
 
 #W16($280FC)//C076
 //[AE-4]<$02><$05><$1C><$03>[BB][A4-1]<$06>ばくはつとともに [NAME]は そとへなげだされ[NL]
@@ -752,7 +753,7 @@ thrown to the ground.[BD-1]<$30>[NL]
 Luckily [NAME] was helped by[NL]
 a passer by.[PAU][CLR]
 You were lucky.[NL]
-Take advanantage of it( and )[NL]
+Take advanantage of it (and)[NL]
 try again.[END]
 
 #W16($28100)//C078
@@ -775,7 +776,7 @@ try again.[END]
 //きあいを いれて よんだ.[NL]
 //きあい いっぱつ [END]
 [NL]
-and was filled with its[NL]
+(and) was filled with its[NL]
 power.[PAU][CLR][END]
 
 #W16($28106)//C07B
@@ -1198,7 +1199,7 @@ Frankenstein[END]
 
 #W16($2821C)//C106
 //グり-ンメットン[END]
-(Green )(Metron)[END]
+Green (Metron)[END]
 
 #W16($2821E)//C107
 //メイジメットン[END]
@@ -1260,7 +1261,7 @@ Ice (Tinbot)[END]
 
 #W16($2823A)//C115
 //ブル-(スケルバット)[END]
-(Blue )(Skull)[END]
+Blue (Skull)[END]
 
 #W16($2823C)//C116
 //コ-ルド(ハングりオン)[END]
@@ -1304,7 +1305,7 @@ Seagrub[END]
 
 #W16($28250)//C120
 //ビ-チ(ハングりオン)[END]
-Sand (Hunter)[END]
+S(and) (Hunter)[END]
 
 #W16($28254)//C122
 //ジャンプ(メカニカニ)[END]
@@ -1675,11 +1676,11 @@ You don't have anything![END]
 
 #W16($28314)//C182
 //たたかえなく なるぞ![END]
-You need that to fight![END]
+You need (that) to fight![END]
 
 #W16($28316)//C183
 //すてないで-![END]
-You can't throw that away![END]
+You can't throw (that) away![END]
 
 #W16($28318)//C184
 //つかえません![END]
@@ -1703,7 +1704,7 @@ yourself now.[END]
 
 #W16($28320)//C188
 //どうぞ おとおりください.[END]
-Right this way.[END]
+Right (this) way.[END]
 
 #W16($28322)//C189
 //たいりよくは いっぱいなのに[NL]
@@ -1718,8 +1719,9 @@ Don't waste your (Magic)![END]
 
 #W16($28326)//C18B
 //ざんねんながら マシンは きてくれませんでした.[END]
-Bad luck! The Mashin[NL]
-didn't come.[END]
+//Bad luck! The Mashin[NL]
+//didn't come.[END]
+fix[END]
 
 #W16($28328)//C18C
 //なにを きるつもりですか?[END]
@@ -1737,7 +1739,7 @@ risky  RISKY[END]
 //[C0]<$84>(を つかった.)[NL]
 //[AD-4]<$2F><$68><$01><$02> のアイテムが もてるようになった.[END]
 [NAME] put on a bigger[NL]
-[C0]<$84>( and )can now[NL]
+[C0]<$84> (and) can now[NL]
 carry [AD-4]<$2F><$68><$01><$02> items.[END]
 
 #W16($28330)//C190
@@ -1761,7 +1763,7 @@ No way![END]
 
 #W16($28338)//C194
 //が ここではつかえないようだ.[END]
-can't be used here.[END]
+can't be used (here).[END]
 
 #W16($2833A)//C195
 //さぁ-てと ゲ-ムを やめよ-っと.[END]
@@ -1884,7 +1886,7 @@ Okay?[NL]
 
 #W16($28360)//C1A8
 //(クレジット)がたりませんよ.[END]
-That's not enough (money).
+That's not enough m(oney).
 
 #W16($28362)//C1A9
 //あぁ3あ ぼるら よっぱらっちゃったら.[END]
@@ -1918,13 +1920,13 @@ Level[END]
 
 #W16($28370)//C1B0
 //もうおかねは いらないでしょう?[END]
-Do you need any more money?[END]
+Do you need any more m(oney)?[END]
 
 #W16($28372)//C1B1
 //(インスタント(クレジット))に おゆをかけた.[NL]
 //3ぷんまったら [AD-4]<$E8><$63><$03><$06>(クレジット)に なった.[END]
 [NAME] poured hot water on[NL]
-the Magic Coin and waited.[NL]
+the Magic Coin (and) waited.[NL]
 (# coins) appeared![END]
 
 #W16($28374)//C1B2
@@ -1975,7 +1977,7 @@ test[END]
 //レべルが 10あがった![PAU][NL]
 //あっ ひとりごとをいってしまった.[END]
 1000 (coins) (appeared)![NL]
-(Life)( and )(Magic) up to 999.[NL]
+(Life) (and) (Magic) up to 999.[NL]
 (Level) increased 10![PAU][NL]
 Oh... It was just talking[NL]
 to itself.[END]
@@ -2000,7 +2002,7 @@ Can't increase any more.[END]
 #W16($28390)//C1C0
 //どうぞ あちらで おやすみください.[END]
 Thanks, you can rest over[NL]
-there.[END]
+t(here).[END]
 
 #W16($28392)//C1C1
 //たびのつかれを いやしてくださいネ.[END]
@@ -2009,7 +2011,7 @@ your journey.[END]
 
 #W16($28394)//C1C2
 //ここでは つかえません.[END]
-You can't use it here.[END]
+You can't use it (here).[END]
 
 #W16($28396)//C1C3
 //ちょっと おくとこ ちがうんでね-の.[END]
@@ -2017,7 +2019,7 @@ test[END]
 
 #W16($28398)//C1C4
 //どこ むいてるの?[END]
-Where are you headed?[END]
+W(here) are you headed?[END]
 
 #W16($2839A)//C1C5
 //を おいた.[AC-1]<$1E>[A601][END]
@@ -2165,7 +2167,7 @@ Please come again![END]
 
 #W16($283D0)//C1E0
 //ここでは (テレポ-ト)はつかえない.[END]
-Can't teleport here.[END]
+Can't teleport (here).[END]
 
 #W16($283D2)//C1E1
 //(テレポ-ト) しっぱい!![NL]
@@ -2183,7 +2185,7 @@ Used escape.[END]
 
 #W16($283D8)//C1E4
 //どこに にげるきですか?[END]
-Where do you feel like[NL]
+W(here) do you feel like[NL]
 running?[END]
 
 #W16($283DA)//C1E5
@@ -2543,7 +2545,7 @@ Woah![NL]
 The most[NL]
 powerful[NL]
 (Magic) in[NL]
-the world.[NL]
+the (world).[NL]
 (M-Cost: )30[END]
 
 #W16($28460)//C228
@@ -2592,7 +2594,7 @@ test[END]
 
 #W16($28474)//C232
 //え-っ あっちで ねてくださいませ.[END]
-Please rest over there.[END]
+Please rest over t(here).[END]
 
 #W16($28476)//C233//merchanton inn going to sleep
 //うちのべッドは ちょっとちがうヨ![END]
@@ -2610,7 +2612,7 @@ Did you sleep well?[C2]<$37>[END]
 #W16($2847C)//C236
 //やっぱりあさは ねむいですね
 I knew you'd be sleepy[NL]
-this morning.[END]
+(this) morning.[END]
 
 #W16($2847E)//C237
 [BD-1]<$20>[NL]
@@ -2665,8 +2667,8 @@ didn't take [AB-1]<$0A>any damage![END]
 [C2]<$40>[C0]<$1D>, i[BE-1]<$01>n[BE-1]<$00> t[BE-1]<$02>h[BE-1]<$00>e [BE-1]<$02>b[BE-1]<$01>a[BE-1]<$00>t[BE-1]<$01>t[BE-1]<$02>l[BE-1]<$00>e[BE-1]<$01>s[BE-1]<$00> [BE-1]<$02>a[BE-1]<$01>h[BE-1]<$00>e[BE-1]<$01>a[BE-1]<$02>d[BE-1]<$00>[NL]
  w[BE-1]<$01>h[BE-1]<$02>e[BE-1]<$00>n [BE-1]<$01>I'[BE-1]<$00>[BE-1]<$04>m [BE-1]<$01>[BE-1]<$05>c[BE-1]<$02>[BE-1]<$04>l[BE-1]<$00>[BE-1]<$03>o[BE-1]<$01>s[BE-1]<$02>e [BE-1]<$00>t[BE-1]<$01>o [BE-1]<$00>d[BE-1]<$02>e[BE-1]<$01>f[BE-1]<$00>e[BE-1]<$01>a[BE-1]<$01>t[BE-1]<$01>[BE-1]<$00>[BD-1]<$40>[CLR]
 I[BE-1]<$01>'l[BE-1]<$02>l[BE-1]<$00> r[BE-1]<$01>e[BE-1]<$00>m[BE-1]<$01>e[BE-1]<$00>m[BE-1]<$02>b[BE-1]<$00>e[BE-1]<$02>r [BE-1]<$01>t[BE-1]<$00>he risk you[NL]
-took saving me and Sokaizan[BE-1]<$00>[BD-1]<$40>[CLR]
-and I'll fight on.[BD-1]<$40>[END]
+took saving me (and) Sokaizan[BE-1]<$00>[BD-1]<$40>[CLR]
+(and) I'll fight on.[BD-1]<$40>[END]
 
 #W16($28494)//C242
 //[C2]<$40>[A2-1]<$04>[NAME] きみのゆうき そして[NL]
@@ -2795,7 +2797,7 @@ of the stairs![END]
 #W16($284CC)//C25E
 #W16($284CE)//C25F
 #W16($284D0)//C260
-[C2]<$64>gained [C2]<$65>( and )[NL]
+[C2]<$64>gained [C2]<$65> (and)[NL]
 found (# coins).[BD-1]<$20>[END]
 
 #W16($284D2)//C261
@@ -2838,7 +2840,7 @@ test[END]
 #W16($284E2)//C269
 //[C0]<$ED>は ここでは やくにたたない[END]
 The (Odd Ladder) is useless[NL]
-here.[END]
+(here).[END]
 
 #W16($284E4)//C26A
 //[C0]<$ED>を がけにたてかけた[END]
