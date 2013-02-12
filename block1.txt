@@ -2259,9 +2259,9 @@ test[END]
 //また おいで[END]
 Come again.[END]
 
-#W16($283F2)//C1F1
+#W16($283F2)//C1F1//warp shop cancel
 //しんじるものは すくわれる[END]
-test[END]
+(fix)[END]
 
 #W16($283F4)//C1F2
 //いま きげんがわるいんだよ![NL]
