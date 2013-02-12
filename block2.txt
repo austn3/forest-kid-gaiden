@@ -1659,7 +1659,7 @@ taken away when I arrived.[PAU][CLR]
 What('s )worse, I've been[NL]
 locked up (here).[PAU][CLR]
 Will (you) help me open (this)[NL]
-gate?
+gate?[NL]
 [A2-1]<$03>Help[A2-1]<$03>Don't
 
 [B6-4]<$02><$09>
@@ -1941,9 +1941,10 @@ went up the tower...[B2-1]<$24>
 //フネに のりたかったら いつでも いってくれ[B4-1]<$01>[END]
 
 //------------------------------------------------------------------
-#WRITE(B2Ptr, $2C352)//C4A1//icefield inn woman
-#WRITE(B2Ptr, $2C354)//C4A2
-#WRITE(B2Ptr, $2C356)//C4A3
+//#WRITE(B2Ptr, $2C352)//C4A1
+//#WRITE(B2Ptr, $2C354)//C4A2
+//------------------------------------------------------------------
+#WRITE(B2Ptr, $2C356)//C4A3//icefield inn woman
 //(シバラク)さんって ごぞんじかしら? ついこのあいだ[NL]
 //(ワタル)を みつけたといって (きたの) (ひょうげん)に[NL]
 //いったヒトなんですけど(......)[END]

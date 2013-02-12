@@ -63,6 +63,9 @@ $26D20:  A9 22 20 48 AE EA EA EA
 $27F8E:                                             A9 C1
 $27F90:  20 48 AE AD 61 04 20 48  AE 60
 
+; inn select
+$38264:  04 02 04  ->  03 03 0A
+
 ; used / life restored
 ; life
 $39C2B:  EF  ->  F1

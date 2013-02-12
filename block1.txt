@@ -341,7 +341,7 @@ Dropped the [END]
 [NL]
 //  つかれたからねる[NL]
 //  まだへっちゃらだい
- Rest.  Not tired.
+ Rest  Not tired
 #EMBWRITE(1)
 [AE-4]<$16><$00><$05><$05><$07><$05>[NL]
 <$0B><$0B> Cost[NL]
