@@ -6,7 +6,6 @@
 #HDR($10)
 #JMP($28610)
 
-#W16($2815C)//C0A6
 #W16($2815E)//C0A7
 #W16($28168)//C0AC
 #W16($2816A)//C0AD
@@ -79,6 +78,9 @@ that[END]
 
 #W16($2815A)//C0A5
 here[END]
+
+#W16($2815C)//C0A6
+Icefield[END]
 
 #W16($28160)//C0A8
 defeat[END]

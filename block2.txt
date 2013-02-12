@@ -75,7 +75,7 @@ Grassy[NL]Plains[END]
 
 #WRITE(B2Ptr,$2C012)//C301
 //ミブル(ひょうげん)[NL][END]
-Icefield[NL][END]
+(Icefield)[NL][END]
 
 #WRITE(B2Ptr, $2C014)//C302
 //ザナミ-かいがん[END]
@@ -1691,7 +1691,7 @@ Ok... Let('s )go![END]
 //(ひょうげん)には とうが2ほん たってるんだ[NL]
 //よくしってるだろ? エッへン![END]
 Ahem! Traveler![NL]
-Did (you) know Icefield has[NL]
+Did (you) know (Icefield) has[NL]
 two towers? Ahem![END]
 
 #EMBWRITE(222)
@@ -1733,7 +1733,7 @@ first.[END]
 (You) were strong enough to[NL]
 (defeat) the (Tinbot).[PAU][CLR]
 I bet (you) could survive[NL]
-the Icefield Tower.[END]
+the (Icefield) Tower.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C33E)//C497//spectrum se house guards
@@ -1915,7 +1915,7 @@ take the boat like (that).[PAU]
 //(シバラク)とかいうやつも うえに いったんだが(......)[B2-1]<$24>
 Are (you) looking for (Wataru)[NL]
 too? A guy named (Shibaraku)[NL]
-went up the tower...[B2-1]<$24>
+already went up the tower...[B2-1]<$24>
 
 #EMBWRITE(848)
 #EMBWRITE(858)
@@ -1932,13 +1932,22 @@ went up the tower...[B2-1]<$24>
 //なに? (シバラク)なら さきにいったぞ ワシなりに[NL]
 //(ワタル)を さがすといっていたが(......)[PAU][CLR]
 //たいへんなようだから このフネに のせてやるよ[B4-1]<$01>[END]
+What? (Shibaraku)('s )already[NL]
+gone. I was hoping to find[NL]
+(Wataru) too...[PAU][CLR]
+Well considering the[NL]
+situation, you can take[NL]
+the boat.[B4-1]<$01>[END]
 
 #EMBWRITE(366)
 #EMBWRITE(306)
 //はやく このフネに のりなよ[B4-1]<$01>[END]
+Hurry up and get on board![B4-1]<$01>[END]
 
 #EMBWRITE(227)
 //フネに のりたかったら いつでも いってくれ[B4-1]<$01>[END]
+If you need the boat again[NL]
+just say so.[B4-1]<$01>[END]
 
 //------------------------------------------------------------------
 //#WRITE(B2Ptr, $2C352)//C4A1
@@ -2206,7 +2215,7 @@ Easy, kid.[END]
 (Shibaraku) is only trying[NL]
 to rescue (Wataru), he can't[NL]
 save the (world) himself.[PAU][CLR]
-He went towards Icefield.[END]
+He went towards (Icefield).[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C39C)//C4C6//spectrum kings guard right
@@ -3327,7 +3336,7 @@ Are you one of (Wataru)'s[NL]
 friends?[PAU][CLR]
 A guy called (Shibaraku)[NL]
 said he was on his way to[NL]
-Icefield.[END]
+(Icefield).[END]
 
 #EMBWRITE(271)
 //(ワタル)さんに あえなかったの? ザンネンだったねェ[END]
@@ -3393,22 +3402,28 @@ are voices over t(here).[END]
 //(シバラク)さんも ふねにのりに きたんだが[NL]
 //しばらく まっててくれって いったんで[NL]
 //ふねをださずに まってるんだ[END]
-(Shibaraku) already came by[NL]
-boat but he said to wait[NL]
-for him.[END]
+(Shibaraku) came by boat[NL]
+but he said for us to wait[NL]
+here for him.[END]
 
 #EMBWRITE(273)
 //(シバラク)さんも さっきここを いったよ[END]
-fix[END]
+(Shibaraku) already left.[END]
 
 //------------------------------------------------------------------
-//#WRITE(B2Ptr, $2C49E)//C547//icefield tower guy 1f right
-//[B1-3]<$04>
-//#EMBSET(274)
+#WRITE(B2Ptr, $2C49E)//C547//icefield tower guy 1f right
+[B1-3]<$04>
+#EMBSET(274)
 //みぎの みちをいくと ふねがあるよ[END]
-//#EMBWRITE(274)
+The path to the right'll[NL]
+take you to the boat.[END]
+
+#EMBWRITE(274)
 //もうふねに のれるね でも (ひょうげん)は のこらず[NL]
 //いってみたかい?[END]
+You can take the boat soon,[NL]
+but have you completed your[NL]
+business in (Icefield)?[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C4A0)//C548//icefield inn
