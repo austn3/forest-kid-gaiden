@@ -44,7 +44,7 @@ protect[END]
 Sokaizan[END]
 
 #WRITE(B2Ptr, $2C114)//C382
-Merchanton[END]
+(Merchanton)[END]
 
 #WRITE(B2Ptr, $2C116)//C383
 This is [END]
@@ -2145,8 +2145,8 @@ Easy, kid.[END]
 //このれいは きっとしよう むらびとたちには[NL]
 //すまぬことをしたと いっておいてくれ[END]
 Thank you.[NL]
-
-//[END]
+(fix)
+[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C37C)//C4B6

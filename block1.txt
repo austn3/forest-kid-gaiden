@@ -1089,7 +1089,7 @@ Dragon Life[END]
 
 #W16($281E0)//C0E8
 //サ-ぺントのなみだ[END]
-Serpent Tear[END]
+(Serpent) Tear[END]
 
 #W16($281E2)//C0E9
 //たくさんのしょくりょう[END]
@@ -2289,7 +2289,7 @@ test[END]
 
 #W16($28410)//C200
 //ではまいるぞ![BC][END]
-test[END]
+Come again![BC][END]
 
 #W16($28414)//C202
 //しょうがない! デバッグようだから[NL]
