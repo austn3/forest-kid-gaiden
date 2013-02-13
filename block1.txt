@@ -7,6 +7,8 @@
 #JMP($28610)
 
 #W16($2815E)//C0A7
+fix[END]
+
 #W16($28168)//C0AC
 #W16($2816A)//C0AD
 #W16($2816C)//C0AE
@@ -597,7 +599,7 @@ Got it![END]
 
 #W16($280B0)//C050
 //ゆうぼくみんのむら[END]
-Nomad Camp[END]
+(Nomad) Camp[END]
 
 #W16($280B2)//C051
 //しょうにんのむら[END]
@@ -1430,7 +1432,7 @@ Tin Knight[END]
 
 #W16($2828E)//C13F
 //デス(ギャザ-)[END]
-(Death )Stare[END]
+Death Stare[END]
 
 #W16($28290)//C140
 //ブりキンソルジャ-[END]
@@ -1528,7 +1530,7 @@ Queen (Blob)[END]
 
 #W16($282BE)//C157
 //(ジャクロ-)グり-ン[END]
-Mega Drake[END]
+Mega (Drake)[END]
 
 #W16($282C0)//C158
 //クライマ-ガイスト[END]
@@ -1540,7 +1542,7 @@ Magma Molebot[END]
 
 #W16($282C4)//C15A
 //デスライガ-[END]
-(Death )(Liger)[END]
+Death (Liger)[END]
 
 #W16($282C6)//C15B
 //スケルサタン[END]
@@ -1580,7 +1582,7 @@ Vampbot[END]
 
 #W16($282DA)//C165
 //(ジャクロ-)ブル-[END]
-Ice Drake[END]
+Ice (Drake)[END]
 
 #W16($282DC)//C166
 //ドンゴロ[END]
@@ -1723,7 +1725,7 @@ Don't waste your (Magic)![END]
 //ざんねんながら マシンは きてくれませんでした.[END]
 //Bad luck! The Mashin[NL]
 //didn't come.[END]
-fix[END]
+(fix)[END]
 
 #W16($28328)//C18C
 //なにを きるつもりですか?[END]
@@ -1874,8 +1876,7 @@ Shield[END]
 //  ワ-プ[NL]
 //  キャンセル[END]
 [NL]
-  (Warp )[NL]
-  Cancel[END]
+[A2-1]<$03>(Warp )[A2-1]<$03>Don't[END]
   
 #W16($2835E)//C1A7
 [AE-4]<$02><$01><$07><$03>[CLR]

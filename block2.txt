@@ -12,23 +12,17 @@
 
 #JMP($2C4B0)
 
+#WRITE(B2Ptr, $2C102)//C379
+#WRITE(B2Ptr, $2C106)//C37B
+[END]
+
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C100)//C378
-N[B0-2]
+Nomad[END]
 #EMBSET(700)
-#WRITE(B2Ptr, $2C102)//C379
-n
-#EMBWRITE(700)
-omad[END]
 
-#WRITE(B2Ptr, $2C226)//C40B
 #WRITE(B2Ptr, $2C104)//C37A
-D[B0-2]
-#EMBSET(701)
-#WRITE(B2Ptr, $2C106)//C37B
-d
-#EMBWRITE(701)
-ragon[END]
+Dragon[END]
 
 #WRITE(B2Ptr, $2C108)//C37C
 Tower[NL][END]
@@ -103,11 +97,13 @@ Dabord[NL](Mountain)s[END]
 
 #WRITE(B2Ptr, $2C020)//C308
 //(セカンドガン)の[NL](ダンジョン)[NL]ちか1かい[END]
-(2nd-Gun)'s[NL](Dungeon)[NL]Lv 1[END]
+(2nd-Gun)'s[NL](Dungeon)[NL]
+Lv 1[END]
 
 #WRITE(B2Ptr, $2C022)//C309
 //(セカンドガン)の[NL](ダンジョン)[NL]ちか2かい[END]
-(2nd-Gun)'s[NL](Dungeon)[NL]Lv 2[END]
+(2nd-Gun)'s[NL](Dungeon)[NL]
+Lv 2[END]
 
 #WRITE(B2Ptr, $2C024)//C30A
 //(かぜのくに[NL])やどや[END]
@@ -145,7 +141,6 @@ North Cave[END]
 #WRITE(B2Ptr, $2C036)//C313
 //(ゆうぼくみんのむら[NL])やどや[END]
 (Nomad Camp[NL])(Inn)[END]
-
 
 #WRITE(B2Ptr, $2C038)//C314
 //(ゆうぼくみんのむら[NL])テント[END]
@@ -228,8 +223,9 @@ Cursed[NL]S(pring)[END]
 //(にじのくに[NL])やどや[END]
 (Spectrum[NL])(Inn)[END]
 
-//#WRITE(B2Ptr, $2C064)//C32A
+#WRITE(B2Ptr, $2C064)//C32A
 //(うつくしむら)[NL][END]
+(Lovely)[NL][END]
 
 #WRITE(B2Ptr, $2C066)//C32B
 //かくれざと[NL][END]
@@ -308,15 +304,18 @@ Last Tower[NL]
 Last Tower[NL]
 4F[END]
 
-//#WRITE(B2Ptr, $2C08C)//C33E
-//#WRITE(B2Ptr, $2C08E)//C33F
+#WRITE(B2Ptr, $2C08C)//C33E
+#WRITE(B2Ptr, $2C08E)//C33F
 //(うつくしむら[NL])いえ[END]
+(Lovely[NL])(House)[END]
 
 //#WRITE(B2Ptr, $2C090)//C340
 //(うつくしむら[NL])どうぐや[END]
+(Lovely[NL])(Shop)[END]
 
 //#WRITE(B2Ptr, $2C092)//C341
 //(うつくしむら[NL])やどや[END]
+(Lovely[NL])(Inn)[END]
 
 #WRITE(B2Ptr, $2C094)//C342
 //(かくれざと[NL])やどや[END]
@@ -446,9 +445,9 @@ Desert Way[END]
 //ダンプ ロ-ド[END]
 Dump Road[END]
 
-//#WRITE(B2Ptr, $2C0D6)//C363
+#WRITE(B2Ptr, $2C0D6)//C363
 //(うつくしむら[NL])ちかしつ[END]
-// basement
+(Lovely[NL])Basement[END]
 
 #WRITE(B2Ptr, $2C0D8)//C364
 //さいごの どうくつ[END]
@@ -531,7 +530,7 @@ Jungle[NL]Road[END]
 
 #WRITE(B2Ptr, $2C1FA)//C3F5
 //(うつくしむら)[NL](ワ-プショップ)[END]
-pvtty[NL](Warp Shop)[END]
+(Lovely[NL])(Warp Shop)[END]
 
 #WRITE(B2Ptr, $2C1FC)//C3F6
 //(かくれざと)[NL](ワ-プショップ)[END]
@@ -592,8 +591,9 @@ and[END]
 //いられる[END]
 That[END]
 
-//#WRITE(B2Ptr, $2C21A)//C405
+#WRITE(B2Ptr, $2C21A)//C405
 //うつくしむら[END]
+Lovely[END]
 
 //#WRITE(B2Ptr, $2C21C)//C406
 //ちょうせん[END]
@@ -609,6 +609,9 @@ That[END]
 
 //#WRITE(B2Ptr, $2C224)//C40A
 //おおきな[END]
+
+#WRITE(B2Ptr, $2C226)//C40B
+dragon(fix)[END]
 
 //#WRITE(B2Ptr, $2C228)//C40C
 //これは[END]
@@ -952,7 +955,7 @@ mountains they say.[END]
 //(わたし)(たちは) (ゆうぼくみん)です (わたし)たちが[NL]
 //こうして ぶじくらせるのは (サザビ-)(さまの)[NL]
 //(まほう)のちからに まもられているからです[END]
-We are (nomad)s. We live in[NL]
+We are (Nomad)s. We live in[NL]
 peace, protected by the[NL]
 power of (Sazabi)('s )magic.[END]
 
@@ -1216,7 +1219,7 @@ With (2nd-Gun) around,[NL]
 t(here)('s )no way...[END]
 
 //------------------------------------------------------------------
-//  Spectrum
+//                         Spectrum
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C310)//C480//spectrum princess
 [B3-3]<$01>
@@ -1829,12 +1832,17 @@ Take care.[END]
 #EMBSET(225)
 //みなみにのびた みさきに ちかへのつうろが[NL]
 //あるそうですよ そこからなみが きたらしいんですが[END]
-South...(fix)[END]
+There is a cape to the[NL]
+with an underground[NL]
+passage.[PAU][CLR]
+It seems like the waves[NL]
+are comming from there.[END]
 
 #EMBWRITE(225)
 //(ありがとう)(ござい)(ました) (サ-ぺント)もきっと[NL]
 //(あなた)に かんしゃして いるでしょう[END]
-Thank you! The Serpent(fix)[END]
+Thank you! The (Serpent) is[NL]
+surely grateful as well.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C344)//C49A//icefield tower cell gate
@@ -1848,31 +1856,47 @@ headed t(here).[PAU][CLR]
 ahead.[PAU][B4-1]<$02>[BA00][END]
 
 //------------------------------------------------------------------
-//#WRITE(B2Ptr, $2C346)//C49B//port town inn bed
-//[B1-3]<$0C>
-//#EMBSET(226)
+#WRITE(B2Ptr, $2C346)//C49B//port town inn bed
+[B1-3]<$0C>
+#EMBSET(226)
 //なんでもうみにすむ (サ-ぺント)が (ダンジョン)に[NL]
 //とじこめられて しまったらしいんだ[NL]
 //だっしゅつしようと あばれたときに[PAU][CLR]
 //おきた つなみで (みなとまち)は みずびたしさ[END]
-//#EMBWRITE(226)
+It seems the (Serpent) that[NL]
+lives in the sea has been[NL]
+trapped in the dungeon.[PAU][CLR]
+In his struggle to get out[NL]
+he's created tsunamis that[NL]
+have flooded Port Town.[END]
+
+#EMBWRITE(226)
 //(ありがとう)[NL]
 //きみのおかげで このまちはすくわれたんだ[END]
+Thanks to you our town has[NL]
+been saved.[END]
 
 //------------------------------------------------------------------
-//#WRITE(B2Ptr, $2C348)//C49C
+#WRITE(B2Ptr, $2C348)//C49C
 //ここから ふねが でるんですよ[END]
+The boat leaves from here.[END]
 
 //------------------------------------------------------------------
-//#WRITE(B2Ptr, $2C34A)//C49D//serpent
-//[B3-3]<$01>
-//#EMBSET(305)
+#WRITE(B2Ptr, $2C34A)//C49D//serpent
+[B3-3]<$01>
+#EMBSET(305)
 //(わたし)が (サ-ぺント)だ(......)[NL]
 //(ドアクダー)のやつらに だまされて (ここに)[NL]
 //とじこめられてしまったのだ すまぬが[PAU][CLR]
-//#EMBWRITE(305)
+I'm the (Serpent)...[NL]
+(Dakdar)('s )minions tricked[NL]
+me and locked me up here.[PAU][CLR]
+
+#EMBWRITE(305)
 //すいもんの となりにある(ボタン)の みぎの[NL]
 //(ボタン)を おしてくれぬか?[B4-1]<$01>[END]
+Could you push the right[NL]
+button by the gate?[B4-1]<$01>[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C34C)//C49E//serpent gate switch
@@ -2051,9 +2075,10 @@ Hello! Please make[NL]
 //(いらっしゃい)! (やどや)です[BF0104]
 
 //------------------------------------------------------------------
-//#WRITE(B2Ptr, $2C364)//C4AA//port town inn
+#WRITE(B2Ptr, $2C364)//C4AA//port town inn
 //(いらっしゃい)! (やどや)です[BF0104]
-
+Welcome to the Port Town[NL]
+inn.[BF0104]
 //------------------------------------------------------------------
 //#WRITE(B2Ptr, $2C366)//C4AB
 //かねがあるなら だいかんげい[BF0005]
@@ -2113,10 +2138,12 @@ Damn it![END]
 Easy, kid.[END]
 
 //------------------------------------------------------------------
-//#WRITE(B2Ptr, $2C37A)//C4B5//serpent thank you
+#WRITE(B2Ptr, $2C37A)//C4B5//serpent thank you
 //(ありがとう)[NL]
 //このれいは きっとしよう むらびとたちには[NL]
 //すまぬことをしたと いっておいてくれ[END]
+Thank you.[NL]
+
 //[END]
 
 //------------------------------------------------------------------
@@ -2469,8 +2496,8 @@ battles.[END]
 //ひほうをあつめ うみにある (ドラゴン)のへやに[NL]
 //いくがいい[PAU][CLR]
 //If you are going to save (Wataru)
-//you must find (the )4 (dragon) treasures (and)
-//go to (the )(dragon)('s )lair in (the )sea.
+//you must find (the )4 dragon treasures (and)
+//go to (the )dragon('s )lair in (the )sea.
 //ひとつは さばくに のこりのみっつは しっちと うみ[NL]
 //そして (ゆうぼくみん)の ちかくにある[B4-1]<$01>
 //[AF-3]<$76>
@@ -3122,12 +3149,13 @@ This is the (Port Town)[NL]
 //せいさいを くわえる![PAU][B8-3]<$19><$B1><$00>[END]
 
 //------------------------------------------------------------------
-//#WRITE(B2Ptr, $2C46A)//C52D//port town inn table
-//[B1-3]<$0D>
-//#EMBSET(265)
+#WRITE(B2Ptr, $2C46A)//C52D//port town inn table
+[B1-3]<$0D>
+#EMBSET(265)
 //みなみにある (うつくしむら)の はながかれてしまって[NL]
 //みな かなしんで おるんじゃ きれいじゃったのに[END]
-//#EMBWRITE(265)
+
+#EMBWRITE(265)
 //(ありがとう)よ おかげでまた (うつくしむら)のはなが[NL]
 //みれますよって[END]
 
