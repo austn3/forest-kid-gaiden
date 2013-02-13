@@ -1876,7 +1876,7 @@ Shield[END]
 //  ワ-プ[NL]
 //  キャンセル[END]
 [NL]
-[A2-1]<$03>(Warp )[A2-1]<$03>Don't[END]
+[A2-1]<$03>(Warp )  Don't[END]
   
 #W16($2835E)//C1A7
 [AE-4]<$02><$01><$07><$03>[CLR]
@@ -2269,9 +2269,9 @@ Come again.[END]
 //はやくでていきな[END]
 test[END]
 
-#W16($283F6)//C1F3
+#W16($283F6)//C1F3//warp shop cancel
 //ひさびさのおきゃくだったのになぁ-[END]
-test[END]
+(fix)[END]
 
 #W16($283FA)//C1F5
 //(いのちのくすり)(を のんだ.)[NL]
