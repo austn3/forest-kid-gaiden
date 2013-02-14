@@ -22,7 +22,6 @@
 #W16($28190)//C0C0
 #W16($2819A)//C0C5
 #W16($281A2)//C0C9
-#W16($281AA)//C0CD
 #W16($281D4)//C0E2
 #W16($283F8)//C1F4
 #W16($28400)//C1F8
@@ -106,6 +105,9 @@ magic[END]
 
 #W16($2819E)//C0C7
 Skull[END]
+
+#W16($281AA)//C0CD//for battle don't change
+( and )[END]
 
 #W16($281A4)//C0CA
 Warp [END]
@@ -2274,7 +2276,7 @@ Come again.[END]
 Save those who believe[NL]
 in you.[END]
 
-#W16($283F4)//C1F2
+#W16($283F4)//C1F2//warp shop cancel
 //いま きげんがわるいんだよ![NL]
 //はやくでていきな[END]
 !C1F2[END]
