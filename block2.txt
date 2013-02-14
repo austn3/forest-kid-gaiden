@@ -876,7 +876,7 @@ mountains (the)y say.[END]
 //(まほう)のちからに まもられているからです[END]
 We are (Nomad)s. We live in[NL]
 peace, protected by (the)[NL]
-power of (Sazabi)('s )magic.[END]
+power of (Sazabi)('s )(magic).[END]
 
 #EMBWRITE(201)
 //[NAME]さん (サザビ-)さまから でんごんがあります[NL]
@@ -1469,7 +1469,7 @@ I'm so jealous...[END]
 (Wataru)?[PAU][CLR]
 (You)'re too late. But if (you)[NL]
 are going after him (you) can[NL]
-take (this) magic spell.
+take (this) (magic) spell.
 
 [B5-3]<$70>
 #EMBSET(402)
@@ -1535,7 +1535,7 @@ through.
 //もっとも (まどうしょ)でも あるんなら べつだけどね[END]
 [PAU][CLR]
 But if (you) could use a[NL]
-powerful magic spell, (that)[NL]
+powerful (magic) spell, (that)[NL]
 might be different.[END]
 
 #EMBWRITE(11)
@@ -1752,7 +1752,7 @@ Take care.[END]
 //みなみにのびた みさきに ちかへのつうろが[NL]
 //あるそうですよ そこからなみが きたらしいんですが[END]
 There is a cape to (the)[NL]
-with an underground[NL]
+south with an underground[NL]
 passage.[PAU][CLR]
 It seems like (the )waves[NL]
 are comming from (the)re.[END]
@@ -1786,7 +1786,7 @@ It seems (the )(Serpent) that[NL]
 lives in (the )sea has been[NL]
 trapped in (the )dungeon.[PAU][CLR]
 In his struggle to get out[NL]
-he's created tsunamis that[NL]
+he's making tsunamis that[NL]
 have flooded Port Town.[END]
 
 #EMBWRITE(226)
@@ -1814,8 +1814,8 @@ me and locked me up here.[PAU][CLR]
 #EMBWRITE(305)
 //すいもんの となりにある(ボタン)の みぎの[NL]
 //(ボタン)を おしてくれぬか?[B4-1]<$01>[END]
-Could you push (the )right[NL]
-button by (the )gate?[B4-1]<$01>[END]
+Could you push (the )button[NL]
+on the right by (the )gate?[B4-1]<$01>[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C34C)//C49E//serpent gate switch
@@ -1996,7 +1996,7 @@ Hello! Please make[NL]
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C364)//C4AA//port town inn
 //(いらっしゃい)! (やどや)です[BF0104]
-Welcome to (the )Port Town[NL]
+Welcome to (the )(Port Town[NL])
 inn.[BF0104]
 //------------------------------------------------------------------
 //#WRITE(B2Ptr, $2C366)//C4AB
@@ -2062,8 +2062,9 @@ Easy, kid.[END]
 //このれいは きっとしよう むらびとたちには[NL]
 //すまぬことをしたと いっておいてくれ[END]
 Thank you.[NL]
-(fix)
-[END]
+Please tell the townsfolk[NL]
+I'm sorry for the trouble[NL]
+I caused.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C37C)//C4B6
@@ -3102,10 +3103,17 @@ the higher the price...[PAU][CLR]
 #EMBSET(265)
 //みなみにある (うつくしむら)の はながかれてしまって[NL]
 //みな かなしんで おるんじゃ きれいじゃったのに[END]
+In Lovely in the south,[NL]
+all the flowers have died.[PAU][CLR]
+Everyone is so sad.[NL]
+They used to be so[NL]
+beautiful...[END]
 
 #EMBWRITE(265)
 //(ありがとう)よ おかげでまた (うつくしむら)のはなが[NL]
 //みれますよって[END]
+Thanks to you we can see[NL]
+(Lovely)('s )flowers again.
 
 //------------------------------------------------------------------
 //#WRITE(B2Ptr, $2C46C)//C52E

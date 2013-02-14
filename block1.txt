@@ -9,7 +9,6 @@
 #W16($2815E)//C0A7
 fix[END]
 
-#W16($2816A)//C0AD
 #W16($2816C)//C0AE
 #W16($2816E)//C0AF
 #W16($28190)//C0C0
@@ -93,6 +92,9 @@ world[END]
 
 #W16($28168)//C0AC
 Cave[END]
+
+#W16($2816A)//C0AD
+magic[END]
 
 #W16($2819E)//C0C7
 Skull[END]
@@ -296,7 +298,7 @@ Save data deleted.[END]
 
 #W16($28046)//C01B 			-- fix case
 //つかえる(まほう)が ありません.[END]
-No (Magic) to use.[END]
+No (magic) to use.[END]
 
 //---------RAM POINTERS----------
 //  these need to stay commented
@@ -380,7 +382,7 @@ Currently[END]
 
 #W16($28066)//C02B
 // なにも つかえない[END]
-no magic[NL] to use.[END]
+no (magic)[NL] to use.[END]
 
 #W16($28068)//C02C
 [A4-1]<$02>[A7-2]<$0C><$00>[NL]
@@ -838,7 +840,7 @@ Sleep Specs[END]
 
 #W16($2811C)//C086
 //インスタント(クレジット)[END]
-Magic Coin[END]
+(Magic) Coin[END]
 
 #W16($2811E)//C087
 //ひとりごとのオルゴ-ル[END]
@@ -924,7 +926,7 @@ Legend Blade[END]
 
 #W16($28146)//C09B
 //(まほう)のつるぎ[END]
-Magic Blade[END]
+(Magic) Blade[END]
 
 #W16($28148)//C09C
 //ラッキ-ソ-ド[END]
@@ -1797,7 +1799,7 @@ Not enough (Magic).[END]
 // おぼえた(まほう)[NL]
 // かいわのはやさ[END]
  Equip[NL]
- Magic[NL]
+ (Magic)[NL]
  Text[END]
 
 #W16($28346)//C19B
@@ -1928,7 +1930,7 @@ Do you need any more m(oney)?[END]
 //(インスタント(クレジット))に おゆをかけた.[NL]
 //3ぷんまったら [AD-4]<$E8><$63><$03><$06>(クレジット)に なった.[END]
 [NAME] poured hot water on[NL]
-the Magic Coin (and) waited.[NL]
+the (Magic) Coin (and) waited.[NL]
 (# coins) appeared![END]
 
 #W16($28374)//C1B2
@@ -2192,7 +2194,7 @@ running?[END]
 
 #W16($283DA)//C1E5
 //(パワ-)の(まほう)(を つかった.)[END]
-Used Power magic.[END]
+Used Power (magic).[END]
 
 #W16($283DC)//C1E6
 //う- ん  うごかない[NL]
