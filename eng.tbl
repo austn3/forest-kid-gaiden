@@ -5,8 +5,6 @@
 //POINTER #31 @ $2804E - STRING #31 @ $26811
 ////#W16($2804E)
 
-C0A7=(fix)
-
 C001=( used )
 C01C=(Metron)
 C01F=[NAME]
