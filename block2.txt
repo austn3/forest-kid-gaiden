@@ -3539,32 +3539,29 @@ aren't you?[BF010C]
 #WRITE(B2Ptr, $2C4A2)//C549//ryujin-maru prologue
 //(わたし)は (りゅうじんまる) (ワタル)とともに[NL]
 //(ドアクダー)と たたかっている もうすぐ (ドアクダー)の[NL]
-//もとにたどりつく というときに とつぜん[PAU]
-//[CLR]
+//もとにたどりつく というときに とつぜん[PAU][CLR]
 I am (Ryujin-Maru). I (fight)[NL]
 with (Wataru) to (protect)[NL]
-(Sokaizan) from (Dakdar).[PAU]
-[CLR]
+(Sokaizan) from (Dakdar).[PAU][CLR]
+
 //このかいそうに とばされて しまったのだ[NL]
 //(わたし)と (ワタル)が ひきはなされた スキをついて[NL]
-//(ワタル)は (ドアクダー)に とらえられて しまったのだ[PAU]
-//[CLR]
+//(ワタル)は (ドアクダー)に とらえられて しまったのだ[PAU][CLR]
 We just about had him[NL]
 when suddenly, we were[NL]
-thrown into (this) (world).[PAU]
-[CLR]
-//そこで キミにてつだって ほしいのだ (ワタル)を[NL]
-//そしてこの そうかいざんの ききを すくうために
+thrown into (this) (world).[PAU][CLR]
 We were separated[NL]
 (and) (Wataru) has been[NL]
-captured.[PAU]
-[CLR]
+captured.[PAU][CLR]
+
+//そこで キミにてつだって ほしいのだ (ワタル)を[NL]
+//そしてこの そうかいざんの ききを すくうために
 [NAME], I need your help to[NL]
 save (Wataru) (and) (Sokaizan)[NL]
 from peril.
 #EMBWRITE(513)
-[PAU]
-[CLR]
+[PAU][CLR]
+
 //いっしょに たたかって くれないだろうか?[NL]
 //   ひきうける  ことわる
 Will you (fight) with me?[NL]
@@ -3572,6 +3569,7 @@ Will you (fight) with me?[NL]
 [B6-4]<$01><$09>
 #EMBSET(513)
 [CLR]
+
 //(ありがとう) もしたたかいに なったら[NL]
 //このつるぎで (わたし)を よんでほしい[NL]
 //たのむぞ![NAME]![END]
