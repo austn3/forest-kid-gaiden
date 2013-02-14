@@ -4,6 +4,16 @@
 #EMBTYPE("LINEAR", 16, $0)
 
 #HDR($10)
+
+//POINTER #29 @ $2804A - STRING #29 @ $263FE
+////#W16($2804A)
+//POINTER #30 @ $2804C - STRING #30 @ $203EC
+////#W16($2804C)
+//POINTER #31 @ $2804E - STRING #31 @ $26811
+////#W16($2804E)
+#JMP($2804A)
+<$EE><$63><$DC><$03><$01><$68>
+
 #JMP($28610)
 
 #W16($2815E)//C0A7
@@ -344,7 +354,7 @@ Dropped the [END]
 [NL]
 //  つかれたからねる[NL]
 //  まだへっちゃらだい
- Rest  Not tired
+ Rest[A2-1]<$03>Not tired
 #EMBWRITE(1)
 [AE-4]<$16><$00><$05><$05><$07><$05>[NL]
 <$0B><$0B> Cost[NL]
