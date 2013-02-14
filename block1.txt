@@ -2261,16 +2261,18 @@ Come again.[END]
 
 #W16($283F2)//C1F1//warp shop cancel
 //しんじるものは すくわれる[END]
-(fix)[END]
+Save those who believe[NL]
+in you.[END]
 
 #W16($283F4)//C1F2
 //いま きげんがわるいんだよ![NL]
 //はやくでていきな[END]
-!C1f2[END]
+!C1F2[END]
 
 #W16($283F6)//C1F3//warp shop cancel
 //ひさびさのおきゃくだったのになぁ-[END]
-(fix)[END]
+You were our customer for[NL]
+so long...[END]
 
 #W16($283FA)//C1F5
 //(いのちのくすり)(を のんだ.)[NL]
@@ -2587,7 +2589,7 @@ the sky.[NL]
 
 #W16($28470)//C230
 //どうぞ あちらで おやすみください.[END]
-!C230END]
+!C230[END]
 
 #W16($28472)//C231
 //たびのつかれを いやしてくださいネ.[END]
