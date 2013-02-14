@@ -12,15 +12,190 @@
 
 #JMP($2C4B0)
 
-#WRITE(B2Ptr, $2C102)//C379
 #WRITE(B2Ptr, $2C106)//C37B
 #WRITE(B2Ptr, $2C11E)//C387
 [END]
+
+#WRITE(B2Ptr, $2C0C0)//C358
+//ワ-プや[END]
+#WRITE(B2Ptr, $2C0E4)//C36A
+//Gale[NL][END]
+#WRITE(B2Ptr, $2C21E)//C407
+//きゅうせいしゅ[END]
+#WRITE(B2Ptr, $2C220)//C408
+//おうさま[END]
+#WRITE(B2Ptr, $2C222)//C409
+//おお [END]
+#WRITE(B2Ptr, $2C224)//C40A
+//おおきな[END]
+#WRITE(B2Ptr, $2C226)//C40B
+//dragon[END]
+#WRITE(B2Ptr, $2C228)//C40C
+//これは[END]
+#WRITE(B2Ptr, $2C22A)//C40D
+//おしろ[END]
+#WRITE(B2Ptr, $2C22C)//C40E
+//おとうさん[END]
+#WRITE(B2Ptr, $2C22E)//C40F
+//おとこ[END]
+#WRITE(B2Ptr, $2C232)//C411
+//おまえ[END]
+#WRITE(B2Ptr, $2C236)//C413
+//かい?[END]
+#WRITE(B2Ptr, $2C23C)//C416
+//かんけい[END]
+#WRITE(B2Ptr, $2C23E)//C417
+//きたの[END]
+#WRITE(B2Ptr, $2C240)//C418
+//1000ゴ-ルド[END]
+#WRITE(B2Ptr, $2C242)//C419
+//けんじゃ[END]
+#WRITE(B2Ptr, $2C244)//C41A
+//こおり[END]
+#WRITE(B2Ptr, $2C246)//C41B
+//ござい[END]
+#WRITE(B2Ptr, $2C248)//C41C
+//しょくりょう[END]
+#WRITE(B2Ptr, $2C24C)//C41E
+//さばく[END]
+#WRITE(B2Ptr, $2C24E)//C41F
+//しかし[END]
+#WRITE(B2Ptr, $2C250)//C420
+//しない[END]
+#WRITE(B2Ptr, $2C252)//C421
+//の かたちの くぼみがあります[END]
+#WRITE(B2Ptr, $2C254)//C422
+//さんは[END]
+#WRITE(B2Ptr, $2C256)//C423
+//しんでん[END]
+#WRITE(B2Ptr, $2C258)//C424
+//せんか?[END]
+#WRITE(B2Ptr, $2C25A)//C425
+//ゆうしゃ[END]
+#WRITE(B2Ptr, $2C25C)//C426
+//だけど[END]
+#WRITE(B2Ptr, $2C25E)//C427
+//たちは[END]
+#WRITE(B2Ptr, $2C260)//C428
+//たって[END]
+#WRITE(B2Ptr, $2C262)//C429
+//ダンジョン[END]
+#WRITE(B2Ptr, $2C264)//C42A
+//ちかく[END]
+#WRITE(B2Ptr, $2C266)//C42B
+//ちかごろ[END]
+#WRITE(B2Ptr, $2C268)//C42C
+//ちゃん[END]
+#WRITE(B2Ptr, $2C26A)//C42D
+//つづく[END]
+#WRITE(B2Ptr, $2C26C)//C42E
+//ですか?[END]
+#WRITE(B2Ptr, $2C26E)//C42F
+//という[END]
+#WRITE(B2Ptr, $2C270)//C430
+//ところ[END]
+#WRITE(B2Ptr, $2C272)//C431
+//ないか?[END]
+#WRITE(B2Ptr, $2C274)//C432
+//なにか[END]
+#WRITE(B2Ptr, $2C278)//C434
+//セカンドガン[END]
+#WRITE(B2Ptr, $2C27A)//C435
+//ひがし[END]
+#WRITE(B2Ptr, $2C27C)//C436
+//ひとり[END]
+#WRITE(B2Ptr, $2C27E)//C437
+//ひょうげん[END]
+#WRITE(B2Ptr, $2C280)//C438
+//ほうに[END]
+#WRITE(B2Ptr, $2C282)//C439
+//おうじょ[END]
+#WRITE(B2Ptr, $2C284)//C43A
+//ました[END]
+#WRITE(B2Ptr, $2C286)//C43B
+//ますか?[END]
+#WRITE(B2Ptr, $2C28A)//C43D
+//まったく[END]
+#WRITE(B2Ptr, $2C28C)//C43E
+//まどうしょ[END]
+#WRITE(B2Ptr, $2C28E)//C43F
+//まほう[END]
+#WRITE(B2Ptr, $2C290)//C440
+//みずうみ[END]
+#WRITE(B2Ptr, $2C292)//C441
+//ボタン[END]
+#WRITE(B2Ptr, $2C294)//C442
+//ここは[END]
+#WRITE(B2Ptr, $2C296)//C443
+//もどって[END]
+#WRITE(B2Ptr, $2C298)//C444
+//ゆうぼくみん[END]
+#WRITE(B2Ptr, $2C29A)//C445
+//しょうにん[END]
+#WRITE(B2Ptr, $2C29E)//C447
+//らしい[END]
+#WRITE(B2Ptr, $2C2A0)//C448
+//わたし[END]
+#WRITE(B2Ptr, $2C2A2)//C449
+//-ん![END]
+#WRITE(B2Ptr, $2C2A4)//C44A
+//......[END]
+#WRITE(B2Ptr, $2C2A8)//C44C
+//さまの[END]
+#WRITE(B2Ptr, $2C2AA)//C44D
+//しょう[END]
+#WRITE(B2Ptr, $2C2AC)//C44E
+//うって[END]
+#WRITE(B2Ptr, $2C2AE)//C44F
+//のやど[END]
+#WRITE(B2Ptr, $2C2B0)//C450
+//こんにちは[END]
+#WRITE(B2Ptr, $2C2B6)//C453
+//りゅうじんまる[END]
+#WRITE(B2Ptr, $2C2B8)//C454
+//ここに[END]
+#WRITE(B2Ptr, $2C2C0)//C458
+//くうじんまる[END]
+#WRITE(B2Ptr, $2C2C4)//C45A
+//しょうねん[END]
+#WRITE(B2Ptr, $2C2C6)//C45B
+//マシン[END]
+#WRITE(B2Ptr, $2C2C8)//C45C
+//せんじんまる[END]
+#WRITE(B2Ptr, $2C2CA)//C45D
+//せっしゃ[END]
+#WRITE(B2Ptr, $2C2CC)//C45E
+//もっと[END]
+#WRITE(B2Ptr, $2C2CE)//C45F
+//けっこん[END]
+#WRITE(B2Ptr, $2C2D0)//C460
+//ブりキントン[END]
+#WRITE(B2Ptr, $2C2D4)//C462
+//むらが[END]
+#WRITE(B2Ptr, $2C2D6)//C463
+//でんせつ[END]
+#WRITE(B2Ptr, $2C2D8)//C464
+//つうこうしょう[END]
+#WRITE(B2Ptr, $2C2DE)//C467
+//あんた[END]
+#WRITE(B2Ptr, $2C2E0)//C468
+#WRITE(B2Ptr, $2C2E2)//C469
+#WRITE(B2Ptr, $2C2E4)//C46A
+#WRITE(B2Ptr, $2C2E6)//C46B
+#WRITE(B2Ptr, $2C2E8)//C46C
+#WRITE(B2Ptr, $2C2EA)//C46D
+#WRITE(B2Ptr, $2C2EC)//C46E
+#WRITE(B2Ptr, $2C2EE)//C46F
+//あいうえお[END]
+(fix)[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C100)//C378
 Nomad[END]
 #EMBSET(700)
+
+#WRITE(B2Ptr, $2C102)//C379
+Last [END]
 
 #WRITE(B2Ptr, $2C104)//C37A
 Dragon[END]
@@ -52,7 +227,7 @@ This is [END]
 #WRITE(B2Ptr, $2C118)//C384
 the [END]
 
-#WRITE(B2Ptr, $2C11A) //C385
+#WRITE(B2Ptr, $2C11A)//C385
 D[B0-2]
 #EMBSET(702)
 #WRITE(B2Ptr, $2C11C)//C386
@@ -60,9 +235,36 @@ d
 #EMBWRITE(702)
 ungeon[END]
 
+#WRITE(B2Ptr, $2C210)//C400
+//あなた[END]
+you[END]
 
+#WRITE(B2Ptr, $2C212)//C401
+//ありがとう[END]
+You[END]
 
+#WRITE(B2Ptr, $2C214)//C402
+//いかが[END]
+'s [END]
 
+#WRITE(B2Ptr, $2C216)//C403
+//いらっしゃい[END]
+and[END]
+
+#WRITE(B2Ptr, $2C218)//C404
+//いられる[END]
+That[END]
+
+#WRITE(B2Ptr, $2C21C)//C406
+//ちょうせん[END]
+the[END]
+
+#WRITE(B2Ptr, $2C2BA)//C455
+//いずみ[END]
+pring[END]
+
+//------------------------------------------------------------------
+//         Places
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C010)//C300
 //コンチヤスそうげん[END]
@@ -99,12 +301,12 @@ Dabord[NL](Mountain)s[END]
 #WRITE(B2Ptr, $2C020)//C308
 //(セカンドガン)の[NL](ダンジョン)[NL]ちか1かい[END]
 (2nd-Gun)'s[NL](Dungeon)[NL]
-Lv 1[END]
+B1[END]
 
 #WRITE(B2Ptr, $2C022)//C309
 //(セカンドガン)の[NL](ダンジョン)[NL]ちか2かい[END]
 (2nd-Gun)'s[NL](Dungeon)[NL]
-Lv 2[END]
+B2[END]
 
 #WRITE(B2Ptr, $2C024)//C30A
 //(かぜのくに[NL])やどや[END]
@@ -112,11 +314,11 @@ Lv 2[END]
 
 #WRITE(B2Ptr, $2C026)//C30B
 //ふみきりハウス[END]
-Last Stop[NL][END]
+(Last )Stop[NL][END]
 
 #WRITE(B2Ptr, $2C028)//C30C
 //きたへのどうくつ[END]
-North Cave[END]
+North (Cave)[END]
 
 #WRITE(B2Ptr, $2C02A)//C30D
 //(しょうにん)のむら[NL][END]
@@ -197,13 +399,13 @@ Recovery[NL]S(pring)[END]
 
 #WRITE(B2Ptr, $2C050)//C320
 //つうこうどめのいえ[NL][END]
-Dead End[NL]House[NL][END]
+Dead End[NL](House)[NL][END]
 
 #WRITE(B2Ptr, $2C052)//C321
 //(にじのくに[NL])じょうない[END]
 (Spectrum[NL])Castle[END]
 
-#WRITE(B2Ptr, $2C054)//C322                     --huh?
+#WRITE(B2Ptr, $2C054)//C322
 //(みなとまち)シャバン[NL][END]
 (Port Town)[NL][END]
 
@@ -248,10 +450,11 @@ Wetl(and)s[NL](Dungeon)[NL]
 
 #WRITE(B2Ptr, $2C06E)//C32F
 //うみのやどや[END]
-Sea (Inn)[END]
+(Sea Inn)[END]
 
-//#WRITE(B2Ptr, $2C070)//C330
+#WRITE(B2Ptr, $2C070)//C330
 //けんじやのいえ[END]
+Sage('s )[NL](House)[END]
 
 #WRITE(B2Ptr, $2C072)//C331
 //(ミブルひょうげん[NL])(ダンジョン)[END]
@@ -287,22 +490,22 @@ Sea[NL](Dungeon)[END]
 
 #WRITE(B2Ptr, $2C084)//C33A
 //さいごのとう1かい[END]
-Last Tower[NL]
+(Last )(Tower[NL])
 1F[END]
 
 #WRITE(B2Ptr, $2C086)//C33B
 //さいごのとう2かい[END]
-Last Tower[NL]
+(Last )(Tower[NL])
 2F[END]
 
 #WRITE(B2Ptr, $2C088)//C33C
 //さいごのとう3かい[END]
-Last Tower[NL]
+(Last )(Tower[NL])
 3F[END]
 
 #WRITE(B2Ptr, $2C08A)//C33D
 //さいごのとう4かい[END]
-Last Tower[NL]
+(Last )(Tower[NL])
 4F[END]
 
 #WRITE(B2Ptr, $2C08C)//C33E
@@ -310,11 +513,11 @@ Last Tower[NL]
 //(うつくしむら[NL])いえ[END]
 (Lovely[NL])(House)[END]
 
-//#WRITE(B2Ptr, $2C090)//C340
+#WRITE(B2Ptr, $2C090)//C340
 //(うつくしむら[NL])どうぐや[END]
 (Lovely[NL])(Shop)[END]
 
-//#WRITE(B2Ptr, $2C092)//C341
+#WRITE(B2Ptr, $2C092)//C341
 //(うつくしむら[NL])やどや[END]
 (Lovely[NL])(Inn)[END]
 
@@ -328,12 +531,12 @@ Last Tower[NL]
 
 #WRITE(B2Ptr, $2C09A)//C345
 //(かくれざと[NL])いえ 1かい[END]
-(Isola[NL])(House)[NL]
+(Isola[NL]House)[NL]
 1F[END]
 
 #WRITE(B2Ptr, $2C09C)//C346
 //(かくれざと[NL])いえ 2かい[END]
-(Isola[NL])(House)[NL]
+(Isola[NL]House)[NL]
 2F[END]
 
 #WRITE(B2Ptr, $2C098)//C344
@@ -352,12 +555,12 @@ Last Tower[NL]
 
 #WRITE(B2Ptr, $2C0A6)//C34B
 //(ピラミッド) 1かい[END]
-Pyramid[NL]
+(Pyramid)[NL]
 1F[END]
 
 #WRITE(B2Ptr, $2C0A8)//C34C
 //(ピラミッド) 2かい[END]
-Pyramid[NL]
+(Pyramid)[NL]
 2F[END]
 
 #WRITE(B2Ptr, $2C0AA)//C34D
@@ -383,15 +586,15 @@ Pyramid[NL]
 #WRITE(B2Ptr, $2C0B2)//C351
 #WRITE(B2Ptr, $2C0B4)//C352
 //うみのどうくつ[END]
-Sea Cave[END]
+Sea (Cave)[END]
 
 #WRITE(B2Ptr, $2C0B6)//C353
 //らいじんの エりア[END]
-Thunder[NL]God Area[END]
+(Thunder)[NL]God Area[END]
 
 #WRITE(B2Ptr, $2C0B8)//C354
 //らいじんの[NL](ダンジョン)[END]
-Thunder[NL]God[NL](Dungeon)[END]
+(Thunder)[NL]God[NL](Dungeon)[END]
 
 #WRITE(B2Ptr, $2C0BA)//C355
 //(しょくりょう)[NL]ちょぞうこ[NL]ちか1かい[END]
@@ -405,10 +608,7 @@ B2[END]
 
 #WRITE(B2Ptr, $2C0BE)//C357
 //らいじんのいえ[END]
-(Thunder)[NL]God's[NL]House[END]
-
-//#WRITE(B2Ptr, $2C0C0)//C358
-//ワ-プや[END]
+(Thunder)[NL]God('s )[NL](House)[END]
 
 #WRITE(B2Ptr, $2C0C2)//C359
 //やまの(ダンジョン)[END]
@@ -420,11 +620,11 @@ B2[END]
 
 #WRITE(B2Ptr, $2C0C6)//C35B
 //やまのどうくつ[END]
-(Mountain)[NL]Cave[END]
+(Mountain)[NL](Cave)[END]
 
 #WRITE(B2Ptr, $2C0CA)//C35D
 //(かぜのくに[NL])どうぐや[END]
-(Gale[NL])Shop[END]
+(Gale[NL])(Shop)[END]
 
 #WRITE(B2Ptr, $2C0CC)//C35E
 //マウンテイン ウェイ[END]
@@ -436,7 +636,7 @@ B2[END]
 
 #WRITE(B2Ptr, $2C0D0)//C360
 //ラスト (ダンジョン)[END]
-Last[NL](Dungeon)[END]
+(Last )[NL](Dungeon)[END]
 
 #WRITE(B2Ptr, $2C0D2)//C361
 //デザ-ト ウェイ[END]
@@ -452,14 +652,13 @@ Dump Road[END]
 
 #WRITE(B2Ptr, $2C0D8)//C364
 //さいごの どうくつ[END]
-Final Cave[END]
+Final (Cave)[END]
 
 #WRITE(B2Ptr, $2C0DA)//C365
 //もり(のやど)[END]
 (Forest Inn)[END]
 
-#WRITE(B2Ptr, $2C0DC)//C366 * this one
-#WRITE(B2Ptr, $2C0E4)//C36A
+#WRITE(B2Ptr, $2C0DC)//C366
 //(かぜのくに)[NL]
 (Gale)[NL][END]
 
@@ -490,7 +689,8 @@ Final Cave[END]
 
 #WRITE(B2Ptr, $2C0F4)//C372
 //しっちの(ダンジョン)[NL]ちか3かい[END]
-Swamp[NL](Dungeon)[NL]3F[END]
+Swamp[NL](Dungeon)[NL]
+B3[END]
 
 #WRITE(B2Ptr, $2C0F6)//C373
 //(いずみ)の すいろ[END]
@@ -508,7 +708,6 @@ Ending[END]
 //(ジャングル)ロ-ド[END]
 Jungle[NL]Road[END]
 
-//------------------------------------------------------------------
 #WRITE(B2Ptr, $2C1F0)//C3F0
 //(ゆうぼくみん)[NL](ワ-プショップ)[END]
 (Nomad Camp[NL])(Warp Shop)[END]
@@ -539,7 +738,7 @@ Jungle[NL]Road[END]
 
 #WRITE(B2Ptr, $2C1FE)//C3F7
 //うみ(のやど)[NL](ワ-プショップ)[END]
-Sea (Inn)[NL](Warp Shop)[END]
+(Sea Inn)[NL](Warp Shop)[END]
 
 #WRITE(B2Ptr, $2C200)//C3F8
 //(オアシス)[NL](ワ-プショップ)[END]
@@ -572,75 +771,18 @@ Sea (Inn)[NL](Warp Shop)[END]
 Strange[NL]Place[END]
 
 //------------------------------------------------------------------
-#WRITE(B2Ptr, $2C210)//C400
-//あなた[END]
-you[END]
-
-#WRITE(B2Ptr, $2C212)//C401
-//ありがとう[END]
-You[END]
-
-#WRITE(B2Ptr, $2C214)//C402
-//いかが[END]
-'s [END]
-
-#WRITE(B2Ptr, $2C216)//C403
-//いらっしゃい[END]
-and[END]
-
-//#WRITE(B2Ptr, $2C218)//C404
-//いられる[END]
-That[END]
 
 #WRITE(B2Ptr, $2C21A)//C405
 //うつくしむら[END]
-Lovely[END]
-
-#WRITE(B2Ptr, $2C21C)//C406
-//ちょうせん[END]
-the[END]
-
-//#WRITE(B2Ptr, $2C21E)//C407
-//きゅうせいしゅ[END]
-
-//#WRITE(B2Ptr, $2C220)//C408
-//おうさま[END]
-
-//#WRITE(B2Ptr, $2C222)//C409
-//おお [END]
-
-//#WRITE(B2Ptr, $2C224)//C40A
-//おおきな[END]
-
-#WRITE(B2Ptr, $2C226)//C40B
-dragon(fix)[END]
-
-//#WRITE(B2Ptr, $2C228)//C40C
-//これは[END]
-
-//#WRITE(B2Ptr, $2C22A)//C40D
-//おしろ[END]
-//Castle[END]
-
-//#WRITE(B2Ptr, $2C22C)//C40E
-//おとうさん[END]
-
-//#WRITE(B2Ptr, $2C22E)//C40F
-//おとこ[END]
+(Lovely)[END]
 
 #WRITE(B2Ptr, $2C230)//C410
 //やどや[END]
 Inn[END]
 
-//#WRITE(B2Ptr, $2C232)//C411
-//おまえ[END]
-
 #WRITE(B2Ptr, $2C234)//C412
 //オアシス[END]
 Oasis[END]
-
-//#WRITE(B2Ptr, $2C236)//C413
-//かい?[END]
 
 #WRITE(B2Ptr, $2C238)//C414
 //かくれざと[END]
@@ -650,191 +792,24 @@ Isola[END]
 //かぜのくに[END]
 Gale[END]
 
-//#WRITE(B2Ptr, $2C23C)//C416
-//かんけい[END]
-
-//#WRITE(B2Ptr, $2C23E)//C417
-//きたの[END]
-
-//#WRITE(B2Ptr, $2C240)//C418
-//1000ゴ-ルド[END]
-
-//#WRITE(B2Ptr, $2C242)//C419
-//けんじゃ[END]
-
-//#WRITE(B2Ptr, $2C244)//C41A
-//こおり[END]
-
-//#WRITE(B2Ptr, $2C246)//C41B
-//ござい[END]
-
-//#WRITE(B2Ptr, $2C248)//C41C
-//しょくりょう[END]
-//Food[END]
-
 #WRITE(B2Ptr, $2C24A)//C41D
 [NAME][END]
 
-//#WRITE(B2Ptr, $2C24C)//C41E
-//さばく[END]
-//desert[END]
-
-//#WRITE(B2Ptr, $2C24E)//C41F
-//しかし[END]
-
-//#WRITE(B2Ptr, $2C250)//C420
-//しない[END]
-
-//#WRITE(B2Ptr, $2C252)//C421
-//の かたちの くぼみがあります[END]
-
-//#WRITE(B2Ptr, $2C254)//C422
-//さんは[END]
-
-//#WRITE(B2Ptr, $2C256)//C423
-//しんでん[END]
-
-//#WRITE(B2Ptr, $2C258)//C424
-//せんか?[END]
-
-//#WRITE(B2Ptr, $2C25A)//C425
-//ゆうしゃ[END]
-
-//#WRITE(B2Ptr, $2C25C)//C426
-//だけど[END]
-
-//#WRITE(B2Ptr, $2C25E)//C427
-//たちは[END]
-
-//#WRITE(B2Ptr, $2C260)//C428
-//たって[END]
-
-//#WRITE(B2Ptr, $2C262)//C429 --replaced
-//ダンジョン[END]
-
-//#WRITE(B2Ptr, $2C264)//C42A
-//ちかく[END]
-
-//#WRITE(B2Ptr, $2C266)//C42B
-//ちかごろ[END]
-
-//#WRITE(B2Ptr, $2C268)//C42C
-//ちゃん[END]
-
-//#WRITE(B2Ptr, $2C26A)//C42D
-//つづく[END]
-
-//#WRITE(B2Ptr, $2C26C)//C42E
-//ですか?[END]
-
-//#WRITE(B2Ptr, $2C26E)//C42F
-//という[END]
-
-//#WRITE(B2Ptr, $2C270)//C430
-//ところ[END]
-//place[END]
-
-//#WRITE(B2Ptr, $2C272)//C431
-//ないか?[END]
-
-//#WRITE(B2Ptr, $2C274)//C432
-//なにか[END]
-
 #WRITE(B2Ptr, $2C276)//C433
 //にじのくに[END]
-Spectrum[END]
-
-///#WRITE(B2Ptr, $2C278)//C434
-//セカンドガン[END]
-//2nd-Gun[END]
-
-//#WRITE(B2Ptr, $2C27A)//C435
-//ひがし[END]
-
-//#WRITE(B2Ptr, $2C27C)//C436
-//ひとり[END]
-
-//#WRITE(B2Ptr, $2C27E)//C437
-//ひょうげん[END]
-
-//#WRITE(B2Ptr, $2C280)//C438
-//ほうに[END]
-
-//#WRITE(B2Ptr, $2C282)//C439
-//おうじょ[END]
-
-//#WRITE(B2Ptr, $2C284)//C43A
-//ました[END]
-
-//#WRITE(B2Ptr, $2C286)//C43B
-//ますか?[END]
+(Spectrum)[END]
 
 #WRITE(B2Ptr, $2C288)//C43C
 //サザビ-[END]
 Sazabi[END]
 
-//#WRITE(B2Ptr, $2C28A)//C43D
-//まったく[END]
-
-//#WRITE(B2Ptr, $2C28C)//C43E
-//まどうしょ[END]
-
-//#WRITE(B2Ptr, $2C28E)//C43F
-//まほう[END]
-
-#WRITE(B2Ptr, $2C290)//C440
-//みずうみ[END]
-lake[END]
-
-//#WRITE(B2Ptr, $2C292)//C441
-//ボタン[END]
-
-//#WRITE(B2Ptr, $2C294)//C442
-//ここは[END]
-
-//#WRITE(B2Ptr, $2C296)//C443
-//もどって[END]
-
-//#WRITE(B2Ptr, $2C298)//C444 -- replaced
-//ゆうぼくみん[END]
-
-//#WRITE(B2Ptr, $2C29A)//C445
-//しょうにん[END]
-
 #WRITE(B2Ptr, $2C29C)//C446
 //ワ-プショップ[END]
 Warp Shop[END]
 
-//#WRITE(B2Ptr, $2C29E)//C447
-//らしい[END]
-
-//#WRITE(B2Ptr, $2C2A0)//C448
-//わたし[END]
-
-//#WRITE(B2Ptr, $2C2A2)//C449
-//-ん![END]
-
-//#WRITE(B2Ptr, $2C2A4)//C44A
-//......[END]
-
 #WRITE(B2Ptr, $2C2A6)//C44B
 //サ-ぺント[END]
 Serpent[END]
-
-//#WRITE(B2Ptr, $2C2A8)//C44C
-//さまの[END]
-
-//#WRITE(B2Ptr, $2C2AA)//C44D
-//しょう[END]
-
-//#WRITE(B2Ptr, $2C2AC)//C44E
-//うって[END]
-
-//#WRITE(B2Ptr, $2C2AE)//C44F
-//のやど[END]
-
-//#WRITE(B2Ptr, $2C2B0)//C450
-//こんにちは[END]
 
 #WRITE(B2Ptr, $2C2B2)//C451
 //ワタル[END]
@@ -844,16 +819,6 @@ Wataru[END]
 //ドアクダ-[END]
 Dakdar[END]
 
-//#WRITE(B2Ptr, $2C2B6)//C453
-//りゅうじんまる[END]
-
-//#WRITE(B2Ptr, $2C2B8)//C454
-//ここに[END]
-
-#WRITE(B2Ptr, $2C2BA)//C455
-//いずみ[END]
-pring[END]
-
 #WRITE(B2Ptr, $2C2BC)//C456
 //ヒミコ[END]
 Himiko[END]
@@ -862,48 +827,13 @@ Himiko[END]
 //シバラク[END]
 Shibaraku[END]
 
-//#WRITE(B2Ptr, $2C2C0)//C458
-//くうじんまる[END]
-
 #WRITE(B2Ptr, $2C2C2)//C459
 //りンクス[END]
 Links[END]
 
-//#WRITE(B2Ptr, $2C2C4)//C45A
-//しょうねん[END]
-
-//#WRITE(B2Ptr, $2C2C6)//C45B
-//マシン[END]
-
-#WRITE(B2Ptr, $2C2C8)//C45C
-//せんじんまる[END]
-Senjinmaru[END]
-
-//#WRITE(B2Ptr, $2C2CA)//C45D
-//せっしゃ[END]
-
-//#WRITE(B2Ptr, $2C2CC)//C45E
-//もっと[END]
-
-//#WRITE(B2Ptr, $2C2CE)//C45F
-//けっこん[END]
-
-#WRITE(B2Ptr, $2C2D0)//C460
-//ブりキントン[END]
-Blinkinton[END]
-
 #WRITE(B2Ptr, $2C2D2)//C461
 //みなとまち[END]
-Port Town[END]
-
-//#WRITE(B2Ptr, $2C2D4)//C462
-//むらが[END]
-
-//#WRITE(B2Ptr, $2C2D6)//C463
-//でんせつ[END]
-
-//#WRITE(B2Ptr, $2C2D8)//C464
-//つうこうしょう[END]
+(Port Town)[END]
 
 #WRITE(B2Ptr, $2C2DA)//C465
 //ジャングル[END]
@@ -912,19 +842,6 @@ Jungle[END]
 #WRITE(B2Ptr, $2C2DC)//C466
 //ピラミッド[END]
 Pyramid[END]
-
-//#WRITE(B2Ptr, $2C2DE)//C467
-//あんた[END]
-
-//#WRITE(B2Ptr, $2C2E0)//C468
-//#WRITE(B2Ptr, $2C2E2)//C469
-//#WRITE(B2Ptr, $2C2E4)//C46A
-//#WRITE(B2Ptr, $2C2E6)//C46B
-//#WRITE(B2Ptr, $2C2E8)//C46C
-//#WRITE(B2Ptr, $2C2EA)//C46D
-//#WRITE(B2Ptr, $2C2EC)//C46E
-//#WRITE(B2Ptr, $2C2EE)//C46F
-//あいうえお[END]
 
 //------------------------------------------------------------------
 //                      Nomad Village

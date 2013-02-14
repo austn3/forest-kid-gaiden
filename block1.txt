@@ -9,7 +9,6 @@
 #W16($2815E)//C0A7
 fix[END]
 
-#W16($28168)//C0AC
 #W16($2816A)//C0AD
 #W16($2816C)//C0AE
 #W16($2816E)//C0AF
@@ -62,10 +61,6 @@ fix[END]
 no data![END]
 
 //-------------------------------------------------------------------------
-
-#W16($28412)//C201
-oney[END]
-
 #W16($280AE)//C04F
 Jump[END]
 
@@ -95,6 +90,9 @@ This[END]
 
 #W16($28166)//C0AB
 world[END]
+
+#W16($28168)//C0AC
+Cave[END]
 
 #W16($2819E)//C0C7
 Skull[END]
@@ -132,7 +130,8 @@ Welcome[END]
 #W16($281C8)//C0DC
 [NAME] opened the chest...[PAU][NL][END]
 
-
+#W16($28412)//C201
+oney[END]
 
 //-------------------------------------------------------------------------
 #W16($28010)//C000
@@ -415,7 +414,7 @@ vanished from the hearts [NL]
 of the people.           [NL]
 Then a hero (appeared).  [NL]
 Wataru Ikusabe.          [NL]
-With his mashin (Ryujin-Maru)[NL]
+With his (Mashin) (Ryujin-Maru)[NL]
 he fought to save Sokaizan.[NL]
 Until something strange  [NL]
 happened, they were      [NL]
@@ -607,7 +606,7 @@ Merchanton[END]
 
 #W16($280B4)//C052
 //にじのくに[END]
-(Spectrum)[END]
+Spectrum[END]
 
 #W16($280B6)//C053
 //もりのやど[END]
@@ -619,7 +618,7 @@ Port Town[END]
 
 #W16($280BA)//C055
 //うつくしむら[END]
-Lpvely[END]
+Lovely[END]
 
 #W16($280BC)//C056
 //かくれざと[END]
@@ -639,7 +638,7 @@ Oasis (House)[END]
 
 #W16($280C4)//C05A
 //ふみきりハウス[END]
-Last Stop[END]
+(Last )Stop[END]
 
 #W16($280C6)//C05B
 //やまぼくみんのむら[END]
