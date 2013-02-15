@@ -99,7 +99,7 @@ $39C3B: 01  ->  00
 $39C6B: 00  ->  D6
 $39C6D: 01  ->  00
 
-; make [clr] wider
+; make [CL] wider
 $3CC1D:  1A  ->  1B
 
 ; nothing in the treasure chest
