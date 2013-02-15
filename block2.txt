@@ -15,8 +15,6 @@
 //------------------------------------------------------------------
 //                      Unused???
 //------------------------------------------------------------------
-#WRITE(B2Ptr, $2C106)//C37B
-#WRITE(B2Ptr, $2C11E)//C387
 #WRITE(B2Ptr, $2C3E4)//C4EA
 #WRITE(B2Ptr, $2C436)//C513
 #WRITE(B2Ptr, $2C476)//C533
@@ -192,6 +190,8 @@
 #WRITE(B2Ptr, $2C2EC)//C46E
 #WRITE(B2Ptr, $2C2EE)//C46F
 //あいうえお[END]
+#WRITE(B2Ptr, $2C396)//C4C3
+//!C4C0fix[END]
 #WRITE(B2Ptr, $2C352)//C4A1
 #WRITE(B2Ptr, $2C354)//C4A2
 #WRITE(B2Ptr, $2C42A)//C50D
@@ -213,6 +213,9 @@ Last [END]
 
 #WRITE(B2Ptr, $2C104)//C37A
 Dragon[END]
+
+#WRITE(B2Ptr, $2C106)//C37B
+The[END]
 
 #WRITE(B2Ptr, $2C108)//C37C
 Tower[NL][END]
@@ -242,12 +245,13 @@ This is [END]
 the [END]
 
 #WRITE(B2Ptr, $2C11A)//C385
-D[B0-2]
-#EMBSET(702)
+The [END]
+
 #WRITE(B2Ptr, $2C11C)//C386
-d
-#EMBWRITE(702)
-ungeon[END]
+There [END]
+
+#WRITE(B2Ptr, $2C11E)//C387
+They [END]
 
 #WRITE(B2Ptr, $2C210)//C400
 //あなた[END]
@@ -1050,7 +1054,7 @@ Please take (this) (Spectrum[NL])
 [PAU][CLR]
 //おや?それいじょう なにも もてないようじゃ[NL]
 //また あとにしま(しょう)[END]
-Oh? (You) can't hold anything[NL]
+Oh? (You) can't hold (anything)[NL]
 else? Well come back later[NL]
 (the)n.[END]
 
@@ -1064,7 +1068,7 @@ Now we can live in peace.[END]
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C302)//C479//nomad shop
 //なにが いりようかな?[BF0000]
-Need anything?[BF0000]
+Need (anything)?[BF0000]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C304)//C47A//merchanton shop boy
@@ -1102,14 +1106,14 @@ but he hasn't come back...[END]
 
 //(マシン)が あばれてるんで うみからの[NL]
 //しなものが ぜんぜん とどかないんだ(......)[END]
-Because of (the )attacks[NL]
-nothing is being delivered[NL]
+(Because )of (the )attacks[NL]
+(nothing) is being delivered[NL]
 by sea...[END]
 
 #EMBWRITE(207)
 //(あんた)のおかげで また しょうばいが できるぞ![NL]
 //(ありがとう)![END]
-Because of (you) we are back[NL]
+(Because )of (you) we are back[NL]
 in business! Thanks![END]
 
 //------------------------------------------------------------------
@@ -1210,7 +1214,7 @@ not a (Tinbot) or whatever...[END]
 //このワタシに たたかいをいどむ つもりか?[NL]
 //    たたかう  たたかわない
 Will (you) (fight) me to save[NL]
-(Spectrum) (and) (the )princess?[NL]
+(Spectrum)( and )(the )princess?[NL]
 [A2-1]<$03>Fight[A2-1]<$03>Don't
 [B6-4]<$02><$0A>
 #EMBSET(500)
@@ -1225,7 +1229,7 @@ Ha! Coward.[END]
 #WRITE(B2Ptr, $2C314)//C482//spectrum ???
 //[B1-3]<$08>
 //#EMBSET(995)
-(where is this person?)[END]
+!C482[END]
 //おわかいの どうか この (にじのくに)を[NL]
 //すくってくれんかね?[END]
 //(You)ng one, somehow (you)[NL]
@@ -1252,7 +1256,7 @@ me back if I (defeat) (that)[NL]
 (Tinbot) guy.[PAU][CLR]
 But without a (Mashin) I[NL]
 don't st(and) a chance. (You)[NL]
-have to beat him for me![B4-1]<$01>[END]
+(have )to beat him for me![B4-1]<$01>[END]
 
 #EMBWRITE(323)
 //ボーッとしてねぇで たのむぜ![END]
@@ -1279,7 +1283,7 @@ sister! By (the )way, did[NL]
 //(つうこうしょう)は もっているのか[NL]
 //  もってる   もっていない
 Who goes t(here)?[NL]
-Do (you) have a (Gate Pass)?[NL]
+Do (you) (have )a (Gate Pass)?[NL]
 [A2-1]<$03>Yes[A2-1]<$03>No
 [B6-4]<$02><$08>
 #EMBSET(501)
@@ -1300,8 +1304,8 @@ Get out of (here)![END]
 [CLR]
 //なに?[PAU][NL]
 //もっているなら はやくいえ[B2-1]<$03>[B4-1]<$01>
-Oh (you) have a pass.[PAU][NL]
-Should have said so sooner.[B2-1]<$03>[B4-1]<$01>
+Oh (you) (have )a pass.[PAU][NL]
+Should (have )said so sooner.[B2-1]<$03>[B4-1]<$01>
 [B9-3]<$61>
 #EMBSET(600)
 [END]
@@ -1335,9 +1339,9 @@ Right (this) way please.[B4-1]<$01>[END]
 #WRITE(B2Ptr, $2C31C)//C486//spectrum shop man
 //ああ (あなた)が(セカンドガン)を たおしてくれたので[NL]
 //つまと こどものもとに かえることができます![END]
-Because (you) (defeat)ed[NL]
+(Because )(you) (defeat)ed[NL]
 (2nd-Gun) I can return to[NL]
-my wife (and) son![END]
+my wife( and )son![END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C31E)//C487//spectrum nw house fire boy
@@ -1419,13 +1423,16 @@ to (the )ends of (the )earth.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C32A)//C48D//old man port town w house
-//[AF-3]<$68>
-//#EMBSET(7)
-//[B1-3]<$0D>
-//#EMBSET(7)
+[AF-3]<$68>
+#EMBSET(7)
+[B1-3]<$0D>
+#EMBSET(57)
 //(サ-ぺント)は こころの ただしいひとには かならず[NL]
 //むくいてくれるはずじゃ[END]
-//#EMBWRITE(7)
+The (serpent
+
+#EMBWRITE(7)
+#EMBWRITE(57)
 //おぬしというヤツは(......) たいしたものじゃ[END]
 !C48D[END]
 
@@ -1499,12 +1506,12 @@ take (this) (magic) spell.
 //おや? もてないようじゃの[NL]
 //でなおしてくるがよい[NL][END]
 Oh! (You) can't carry[NL]
-anything else.[END]
+(anything) else.[END]
 
 #EMBWRITE(9)
 //もう なにもいうことはない[PAU][NL]
 //じぶんの しんずるみちを ゆけ[END]
-I have nothing more to say.[PAU][NL]
+I (have )(nothing) more to say.[PAU][NL]
 Follow (the )path (you)[NL]
 believe in.[END]
 
@@ -1697,7 +1704,7 @@ So smooth, so great![END]
 
 //[NAME]よ (おまえ)も (マシン)をもっているのか?[NL]
 //   もっている  もっていない
-[NAME], (you) have a (Mashin)[NL]
+[NAME], (you) (have )a (Mashin)[NL]
 too right?[NL]
 [A2-1]<$03>Yes[A2-1]<$03>No
 
@@ -1708,9 +1715,9 @@ too right?[NL]
 //ならばこの (にじのくに)をすくってくれ![NL]
 //もし (ブりキントン)めを たおしたら[NL]
 //この(にじのくに)と (おうじょ)を (おまえ)にやろう![END]
-(You) must save (Spectrum) (and)[NL]
+(You) must save (Spectrum)( and )[NL]
 (defeat) (that) (Tinbot) guy.[PAU][CLR]
-If (you) do, (Spectrum) (and)[NL]
+If (you) do, (Spectrum)( and )[NL]
 (the )princess are (you)rs![END]
 
 #EMBWRITE(503)
@@ -1806,7 +1813,7 @@ lives in (the )sea has been[NL]
 trapped in (the )dungeon.[PAU][CLR]
 In his struggle to get out[NL]
 he's making tsunamis that[NL]
-have flooded Port Town.[END]
+(have )flooded Port Town.[END]
 
 #EMBWRITE(226)
 //(ありがとう)[NL]
@@ -1929,7 +1936,7 @@ just say so.[B4-1]<$01>[END]
 //いったヒトなんですけど(......)[END]
 Do (you) know (Shibaraku)?[PAU][CLR]
 Just recently he said he[NL]
-found (Wataru) (and) headed[NL]
+found (Wataru)( and )headed[NL]
 north...[END]
 
 //------------------------------------------------------------------
@@ -2020,7 +2027,7 @@ Welcome to (the )[NL]
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C366)//C4AB//port town shop
 //かねがあるなら だいかんげい[BF0005]
-!C4AB[END]
+Do you have money?[BF0005]
 
 //------------------------------------------------------------------
 //      Prologue
@@ -2176,8 +2183,7 @@ I caused.[END]
 !C4C2[END]
 
 //------------------------------------------------------------------
-#WRITE(B2Ptr, $2C396)//C4C3
-!C4C0fix[END]
+
 #WRITE(B2Ptr, $2C398)//C4C4//shibaraku port town shop
 //[B1-3]<$E2>
 //#EMBSET(231)
@@ -2234,7 +2240,7 @@ We're doomed![END]
 //あったら(......)[END]
 I can't find (the )princess![NL]
 I just saw her. I think she[NL]
-had something in her eye...[END]
+had s(omething) in her eye...[END]
 
 #EMBWRITE(233)
 //(おうじょ)さまに あったのですか![PAU][CLR]
@@ -2466,7 +2472,7 @@ battles.[END]
 //ひほうをあつめ うみにある (ドラゴン)のへやに[NL]
 //いくがいい[PAU][CLR]
 //If you are going to save (Wataru)
-//you must find (the )4 dragon treasures (and)
+//you must find (the )4 dragon treasures( and )
 //go to (the )dragon('s )lair in (the )sea.
 //ひとつは さばくに のこりのみっつは しっちと うみ[NL]
 //そして (ゆうぼくみん)の ちかくにある[B4-1]<$01>
@@ -2498,7 +2504,7 @@ battles.[END]
 //せいぎをきどると はやじにするものだぞ![PAU][B8-3]<$02><$1F><$00>[END]
 (This) child dares to[NL]
 disturb (2nd-Gun)?[PAU][CLR]
-Playing (the )hero (and) trying[NL]
+Playing (the )hero( and )trying[NL]
 to (defeat) me will earn you[NL]
 a quick death![PAU][B8-3]<$02><$1F><$00>[END]
 
@@ -3198,7 +3204,7 @@ the higher the price...[PAU][CLR]
 //みなみにある (うつくしむら)の はながかれてしまって[NL]
 //みな かなしんで おるんじゃ きれいじゃったのに[END]
 In Lovely in the south,[NL]
-all the flowers have died.[PAU][CLR]
+all the flowers (have )died.[PAU][CLR]
 Everyone is so sad.[NL]
 They used to be so[NL]
 beautiful...[END]
@@ -3526,7 +3532,7 @@ take you to (the )boat.[END]
 //もうふねに のれるね でも (ひょうげん)は のこらず[NL]
 //いってみたかい?[END]
 You can take (the )boat soon,[NL]
-but have you completed your[NL]
+but (have )you completed your[NL]
 business in (Icefield)?[END]
 
 //------------------------------------------------------------------
@@ -3557,7 +3563,7 @@ captured.[PAU][CLR]
 //そこで キミにてつだって ほしいのだ (ワタル)を[NL]
 //そしてこの そうかいざんの ききを すくうために
 [NAME], I need your help to[NL]
-save (Wataru) (and) (Sokaizan)[NL]
+save (Wataru)( and )(Sokaizan)[NL]
 from peril.
 #EMBWRITE(513)
 [PAU][CLR]
@@ -3616,7 +3622,7 @@ with (this) sword.[END]
 //(ヒミコ)さんを さがしてるんだって[END]
 (Shibaraku)? He was (here).[NL]
 Looking for his friends[NL]
-(Wataru) (and) (Himiko).[END]
+(Wataru)( and )(Himiko).[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C4AA)//C54D
