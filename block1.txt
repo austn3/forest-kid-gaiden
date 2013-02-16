@@ -19,9 +19,6 @@
 
 #JMP($28610)
 
-#W16($28404)//C1FA
-#W16($28406)//C1FB
-#W16($28408)//C1FC
 #W16($2840A)//C1FD
 #W16($2840C)//C1FE
 #W16($2840E)//C1FF
@@ -118,7 +115,7 @@ Skull[END]
 already[END]
 
 #W16($281AA)//C0CD//for battle don't change
-( and )[END]
+ and [END]
 
 #W16($281A4)//C0CA
 Warp [END]
@@ -167,8 +164,93 @@ d
 #EMBWRITE(702)
 ungeon[END]
 
+#W16($28404)//C1FA
+Please [END]
+
 #W16($28412)//C201
 oney[END]
+
+//------------------------------------------------------------------
+//#WRITE(B2Ptr, $2C340)//C498//spectrum king
+#W16($28406)//C1FB
+[AF]<$71>
+#EMBSET(13)
+[B1]<$08>
+#EMBSET(224)
+
+//[NAME]よ (おまえ)も (マシン)をもっているのか?[NL]
+//   もっている  もっていない
+[NAME], (you) (have )a (Mashin)[NL]
+too (right)?[NL]
+[A2]<$03>Yes[A2]<$03>No
+
+[B6]<$02><$08>
+#EMBSET(503)
+
+[CL]
+//ならばこの (にじのくに)をすくってくれ![NL]
+//もし (ブりキントン)めを たおしたら[NL]
+//この(にじのくに)と (おうじょ)を (おまえ)にやろう![END]
+(You) must save (Spectrum)( and )[NL]
+(defeat) (that) (Tinbot) guy.[PAU][CL]
+If (you) do, (Spectrum)( and )[NL]
+(the )princess are (you)rs![END]
+
+#EMBWRITE(503)
+[CL]
+//おぬしならと おもったのじゃが[NL]
+//とんだ みこみちがいの ようじゃな(......)[END]
+I thought (you) did.[NL]
+It seems I've made a[NL]
+huge mistake...[END]
+
+#EMBWRITE(224)
+[CL]
+//おお! よくやってくれた [NAME]よ[NL]
+//では れいとして (まどうしょ)を さずけよう
+Oh! Well done [NAME]![NL]
+(Please )accept (this) spell[NL]
+as a token of our thanks.
+
+[B5]<$71>
+#EMBSET(403)
+
+[PAU][CL]
+//そこで たのみがあるのだが わしのむすめの[NL]
+//ムコになってはくれぬか?[NL]
+//    なる  ことわる
+And as I promised, won't[NL]
+(you) marry my daughter?[NL]
+[A2]<$03>Accept[A2]<$03>Refuse
+
+[B6]<$02><$0B>
+#EMBSET(504)
+[CL]
+//そうか!では[NAME]よ[NL]
+//たびがおわりしだい (けっこん)しきを[NL]
+//おこなう きをつけていくがいい[B2]<$0A>[END]
+Well (the)n! We'll hold (the)[NL]
+wedding when (you)r journey[NL]
+is over. Be careful![B2]<$0A>[END]
+
+#EMBWRITE(504)
+[CL]
+//なんというやつ![NL]
+//(おまえ)の けんきょなたいど[NL]
+//ワシはきにいったぞ![END]
+What('s )(that)!?[NL]
+I've taken a liking to[NL]
+(you)r modest attitude![END]
+
+#EMBWRITE(13)
+[CL]
+//きをつけてまいれ[END]
+Take care.[END]
+
+//-------------------------------------------------------------------------
+#W16($28408)//C1FC
+#EMBWRITE(403)
+[PAU][CL]I'll wait till you've made[NL]room.[END]
 
 //-------------------------------------------------------------------------
 #W16($28010)//C000
@@ -290,7 +372,7 @@ That's not enough.[END]
 //[A8]<$04><$07>りセット ボタン を おしながら[NL]
 //[A8]<$0B><$08>でんげん を きってください.[END]
 [A8]<$0A><$05>Sleep well.[NL]
-[A8]<$03><$07>Please hold reset[NL]
+[A8]<$03><$07>(Please )hold reset[NL]
 [A8]<$0A><$08>while you power off.[END]
 
 #W16($2803A)//C015
@@ -600,6 +682,7 @@ But (the )m(oney) in (this)[NL]
 //[END]
 (Power)
 #EMBWRITE(5)
+#EMBWRITE(12)
  up [C0]<$4C>![PAU][NL]
 [END]
 
@@ -611,7 +694,7 @@ Speed[B0]
 #W16($280A6)//C04B
 //かしこさが[C0]<$4C>[B0]<$7D><$8D>
 Intelligence[B0]
-#EMBSET(5)
+#EMBSET(12)
 
 #W16($280A8)//C04C
 [AD]<$1E><$64><$01><$06>[END]
@@ -653,7 +736,7 @@ Lovely[END]
 
 #W16($280BC)//C056
 //かくれざと[END]
-(Isola)[END]
+Isola[END]
 
 #W16($280BE)//C057
 //うみのやど[END]
@@ -665,7 +748,7 @@ Oasis (House)[END]
 
 #W16($280C2)//C059
 //かぜのくに[END]
-(Gale)[END]
+Gale[END]
 
 #W16($280C4)//C05A
 //ふみきりハウス[END]
@@ -674,11 +757,11 @@ Oasis (House)[END]
 #W16($280C6)//C05B
 //やまぼくみんのむら[END]
 //やま[B0]<$B7><$8D>
-Mountain Clan[END]
+(Mountain) Clan[END]
 
 #W16($280C8)//C05C
 //ひょうげんのやどや[END]
-Icefield (Inn)[END]
+(Icefield) (Inn)[END]
 
 //-----------------------Magic Names----------------------------
 
@@ -768,7 +851,7 @@ but it's empty, damn.[END]
 #W16($280FA)//C075
 //[AD]<$E8><$63><$03><$06>(クレジット)[END]
 ([NAME] opened (the )chest...[PAU][NL])
-(and) found [AD]<$E8><$63><$03><$06> (coins)![END]
+(and) found (# coins)![END]
 
 #W16($280FC)//C076
 //[AE]<$02><$05><$1C><$03>[BB][A4]<$06>ばくはつとともに [NAME]は そとへなげだされ[NL]
@@ -2191,7 +2274,7 @@ Take care.[END]
 #W16($283CC)//C1DE
 #EMBWRITE(8)
 //またきてちょ-だいよ![END]
-Please come again![END]
+(Please )come again![END]
 
 #W16($283CE)//C1DF
 //[NAME]さん [B0]<$58><$9E>
@@ -2258,6 +2341,7 @@ It won't move.[END]
 [C0]<$8A>.[NL]
 (Power)
 #EMBWRITE(9)
+#EMBWRITE(11)
  increased [C0]<$4C>.[END]
 
 #W16($283E8)//C1EC
@@ -2273,7 +2357,7 @@ Intellegence[B0]
 //#EMBSET(9)
 [NAME]( used )(the )(Hermes Herb)[NL]
 Speed[B0]
-#EMBSET(9)
+#EMBSET(11)
 
 #W16($283EC)//C1EE
 //[NL]
@@ -2628,7 +2712,7 @@ water from[NL]
 
 #W16($28474)//C232
 //え-っ あっちで ねてくださいませ.[END]
-Please rest over t(here).[END]
+(Please )rest over t(here).[END]
 
 #W16($28476)//C233//merchanton inn going to sleep
 //うちのべッドは ちょっとちがうヨ![END]
@@ -2637,7 +2721,7 @@ different![END]
 
 #W16($28478)//C234
 //1ばんべッドで おやすみください.[END]
-Please [END]
+!C234 [END]
 
 #W16($2847A)//C235//merchanton inn morning level stats
 //よくねむれましたか?[C2]<$37>[END]
@@ -2661,7 +2745,7 @@ from battle.[C2]<$3B>[END]
 
 #W16($28482)//C239
 //またきてくださいヨ[C2]<$3B>[END]
-Please come again.[C2]<$3B>[END]
+(Please )come again.[C2]<$3B>[END]
 
 #W16($28484)//C23A
 //いつでも だいかんげいです.
@@ -2867,9 +2951,9 @@ found (# coins).[BD]<$20>[END]
 !C267[END]
 
 #W16($284E0)//C268
-//#EMBWRITE(10)
+#EMBWRITE(10)
 //[AD]<$E8><$63><$03><$06>(クレジット)[C2]<$66>[END]
- [AD]<$E8><$63><$03><$06>(coins)[C2]<$66>[END]
+ (# coins)[C2]<$66>[END]
 
 #W16($284E2)//C269
 //[C0]<$ED>は ここでは やくにたたない[END]

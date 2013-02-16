@@ -803,11 +803,11 @@ Oasis[END]
 
 #WRITE(B2Ptr, $2C238)//C414
 //かくれざと[END]
-Isola[END]
+(Isola)[END]
 
 #WRITE(B2Ptr, $2C23A)//C415
 //かぜのくに[END]
-Gale[END]
+(Gale)[END]
 
 #WRITE(B2Ptr, $2C24A)//C41D
 [NAME][END]
@@ -914,7 +914,7 @@ is in (the )mountain temple.[END]
 //この そうかいざん ちゅう2かいそうの へいわを[NL]
 //とりもどしてください (ドアクダー)のために[NL]
 //どれだけ おおくのひとが くるしんでいるか![END]
-Please return peace to our[NL]
+(Please )return peace to our[NL]
 second layer of Sokaizan.[PAU][CL]
 How long must so many[NL]
 suffer at (the )h(and)s of[NL]
@@ -942,7 +942,7 @@ transform living (thing)s![END]
 #EMBWRITE(0)
 #EMBWRITE(895)
 //きをつけていってください[END]
-Please be careful.[END]
+(Please )be careful.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C2F8)//C474//nomad horse
@@ -973,7 +973,7 @@ took him headed south.[END]
 //[B4]<$01>[END]
 //#EMBWRITE(300)
 //(ワタル)さんをたすけてください[END]
-//Please save (Wataru).[END]
+//(Please )save (Wataru).[END]
 
 #EMBWRITE(1)
 //まにあわなかったのですね? いま このせかいの[NL]
@@ -1043,7 +1043,7 @@ don't know what to do.[NL]
 //さしあげます
 What?[NL]
 (You) (defeat)ed (2nd-Gun)![PAU][CL]
-Please take (this) (Spectrum[NL])
+(Please )take (this) (Spectrum[NL])
 (Gate Pass) as our thanks.
 [B5]<$61>
 #EMBSET(400)
@@ -1181,7 +1181,7 @@ Could it?[B2]<$07>[B4]<$01>[END]
 
 #EMBWRITE(322)
 //おねがい! (ブりキントン)を やっつけて![END]
-Please (defeat) (the )(Tinbot)![END]
+(Please )(defeat) (the )(Tinbot)![END]
 
 #EMBWRITE(209)
 //[NAME]さま[NL]
@@ -1317,7 +1317,7 @@ not come around (here)![B4]<$01>[END]
 
 #EMBWRITE(214)
 //いままでの ごぶれい どうか おゆるしください![B2]<$13>[B4]<$01>[END]
-Please forgive my rudeness[NL]
+(Please )forgive my rudeness[NL]
 before![B2]<$13>[B4]<$01>[END]
 
 #EMBWRITE(213)
@@ -1568,7 +1568,7 @@ might be different.[END]
 //えっ (サザビ-)さまから (まどうしょ)を さずかったって![NL]
 //これはしつれいし(ました)[B2]<$01>[B4]<$01>[END]
 Oh, (Sazabi) gave (you) a[NL]
-spell! Please excuse me.[B2]<$01>[B4]<$01>[END]
+spell! (Please )excuse me.[B2]<$01>[B4]<$01>[END]
 
 #EMBWRITE(220)
 //(ゆうしゃ)どの[NL]
@@ -1579,7 +1579,7 @@ Brave hero,[NL]
 #EMBWRITE(219)
 //[NAME]どの! おねがいです[NL]
 //(サザビ-)さまのちからに なってください![END]
-Brave [NAME]! Please help[NL]
+Brave [NAME]! (Please )help[NL]
 (Sazabi)![END]
 
 //------------------------------------------------------------------
@@ -1693,82 +1693,6 @@ Ever been on a boat kid?[B4]<$01>[END]
 #EMBWRITE(304)
 //スイス-イと たのしいぞ[END]
 So smooth, so great![END]
-
-//------------------------------------------------------------------
-#WRITE(B2Ptr, $2C340)//C498//spectrum king
-[AF]<$71>
-#EMBSET(13)
-[B1]<$08>
-#EMBSET(224)
-
-//[NAME]よ (おまえ)も (マシン)をもっているのか?[NL]
-//   もっている  もっていない
-[NAME], (you) (have )a (Mashin)[NL]
-too (right)?[NL]
-[A2]<$03>Yes[A2]<$03>No
-
-[B6]<$02><$08>
-#EMBSET(503)
-
-[CL]
-//ならばこの (にじのくに)をすくってくれ![NL]
-//もし (ブりキントン)めを たおしたら[NL]
-//この(にじのくに)と (おうじょ)を (おまえ)にやろう![END]
-(You) must save (Spectrum)( and )[NL]
-(defeat) (that) (Tinbot) guy.[PAU][CL]
-If (you) do, (Spectrum)( and )[NL]
-(the )princess are (you)rs![END]
-
-#EMBWRITE(503)
-[CL]
-//おぬしならと おもったのじゃが[NL]
-//とんだ みこみちがいの ようじゃな(......)[END]
-I thought (you) did.[NL]
-It seems I've made a[NL]
-huge mistake...[END]
-
-#EMBWRITE(224)
-[CL]
-//おお! よくやってくれた [NAME]よ[NL]
-//では れいとして (まどうしょ)を さずけよう
-Oh! Well done [NAME]![NL]
-Please accept (this) spell[NL]
-as a token of our thanks.
-
-[B5]<$71>
-#EMBSET(403)
-
-[PAU][CL]
-//そこで たのみがあるのだが わしのむすめの[NL]
-//ムコになってはくれぬか?[NL]
-//    なる  ことわる
-And as I promised, won't[NL]
-(you) marry my daughter?[NL]
-[A2]<$03>Accept[A2]<$03>Refuse
-
-[B6]<$02><$0B>
-#EMBSET(504)
-[CL]
-//そうか!では[NAME]よ[NL]
-//たびがおわりしだい (けっこん)しきを[NL]
-//おこなう きをつけていくがいい[B2]<$0A>[END]
-Well (the)n! We'll hold (the)[NL]
-wedding when (you)r journey[NL]
-is over. Be careful![B2]<$0A>[END]
-
-#EMBWRITE(504)
-[CL]
-//なんというやつ![NL]
-//(おまえ)の けんきょなたいど[NL]
-//ワシはきにいったぞ![END]
-What('s )(that)!?[NL]
-I've taken a liking to[NL]
-(you)r modest attitude![END]
-
-#EMBWRITE(13)
-[CL]
-//きをつけてまいれ[END]
-Take care.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C342)//C499//port town guy outside
@@ -2009,7 +1933,7 @@ Be careful.[END]
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C360)//C4A8//spectrum inn
 //こんちは! やすんでいきなよ[BF0102]
-Hello! Please make[NL]
+Hello! (Please )make[NL]
 (you)rself at home.[BF0102]
 
 //------------------------------------------------------------------
@@ -2088,7 +2012,7 @@ Easy, kid.[END]
 //このれいは きっとしよう むらびとたちには[NL]
 //すまぬことをしたと いっておいてくれ[END]
 Thank you.[NL]
-Please tell the townsfolk[NL]
+(Please )tell the townsfolk[NL]
 I'm sorry for the trouble[NL]
 I caused.[END]
 
@@ -2288,11 +2212,9 @@ too shy to talk to boys.[END]
 #EMBWRITE(464)
 #EMBWRITE(465)
 #EMBWRITE(466)
-#EMBWRITE(403)
-[PAU][CL]
+//#EMBWRITE(403)
 //もてないなら せいりするまで まっているぞ[END]
-I'll wait till you've made[NL]
-room.[END]
+([PAU][CL]I'll wait till you've made[NL]room.)[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C3AA)//C4CD
@@ -2939,7 +2861,7 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 [B1]<$22>
 #EMBSET(256)
 [C5]<$0F>
-#EMBWRITE($256)
+#EMBWRITE(256)
 //(ここは)(オアシス)の (ワ-プショップ)です[BF0208]
 (This is )(the )(Oasis)[NL]
 (Warp Shop).[BF0208]
