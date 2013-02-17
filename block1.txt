@@ -849,7 +849,7 @@ but it's empty, damn.[END]
 
 #W16($280FA)//C075
 //[AD]<$E8><$63><$03><$06>(クレジット)[END]
-([NAME] opened (the )chest...[PAU][NL])
+([NAME] opened the chest...[PAU][NL])
 (and) found (# coins)![END]
 
 #W16($280FC)//C076

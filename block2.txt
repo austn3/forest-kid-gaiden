@@ -2235,7 +2235,7 @@ too shy to talk to boys.[END]
 ([PAU][CL]I'll wait till you've made[NL]room.)[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3AA)//C4CD
+#WRITE(B2Ptr, $2C3AA)//C4CD//isola shop
 //いかがかな?[BF0007]
 !C4CD[END]
 
@@ -2344,12 +2344,12 @@ there was a (Serpent)![END]
 !C4D2[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3B6)//C4D3
+#WRITE(B2Ptr, $2C3B6)//C4D3//isola inn
 //きずをおってちゃ たたかえないよ[BF0106]
 !C4D3[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3B8)//C4D4
+#WRITE(B2Ptr, $2C3B8)//C4D4//oasis house shop
 //うちの しなものは いいよ[BF0008]
 !C4D4[END]
 
@@ -2359,12 +2359,12 @@ there was a (Serpent)![END]
 !C4D5[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3BC)//C4D6
+#WRITE(B2Ptr, $2C3BC)//C4D6//isola house 1f guy n
 //わ-い (ゆうしゃ)の おにいちゃんだ![END]
 !C4D6[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3BE)//C4D7
+#WRITE(B2Ptr, $2C3BE)//C4D7//isola house 1f guy e
 //[B1]<$2F>
 //#EMBSET(238)
 //とうさんが みせたいものが あるから[NL]
@@ -2374,17 +2374,17 @@ there was a (Serpent)![END]
 !C4D7[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3C0)//C4D8
+#WRITE(B2Ptr, $2C3C0)//C4D8//isola house 1f guy w
 //(まほう)が つかえるの?[END]
 !C4D8[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3C2)//C4D9
+#WRITE(B2Ptr, $2C3C2)//C4D9//isola house 1f guy s
 //かっこいいな-[END]
 !C4D9[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3C4)//C4DA
+#WRITE(B2Ptr, $2C3C4)//C4DA//isola house 2f
 //[B1]<$2F>
 //#EMBSET(239)
 //(あんた)が ガンバって (ゆうしゃ)を やってるから[NL]
@@ -2513,25 +2513,25 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 !C4E2[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3D6)//C4E3
+#WRITE(B2Ptr, $2C3D6)//C4E3//isola girls outside
 //[B1]<$E2>
 //#EMBSET(999)
 //お おなかが(......)[END]
 !C4E3[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3D8)//C4E4
+#WRITE(B2Ptr, $2C3D8)//C4E4//isola girl se house
 //このあいだまで (ひがし)にある (いずみ)に けんじゃ[NL]
 //(りンクス)さまが きていらしたんだけど[NL]
 //さいきん どうなさって いるのかしら[END]
 !C4E4[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3DA)//C4E5
+#WRITE(B2Ptr, $2C3DA)//C4E5//isola man se house
 //(りンクス)さまは(いずみ)で (まどうしょ)を[NL]
 //なくしたらしい[END]
 //[END]
-!C4E5[END]
+!C4E5[END]d
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3DC)//C4E6//himiko
@@ -2558,14 +2558,14 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 !C4E6[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3DE)//C4E7
+#WRITE(B2Ptr, $2C3DE)//C4E7//isola boy by rock
 //[B1]<$E2>
 //#EMBSET(998)
 //ハラへって しにそうだよ(......)[END]
 !C4E7[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3E0)//C4E8
+#WRITE(B2Ptr, $2C3E0)//C4E8//isola man s house
 //[B1]<$E2>
 //#EMBSET(242)
 //(しょくりょう)ちょぞうこは (きたの)(ほうに)あるはずよ![END]
@@ -2575,7 +2575,7 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 !C4E8[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3E2)//C4E9
+#WRITE(B2Ptr, $2C3E2)//C4E9//isola woman s house
 //[B1]<$E2>
 //#EMBSET(243)
 //この (ジャングル)のどこかに むかし つかっていた[NL]
@@ -2589,7 +2589,7 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 !C4E9[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3E6)//C4EB
+#WRITE(B2Ptr, $2C3E6)//C4EB//oasis house boy
 //スフィンクスって しってる?[NL]
 //けっこう あまのじゃくなんだぜ[END]
 !C4EB[END]
@@ -2600,7 +2600,7 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 !C4EC[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3EA)//C4ED
+#WRITE(B2Ptr, $2C3EA)//C4ED//oasis house inn
 //ほっと ひといきついてください [BF0108]
 !C4ED[END]
 
@@ -2615,7 +2615,7 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 !C4EF[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3F0)//C4F0
+#WRITE(B2Ptr, $2C3F0)//C4F0//oasis house girl
 //にしにある (ピラミッド)には  いなずまをよぶ[NL]
 //(まどうしょ)が あるそうよ[END]
 !C4F0[END]
@@ -3144,7 +3144,7 @@ the higher the price...[PAU][CL]
 !C529[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C464)//C52A
+#WRITE(B2Ptr, $2C464)//C52A//jungle guy by desert stairs
 //ここからさきは さばくが ひろがっている[NL]
 //きをつけて いくんだぞ[END]
 !C52A[END]
@@ -3284,7 +3284,7 @@ Be careful, kid.[END]
 !C532[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C478)//C534
+#WRITE(B2Ptr, $2C478)//C534//desert 3 palms guy
 //このさばくの どこかに ざいほうが あるはずなんだ[NL]
 //ずいぶんまえから さがしては いるんだが(......)
 //[AF]<$66>
