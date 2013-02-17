@@ -5,20 +5,17 @@
 
 #HDR($10)
 
-//---------RAM POINTERS----------
-//  these need to stay commented
-////#W16($2804A)//C01D  (EE 63)
-////#W16($2804C)//C01E  (DC 03)
-////#W16($2804E)//C01F  (01 68)
 // static pointers to outside the text block.
-//#W16($2804A)//EE 63//temp ram string
-//#W16($2804C)//DC 03//memory value
-//#W16($2804E)//01 68//[NAME]
+//#W16($2804A)//C01D//EE 63//temp ram string
+//#W16($2804C)//C01E//DC 03//memory value
+//#W16($2804E)//C01F//01 68//[NAME]
 #JMP($2804A)
 <$EE><$63><$DC><$03><$01><$68>
 
 #JMP($28610)
 
+#W16($282CE)//C15F
+#W16($28304)//C17A
 #W16($2840A)//C1FD
 #W16($2840C)//C1FE
 #W16($2840E)//C1FF
@@ -28,7 +25,7 @@
 #W16($284C0)//C258
 #W16($284C2)//C259
 #W16($284E6)//C26B
-[END]
+fix[END]
 
 #W16($281BA)//C0D5
 #W16($281CA)//C0DD
@@ -283,7 +280,7 @@ Quit (the )game?[A4]<$00>[NL]
 //[NL]
 //[A4]<$00>[A2]<$04>はい  いいえ[END]
 [NL]
-[A4]<$00>[A2]<$04>yes  no[END]
+[A4]<$00>[A2]<$04>Yes  No[END]
 
 #W16($2801C)//C006
 //(キュア)(を つかった.)[NL]
@@ -321,7 +318,6 @@ Nobody t(here).[END]
 [A2]<$04>Yes  No[END]
 
 //-------------------single box---------------------------------
-
 #W16($28026)//C00B
  <$0B>[A2]<$1C><$0B> [END]
 
@@ -1186,7 +1182,7 @@ Gate Pass[END]
 
 #W16($281D8)//C0E4
 //(ドラゴン)のいのち[END]
-Dragon Life[END]
+(Dragon) Life[END]
 
 #W16($281DA)//C0E5
 //(ドラゴン)のめんたま[END]
@@ -1312,7 +1308,7 @@ Myconid[END]
 
 #W16($2821A)//C105
 //フランケ-ン[END]
-Frankenstein[END]
+(Franken)stein[END]
 
 #W16($2821C)//C106
 //グり-ンメットン[END]
@@ -1746,7 +1742,7 @@ Baby (Blob)[END]
 
 #W16($282F2)//C171
 //サ-ドガン[END]
-3rd Gun[END]
+3rd-Gun[END]
 
 #W16($282F4)//C172
 //メットパピ-[END]
@@ -1756,8 +1752,6 @@ Baby Metron[END]
 //スフィンクス[END]
 Sphinx[END]
 
-#W16($282CE)//C15F
-#W16($28304)//C17A
 #W16($28384)//C1BA
 //ドラゴン[END]
 Dragon[END]

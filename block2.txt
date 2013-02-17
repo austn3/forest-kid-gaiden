@@ -211,7 +211,7 @@ Nomad[END]
 Last [END]
 
 #WRITE(B2Ptr, $2C104)//C37A
-Dragon[END]
+(Dragon)[END]
 
 #WRITE(B2Ptr, $2C106)//C37B
 The[END]
@@ -1428,12 +1428,15 @@ to (the )ends of (the )earth.[END]
 #EMBSET(57)
 //(サ-ぺント)は こころの ただしいひとには かならず[NL]
 //むくいてくれるはずじゃ[END]
-(The )(Serpent) has a good 
+If (the )(Serpent) truely[NL]
+has a good heart, he should[NL]
+repay us for our losses.[END]
 
 #EMBWRITE(7)
 #EMBWRITE(57)
 //おぬしというヤツは(......) たいしたものじゃ[END]
-!C48D[END]
+That (Shibaraku)...[NL]
+What a piece of work.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C32C)//C48E//merchanton inn boy
@@ -1593,9 +1596,9 @@ Brave [NAME]! (Please )help[NL]
 
 //(せっしゃ) (シバラク) ともうすもの (ワタル)が ここに[NL]
 //いるときいたので きてみたら つれさられて いたのだ[PAU][CL]
-I'm (Shibaraku). I heard[NL]
-(Wataru) was being held[NL]
-(here).[PAU][CL]
+I am called (Shibaraku).[NL]
+I heard (Wataru) was being[NL]
+held (here).[PAU][CL]
 But he had (already) been[NL]
 taken away when I arrived.[PAU][CL]
 
@@ -1605,8 +1608,8 @@ taken away when I arrived.[PAU][CL]
 //   てつだう   ことわる
 What('s )worse, I've been[NL]
 locked up (here).[PAU][CL]
-Will (you) help me open (this)[NL]
-gate?[NL]
+Won't (you) help me open[NL]
+(this) gate?[NL]
 [A2]<$03>Help[A2]<$03>Don't
 
 [B6]<$02><$09>
@@ -1622,8 +1625,9 @@ of (the )gate.[B4]<$01>[END]
 //そんなっっ![NL]
 //おぬし ちと つめたすぎるのではないか?(......)[B4]<$04>[END]
 What!?[NL]
-(That)('s )a little cold[NL]
-hearted don't (you) think?[B4]<$04>[END]
+Sir, don't (you think[NL]
+that's a little cold[NL]
+hearted?[B4]<$04>[END]
 
 #EMBWRITE(221)
 //さぁっ いかれよ![END]
@@ -1733,10 +1737,10 @@ ahead.[PAU][B4]<$02>[BA00][END]
 //おきた つなみで (みなとまち)は みずびたしさ[END]
 It seems (the )(Serpent) that[NL]
 lives in (the )sea has been[NL]
-trapped in (the )dungeon.[PAU][CL]
+trapped in a dungeon.[PAU][CL]
 In his struggle to get out[NL]
-he's making tsunamis that[NL]
-(have )flooded Port Town.[END]
+he's causing tsunamis that[NL]
+(have )flooded (Port Town).[END]
 
 #EMBWRITE(226)
 //(ありがとう)[NL]
@@ -2057,13 +2061,18 @@ I caused.[END]
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C384)//C4BA//boy outside lovely e house
 //(ここは) (うつくしむら)
-//[B1]<$0D>
-//#EMBSET(230)
+(This is )(Lovely),[NL]
+[B1]<$0D>
+#EMBSET(230)
+
 //(......) だったところです[NL]
 //きれいなはなが さいていたんですが [END]
-//#EMBWRITE(230)
+...er it was. The flowers[NL]
+were so pretty.[END]
+
+#EMBWRITE(230)
 // はなのさくまちです![END]
-!C4BA[END]
+the city of flowers![END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C386)//C4BB
@@ -2103,26 +2112,36 @@ I caused.[END]
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C394)//C4C2//lovely shop
 //なにがいるんだい?[BF0006]
-!C4C2[END]
+What do you need?[BF0006]
 
 //------------------------------------------------------------------
-
 #WRITE(B2Ptr, $2C398)//C4C4//shibaraku port town shop
-//[B1]<$E2>
-//#EMBSET(231)
+[B1]<$E2>
+#EMBSET(231)
 //(おお)(あなた)は [NAME]どの (ひょうげん)では[NL]
 //おせわになりもうした (ワタル)のてがかりは[NL]
 //まだなのだが なかまの (ヒミコ)が[PAU][CL]
 //(ジャングル)の(ほうに)いるらしいのだ[END]
-//#EMBWRITE(231)
-//[B1]<$E3>
-//#EMBSET(232)
-//[B1]<$E4>
-//#EMBSET(232)
+Oh, you're [NAME]. You[NL]
+helped me out back in[NL]
+(Icefield).[PAU][CL]
+Our friend (Himiko) is[NL]
+still on (Wataru)('s ) trail[NL]
+in the Jungle.[END]
+
+#EMBWRITE(231)
+[B1]<$E3>
+#EMBSET(232)
+[B1]<$E4>
+#EMBSET(282)
 //それは げんじんまる! (ヒミコ)に あえたのですな?[END]
-//#EMBWRITE(232)
+That's Kenjin-Maru![NL]
+Did you meet (Himiko)?[END]
+
+#EMBWRITE(232)
+#EMBWRITE(282)
 //わたしの (せんじんまる)は げんきですか?[END]
-!C4C4[END]
+How('s )my Senjin-Maru?[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C39A)//C4C5//spectrum kings guard left
@@ -2179,11 +2198,11 @@ too shy to talk to boys.[END]
 #EMBWRITE(992)
 #EMBWRITE(993)
 #EMBWRITE(994)
-#EMBWRITE(995)
+//#EMBWRITE(995)
 #EMBWRITE(996)
 #EMBWRITE(997)
-#EMBWRITE(998)
-#EMBWRITE(999)
+//#EMBWRITE(998)
+//#EMBWRITE(999)
 //(ありがとう)(ござい)(ました)[END]
 (Thank you)![END]
 
@@ -2208,11 +2227,10 @@ too shy to talk to boys.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C3A8)//C4CC
-#EMBWRITE(463)
-#EMBWRITE(464)
-#EMBWRITE(465)
-#EMBWRITE(466)
-//#EMBWRITE(403)
+//#EMBWRITE(463)
+//#EMBWRITE(464)
+//#EMBWRITE(465)
+//#EMBWRITE(466)
 //もてないなら せいりするまで まっているぞ[END]
 ([PAU][CL]I'll wait till you've made[NL]room.)[END]
 
@@ -2224,7 +2242,8 @@ too shy to talk to boys.[END]
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C3AC)//C4CE//woman lovely e house
 //すぐに ゲンキに なりますよ[BF0105]
-!C4CE[END]
+You'll feel better[NL]
+soon.[BF0105]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C3AE)//C4CF//woman lovely se house
@@ -3372,7 +3391,9 @@ Really bad luck...[END]
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C48C)//C53E//port town ne house
 //どこかのせんろのわきに ちかへのいりぐちがあったよ[END]
-!C53E[END]
+Somewhere near the tracks[NL]
+is an entrance to the[NL]
+underground.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C48E)//C53F
@@ -3393,15 +3414,21 @@ are voices over t(here).[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C494)//C542//girl port town n house
-//[B1]<$0D>
-//#EMBSET(272)
+[B1]<$0D>
+#EMBSET(272)
 //(うつくしむら)にいったかい? むかしはキレイな[NL]
 //ところだったんだけどね [PAU]そういえば あそこに[NL]
 //カギをもってる おんなのヒトが いたけど(......)[END]
-//#EMBWRITE(272)
+Have you been to (Lovely)?[NL]
+It used to be so beautiful.[PAU][CL]
+Speaking of which, a woman[NL]
+with a key went there...[END]
+
+#EMBWRITE(272)
 //(あんた) (うつくしむら)のはなを さかせたのか![NL]
 //えらいッ! えらいぞッ![END]
-!C542[END]
+You made the flowers in[NL]
+(Lovely) bloom again! Yea![END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C496)//C543

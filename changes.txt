@@ -1,3 +1,7 @@
+; script block changes
+; spectrum king
+$164C8:  C4 98  ->  C1 FB
+
 ; relocate pointer to death graphic
 $206C5: 88  ->  B8
 
