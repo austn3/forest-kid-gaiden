@@ -1082,7 +1082,7 @@ trade.[END]
 
 #EMBWRITE(205)
 //[NAME]さん [C4]<$C8>[END]
-[NAME], [C4]<$C8>[END]
+[NAME], (Thank You!)[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C306)//C47B//merchanton weapon shop counter
@@ -2247,50 +2247,73 @@ soon.[BF0105]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C3AE)//C4CF//woman lovely se house
-//[AF]<$60>
-//#EMBSET(18)
-//[B1]<$0D>
-//#EMBSET(234)
+[AF]<$60>
+#EMBSET(18)
+[B1]<$0D>
+#EMBSET(234)
+
 //たいせつなカギを みどりの はなのところに[NL]
 //うめたのですが (......)[B4]<$01>[END]
-//#EMBWRITE(234)
-//[C4]<$C8>[NL]
+An important key is[NL]
+burried near a green[NL]
+flower...[B4]<$01>[END]
+
+#EMBWRITE(234)
+(Thank You!)[PAU][CL]
 //このこが おおきくなる ころには もっと はなが[NL]
 //さいて いるでしょう[END]
-//#EMBWRITE(18)
+I'm sure by the time our[NL]
+boy is grown, even more[NL]
+flowers will bloom.[END]
+
+#EMBWRITE(18)
 //カギは (あなた)が おつかいください みなみの(ほうに)[NL]
 //(ジャングル)への つうろが あったはずです[END]
-!C4CF[END]
+Supposedly there's a path[NL]
+in the south to the Jungle[NL]
+where you can use the key.[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C3B0)//C4D0//man lovely se house
-//[B1]<$0D>
-//#EMBSET(235)
+[B1]<$0D>
+#EMBSET(235)
+
 //あんなに さいていたはなも いどが ひあがって[NL]
 //ぜんぶ かれてしまったんだ もう にどとはなは[NL]
 //さかないんだろうか(......)[B4]<$02>[END]
-//#EMBWRITE(235)
+Never have we had this few[NL]
+flowers. Since the well[NL]
+dried up they all died.[PAU][CL]
+Soon they won't ever[NL]
+bloom again...[B4]<$02>[END]
+
+#EMBWRITE(235)
 //みどりのはなは ごらんになり(ました)?[END]
 !C4D0[END]
 
 //------------------------------------------------------------------
 #WRITE(B2Ptr, $2C3B2)//C4D1//boy lovely se house
-//[B3]<$03>
-//#EMBSET(308)
-//[B3]<$01>
-//#EMBSET(309)
-//[B3]<$02>
-//#EMBSET(310)
+[B3]<$03>
+#EMBSET(308)
+[B3]<$01>
+#EMBSET(309)
+[B3]<$02>
+#EMBSET(310)
+
 //う-ん ムニャムニャ(......)[END]
-//#EMBWRITE(309)
+
+#EMBWRITE(309)
 //みなみに とびらが あるんだけど カギがないんで[NL]
 //あそべないんだ (......)[END]
-//#EMBWRITE(310)
+
+#EMBWRITE(310)
 //(サ-ぺント)って しってる? このうみの ぬしなんだ[END]
-//#EMBWRITE(308)
+
+#EMBWRITE(308)
 //(みなとまち)で ふねにのった ことがあるんだ[NL]
 //そのとき どこかのしまに (サ-ぺント)
-//#EMBWRITE(238)
+
+#EMBWRITE(238)
 //がいたよ!(......)[END]
 !C4D1[END]
 
@@ -2310,7 +2333,7 @@ soon.[BF0105]
 //#EMBWRITE(19)
 //はやくその (サ-ぺント)のなみだを いどのなかに![END]
 //#EMBWRITE(236)
-//[C4]<$C8>[NL]
+//(Thank You!)[NL]
 //みなみの(ほうに) ちかへの いりぐちが あるそうですよ[END]
 !C4D2[END]
 
@@ -2966,7 +2989,7 @@ the higher the price...[PAU][CL]
 //#EMBSET(261)
 //だめだよ!いくらなんでも ネコのタマしかはいれないよ![END]
 //#EMBWRITE(261)
-//[C4]<$C8>[NL]
+//(Thank You!)[NL]
 //じつは ボク タタル(ちゃん)です ネコによろしく[END]
 //#EMBWRITE(317)
 //タマが おこるときは イヌのにおいが したときだよ[END]

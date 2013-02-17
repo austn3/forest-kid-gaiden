@@ -5,7 +5,7 @@
 
 #HDR($10)
 
-// static pointers to outside the text block.
+//static pointers to outside the text block.
 //#W16($2804A)//C01D//EE 63//temp ram string
 //#W16($2804C)//C01E//DC 03//memory value
 //#W16($2804E)//C01F//01 68//[NAME]
