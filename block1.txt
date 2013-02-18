@@ -2382,7 +2382,8 @@ so long...[END]
 #W16($283FA)//C1F5
 //(いのちのくすり)(を のんだ.)[NL]
 //(たいりょく)が マックスになった[END]
-!C1f5[END]
+[NAME] drank the (Life Tonic).
+Life is now full.[END]
 
 #W16($283FC)//C1F6
 //(たいりょく)は マックスだったのに-[END]

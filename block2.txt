@@ -787,8 +787,6 @@ Jungle[NL]Road[END]
 //みしらぬばしょ[END]
 Strange[NL]Place[END]
 
-//----------------------------------------------------
-
 #WRITE(B2Ptr, $2C21A)//C405
 //うつくしむら[END]
 (Lovely)[END]
@@ -1228,11 +1226,11 @@ Ha! Coward.[END]
 #WRITE(B2Ptr, $2C314)//C482//spectrum ???
 //[B1]<$08>
 //#EMBSET(995)
-!C482[END]
 //おわかいの どうか この (にじのくに)を[NL]
 //すくってくれんかね?[END]
 //(You)ng one, somehow (you)[NL]
 //must save (Spectrum).[END]
+!C482[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C316)//C483//spectrum ne house former prince
@@ -2029,7 +2027,7 @@ I caused.[END]
 #WRITE(B2Ptr, $2C37E)//C4B7
 //[AF]<$68>
 //#EMBSET(17)
-//[B3]<$01>
+//[B3]<$01>//hmmm
 //#EMBSET(307)
 //#EMBWRITE(307)
 //よくきたな [NAME]よ さあ この[NL]
@@ -2043,25 +2041,18 @@ I caused.[END]
 !C4B7[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C380)//C4B8
-//[B5]<$09>
-//#EMBSET(404)
-//[B5]<$08>
-//#EMBSET(404)[END]
-!C4B8[END]
-
-//----------------------------------------------------
+#WRITE(B2Ptr, $2C380)//C4B8//hmmm
 #WRITE(B2Ptr, $2C382)//C4B9
 //[B5]<$09>
-//#EMBSET(404)
+//#EMBSET(412)
 //[B5]<$08>
-//#EMBSET(404)[END]
-!C4B9[END]
+//#EMBSET(413)[END]
+!C4B8,B9[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C384)//C4BA//boy outside lovely e house
 //(ここは) (うつくしむら)
-(This is )(Lovely),[NL]
+(This is )(Lovely),[PAU][NL]
 [B1]<$0D>
 #EMBSET(230)
 
@@ -2135,13 +2126,13 @@ in the Jungle.[END]
 [B1]<$E4>
 #EMBSET(282)
 //それは げんじんまる! (ヒミコ)に あえたのですな?[END]
-That's Kenjin-Maru![NL]
+That's (Genjin-Maru)![NL]
 Did you meet (Himiko)?[END]
 
 #EMBWRITE(232)
 #EMBWRITE(282)
 //わたしの (せんじんまる)は げんきですか?[END]
-How('s )my Senjin-Maru?[END]
+How('s )my (Senjin-Maru)?[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C39A)//C4C5//spectrum kings guard left
@@ -2220,10 +2211,20 @@ too shy to talk to boys.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3A6)//C4CB
-//#EMBWRITE(404)
-//[PAU][CL]
+#EMBWRITE(404)
+//#EMBWRITE(405)
+//#EMBWRITE(406)
+//#EMBWRITE(407)
+//#EMBWRITE(408)
+//#EMBWRITE(409)
+//#EMBWRITE(410)
+//#EMBWRITE(411)
+//#EMBWRITE(412)
+//#EMBWRITE(413)
+[PAU][CL]
 //でも にもつがおおくて もてない[END]
-!C4CB[END]
+Oh, you've already got[NL]
+too much.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3A8)//C4CC
@@ -2237,7 +2238,7 @@ too shy to talk to boys.[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3AA)//C4CD//isola shop
 //いかがかな?[BF0007]
-!C4CD[END]
+How can I help you?[BF0007]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3AC)//C4CE//woman lovely e house
@@ -2307,8 +2308,8 @@ Mmmhm...[END]
 //みなみに とびらが あるんだけど カギがないんで[NL]
 //あそべないんだ (......)[END]
 There's a gate in the south[NL]
-but because I don't have a[NL]
-key, I can't play there...[END]
+but I don't have a key so[NL]
+I can't play there...[END]
 
 #EMBWRITE(310)
 //(サ-ぺント)って しってる? このうみの ぬしなんだ[END]
@@ -2325,33 +2326,48 @@ there was a (Serpent)![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3B4)//C4D2//old man lovely w house
-//[B1]<$0D>
-//#EMBSET(236)
-//[AF]<$68>
-//#EMBSET(19)
-//[B1]<$0C>
-//#EMBSET(237)
+[B1]<$0D>
+#EMBSET(236)
+[AF]<$68>
+#EMBSET(19)
+[B1]<$0C>
+#EMBSET(237)
+
 //(サ-ぺント)を たすけてくれんか?(......)[END]
-//#EMBWRITE(237)
+You rescued the (Serpent)?[NL]
+...[END]
+
+#EMBWRITE(237)
 //かれたはなを さかせるには (サ-ぺント)の[NL]
 //なみだがひつようなんだ (みなとまち)の ふなのりが[NL]
 //ちからになって くれるはずだ[B2]<$12>[END]
-//#EMBWRITE(19)
+To make the withered[NL]
+flowers bloom again we need[NL]
+a (Serpent)('s )Tear.[PAU][CL]
+You'll need help from the[NL]
+boatmen in (Port Town).[B2]<$12>[END]
+
+#EMBWRITE(19)
 //はやくその (サ-ぺント)のなみだを いどのなかに![END]
-//#EMBWRITE(236)
-//(Thank You!)[NL]
+Hurry and put the (Serpent)[NL]
+Tear in the well![END]
+
+#EMBWRITE(236)
+(Thank You!)[NL]
 //みなみの(ほうに) ちかへの いりぐちが あるそうですよ[END]
-!C4D2[END]
+To the south there is an[NL]
+undeground passage.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3B6)//C4D3//isola inn
 //きずをおってちゃ たたかえないよ[BF0106]
-!C4D3[END]
+You're injured. You[NL]
+shouldn't fight.[BF0106]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3B8)//C4D4//oasis house shop
 //うちの しなものは いいよ[BF0008]
-!C4D4[END]
+Our goods are the best![BF0008]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3BA)//C4D5
@@ -2361,41 +2377,52 @@ there was a (Serpent)![END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3BC)//C4D6//isola house 1f guy n
 //わ-い (ゆうしゃ)の おにいちゃんだ![END]
-!C4D6[END]
+Woah! It's the hero![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3BE)//C4D7//isola house 1f guy e
-//[B1]<$2F>
-//#EMBSET(238)
+[B1]<$2F>
+#EMBSET(238)
 //とうさんが みせたいものが あるから[NL]
 //うえにきてくれっていってたよ[END]
-//#EMBWRITE(238)
+Dad has something he wants[NL]
+to show you. He said to go[NL]
+upstairs.[END]
+
+#EMBWRITE(238)
 //がんばってね![END]
-!C4D7[END]
+You can do it![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3C0)//C4D8//isola house 1f guy w
 //(まほう)が つかえるの?[END]
-!C4D8[END]
+You can use magic?[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3C2)//C4D9//isola house 1f guy s
 //かっこいいな-[END]
-!C4D9[END]
+Coool![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3C4)//C4DA//isola house 2f
-//[B1]<$2F>
-//#EMBSET(239)
+[B1]<$2F>
+#EMBSET(239)
 //(あんた)が ガンバって (ゆうしゃ)を やってるから[NL]
 //この いのちのくすりを あげたくなったんでぇ[NL]
 //しにかけたら つかってくんねぇ
-//[B5]<$52>
-//#EMBSET(404)
-//[B2]<$2F>[END]
-//#EMBWRITE(239)
+I wanted to give you this[NL]
+to help in your struggle.[PAU][CL]
+Use it when you are close[NL]
+to death.
+
+[B5]<$52>
+#EMBSET(404)
+[B2]<$2F>[END]
+
+#EMBWRITE(239)
 //もう あげるモンはねぇが きをつけて いってくれ[END]
-!C4DA[END]
+That's all I have.[NL]
+Take care.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3C6)//C4DB
@@ -2403,6 +2430,7 @@ there was a (Serpent)![END]
 //おれは [NAME]の ごせんぞさまよ[PAU][NL]
 [A4]<$02>Hey! [NAME][NL]
 I'm your ancestor.[PAU][NL]
+
 [B1]<$E4>
 #EMBSET(20)
 [AF]<$44>
@@ -2495,63 +2523,80 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3CE)//C4DF//dragon room heart
 //ハ-ト(の かたちの くぼみがあります)[END]
-!C4DF[END]
+A carving of a heart.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3D0)//C4E0//dragon room eye
 //め(の かたちの くぼみがあります)[END]
-!C4E0[END]
+A carving of an eye.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3D2)//C4E1//dragon room fangs
 //きば(の かたちの くぼみがあります)[END]
-!C4E1[END]
+A carving of a fang.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3D4)//C4E2//dragon room wings
 //つばさ(の かたちの くぼみがあります)[END]
-!C4E2[END]
+A carving of a wing.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3D6)//C4E3//isola girls outside
-//[B1]<$E2>
-//#EMBSET(999)
+[B1]<$E2>
+#EMBSET(999)
 //お おなかが(......)[END]
-!C4E3[END]
+Oh my stomach...[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3D8)//C4E4//isola girl se house
 //このあいだまで (ひがし)にある (いずみ)に けんじゃ[NL]
 //(りンクス)さまが きていらしたんだけど[NL]
 //さいきん どうなさって いるのかしら[END]
-!C4E4[END]
+The other day Sage (Links)[NL]
+returned from the east[NL]
+spring.[PAU][CL]
+I wonder what he was doing[NL]
+there.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3DA)//C4E5//isola man se house
 //(りンクス)さまは(いずみ)で (まどうしょ)を[NL]
-//なくしたらしい[END]
-//[END]
-!C4E5[END]d
+//なくしたらしい[END][END]
+I heard Links lost a (spell)[NL]
+at the spring.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3DC)//C4E6//himiko
-//[B1]<$E2>
-//#EMBSET(24)
-//[AF]<$42>
-//#EMBSET(24)
-//[AF]<$69>
-//#EMBSET(25)
+[B1]<$E2>
+#EMBSET(24)
+[AF]<$42>
+#EMBSET(24)
+[AF]<$69>
+#EMBSET(25)
+
 //アチシが(ヒミコ)だよ アチシが メシくいすぎて[NL]
 //みんな ハラぺコなのだ アチシのかわりに[NL]
 //メシ とってきたら いいもの やるんだけどな[END]
-//#EMBWRITE(25)
+I'm (Himiko). Because I ate[NL]
+too much food, everyone is[NL]
+starving.[PAU][CL]
+If you bring back more food[NL]
+I'll give you something[NL]
+really nice.[END]
+
+#EMBWRITE(25)
 //[NAME] よくやったのだ おれいに あちしの[NL]
 //げんじんまる あげちゃうのだ![B2]<$E2>
-//[B9]<$69>
-//#EMBSET(602)
-//#EMBWRITE(602)
-//[END]
-//#EMBWRITE(24)
+[NAME] you did great.[NL]
+In return, here is my[NL]
+(Genjin-Maru)![B2]<$E2>
+
+[B9]<$69>
+#EMBSET(602)
+#EMBWRITE(602)
+[END]
+
+#EMBWRITE(24)
 //そういえば (ワタル) さがしてるヒト ほかにもいたヨ[NL]
 //アチシと (シバラク)の オッチャンの ぶんまで[NL]
 //ガンバってね! [END]
@@ -2624,7 +2669,7 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 #WRITE(B2Ptr, $2C3F2)//C4F1
 //みずのなかに ふるぼけた (まどうしょ)があった!
 //[B5]<$6B>
-//#EMBSET(404)
+//#EMBSET(405)
 //[B2]<$14>[END]
 !C4F1[END]
 
@@ -2700,24 +2745,24 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 //#EMBWRITE(312)
 //げんきそうがあった!
 //[B5]<$0D>
-//#EMBSET(404)
+//#EMBSET(406)
 //[END]
 //#EMBWRITE(313)
 //りスクのくすりがあった!
 //[B5]<$0E>
-//#EMBSET(404)
+//#EMBSET(407)
 //[END]
 //#EMBWRITE(314)
 //いのちのくすりがあった!
 //[B5]<$52>
-//#EMBSET(404)[END]
+//#EMBSET(408)[END]
 !C4F8[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C402)//C4F9
 //げんきそうがあった!
 //[B5]<$0D>
-//#EMBSET(404)
+//#EMBSET(409)
 //[B4]<$01>[END]
 !C4F9[END]
 
@@ -2802,7 +2847,7 @@ a quick death![PAU][B8]<$02><$1F><$00>[END]
 //[B6]<$02><$09>
 //#EMBSET(510)
 //[B5]<$6C>
-//#EMBSET(404)
+//#EMBSET(410)
 //[PAU][CL]
 //(ありがとう) ちいさくなってしまった といっても[NL]
 //ぼくがいることで (りゅうじんまる)は いままでよりも[NL]
@@ -3317,7 +3362,7 @@ Be careful, kid.[END]
 #WRITE(B2Ptr, $2C47A)//C535
 //すなのなかに まきものがあった!
 //[B5]<$09>
-//#EMBSET(404)
+//#EMBSET(411)
 //[B2]<$1D>[END]
 !C535[END]
 
