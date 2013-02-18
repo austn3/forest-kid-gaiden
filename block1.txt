@@ -13,6 +13,8 @@
 <$EE><$63><$DC><$03><$01><$68>
 
 #JMP($28610)
+#W16($28058)//C024
+//[A4]<$01>[NAME] は [END]
 #W16($280E8)//C06C
 //(まほう) その12[END]
 #W16($280EA)//C06D
@@ -25,6 +27,8 @@
 //デバッグよう[END]
 #W16($282CE)//C15F
 #W16($28304)//C17A
+#W16($2836C)//C1AE
+//(Level) アップ[END]
 #W16($2840A)//C1FD
 #W16($2840C)//C1FE
 #W16($2840E)//C1FF
@@ -82,7 +86,7 @@ here[END]
 Icefield[END]
 
 #W16($2815E)//C0A7
-Because[END]
+Because [END]
 
 #W16($28160)//C0A8
 defeat[END]
@@ -215,7 +219,7 @@ huge mistake...[END]
 //おお! よくやってくれた [NAME]よ[NL]
 //では れいとして (まどうしょ)を さずけよう
 Oh! Well done [NAME]![NL]
-(Please )accept (this) spell[NL]
+(Please )accept (this) (spell)[NL]
 as a token of our thanks.
 
 [B5]<$71>
@@ -295,7 +299,7 @@ Quit (the )game?[A4]<$00>[NL]
 //(キュア)(を つかった.)[NL]
 //(たいりょく)が いっぱいになった.[NL]
 //ん- っ げんき ゲンキ.[END]
-You( used )cure.[NL]
+[NAME]( used )cure.[NL]
 (Life) is now full.[NL]
 Mmm feels great![END]
 
@@ -447,11 +451,6 @@ drank [END]
 pg:[A603]<$85><$00>[A603]<$86><$00> blok:[A603]<$87><$00>[A603]<$88><$00> cel:[A603]<$89><$00>[A603]<$8A><$00>[NL]
 [A2]<$05>map pg cel[A2]<$02>en item[NL]
 [C0]<$26>[END]
-
-#W16($28058)//C024
-//[A4]<$01>[NAME] は [END]
-//[A4]<$01>[NAME] [END]
-(fix)[END]
 
 #W16($2805A)//C025
 // を[AB]<$09>すてちまった.[END]
@@ -714,10 +713,10 @@ Intelligence[B0]
 //[NL]
 //きぃたぁ-っ [END]
 Got it![END]
+
 //----------------------------------------------------
 //             Warp List Names
 //----------------------------------------------------
-
 #W16($280B0)//C050
 //ゆうぼくみんのむら[END]
 (Nomad) Camp[END]
@@ -770,10 +769,10 @@ Gale[END]
 #W16($280C8)//C05C
 //ひょうげんのやどや[END]
 (Icefield) (Inn)[END]
+
 //----------------------------------------------------
 //               Magic Names
 //----------------------------------------------------
-
 #W16($280D0)//C060
 //ファイア-[END]
 Fire[END]
@@ -882,7 +881,6 @@ try again.[END]
   I wont give up yet...[BD]<$30>[NL]
   I'll try again![END]
 
-
 #W16($28102)//C079
 //[NAME] は [END]
 [NAME] read (the )[END]
@@ -928,7 +926,7 @@ power.[PAU][CL][END]
 //----------------------------------------------------
 #W16($28110)//C080
 //なにももってない[END]
-not hing[END]
+nothing[END]
 
 #W16($28112)//C081
 //やくそう[END]
@@ -1168,7 +1166,7 @@ Life Tonic[END]
 
 #W16($281B6)//C0D3
 //つかいわすれたオンガク[END]
-Forgotten Music[END]
+Music Box[END]
 
 #W16($281D0)//C0E0
 //ゆうしゃのカギ[END]
@@ -1208,7 +1206,7 @@ Small Collar[END]
 
 #W16($281E6)//C0EB
 //......(の まどうしょ)[END]
-... Spell[END]
+... (Spell)[END]
 
 #W16($281E8)//C0EC
 //ようまのこびん[END]
@@ -1277,6 +1275,7 @@ Water (Spell)[END]
 #W16($2820E)//C0FF
 //の まどうしょ[END]
 Spell[END]
+
 //----------------------------------------------------
 //                Monsters
 //----------------------------------------------------
@@ -1768,7 +1767,7 @@ Snake[END]
 
 #W16($2830C)//C17E
 //ギャザ-[END]
-Ga(the)r[END]
+Eyebot[END]
 
 //----------------------------------------------------
 #W16($28310)//C180
@@ -1828,7 +1827,7 @@ Don't waste your (Magic)![END]
 //ざんねんながら マシンは きてくれませんでした.[END]
 //Bad luck! (The )(Mashin)[NL]
 //didn't come.[END]
-(fix)[END]
+!C18B[END]
 
 #W16($28328)//C18C
 //なにを きるつもりですか?[END]
@@ -1865,7 +1864,7 @@ No way![END]
 #W16($28336)//C193
 //[A4]<$05>コケコッコ- [NL]
 //[A2]<$04>あさ だよぉ-ん.[END]
-[A4]<$05>(Cock-a-doodle-doo)[NL]
+[A4]<$05>((Cock-a-doodle-doo))[NL]
 [A2]<$04>It's morning.[END]
 
 #W16($28338)//C194
@@ -1906,11 +1905,11 @@ Not enough (Magic).[END]
 
 #W16($28346)//C19B
 //に [AB]<$0F>[AD]<$1E><$64><$01><$06>のダメ-ジを あたえた.[END]
- took [AD]<$1E><$64><$01><$06> [AB]<$06>damage.[END]
+ took [AB]<$0A>[AD]<$1E><$64><$01><$06> damage.[END]
 
 #W16($28348)//C19C
 //[MASHIN]は [AD]<$1E><$64><$01><$06>のダメ-ジを うけた.[END]
-[MASHIN] took [AD]<$1E><$64><$01><$06> [AB]<$06>damage.[END]
+[MASHIN] took [AB]<$0A>[AD]<$1E><$64><$01><$06> damage.[END]
 
 #W16($2834A)//C19D
 //(せんじん テレカ)(を つかった.)[NL]
@@ -1921,8 +1920,8 @@ to join (the )fight.[END]
 #W16($2834C)//C19E
 //(たいりょく)は いっぱいなのにキュアを つかうなんて[NL]
 //まぁ- ごりっぱ.[END]
-(Life) was full, but [NAME][NL]
-used (Cure). Just great...[END]
+[NAME] used (Cure), but (Life)[NL]
+was full. Just great...[END]
 
 #W16($2834E)//C19F
 //[AE]<$0B><$01><$12><$03>[CL][NL]
@@ -1932,7 +1931,7 @@ used (Cure). Just great...[END]
 
 #W16($28350)//C1A0
 //あなたは もうさいきょうです.[END]
-You are (already) (the)[NL]
+You are (already) the[NL]
 strongest.[END]
 
 #W16($28352)//C1A1
@@ -2016,10 +2015,6 @@ taking a rest.[END]
 #W16($2836A)//C1AD
 //レべル[END]
 Level[END]
-
-//#W16($2836C)//C1AE
-//(Level) アップ[END]
-//(Level) Up[END]
 
 #W16($2836E)//C1AF
 [AD]<$EB><$63><$03><$06>[END]
@@ -2151,7 +2146,7 @@ Better check outside.[BD]<$40>[END]
 //おおぉっ (たぬきっぱ)が[NL]
 //(1000ゴ-ルド)になったぞ![END]
 Ooo (the )(Tanuki Paw)[NL]
-turned into (1000 Gold)[END]
+turned into a (Gold Bar)![END]
 
 #W16($283A4)//C1CA
 //(たぬきっぱ)(を つかった.)[NL]
@@ -2312,12 +2307,12 @@ It won't move.[END]
 //こうげきりょくが[C0]<$4C>あがった![END]
 !C1E8[END]
 
-#W16($283E2)//C1E9
+#W16($283E2)//C1E9//!!escape worked
 //[NL]
 //にげのいって.  おぼえてやがれ-っ[END]
 !C1E9[END]
 
-#W16($283E4)//C1EA
+#W16($283E4)//C1EA//!!escape failed
 //[NL]
 //にげのいって.  しかししっぱい[END]
 !C1EA[END]
@@ -2369,7 +2364,7 @@ Come again.[END]
 Save those who believe[NL]
 in you.[END]
 
-#W16($283F4)//C1F2//warp shop cancel
+#W16($283F4)//C1F2//!!warp shop cancel
 //いま きげんがわるいんだよ![NL]
 //はやくでていきな[END]
 !C1F2[END]
@@ -2712,7 +2707,7 @@ different![END]
 //1ばんべッドで おやすみください.[END]
 !C234 [END]
 
-#W16($2847A)//C235//merchanton inn morning level stats
+#W16($2847A)//C235//inn morning level stats
 //よくねむれましたか?[C2]<$37>[END]
 Did you sleep well?[C2]<$37>[END]
 
