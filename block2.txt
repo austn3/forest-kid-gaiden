@@ -2231,7 +2231,7 @@ too much.[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3A8)//C4CC
 //#EMBWRITE(463)
-//#EMBWRITE(464)
+#EMBWRITE(464)
 //#EMBWRITE(465)
 //#EMBWRITE(466)
 //もてないなら せいりするまで まっているぞ[END]
@@ -2464,38 +2464,54 @@ battles.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3C8)//C4DC//!!links sages house
-//AF-3 POINTERS HERE WERE A BIT STRANGE!
 //わしは けんじゃをやってる (りンクス)というものじゃ[PAU][CL]
-//[B3]<$01>
-//#EMBSET(#311)
+People call me Sage (Links).[PAU][CL]
+
+[B3]<$01>
+#EMBSET(311)
+
 //(ワタル)を たすけたくば (ドラゴン)の よっつの[NL]
 //ひほうをあつめ うみにある (ドラゴン)のへやに[NL]
 //いくがいい[PAU][CL]
-//If you are going to save (Wataru)
-//you must find (the )4 dragon treasures( and )
-//go to (the )dragon('s )lair in (the )sea.
+If you want to save (Wataru)[NL]
+you must find (the )4 dragon[NL]
+treasures,[PAU][CL]
+and take them to (the )[NL]
+Dragon('s )Room[NL] in[NL]
+(the )sea.[PAU][CL]
+
 //ひとつは さばくに のこりのみっつは しっちと うみ[NL]
 //そして (ゆうぼくみん)の ちかくにある[B4]<$01>
-//[AF]<$76>
-//#EMBSET(22)
-//[AF]<$6B>
-//#EMBSET(23)
-//[END]
-//#EMBWRITE(23)
-//[PAU][CL]
+The first is in the desert.[PAU][CL]
+The other 3 you'll find in[NL]
+the swamp, by the sea,[NL]
+and near the Nomad Camp.[B4]<$01>
+
+[AF]<$76>
+#EMBSET(22)
+[AF]<$6B>
+#EMBSET(23)
+#EMBWRITE(22)
+[END]
+
+#EMBWRITE(23)
+[PAU][CL]
 //ムッ! [NAME]よ それはむかし ワシがなくした[NL]
 //(まどうしょ) それをみつけるとは ラッキ-なやつ[NL]
 //もとどおりに してやるから もっていくがいい
-//[B9]<$6B>
-//#EMBSET(601)
-//#EMBWRITE(601)
-//[B5]<$76>
-//#EMBSET(464)
-//#EMBWRITE(22)
-//[END]
-//#EMBWRITE(311)
+
+
+[B9]<$6B>
+#EMBSET(601)
+#EMBWRITE(601)
+[B5]<$76>
+#EMBSET(464)
+[END]
+
+#EMBWRITE(311)
 //しってることは これだけじゃ きをつけていくがよい[END]
-!C4DC[END]
+That's all I know.[NL]
+Take care.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3CA)//C4DD//2nd Gun
