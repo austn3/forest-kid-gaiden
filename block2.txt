@@ -2464,7 +2464,8 @@ battles.[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3C8)//C4DC//lynx sages house
 //わしは けんじゃをやってる (りンクス)というものじゃ[PAU][CL]
-People call me Sage (Lynx).[PAU][CL]
+I'm (Lynx). I'm sort of a[NL]
+sage around here.[PAU][CL]
 
 [B3]<$01>
 #EMBSET(311)
