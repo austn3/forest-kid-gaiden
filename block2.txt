@@ -846,7 +846,7 @@ Shibaraku[END]
 
 #WRITE(B2Ptr, $2C2C2)//C459
 //りンクス[END]
-Links[END]
+Lynx[END]
 
 #WRITE(B2Ptr, $2C2D2)//C461
 //みなとまち[END]
@@ -1514,8 +1514,7 @@ Oh! (You) can't carry[NL]
 //もう なにもいうことはない[PAU][NL]
 //じぶんの しんずるみちを ゆけ[END]
 I (have )(nothing) more to say.[PAU][NL]
-Follow (the )path (you)[NL]
-believe in.[END]
+Trust in your own path.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C334)//C492//boy by restore spring
@@ -2463,9 +2462,9 @@ forever little[NL]
 battles.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3C8)//C4DC//!!links sages house
+#WRITE(B2Ptr, $2C3C8)//C4DC//lynx sages house
 //わしは けんじゃをやってる (りンクス)というものじゃ[PAU][CL]
-People call me Sage (Links).[PAU][CL]
+People call me Sage (Lynx).[PAU][CL]
 
 [B3]<$01>
 #EMBSET(311)
@@ -2499,7 +2498,11 @@ and near the Nomad Camp.[B4]<$01>
 //ムッ! [NAME]よ それはむかし ワシがなくした[NL]
 //(まどうしょ) それをみつけるとは ラッキ-なやつ[NL]
 //もとどおりに してやるから もっていくがいい
-
+Ha! [NAME]! That's the[NL]
+spell I lost long ago.[PAU][CL]
+Well, today's your lucky[NL]
+day. I'll fix it up and[NL]
+let you have it.
 
 [B9]<$6B>
 #EMBSET(601)
@@ -2570,7 +2573,7 @@ Oh my stomach...[END]
 //このあいだまで (ひがし)にある (いずみ)に けんじゃ[NL]
 //(りンクス)さまが きていらしたんだけど[NL]
 //さいきん どうなさって いるのかしら[END]
-The other day Sage (Links)[NL]
+The other day Sage (Lynx)[NL]
 returned from the east[NL]
 spring.[PAU][CL]
 I wonder what he was doing[NL]
@@ -2580,7 +2583,7 @@ there.[END]
 #WRITE(B2Ptr, $2C3DA)//C4E5//isola man se house
 //(りンクス)さまは(いずみ)で (まどうしょ)を[NL]
 //なくしたらしい[END][END]
-I heard (Links) lost a (spell)[NL]
+I heard (Lynx) lost a (spell)[NL]
 at the s(pring).[END]
 
 //----------------------------------------------------
