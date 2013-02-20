@@ -2213,7 +2213,7 @@ too shy to talk to boys.[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3A6)//C4CB
 #EMBWRITE(404)
-//#EMBWRITE(405)
+#EMBWRITE(405)
 //#EMBWRITE(406)
 //#EMBWRITE(407)
 //#EMBWRITE(408)
@@ -2371,9 +2371,9 @@ shouldn't fight.[BF0106]
 Our goods are the best![BF0008]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3BA)//C4D5
+#WRITE(B2Ptr, $2C3BA)//C4D5//last stop shop
 //(いらっしゃい)![BF0009]
-!C4D5[END]
+Welcome![BF0009]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3BC)//C4D6//isola house 1f guy n
@@ -2477,7 +2477,7 @@ If you want to save (Wataru)[NL]
 you must find (the )4 dragon[NL]
 treasures,[PAU][CL]
 and take them to (the )[NL]
-Dragon('s )Room[NL] in[NL]
+Dragon('s )Room in[NL]
 (the )sea.[PAU][CL]
 
 //ひとつは さばくに のこりのみっつは しっちと うみ[NL]
@@ -2623,22 +2623,25 @@ In return, here is my[NL]
 //そういえば (ワタル) さがしてるヒト ほかにもいたヨ[NL]
 //アチシと (シバラク)の オッチャンの ぶんまで[NL]
 //ガンバってね! [END]
-!C4E6[END]
+Wow! Someone else searching[NL]
+for (Wataru). Good luck![END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3DE)//C4E7//!!isola boy by rock
+#WRITE(B2Ptr, $2C3DE)//C4E7//isola boy by rock
 [B1]<$E2>
 #EMBSET(998)
 //ハラへって しにそうだよ(......)[END]
-My stomach hurts so much.[NL]
+I'm starving.[NL]
 I want to die...[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3E0)//C4E8//!!isola man s house
-//[B1]<$E2>
-//#EMBSET(242)
+[B1]<$E2>
+#EMBSET(242)
+
 //(しょくりょう)ちょぞうこは (きたの)(ほうに)あるはずよ![END]
-//#EMBWRITE(242)
+
+#EMBWRITE(242)
 //たびを つづけるのでしたら にしの (さばく)には[NL]
 //いかないほうが いいですよ あぶないですから(......)[END]
 !C4E8[END]
@@ -2692,15 +2695,16 @@ I want to die...[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3F2)//C4F1
 //みずのなかに ふるぼけた (まどうしょ)があった!
-//[B5]<$6B>
-//#EMBSET(405)
-//[B2]<$14>[END]
-!C4F1[END]
+This old spell was in the[NL]
+water!
+[B5]<$6B>
+#EMBSET(405)
+[B2]<$14>[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3F4)//C4F2
+#WRITE(B2Ptr, $2C3F4)//C4F2//last stop inn
 //だいじょうぶかい?[BF010A]
-!C4F2[END]
+Are you alright?[NL][BF010A]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3F6)//C4F3
@@ -2708,13 +2712,13 @@ I want to die...[END]
 !C4F3[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3F8)//C4F4
+#WRITE(B2Ptr, $2C3F8)//C4F4//!!gale inn girl
 //(きたの)(ダンジョン)には いってみた?あそこには[NL]
 //なにかあるってうわさよ[END]
 !C4F4[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3FA)//C4F5
+#WRITE(B2Ptr, $2C3FA)//C4F5//!!gale inn
 //とまってきな[BF0109]
 !C4F5[END]
 
@@ -3042,7 +3046,7 @@ the higher the price...[PAU][CL]
 [B2]<$22>[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C430)//C510
+#WRITE(B2Ptr, $2C430)//C510//!!gale old man by well
 //[B1]
 //#EMBSET(260)
 //<$AD>なんか さむくないですか?[NL]
@@ -3053,13 +3057,13 @@ the higher the price...[PAU][CL]
 !C510[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C432)//C511
+#WRITE(B2Ptr, $2C432)//C511//!!gale woman outside shop
 //ガスでいえを ちいさくされて しまったんです[NL]
 //おかげでみんな いえにはいれなくなって(......)[END]
 !C511[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C434)//C512
+#WRITE(B2Ptr, $2C434)//C512//!!gale red girl sw
 //[B3]<$01>
 //#EMBSET(317)
 //[B1]<$1B>
@@ -3140,7 +3144,7 @@ the higher the price...[PAU][CL]
 !C51D[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C44C)//C51E
+#WRITE(B2Ptr, $2C44C)//C51E//!!gale kid by entrance
 //(かぜのくに)を こんなにした ガスは どうも[NL]
 //まちの どこかから ふきあげてるようなんだが[END]
 !C51E[END]
@@ -3159,7 +3163,7 @@ the higher the price...[PAU][CL]
 !C51F[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C450)//C520
+#WRITE(B2Ptr, $2C450)//C520//!!gale old man w
 //きたの(ほうに) いしでかこまれた ところが あるんだな[NL]
 //そこにいくには おしろを とおらなければ[NL]
 //いけないんだよ もっとも おしろが あれじゃぁね[END]
@@ -3192,13 +3196,13 @@ the higher the price...[PAU][CL]
 !C525[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C45C)//C526
+#WRITE(B2Ptr, $2C45C)//C526//!!gale kid by entrance
 //この(かぜのくに)のきたには ひみつの ばしょがあるんだ[NL]
 //もっとも そこにいけるのは おうさまだけなんだけど[END]
 !C526[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C45E)//C527
+#WRITE(B2Ptr, $2C45E)//C527//!!gale blue boy sw
 //そこのかいだんは やどやだよ[END]
 !C527[END]
 
@@ -3219,7 +3223,7 @@ the higher the price...[PAU][CL]
 !C52A[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C466)//C52B
+#WRITE(B2Ptr, $2C466)//C52B//!!gale boy in the well
 //[B1]<$1B>
 //#EMBSET(264)
 //どうやら このさきは にしにある のろいの[NL]
@@ -3634,7 +3638,7 @@ trouble, you can call me[NL]
 with (this) sword.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C4A4)//C54A
+#WRITE(B2Ptr, $2C4A4)//C54A//!!gale well monster
 //きさまも このみずの ひみつに かんづいたんだな?[NL]
 //だが のろいの(いずみ)との つながりが[NL]
 //わかったところで (おまえ)には どうすることもできん[PAU]

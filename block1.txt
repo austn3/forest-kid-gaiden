@@ -1905,11 +1905,11 @@ Not enough (Magic).[END]
 
 #W16($28346)//C19B
 //に [AB]<$0F>[AD]<$1E><$64><$01><$06>のダメ-ジを あたえた.[END]
- took [AB]<$0A>[AD]<$1E><$64><$01><$06> damage.[END]
+ took [AD]<$1E><$64><$01><$06> [AB]<$06>damage.[END]
 
 #W16($28348)//C19C
 //[MASHIN]は [AD]<$1E><$64><$01><$06>のダメ-ジを うけた.[END]
-[MASHIN] took [AB]<$0A>[AD]<$1E><$64><$01><$06> damage.[END]
+[MASHIN] took [AD]<$1E><$64><$01><$06> [AB]<$06>damage.[END]
 
 #W16($2834A)//C19D
 //(せんじん テレカ)(を つかった.)[NL]
@@ -2203,7 +2203,7 @@ Buy it![NL]
 #W16($283B6)//C1D3
 //うりますョ[NL]
 //[C1]<$D5>[END]
-Sell it![NL]
+Sell?[NL]
 [C1]<$D5>[END]
 
 #W16($283B8)//C1D4
@@ -2215,8 +2215,8 @@ Sell it![NL]
 #W16($283BA)//C1D5
 // よい[NL]
 // だめ[END]
- Good[NL]
- No way![END]
+ Sure[NL]
+ Nope[END]
 
 #W16($283BC)//C1D6
 //ありがとうございます. [B0]<$0B><$9E>
@@ -2367,7 +2367,8 @@ be saved.[END]
 #W16($283F4)//C1F2//!!warp shop cancel
 //いま きげんがわるいんだよ![NL]
 //はやくでていきな[END]
-!C1F2[END]
+I'm in a bad mood now![NL]
+Hurry up and get out![END]
 
 #W16($283F6)//C1F3//warp shop cancel
 //ひさびさのおきゃくだったのになぁ-[END]
@@ -2688,7 +2689,7 @@ water from[NL]
 //----------------------------------------------------
 #W16($28470)//C230
 //どうぞ あちらで おやすみください.[END]
-!C230[END]
+Please rest over there.[END]
 
 #W16($28472)//C231
 //たびのつかれを いやしてくださいネ.[END]
