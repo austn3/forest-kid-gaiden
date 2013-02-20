@@ -2193,7 +2193,7 @@ too shy to talk to boys.[END]
 //#EMBWRITE(995)
 #EMBWRITE(996)
 #EMBWRITE(997)
-//#EMBWRITE(998)
+#EMBWRITE(998)
 #EMBWRITE(999)
 //(ありがとう)(ござい)(ました)[END]
 (Thank you)![END]
@@ -2627,10 +2627,11 @@ In return, here is my[NL]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3DE)//C4E7//!!isola boy by rock
-//[B1]<$E2>
-//#EMBSET(998)
+[B1]<$E2>
+#EMBSET(998)
 //ハラへって しにそうだよ(......)[END]
-!C4E7[END]
+My stomach hurts so much.[NL]
+I want to die...[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3E0)//C4E8//!!isola man s house
