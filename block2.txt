@@ -1383,8 +1383,6 @@ to (the )ends of (the )earth.[END]
 (Welcome).[BF0001]
 
 //----------------------------------------------------
-//
-//----------------------------------------------------
 #WRITE(B2Ptr, $2C326)//C48B
 //[AF]<$60>
 //#EMBSET(5)
@@ -3230,23 +3228,25 @@ the higher the price...[PAU][CL]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C452)//C521//!!gale old man w house
 //ここには かぜの(まほう)が ねむっているらしいよ[END]
-!C521[END]
+It seems wind magic[NL]
+sleeps here.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C454)//C522//!!gale girl e house
 //かぜの(まどうしょ)なら おしろのきたにあるって[NL]
 //きいたわ[END]
-!C522[END]
+I heard thd wind spell is[NL]
+north of the castle.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C456)//C523//!!gale man sw house
+#WRITE(B2Ptr, $2C456)//C523//gale man sw house
 //おかげで たすかり(ました)[END]
-!C523[END]
+You saved us.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C458)//C524//!!gale boy se house
+#WRITE(B2Ptr, $2C458)//C524//gale boy se house
 //おうさまには あい(ました)か?[END]
-!C524[END]
+Have you met the king?[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C45A)//C525//!!gale boy se house bed
