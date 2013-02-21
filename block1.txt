@@ -260,7 +260,7 @@ Take care.[END]
 //----------------------------------------------------
 #W16($28408)//C1FC
 #EMBWRITE(403)
-[PAU][CL]I'll wait till you've made[NL]room.[END]
+[PAU][CL]I'll wait for you to[NL]make room.[END]
 
 //----------------------------------------------------
 #W16($28010)//C000

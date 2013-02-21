@@ -195,6 +195,10 @@
 //(ここは)の (ワ-プショップ)です(あなた)[C1]<$00>[BF020D]
 #WRITE(B2Ptr, $2C42C)//C50E
 //(ここは)[C4]<$C1>の (ワ-プショップ)です[BF020E]
+#WRITE(B2Ptr, $2C4AA)//C54D
+#WRITE(B2Ptr, $2C4AC)//C54E
+#WRITE(B2Ptr, $2C4AE)//C54F
+//メッセ-ジがないよ[END]
 
 !fix[END]
 
@@ -2230,10 +2234,10 @@ too much.[END]
 #WRITE(B2Ptr, $2C3A8)//C4CC
 //#EMBWRITE(463)
 #EMBWRITE(464)
-//#EMBWRITE(465)
+#EMBWRITE(465)
 //#EMBWRITE(466)
 //もてないなら せいりするまで まっているぞ[END]
-([PAU][CL]I'll wait till you've made[NL]room.)[END]
+([PAU][CL]I'll wait for you to[NL]make room.)[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3AA)//C4CD//isola shop
@@ -2634,46 +2638,62 @@ I'm so hungry.[NL]
 I think I'm going to die...[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3E0)//C4E8//!!isola man s house
+#WRITE(B2Ptr, $2C3E0)//C4E8//isola man s house
 [B1]<$E2>
 #EMBSET(242)
 
 //(しょくりょう)ちょぞうこは (きたの)(ほうに)あるはずよ![END]
+There is a food storehouse[NL]
+to the north.[END]
 
 #EMBWRITE(242)
 //たびを つづけるのでしたら にしの (さばく)には[NL]
 //いかないほうが いいですよ あぶないですから(......)[END]
-!C4E8[END]
+You really shouldn't go[NL]
+to the west desert.[NL]
+It's dangerous...[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3E2)//C4E9//!!isola woman s house
-//[B1]<$E2>
-//#EMBSET(243)
+#WRITE(B2Ptr, $2C3E2)//C4E9//isola woman s house
+[B1]<$E2>
+#EMBSET(243)
+
 //この (ジャングル)のどこかに むかし つかっていた[NL]
 //(しょくりょう)ちょぞうこが あるの[PAU][CL]
 //そこからたべものを もってくることが できたら[NL]
 //みんな げんきに なるのに(......)[END]
-//#EMBWRITE(243)
+Somewhere in this jungle[NL]
+there is an old food[NL]
+storehouse.[PAU][CL]
+If you brought back food[NL]
+everyone would be happy...[END]
+
+#EMBWRITE(243)
 //(ありがとう) [NAME]さん ところで (ピラミッド)に[NL]
 //(まどうしょ)があるって きいたことがあるわ[NL]
 //その (まほう)で いわをこわせるらしいわ[END]
-!C4E9[END]
+Thank you, [NAME]. By the[NL]
+way. I heard there is a[NL]
+spell in the pyramid.[PAU][CL]
+That magic can destroy[NL]
+rocks.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3E6)//C4EB//!!oasis house boy
+#WRITE(B2Ptr, $2C3E6)//C4EB//oasis house boy
 //スフィンクスって しってる?[NL]
 //けっこう あまのじゃくなんだぜ[END]
-!C4EB[END]
+Do you know the Sphinx?[NL]
+He's really a demon![END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3E8)//C4EC//!!sea inn
+#WRITE(B2Ptr, $2C3E8)//C4EC//sea inn
 //うちはただの(やどや)です[BF0107]
-!C4EC[END]
+This is just an inn.[NL][BF0107]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3EA)//C4ED//!!oasis house inn
+#WRITE(B2Ptr, $2C3EA)//C4ED//oasis house inn
 //ほっと ひといきついてください [BF0108]
-!C4ED[END]
+Please take a rest.[NL][BF0108]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3EC)//C4EE
@@ -2681,21 +2701,23 @@ I think I'm going to die...[END]
 (Welcome).[BF000B]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3EE)//C4EF//!!food storehouse floor
+#WRITE(B2Ptr, $2C3EE)//C4EF//food storehouse floor
 //あしもとが ミシミシいってる [B4]<$01>[END]
-!C4EF[END]
+((crack))[B4]<$01>[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3F0)//C4F0//!!oasis house girl
+#WRITE(B2Ptr, $2C3F0)//C4F0//oasis house girl
 //にしにある (ピラミッド)には  いなずまをよぶ[NL]
 //(まどうしょ)が あるそうよ[END]
-!C4F0[END]
+I the west pyramid there[NL]
+is a spell that can summon[NL]
+lightning.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3F2)//C4F1
 //みずのなかに ふるぼけた (まどうしょ)があった!
-This old spell was in the[NL]
-water!
+This old spell was in[NL]
+the water!
 [B5]<$6B>
 #EMBSET(405)
 [B2]<$14>[END]
@@ -2711,42 +2733,55 @@ Are you alright?[NL][BF010A]
 !C4F3[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3F8)//C4F4//!!gale inn girl
+#WRITE(B2Ptr, $2C3F8)//C4F4//gale inn girl
 //(きたの)(ダンジョン)には いってみた?あそこには[NL]
 //なにかあるってうわさよ[END]
-!C4F4[END]
+Have you been to the north[NL]
+dungeon? There's a rumor[NL]
+something is there.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3FA)//C4F5//!!gale inn
+#WRITE(B2Ptr, $2C3FA)//C4F5//gale inn
 //とまってきな[BF0109]
-!C4F5[END]
+Take a break for[NL]
+awhile.[BF0109]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3FC)//C4F6//!!pyramid guardian
-//[B1]<$2D>
-//#EMBSET(244)
-//[B1]<$0F>
-//#EMBSET(245)
-//[B1]<$10>
-//#EMBSET(246)
-//[END]
-//#EMBWRITE(245)
+#WRITE(B2Ptr, $2C3FC)//C4F6//pyramid guardian
+[B1]<$2D>
+#EMBSET(244)
+[B1]<$0F>
+#EMBSET(245)
+[B1]<$10>
+#EMBSET(246)
+[END]
+
+#EMBWRITE(245)
 //(わたし)が そうやすやすと ざいほうを わたすと[NL]
 //おもっていたのか?![CL]
-//Did you think I would h(and) over
-//(the )treasure so easily?
-//[B0]
-//#EMBSET(101)
-//#EMBWRITE(246)
+Did you think I would give[NL]
+up (the )treasure so easily?![PAU][CL]
+
+[B0]
+#EMBSET(101)
+
+#EMBWRITE(246)
 //(わたし)がほんとうに まけたと おもっていたのか?![CL]
-//#EMBWRITE(101)
+Did you realy think you[NL]
+defeated me?![PAU][CL]
+
+#EMBWRITE(101)
 //やはり (おまえ)は おろかものだ![PAU][B8]<$2D><$F3><$00>[END]
-//#EMBWRITE(244)
+A fool, just as I thought![PAU][B8]<$2D><$F3><$00>[END]
+
+#EMBWRITE(244)
 //ハッハッハッ (わたし)の かんぱいだ! [NAME][NL]
 //(ドラゴン)のひほうは しっちにも あるときいたぞ[NL]
 //いってみるがいい[END]
-//Hahaha 
-!C4F6[END]
+HaHaHa, I'm truely beaten![NL]
+I heard another dragon[NL]
+treasure is in the swamp.[PAU][CL]
+You should check it out.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3FE)//C4F7
@@ -2794,26 +2829,39 @@ Are you alright?[NL][BF010A]
 !C4F9[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C404)//C4FA//!!boy food storehouse
-//[B1]<$E2>
-//#EMBSET(247)
-//[AF]<$69>
-//#EMBSET(27)
-//[B3]<$01>
-//#EMBSET(315)
+#WRITE(B2Ptr, $2C404)//C4FA//boy food storehouse
+[B1]<$E2>
+#EMBSET(247)
+[AF]<$69>
+#EMBSET(27)
+[B3]<$01>
+#EMBSET(315)
+
 //(おお)(かくれざと)から きたのか? だれも[NL]
 //こなくなってから ずいぶんたつから しんぱい[NL]
 //だったんだ[PAU][CL]
 //とにかく 
-//#EMBWRITE(315)
+Oh, you came from (Isola)?[NL]
+It's been so long since[NL]
+anyone has come.[PAU][CL]
+I was worried.[NL]
+anyway...[PAU][CL]
+
+#EMBWRITE(315)
 //(しょくりょう)を もっていくんだ[B4]<$01>
-//[B5]<$69>
-//#EMBSET(465)[END]
-//#EMBWRITE(27)
+Please take the food.[B4]<$01>
+
+[B5]<$69>
+#EMBSET(465)[END]
+
+#EMBWRITE(27)
 //はやくいって (かくれざと)の みんなをたすけてこい[END]
-//#EMBWRITE(247)
+Hurry and go help the[NL]
+people of (Isola).[END]
+
+#EMBWRITE(247)
 //よくやったぞ[END]
-!C4FA[END]
+Well done![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C406)//C4FB//!!sphinx
@@ -2821,25 +2869,33 @@ Are you alright?[NL][BF010A]
 //こたえることが できたら とおしてやろう[PAU][CL]
 //(おまえ)はつよいか?[NL]
 //   つよい   よわい
-//[B6]<$02><$08>
-//#EMBSET(507)
-//#EMBWRITE(507)
-//[CL]
+
+[B6]<$02><$08>
+#EMBSET(507)
+#EMBWRITE(507)
+[CL]
+
 //つぎ! (わたし)はつよいか?[NL]
 //   よわい  つよい
-//[B6]<$02><$07>
-//#EMBSET(508)
-//#EMBWRITE(508)
-//[CL]
+
+[B6]<$02><$07>
+#EMBSET(508)
+#EMBWRITE(508)
+[CL]
+
 //では(おまえ)と(わたし) どちらがつよい?[NL]
 //  スフィンクス  [NAME]
-//[B6]<$01><$09>
-//#EMBSET(509)
-//[CL]
+
+[B6]<$01><$09>
+#EMBSET(509)
+[CL]
+
 //キサマ! こころにも ないことを!え-い![PAU][B4]<$02>
-//[B8]<$10><$F3><$00>[END]
-//#EMBWRITE(509)
-//[CL]
+
+[B8]<$10><$F3><$00>[END]
+
+#EMBWRITE(509)
+[CL]
 //おのれのちからも しらぬやつに ようはない[NL]
 //さっさと いくがいい[B4]<$01>[BA00][END]
 !C4FB[END]
@@ -3035,8 +3091,8 @@ Clan (Warp Shop).[BF020B]
 //ここ(ワ-プショップ)は みなさまの きおくを たよりに[NL]
 //あらゆるまちへ いくことができます ただし[NL]
 //とおくのまちほど おねだんは たかくなります(......)[PAU][CL]
-Suddenly from nowhere you[NL]
-hear a voice.[PAU][CL]
+((Suddenly from nowhere[NL]
+[NAME] hears a voice.))[PAU][CL]
 [A2]<$04>Welcome first time[NL]
 [A2]<$08>(Warp Shop) user.[PAU][CL]
 From the (Warp Shop) you[NL]
@@ -3219,10 +3275,11 @@ the higher the price...[PAU][CL]
 !C529[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C464)//C52A//!!jungle guy by desert stairs
+#WRITE(B2Ptr, $2C464)//C52A//jungle guy by desert stairs
 //ここからさきは さばくが ひろがっている[NL]
 //きをつけて いくんだぞ[END]
-!C52A[END]
+Just ahead from here lies[NL]
+the desert. Take care.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C466)//C52B//!!gale boy in the well
@@ -3640,14 +3697,20 @@ trouble, you can call me[NL]
 with (this) sword.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C4A4)//C54A//!!gale well monster
+#WRITE(B2Ptr, $2C4A4)//C54A//gale well monster
 //きさまも このみずの ひみつに かんづいたんだな?[NL]
 //だが のろいの(いずみ)との つながりが[NL]
-//わかったところで (おまえ)には どうすることもできん[PAU]
-//[CL]
+//わかったところで (おまえ)には どうすることもできん[PAU][CL]
 //どうせ オレに ころされるのだからなっ[PAU]
+You suspect this water's[NL]
+secret don't you?[PAU][CL]
+But even though you know[NL]
+the connection to the[NL]
+cursed spring...[PAU][CL]
+there is nothing you can[NL]
+do, because I'm going to[NL]
+kill you.[PAU]
 [B8]<$26><$E0><$00>[END]
-!C54A[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C4A6)//C54B
@@ -3680,10 +3743,3 @@ with (this) sword.[END]
 (Shibaraku)? He was (here).[NL]
 Looking for his friends[NL]
 (Wataru)( and )(Himiko).[END]
-
-//----------------------------------------------------
-#WRITE(B2Ptr, $2C4AA)//C54D
-#WRITE(B2Ptr, $2C4AC)//C54E
-#WRITE(B2Ptr, $2C4AE)//C54F
-//メッセ-ジがないよ[END]
-No message[END]
