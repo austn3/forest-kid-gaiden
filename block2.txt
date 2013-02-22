@@ -2589,7 +2589,7 @@ I heard (Lynx) lost a (spell)[NL]
 at the s(pring).[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3DC)//C4E6//!!himiko
+#WRITE(B2Ptr, $2C3DC)//C4E6//himiko
 [B1]<$E2>
 #EMBSET(24)
 [AF]<$42>
@@ -2625,7 +2625,7 @@ In return, here is my[NL]
 //アチシと (シバラク)の オッチャンの ぶんまで[NL]
 //ガンバってね! [END]
 Wow! Someone else searching[NL]
-for (Wataru). Good luck![END]
+for (Wataru)! Good luck![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3DE)//C4E7//isola boy by rock
@@ -2680,7 +2680,7 @@ rocks.[END]
 #WRITE(B2Ptr, $2C3E6)//C4EB//oasis house boy
 //スフィンクスって しってる?[NL]
 //けっこう あまのじゃくなんだぜ[END]
-Do you know the Sphinx?[NL]
+Do you know the (Sphinx)?[NL]
 He's really a demon![END]
 
 //----------------------------------------------------
@@ -2862,11 +2862,16 @@ people of (Isola).[END]
 Well done![END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C406)//C4FB//!!sphinx
+#WRITE(B2Ptr, $2C406)//C4FB//sphinx
 //(わたし)はスフィンクス (わたし)の しつもんにただしく[NL]
 //こたえることが できたら とおしてやろう[PAU][CL]
 //(おまえ)はつよいか?[NL]
 //   つよい   よわい
+I am the (Sphinx). Answer my[NL]
+questions correctly and you[NL]
+may pass.[PAU][CL]
+Are you strong?[NL]
+[A2]<$03>Yes[A2]<$03>No
 
 [B6]<$02><$08>
 #EMBSET(507)
@@ -2875,28 +2880,35 @@ Well done![END]
 
 //つぎ! (わたし)はつよいか?[NL]
 //   よわい  つよい
+Next! Am I strong?[NL]
+[A2]<$03>Yes[A2]<$03>No
 
-[B6]<$02><$07>
+[B6]<$02><$08>
 #EMBSET(508)
 #EMBWRITE(508)
 [CL]
 
 //では(おまえ)と(わたし) どちらがつよい?[NL]
 //  スフィンクス  [NAME]
+Then who is stronger?[NL]
+[A2]<$02>(Sphinx)[A2]<$03>[NAME]
 
 [B6]<$01><$09>
 #EMBSET(509)
 [CL]
 
 //キサマ! こころにも ないことを!え-い![PAU][B4]<$02>
-
+Bastard! Don't say things[NL]
+you don't mean![PAU][B4]<$02>
 [B8]<$10><$F3><$00>[END]
 
 #EMBWRITE(509)
 [CL]
 //おのれのちからも しらぬやつに ようはない[NL]
 //さっさと いくがいい[B4]<$01>[BA00][END]
-!C4FB[END]
+There is no use for someone[NL]
+who doesn't know their own[NL]
+power. Hurry up and go.[B4]<$01>[BA00][END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C408)//C4FC//icefield bridge noise
@@ -3102,35 +3114,51 @@ the higher the price...[PAU][CL]
 [B2]<$22>[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C430)//C510//!!gale old man ne by well
-//[B1]
-//#EMBSET(260)
-//<$AD>なんか さむくないですか?[NL]
+#WRITE(B2Ptr, $2C430)//C510//gale old man ne by well
+[B1]<$1B>
+#EMBSET(260)
+
+//なんか さむくないですか?[NL]
 //かぜが ふいてるみたいで(......)[END]
-//#EMBWRITE(260)
+It's kind of cold isn't it?[NL]
+Like the wind is blowing...[END]
+
+#EMBWRITE(260)
 //いどが ガスを だしていたことは わかりましたが[NL]
 //(かぜのくに)の きたの かいだんは なんでしょう?[END]
-!C510[END]
+I knew about the gas coming[NL]
+from the well.[PAU][CL]
+But what are the north[NL]
+stairs for?[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C432)//C511//!!gale woman outside shop
+#WRITE(B2Ptr, $2C432)//C511//gale woman outside shop
 //ガスでいえを ちいさくされて しまったんです[NL]
 //おかげでみんな いえにはいれなくなって(......)[END]
-!C511[END]
+The gas made all the houses[NL]
+shrink. Now no one can go[NL]
+insdie...[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C434)//C512//!!gale red girl sw
-//[B3]<$01>
-//#EMBSET(317)
-//[B1]<$1B>
-//#EMBSET(261)
+#WRITE(B2Ptr, $2C434)//C512//gale red girl sw
+[B3]<$01>
+#EMBSET(317)
+[B1]<$1B>
+#EMBSET(261)
 //だめだよ!いくらなんでも ネコのタマしかはいれないよ![END]
-//#EMBWRITE(261)
-//(Thank You!)[NL]
+It's useless! Only my cat[NL]
+Tama can fit inside![END]
+
+#EMBWRITE(261)
+(Thank You!)[NL]
 //じつは ボク タタル(ちゃん)です ネコによろしく[END]
-//#EMBWRITE(317)
+By the way, I'm Tataru.[NL]
+Please be nice to the cat.[END]
+
+#EMBWRITE(317)
 //タマが おこるときは イヌのにおいが したときだよ[END]
-!C512[END]
+Tama wakes up whenever he[NL]
+smells a dog.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C438)//C514
