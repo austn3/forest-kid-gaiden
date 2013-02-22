@@ -219,7 +219,7 @@ huge mistake...[END]
 //おお! よくやってくれた [NAME]よ[NL]
 //では れいとして (まどうしょ)を さずけよう
 Oh! Well done [NAME]![NL]
-(Please )accept (this) (spell)[NL]
+(Please )accept (this) (Spell)[NL]
 as a token of our thanks.
 
 [B5]<$71>
@@ -2283,7 +2283,7 @@ Can't teleport (here).[END]
 #W16($283D2)//C1E1
 //(テレポ-ト) しっぱい!![NL]
 //はじきかえされた   いてっ[END]
-Teleport failed!![NL]
+Teleport failed![NL]
 Rejected, ouch.[END]
 
 #W16($283D4)//C1E2
@@ -2374,7 +2374,7 @@ Come again.[END]
 Those who believe will[NL]
 be saved.[END]
 
-#W16($283F4)//C1F2//!!warp shop cancel
+#W16($283F4)//C1F2//warp shop cancel
 //いま きげんがわるいんだよ![NL]
 //はやくでていきな[END]
 I'm in a bad mood now![NL]
@@ -2875,7 +2875,7 @@ Until then, this is goodbye![BD]<$40>[END]
 [AE]<$07><$01><$1C><$03>[CL]
 [BB][A4]<$08>[END]
 
-#W16($284A4)//C24A//!!ending conclsion
+#W16($284A4)//C24A//!!ending conclusion
 //[C2]<$49>この そうかいざん ちゅう2かいそうの[NL]
 //へいわも すこしづつだが もどりはじめていた[BD]<$40>[CL]
 //かれはてていた はなも よみがえり[NL]
