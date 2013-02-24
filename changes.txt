@@ -2,9 +2,10 @@
 ; spectrum king
 $164C8:  C4 98  ->  C1 FB
 
+; lynx sage's house
 $1662D:  C4 DC  ->  C0 DD
 
-;ryujin-maru prologue
+; ryujin-maru prologue
 $1AD78:  C5 49  ->  C0 D5
 
 ; relocate pointer to death graphic
