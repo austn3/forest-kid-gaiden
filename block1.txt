@@ -40,8 +40,6 @@
 #W16($284E6)//C26B
 fix[END]
 
-#W16($281BA)//C0D5
-#W16($281CA)//C0DD
 #W16($281CC)//C0DE
 #W16($281CE)//C0DF
 #W16($281D6)//C0E3
@@ -239,7 +237,7 @@ And as I promised, won't[NL]
 //そうか!では[NAME]よ[NL]
 //たびがおわりしだい (けっこん)しきを[NL]
 //おこなう きをつけていくがいい[B2]<$0A>[END]
-Well (the)n! We'll hold (the)[NL]
+Well (the)n! We('ll )hold (the)[NL]
 wedding when (you)r journey[NL]
 is over. Be careful![B2]<$0A>[END]
 
@@ -260,7 +258,108 @@ Take care.[END]
 //----------------------------------------------------
 #W16($28408)//C1FC
 #EMBWRITE(403)
-[PAU][CL]I'll wait for you to[NL]make room.[END]
+#EMBWRITE(464)
+[PAU][CL]I('ll )wait for you to[NL]make room.[END]
+
+//----------------------------------------------------
+//#WRITE(B2Ptr, $2C3C8)//C4DC//lynx sages house
+#W16($281CA)//C0DD
+//わしは けんじゃをやってる (りンクス)というものじゃ[PAU][CL]
+I'm (Lynx). I'm sort of a[NL]
+sage around here.[PAU][CL]
+
+[B3]<$01>
+#EMBSET(311)
+
+//(ワタル)を たすけたくば (ドラゴン)の よっつの[NL]
+//ひほうをあつめ うみにある (ドラゴン)のへやに[NL]
+//いくがいい[PAU][CL]
+If (you) want to save (Wataru)[NL]
+(you) must find (the )4 dragon[NL]
+treasures,[PAU][CL]
+and take them to (the )[NL]
+Dragon('s )Room in[NL]
+(the )sea.[PAU][CL]
+
+//ひとつは さばくに のこりのみっつは しっちと うみ[NL]
+//そして (ゆうぼくみん)の ちかくにある[B4]<$01>
+(The )first is in the desert.[PAU][CL]
+(The )other 3 (you)('ll )find in[NL]
+(the )swamp, by (the )sea,[NL]
+and near (the )(Nomad) Camp.[B4]<$01>
+
+[AF]<$76>
+#EMBSET(22)
+[AF]<$6B>
+#EMBSET(23)
+#EMBWRITE(22)
+[END]
+
+#EMBWRITE(23)
+[PAU][CL]
+//ムッ! [NAME]よ それはむかし ワシがなくした[NL]
+//(まどうしょ) それをみつけるとは ラッキ-なやつ[NL]
+//もとどおりに してやるから もっていくがいい
+Ha! [NAME]! That's the[NL]
+spell I lost long ago.[PAU][CL]
+Well, today's your lucky[NL]
+day. I('ll )fix it up and[NL]
+let (you) have it.
+
+[B9]<$6B>
+#EMBSET(601)
+#EMBWRITE(601)
+[B5]<$76>
+#EMBSET(464)
+[END]
+
+#EMBWRITE(311)
+//しってることは これだけじゃ きをつけていくがよい[END]
+That's all I know.[NL]
+Take care.[END]
+
+//----------------------------------------------------
+//#WRITE(B2Ptr, $2C4A2)//C549//ryujin-maru prologue
+#W16($281BA)//C0D5
+//(わたし)は (りゅうじんまる) (ワタル)とともに[NL]
+//(ドアクダー)と たたかっている もうすぐ (ドアクダー)の[NL]
+//もとにたどりつく というときに とつぜん[PAU][CL]
+I am (Ryujin-Maru). I (fight)[NL]
+with (Wataru) to (protect)[NL]
+(Sokaizan) from (Dakdar).[PAU][CL]
+
+//このかいそうに とばされて しまったのだ[NL]
+//(わたし)と (ワタル)が ひきはなされた スキをついて[NL]
+//(ワタル)は (ドアクダー)に とらえられて しまったのだ[PAU][CL]
+We just about had him[NL]
+when suddenly, we were[NL]
+thrown into (this) (world).[PAU][CL]
+We were separated[NL]
+(and) (Wataru) has been[NL]
+captured.[PAU][CL]
+
+//そこで キミにてつだって ほしいのだ (ワタル)を[NL]
+//そしてこの そうかいざんの ききを すくうために
+[NAME], I need your help to[NL]
+save (Wataru)( and )(Sokaizan)[NL]
+from peril.
+#EMBWRITE(513)
+[PAU][CL]
+
+//いっしょに たたかって くれないだろうか?[NL]
+//   ひきうける  ことわる
+Will (you) (fight) with me?[NL]
+  Yes![A2]<$04>Umm...
+[B6]<$01><$09>
+#EMBSET(513)
+[CL]
+
+//(ありがとう) もしたたかいに なったら[NL]
+//このつるぎで (わたし)を よんでほしい[NL]
+//たのむぞ![NAME]![END]
+(Thank you). If (you) are in[NL]
+trouble, (you) can call me[NL]
+with (this) sword.[END]
 
 //----------------------------------------------------
 #W16($28010)//C000
@@ -315,9 +414,9 @@ Mmm feels great![END]
  <$0B>[A2]<$0B><$0B><$0B> M(oney):
  [A5]<$06><$68><$03><$06> <$0B> [NL]
  <$0B>[A2]<$0B><$0B><$0B> (Life) :
- [A5]<$0C><$68><$02><$03>-[A5]<$0E><$68><$02><$03> <$0B> [NL]
+[A5]<$0C><$68><$02><$03>-[A5]<$0E><$68><$02><$03> <$0B> [NL]
  <$0B>[A2]<$0B><$0B><$0B> (Magic):
- [A5]<$10><$68><$02><$03>-[A5]<$12><$68><$02><$03> <$0B> [NL]
+[A5]<$10><$68><$02><$03>-[A5]<$12><$68><$02><$03> <$0B> [NL]
 [AE]<$03><$01><$0A><$03>[A600][AE]<$00><$04><$20><$01>
  <$08>[A7]<$0B><$09><$0A><$08>[A7]<$0F><$09><$0A> [END]
 
@@ -888,7 +987,7 @@ try again.[END]
 [NAME] you must fight on![NL]
 [NL]
   I wont give up yet...[BD]<$30>[NL]
-  I'll try again![END]
+  I('ll )try again![END]
 
 #W16($28102)//C079
 //[NAME] は [END]
@@ -1739,7 +1838,7 @@ Vampire[END]
 
 #W16($282EE)//C16F
 //ネオゴ-ストン[END]
-Neo Death[END]
+Neo Ghostron[END]
 
 #W16($282F0)//C170
 //(ブロブ)パピ-[END]
@@ -2005,7 +2104,7 @@ That's not enough m(oney).
 
 #W16($28362)//C1A9
 //あぁ3あ ぼるら よっぱらっちゃったら.[END]
-Aaa... We're drunk.[END]
+Aaa... We('re )drunk.[END]
 
 #W16($28364)//C1AA
 //[NAME]には よめない.[END]
@@ -2736,7 +2835,7 @@ from battle.[C2]<$3B>[END]
 
 #W16($28484)//C23A
 //いつでも だいかんげいです.
-You're always welcome.
+You('re )always welcome.
 
 #W16($28486)//C23B
 [BD]<$20>[NL]
@@ -2789,7 +2888,7 @@ w[BE01]h[BE02]e[BE00]n [BE01]I'[BE00][BE04]m [BE01][BE05]c
 I[BE01]'l[BE02]l[BE00] r[BE01]e[BE00]m[BE01]e[BE00]m[BE02]b
 [BE00]e[BE02]r [BE01]t[BE00]he risk you[NL]
 took saving me (and) Sokaizan[BE00][BD]<$40>[CL]
-[A2]<$03>(and) I'll fight on.[BD]<$40>[END]
+[A2]<$03>(and) I('ll )fight on.[BD]<$40>[END]
 
 #W16($28494)//C242//!!ryujin-maru ending
 //[C2]<$40>[A2]<$04>[NAME] きみのゆうき そして[NL]
@@ -2859,7 +2958,8 @@ Until then, this is goodbye![BD]<$40>[END]
 //[BE10]く[BE11]や[BE0F]っ[BE10]て[BE0F]く
 //[BE10]れ[BE11]た[BE0F]![BD]<$40>[NL][END]
 [C2]<$40>[A2]<$04>
-[C0]<$1D>, well done!
+[C0]<$1D>, [BE10]w[BE11]e[BE0F]l[BE10]l
+ [BE0F]d[BE10]o[BE11]n[BE10]e[BE0F]!
 [BD]<$40>[NL][END]
 
 #W16($284A0)//C248
@@ -2868,7 +2968,8 @@ Until then, this is goodbye![BD]<$40>[END]
 //[BE0C]コ[BE0E] [BE0C]い[BE0E]い[BE0D]コ
 //[BE0C]![BD]<$40>[END]
 [C2]<$40>[A2]<$02>
-[C0]<$1D> is amazing! Yea!
+[C0]<$1D> [BE0C]i[BE0D]s [BE0E]a[BE0C]m[BE0D]a[BE0C]z
+[BE0E]i[BE0C]n[BE0D]g[BE0C]! [BE0E]Y[BE0D]e[BE0E]a!
 [BD]<$40>[END]
 
 #W16($284A2)//C249
@@ -2901,13 +3002,13 @@ Until then, this is goodbye![BD]<$40>[END]
 //[BD]<$FF>[CL][NL][NL][END]
 !C24D[END]
 
-#W16($284AC)//C24E
+#W16($284AC)//C24E//!!more ending
 //[C2]<$4C>そして [NAME]は にじのくにのおひめさまと[NL]
 //すえながく くらしたそうな......[BD]<$FF>[CL]
 //[NL][NL][END]
 !C24E[END]
 
-#W16($284AE)//C24F
+#W16($284AE)//C24F//more ending
 //[C2]<$4C>[A2]<$03>そして [NAME]もまた[NL]
 //[A2]<$03>あらたなぼうけんへとたびだった.....
 //[BD]<$FF>[CL][NL][NL][END]
@@ -2919,28 +3020,28 @@ for a new adventure...
 #W16($284B0)//C250
 [BB][A4]<$06>[END]
 
-#W16($284B4)//C252
+#W16($284B4)//C252//wataru out of the bottle
 //[C2]<$50>ありがとう...... [NAME][BD]<$40>[NL]
 //ほんとうに どうおれいを いったらいいのか[NL]
 //わからないよ[END]
-[C2]<$50>(Thank you)... [NAME][BD]<$40>[NL]
-Truely I can't find (the)[NL]
-words to express my thanks.[END]
+[C2]<$50>[NAME], thank you...[BD]<$40>[NL]
+Truly I'm at a loss for[NL]
+words.[END]
 
-#W16($284B6)//C253
+#W16($284B6)//C253//himiko ending
 //[C2]<$50>ワタル![END]
 [C2]<$50>(Wataru)![END]
 
-#W16($284B8)//C254
+#W16($284B8)//C254//himiko ending
 //[C2]<$50>ワタル ワタルぅ-![END]
 [C2]<$50>(Wataru) (Wataru)uu![END]
 
-#W16($284BA)//C255
+#W16($284BA)//C255//wataru dakdar defeated
 //[C2]<$50>やった!  それじゃ [NAME] ぼくを[NL]
 //かいだんの うえの さいだんに はこんでよ![END]
-[C2]<$50>Yea!  Now [NAME], take[NL]
-me to (the )alter at (the )top[NL]
-of (the )stairs![END]
+[C2]<$50>Yea! Now [NAME],[NL]
+take me to (the )altar at[NL]
+(the )top of (the )stairs![END]
 
 #W16($284C4)//C25A
 #W16($284C6)//C25B
