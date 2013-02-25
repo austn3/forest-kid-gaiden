@@ -459,13 +459,13 @@ Cursed[NL]S(pring)[END]
 
 #WRITE(B2Ptr, $2C068)//C32C
 //しっちの(ダンジョン)[NL]ちか1かい[END]
-Wetl(and)s[NL](Dungeon)[NL]
-1F[END]
+Swamp[NL](Dungeon)[NL]
+B1[END]
 
 #WRITE(B2Ptr, $2C06A)//C32D
 //しっちの(ダンジョン)[NL]ちか2かい[END]
-Wetl(and)s[NL](Dungeon)[NL]
-2F[END]
+Swamp[NL](Dungeon)[NL]
+B2[END]
 
 #WRITE(B2Ptr, $2C06C)//C32E
 //(ドラゴン)ル-ム[END]
@@ -665,7 +665,7 @@ B2[END]
 //デザ-ト ウェイ[END]
 Desert Way[END]
 
-#WRITE(B2Ptr, $2C0D4)//C362
+#WRITE(B2Ptr, $2C0D4)//!!C362
 //ダンプ ロ-ド[END]
 Dump Road[END]
 
@@ -785,10 +785,9 @@ Jungle[NL]Road[END]
 (Icefield[NL])(Warp Shop)[END]
 
 #WRITE(B2Ptr, $2C20A)//C3FD
-//01[END]
+01[END]
 #WRITE(B2Ptr, $2C20C)//C3FE
-//02[END]
-[END]
+02[END]
 
 #WRITE(B2Ptr, $2C20E)//C3FF
 //みしらぬばしょ[END]
@@ -1389,24 +1388,35 @@ to (the )ends of (the )earth.[END]
 (Welcome).[BF0001]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C326)//C48B
-//[AF]<$60>
-//#EMBSET(5)
+#WRITE(B2Ptr, $2C326)//C48B//find key by green flower
+[AF]<$60>
+#EMBSET(5)
 //はなのしたを かきわけると キラりとひかる ものが[NL]
 //あった!よくみるとそれは カギだった!
-//[B5]<$60>
-//#EMBSET(401)
-//[END]
-//#EMBWRITE(5)
+[NAME] looks under the flower[NL]
+and sees a glint of light.[PAU][NL]
+It's a key!
+
+[B5]<$60>
+#EMBSET(401)
+[END]
+
+#EMBWRITE(5)
 //みどりのはなを みつめていると くさもちが[NL]
 //たべたくなってしまった(......)[END]
-//#EMBWRITE(401)
-//[CL]
+After finding the green[NL]
+flower, [NAME] has the urge[NL]
+to eat Grass Mochi...[END]
+
+#EMBWRITE(401)
+[CL]
 //でももてないので そのままに しておくことにした[END]
-!C48B[END]
+But [NAME] can't carry[NL]
+anything else and leaves[NL]
+it on the ground.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C328)//C48C//!!port town ne house man
+#WRITE(B2Ptr, $2C328)//C48C//port town ne house man
 [B1]<$12>
 #EMBSET(216)
 //わしはふなのり ハイホハイホ[END]
@@ -1430,8 +1440,7 @@ outside. Go when you like.
 
 #EMBWRITE(301)
 //まあ えんりょなさるな[END]
-Please try to restrain[NL]
-yourself.[END]
+Try to contain yourself.[END]
 
 #EMBWRITE(6)
 #EMBWRITE(656)
@@ -1492,14 +1501,18 @@ for sure now.[END]
 I'm so jealous...[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C32E)//C48F//!!Kujin-Maru
+#WRITE(B2Ptr, $2C32E)//C48F//Kujin-Maru
 //(わたし)は (くうじんまる)(......) たましいとなった[NL]
 //(わたし)を つれていってください きっと おやくに[NL]
-//たてるでしょう
-[B4]<$01>[END]
+//たてるでしょう[B4]<$01>[END]
+I'm (Kujin-Maru)...[NL]
+I've become a spirit.[PAU][CL]
+Please take me with you.[NL]
+I will surely be of some use[NL]
+to you.[B4]<$01>[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C330)//C490
+#WRITE(B2Ptr, $2C330)//C490//!!
 //えらばれたるものよ みなのくらしを まもるために[NL]
 //このせかいを まもるために[NL]
 //[END]
@@ -1809,14 +1822,18 @@ Push (the )(right) one![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C34E)//C49F//swamp dungeon guy
-//[B1]<$30>
-//#EMBSET(14)
-//[AF]<$64>
-//#EMBSET(14)
+[B1]<$30>
+#EMBSET(14)
+[AF]<$64>
+#EMBSET(514)
 //どうにも したにある たからがとれんのじゃ[END]
-//#EMBWRITE(14)
+There's no way to get that[NL]
+treasure down there.[END]
+
+#EMBWRITE(14)
+#EMBWRITE(514)
 //ほお たいしたもんじゃ[END]
-!C49F[END]
+Woah... Amazing![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C350)//C4A0//icefield tower boatman
@@ -1960,9 +1977,10 @@ Hello! (Please )make[NL]
 (you)rself at home.[BF0102]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C362)//C4A9
+#WRITE(B2Ptr, $2C362)//C4A9//!!
 //(いらっしゃい)! (やどや)です[BF0104]
-!C4A9[END]
+Welcome! This is[NL]
+an inn.!C4A9[BF0104]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C364)//C4AA//port town inn
@@ -2045,24 +2063,31 @@ I caused.[END]
 !C4B6[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C37E)//C4B7//!!serpent in the sea
-//[AF]<$68>
-//#EMBSET(17)
-//[B3]<$01>//hmmm
-//#EMBSET(307)
-//#EMBWRITE(307)
+#WRITE(B2Ptr, $2C37E)//C4B7//serpent in the sea
+[AF]<$68>
+#EMBSET(17)
+[B3]<$01>//hmmm
+#EMBSET(307)
+#EMBWRITE(307)
+
 //よくきたな [NAME]よ さあ この[NL]
 //(サ-ぺント)のなみだを もってゆくがいい[B4]<$01>
-//[B5]<$68>
-//#EMBSET(463)
-//[END]
-//#EMBWRITE(17)
+It's good you came [NAME].[NL]
+You can take this[NL]
+(Serpent Tear).[B4]<$01>
+
+[B5]<$68>
+#EMBSET(463)
+[END]
+
+#EMBWRITE(17)
 //どうした?はやくゆけ いっこくも はやくはなを[NL]
 //さかせてやるのだ[END]
-!C4B7[END]
+What are you doing? Hurry[NL]
+and make the flowers bloom.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C380)//C4B8//hmmm
+#WRITE(B2Ptr, $2C380)//C4B8//!!
 #WRITE(B2Ptr, $2C382)//C4B9
 //[B5]<$09>
 //#EMBSET(412)
@@ -2220,15 +2245,16 @@ too shy to talk to boys.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3A2)//C4C9
-//[PAU][CL]
+[PAU][CL]
 //でもはこべないようですね[END]
-!C4C9[END]
+But you can't carry[NL]
+anything else.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3A4)//C4CA
-//[PAU][CL]
+[PAU][CL]
 //もちものを せいりしてこい[END]
-!C4CA[END]
+Please make some room.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3A6)//C4CB
@@ -2249,9 +2275,9 @@ too much.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3A8)//C4CC
-//#EMBWRITE(463)
+#EMBWRITE(463)
 #EMBWRITE(465)
-//#EMBWRITE(466)
+#EMBWRITE(466)
 //もてないなら せいりするまで まっているぞ[END]
 ([PAU][CL]I'll wait for you to[NL]make room.)[END]
 
@@ -3476,30 +3502,40 @@ Be careful, kid.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C47E)//C537//!!old man mountain dungeon
-//[B1]<$25>
-//#EMBSET(268)
-//[B1]<$21>
-//#EMBSET(269)
+[B1]<$25>
+#EMBSET(268)
+[B1]<$21>
+#EMBSET(269)
+
 //(おお)(おまえ)は [NAME][PAU][NL]
 //わしもここまで きたのだが[NL]
-//このいわが こわせんのじゃ みなみの かいだんを[PAU]
-//[CL]
+//このいわが こわせんのじゃ みなみの かいだんを[PAU][CL]
 //おりたところに (まどうしょ)が あるはずじゃ[NL]
 //それをとって トロッコで だっしゅつするがいい[NL]
 //(おまえ)が きてくれると おもってな いわを[PAU][CL]
 //パワ-の(まほう)で うごかしておいたぞ[PAU][CL]
-//#EMBWRITE(269)
-//[AF]<$6D>
-//#EMBSET(34)
+Oh! You're [NAME].[PAU][NL]
+
+
+#EMBWRITE(269)
+[AF]<$6D>
+#EMBSET(34)
+
 //この ふしぎなハシゴを もってゆけ[B2]<$21>[B4]<$01>
-//[B5]<$6D>
-//#EMBSET(466)
-//[END]
-//#EMBWRITE(34)
+Take this (Odd Ladder).[B2]<$21>[B4]<$01>
+
+[B5]<$6D>
+#EMBSET(466)
+[END]
+
+#EMBWRITE(34)
 //[NAME]よ やまの(しんでん)に むかってくれ![END]
-//#EMBWRITE(268)
+[NAME], please go to the[NL]
+mountain shrine![END]
+
+#EMBWRITE(268)
 //よくやった! きをつけて いくのだぞ[END]
-!C537[END]
+Good job! Be careful.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C480)//C538//!!last tower warning
