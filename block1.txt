@@ -40,9 +40,6 @@
 #W16($284E6)//C26B
 fix[END]
 
-#W16($281CC)//C0DE
-#W16($281CE)//C0DF
-#W16($281D6)//C0E3
 #W16($281EC)//C0EE
 #W16($281EE)//C0EF
 #W16($282F8)//C174
@@ -179,8 +176,108 @@ Please [END]
 oney[END]
 
 //----------------------------------------------------
-//#WRITE(B2Ptr, $2C340)//C498//spectrum king
+#W16($281CC)//C0DE
+//#WRITE(B2Ptr, $2C300)//C478//merchanton old man
+[AF]<$61>
+#EMBSET(33)
+[B1]<$03>
+#EMBSET(896)
+
+//(ちかごろ) (ダンジョン)から (セカンドガン)が でて[NL]
+//こまっているんです[PAU][CL]
+Recently (2nd-Gun) has[NL]
+been leaving his dungeon.[PAU][CL]
+[B1]<$02>
+#EMBSET(204)
+
+//みんな すっかりおびえてしまって(......)[NL]
+//[NAME]さん (あなた)の つよいところを[NL]
+//みせてもらえま(せんか?)[END]
+Everyone is scared. We[NL]
+don't know what to do.[NL]
+[NAME], please help us![END]
+
+#EMBWRITE(204)
+[CL]
+//えっ?[NL]
+//(マシン)を たおして くださったのですか![NL]
+//おれいに (にじのくに)にはいれる (つうこうしょう)を[NL]
+//さしあげます
+What?[NL]
+(You) (defeat)ed (2nd-Gun)![PAU][CL]
+(Please )take (this) (Spectrum[NL])
+(Gate Pass) as our thanks.
+[B5]<$61>
+#EMBSET(400)
+[END]
+
+#EMBWRITE(400)
+[PAU][CL]
+//おや?それいじょう なにも もてないようじゃ[NL]
+//また あとにしま(しょう)[END]
+Oh? (You) can't hold (anything)[NL]
+else? Well come back later[NL]
+(the)n.[END]
+
+#EMBWRITE(33)
+#EMBWRITE(896)
+//(ありがとう)(ござい)(ました)[NL]
+//みな ぶじにくらすことが できます[END]
+(Thank you), [NAME]![NL]
+Now we can live in peace.[END]
+
+//----------------------------------------------------
+#W16($281CE)//C0DF
+//#WRITE(B2Ptr, $2C338)//C494//shibaraku icefield tower
+[B1]<$04>
+#EMBSET(221)
+[B3]<$01>
+#EMBSET(302)
+[B3]<$04>
+#EMBSET(303)
+
+//(せっしゃ) (シバラク) ともうすもの (ワタル)が ここに[NL]
+//いるときいたので きてみたら つれさられて いたのだ[PAU][CL]
+I am called (Shibaraku).[NL]
+I heard (Wataru) was being[NL]
+held (here).[PAU][CL]
+But he had (already) been[NL]
+taken away when I arrived.[PAU][CL]
+
+#EMBWRITE(303)
+//おまけに とじこめられて しまったのだ とびらを[NL]
+//あけるのを てつだって くれんか?[NL]
+//   てつだう   ことわる
+What('s )worse, I've been[NL]
+locked up (here).[PAU][CL]
+Won't (you) help me open[NL]
+(this) gate?[NL]
+[A2]<$03>Help[A2]<$03>Don't
+
+[B6]<$02><$09>
+#EMBSET(502)
+[CL]
+#EMBWRITE(302)
+//ならば とびらの むこうにいってくれ[B4]<$01>[END]
+Ok, go to (the )o(the)r side[NL]
+of (the )gate.[B4]<$01>[END]
+
+#EMBWRITE(502)
+[CL]
+//そんなっっ![NL]
+//おぬし ちと つめたすぎるのではないか?(......)[B4]<$04>[END]
+What!?[NL]
+Sir, don't (you) think[NL]
+that's a little cold[NL]
+hearted?[B4]<$04>[END]
+
+#EMBWRITE(221)
+//さぁっ いかれよ![END]
+Ok... Let('s )go![END]
+
+//----------------------------------------------------
 #W16($28406)//C1FB
+//#WRITE(B2Ptr, $2C340)//C498//spectrum king
 [AF]<$71>
 #EMBSET(13)
 [B1]<$08>
@@ -256,14 +353,73 @@ I've taken a liking to[NL]
 Take care.[END]
 
 //----------------------------------------------------
+#W16($281D6)//C0E3
+//#WRITE(B2Ptr, $2C350)//C4A0//icefield tower boatman
+[B3]<$01>
+#EMBSET(306)
+[B1]<$05>
+#EMBSET(227)
+
+//だめだめ そうかんたんには ふねにのせないよ//[PAU]
+Woah t(here). (You) can't just[NL]
+take (the )boat like (that).[PAU]
+
+[B1]<$E1>
+#EMBSET(848)
+[AF]<$41>
+#EMBSET(858)
+[B1]<$24>
+#EMBSET(898)
+
+[CL]
+//(おまえ)も (ワタル)を さがしているのか?[NL]
+//(シバラク)とかいうやつも うえに いったんだが(......)[B2]<$24>
+Are (you) looking for (Wataru)[NL]
+too? A guy named (Shibaraku)[NL]
+(already) went up (the )t(ower)...[B2]<$24>
+
+#EMBWRITE(848)
+#EMBWRITE(858)
+#EMBWRITE(898)
+[B1]<$04>
+#EMBSET(228)
+[END]
+
+#EMBWRITE(228)
+[CL]
+[B3]<$01>
+#EMBSET(366)
+
+//なに? (シバラク)なら さきにいったぞ ワシなりに[NL]
+//(ワタル)を さがすといっていたが(......)[PAU][CL]
+//たいへんなようだから このフネに のせてやるよ[B4]<$01>[END]
+What? (Shibaraku)('s )(already)[NL]
+gone. I was hoping to find[NL]
+(Wataru) too...[PAU][CL]
+Well considering the[NL]
+situation, you can take[NL]
+(the )boat.[B4]<$01>[END]
+
+#EMBWRITE(366)
+#EMBWRITE(306)
+//はやく このフネに のりなよ[B4]<$01>[END]
+Hurry up and get on board![B4]<$01>[END]
+
+#EMBWRITE(227)
+//フネに のりたかったら いつでも いってくれ[B4]<$01>[END]
+If you need (the )boat again[NL]
+just say so.[B4]<$01>[END]
+
+//----------------------------------------------------
+//----------------------------------------------------
 #W16($28408)//C1FC
 #EMBWRITE(403)
 #EMBWRITE(464)
 [PAU][CL]I('ll )wait for you to[NL]make room.[END]
 
 //----------------------------------------------------
-//#WRITE(B2Ptr, $2C3C8)//C4DC//lynx sages house
 #W16($281CA)//C0DD
+//#WRITE(B2Ptr, $2C3C8)//C4DC//lynx sages house
 //わしは けんじゃをやってる (りンクス)というものじゃ[PAU][CL]
 I'm (Lynx). I'm sort of a[NL]
 sage around here.[PAU][CL]
@@ -2274,18 +2430,18 @@ Boo![END]
 //では [C0]<$75> ひかせてもらう![END]
 !C1CC[END]
 
-#W16($283AA)//C1CD
+#W16($283AA)//C1CD//!!serpent tear in the well
 //(サ-ぺントのなみだ)を いどへおとした.[NL]
 //ここちよいねいろが あたりをつつみこみ[NL]
 //まばゆいばかりのひかりをはなった.[BD]<$30>[END]
 !C1CD[END]
 
-#W16($283AC)//C1CE
+#W16($283AC)//C1CE//serpent tear not by well
 //いまつかってもしょうがないとおもいます.[END]
-Using it now probably isn't[NL]
-a good idea.[END]
+Probably shouldn't use[NL]
+it now.[END]
 
-#W16($283AE)//C1CF
+#W16($283AE)//C1CF//!!serpent tear int the well
 //かれはてていた このちに うるおいがもどり[NL]
 //むらじゅうのくさばなが いっせいに はなをさかせた.[NL]
 //ほんらいの うつくしむらに もどったのである.[END]

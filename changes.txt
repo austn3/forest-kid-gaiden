@@ -1,6 +1,16 @@
 ; script block changes
+
+; merchanton old man
+$16410:  C478  ->  C0 DE
+
 ; spectrum king
 $164C8:  C4 98  ->  C1 FB
+
+; icefield boatman
+$16529:  C4 A0  ->  C0 E3
+
+; shibaraku icefield
+$1653D:  C4 94  ->  C0 DF
 
 ; lynx sage's house
 $1662D:  C4 DC  ->  C0 DD

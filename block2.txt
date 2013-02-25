@@ -960,7 +960,8 @@ I'm a horse![END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C2FA)//C475//nomad inn
 //え-っ (やどや)でございます[BF0100]
-(Welcome) to (the )(Inn).[BF0100]
+Oh... (Welcome) to[NL]
+our (Inn).[BF0100]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C2FC)//C476//nomad tent woman
@@ -1023,56 +1024,6 @@ Take care of (you)rself.[NL]
 //----------------------------------------------------
 //  Merchanton
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C300)//C478//merchanton old man
-[AF]<$61>
-#EMBSET(3)
-[B1]<$03>
-#EMBSET(896)
-
-//(ちかごろ) (ダンジョン)から (セカンドガン)が でて[NL]
-//こまっているんです[PAU][CL]
-Recently (2nd-Gun) has[NL]
-been leaving his dungeon.[PAU][CL]
-[B1]<$02>
-#EMBSET(204)
-
-//みんな すっかりおびえてしまって(......)[NL]
-//[NAME]さん (あなた)の つよいところを[NL]
-//みせてもらえま(せんか?)[END]
-Everyone is scared. We[NL]
-don't know what to do.[NL]
-[NAME], please help us![END]
-
-#EMBWRITE(204)
-[CL]
-//えっ?[NL]
-//(マシン)を たおして くださったのですか![NL]
-//おれいに (にじのくに)にはいれる (つうこうしょう)を[NL]
-//さしあげます
-What?[NL]
-(You) (defeat)ed (2nd-Gun)![PAU][CL]
-(Please )take (this) (Spectrum[NL])
-(Gate Pass) as our thanks.
-[B5]<$61>
-#EMBSET(400)
-[END]
-
-#EMBWRITE(400)
-[PAU][CL]
-//おや?それいじょう なにも もてないようじゃ[NL]
-//また あとにしま(しょう)[END]
-Oh? (You) can't hold (anything)[NL]
-else? Well come back later[NL]
-(the)n.[END]
-
-#EMBWRITE(3)
-#EMBWRITE(896)
-//(ありがとう)(ござい)(ました)[NL]
-//みな ぶじにくらすことが できます[END]
-(Thank you), [NAME]![NL]
-Now we can live in peace.[END]
-
-//----------------------------------------------------
 #WRITE(B2Ptr, $2C302)//C479//nomad shop
 //なにが いりようかな?[BF0000]
 Need (anything)?[BF0000]
@@ -1126,7 +1077,8 @@ in business! Thanks![END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C30A)//C47D//merchanton inn
 //みんなの(やどや)です [BF0101]
-Everyone('s )welcome.[BF0101]
+Everyone('s )[NL]
+welcome here.[BF0101]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C30C)//C47E//merchanton house woman
@@ -1516,6 +1468,9 @@ to you.[B4]<$01>[END]
 //えらばれたるものよ みなのくらしを まもるために[NL]
 //このせかいを まもるために[NL]
 //[END]
+//It's something you must choose
+//to protect the people
+//to protect the world
 !C490[END]
 
 //----------------------------------------------------
@@ -1616,54 +1571,6 @@ Brave hero,[NL]
 //(サザビ-)さまのちからに なってください![END]
 Brave [NAME]! (Please )help[NL]
 (Sazabi)![END]
-
-//----------------------------------------------------
-#WRITE(B2Ptr, $2C338)//C494//shibaraku icefield tower
-[B1]<$04>
-#EMBSET(221)
-[B3]<$01>
-#EMBSET(302)
-[B3]<$04>
-#EMBSET(303)
-
-//(せっしゃ) (シバラク) ともうすもの (ワタル)が ここに[NL]
-//いるときいたので きてみたら つれさられて いたのだ[PAU][CL]
-I am called (Shibaraku).[NL]
-I heard (Wataru) was being[NL]
-held (here).[PAU][CL]
-But he had (already) been[NL]
-taken away when I arrived.[PAU][CL]
-
-#EMBWRITE(303)
-//おまけに とじこめられて しまったのだ とびらを[NL]
-//あけるのを てつだって くれんか?[NL]
-//   てつだう   ことわる
-What('s )worse, I've been[NL]
-locked up (here).[PAU][CL]
-Won't (you) help me open[NL]
-(this) gate?[NL]
-[A2]<$03>Help[A2]<$03>Don't
-
-[B6]<$02><$09>
-#EMBSET(502)
-[CL]
-#EMBWRITE(302)
-//ならば とびらの むこうにいってくれ[B4]<$01>[END]
-Ok, go to (the )o(the)r side[NL]
-of (the )gate.[B4]<$01>[END]
-
-#EMBWRITE(502)
-[CL]
-//そんなっっ![NL]
-//おぬし ちと つめたすぎるのではないか?(......)[B4]<$04>[END]
-What!?[NL]
-Sir, don't (you) think[NL]
-that's a little cold[NL]
-hearted?[B4]<$04>[END]
-
-#EMBWRITE(221)
-//さぁっ いかれよ![END]
-Ok... Let('s )go![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C33A)//C495//icefield inn man
@@ -1834,63 +1741,6 @@ treasure down there.[END]
 #EMBWRITE(514)
 //ほお たいしたもんじゃ[END]
 Woah... Amazing![END]
-
-//----------------------------------------------------
-#WRITE(B2Ptr, $2C350)//C4A0//icefield tower boatman
-[B3]<$01>
-#EMBSET(306)
-[B1]<$05>
-#EMBSET(227)
-
-//だめだめ そうかんたんには ふねにのせないよ//[PAU]
-Woah t(here). (You) can't just[NL]
-take (the )boat like (that).[PAU]
-
-[B1]<$E1>
-#EMBSET(848)
-[AF]<$41>
-#EMBSET(858)
-[B1]<$24>
-#EMBSET(898)
-
-[CL]
-//(おまえ)も (ワタル)を さがしているのか?[NL]
-//(シバラク)とかいうやつも うえに いったんだが(......)[B2]<$24>
-Are (you) looking for (Wataru)[NL]
-too? A guy named (Shibaraku)[NL]
-(already) went up (the )t(ower)...[B2]<$24>
-
-#EMBWRITE(848)
-#EMBWRITE(858)
-#EMBWRITE(898)
-[B1]<$04>
-#EMBSET(228)
-[END]
-
-#EMBWRITE(228)
-[CL]
-[B3]<$01>
-#EMBSET(366)
-
-//なに? (シバラク)なら さきにいったぞ ワシなりに[NL]
-//(ワタル)を さがすといっていたが(......)[PAU][CL]
-//たいへんなようだから このフネに のせてやるよ[B4]<$01>[END]
-What? (Shibaraku)('s )(already)[NL]
-gone. I was hoping to find[NL]
-(Wataru) too...[PAU][CL]
-Well considering the[NL]
-situation, you can take[NL]
-(the )boat.[B4]<$01>[END]
-
-#EMBWRITE(366)
-#EMBWRITE(306)
-//はやく このフネに のりなよ[B4]<$01>[END]
-Hurry up and get on board![B4]<$01>[END]
-
-#EMBWRITE(227)
-//フネに のりたかったら いつでも いってくれ[B4]<$01>[END]
-If you need (the )boat again[NL]
-just say so.[B4]<$01>[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C356)//C4A3//icefield inn woman
@@ -2066,7 +1916,7 @@ I caused.[END]
 #WRITE(B2Ptr, $2C37E)//C4B7//serpent in the sea
 [AF]<$68>
 #EMBSET(17)
-[B3]<$01>//hmmm
+[B3]<$01>
 #EMBSET(307)
 #EMBWRITE(307)
 
@@ -2089,11 +1939,10 @@ and make the flowers bloom.[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C380)//C4B8//!!
 #WRITE(B2Ptr, $2C382)//C4B9
-//[B5]<$09>
-//#EMBSET(412)
-//[B5]<$08>
-//#EMBSET(413)[END]
-!C4B8,B9[END]
+[B5]<$09>
+#EMBSET(412)
+[B5]<$08>
+#EMBSET(413)[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C384)//C4BA//boy outside lovely e house
@@ -2266,8 +2115,8 @@ Please make some room.[END]
 //#EMBWRITE(409)
 //#EMBWRITE(410)
 //#EMBWRITE(411)
-//#EMBWRITE(412)
-//#EMBWRITE(413)
+#EMBWRITE(412)
+#EMBWRITE(413)
 [PAU][CL]
 //でも にもつがおおくて もてない[END]
 Oh, you've already got[NL]
@@ -2287,10 +2136,10 @@ too much.[END]
 How can I help you?[BF0007]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3AC)//C4CE//woman lovely e house
+#WRITE(B2Ptr, $2C3AC)//C4CE//woman lovely inn
 //すぐに ゲンキに なりますよ[BF0105]
-(You)('ll )feel better[NL]
-soon.[BF0105]
+(You)('ll )feel[NL]
+ better soon.[BF0105]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3AE)//C4CF//woman lovely se house
@@ -2388,8 +2237,8 @@ there was a (Serpent)![END]
 //なみだがひつようなんだ (みなとまち)の ふなのりが[NL]
 //ちからになって くれるはずだ[B2]<$12>[END]
 To make the withered[NL]
-flowers bloom again we need[NL]
-a (Serpent)('s )Tear.[PAU][CL]
+flowers bloom again we[NL]
+need a (Serpent Tear).[PAU][CL]
 (You)('ll )need help from the[NL]
 boatmen in (Port Town).[B2]<$12>[END]
 
@@ -2518,16 +2367,16 @@ to (defeat) me will earn (you)[NL]
 a quick death![PAU][B8]<$02><$1F><$00>[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3CC)//C4DE//!!forest inn
+#WRITE(B2Ptr, $2C3CC)//C4DE//forest inn
 [B1]<$11>
 #EMBSET(240)
 [B1]<$0B>
 #EMBSET(241)
+
 #EMBWRITE(240)
 //ん-っ ひさしぶりの おきゃくだね![BF0103]
 What!? A customer?![NL]
 It's been so long.[BF0103]
-//[END]
 
 #EMBWRITE(241)
 //(あんた) (1000ゴ-ルド)はらったひとだね[NL]
@@ -2679,7 +2528,8 @@ He's really a demon![END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3E8)//C4EC//sea inn
 //うちはただの(やどや)です[BF0107]
-(This is )just an inn.[NL][BF0107]
+(This is )just[NL]
+an inn.[BF0107]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3EA)//C4ED//oasis house inn
@@ -2687,9 +2537,9 @@ He's really a demon![END]
 Please take a rest.[NL][BF0108]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3EC)//C4EE
+#WRITE(B2Ptr, $2C3EC)//C4EE//!!
 //(いらっしゃい)[BF000B]
-(Welcome) ...where?.[BF000B]
+(Welcome) !where?.[BF000B]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3EE)//C4EF//food storehouse floor
@@ -2705,7 +2555,7 @@ is a spell that can summon[NL]
 lightning.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3F2)//C4F1//last stop shop
+#WRITE(B2Ptr, $2C3F2)//C4F1//!!last stop shop
 //みずのなかに ふるぼけた (まどうしょ)があった!
 This old spell was in[NL]
 (the )water!
@@ -2786,7 +2636,7 @@ treasure is in (the )swamp.[PAU][CL]
 !C4F7[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C400)//C4F8
+#WRITE(B2Ptr, $2C400)//C4F8//!!
 //ここほれ ワンワン![CL]
 //[B3]<$01>
 //#EMBSET(312)
@@ -2812,7 +2662,7 @@ treasure is in (the )swamp.[PAU][CL]
 !C4F8[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C402)//C4F9
+#WRITE(B2Ptr, $2C402)//C4F9//!!
 //げんきそうがあった!
 //[B5]<$0D>
 //#EMBSET(409)
@@ -3222,12 +3072,12 @@ Sage (Lynx) just came through[NL]
 his way to (the )mountains.[B2]<$29>[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C448)//C51C
+#WRITE(B2Ptr, $2C448)//C51C//!!
 //やっといえにはいれ(ました) (ありがとう)(ござい)ます[END]
 !C51C[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C44A)//C51D
+#WRITE(B2Ptr, $2C44A)//C51D//!!
 //ここから (チャップスぬま)をこえ(ダボ-ドさんみゃく)にむかうなら
 // (まどうしょ)はおろか (マシン)をそろえていないと きびしいぞ[END]
 !C51D[END]
@@ -3334,7 +3184,7 @@ Just ahead from here lies[NL]
 !C52B[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C468)//C52C
+#WRITE(B2Ptr, $2C468)//C52C//!!
 //(おまえ)か! (ワタル)をたすけると いってるヤツは![PAU][NL]
 //わらわせるな! (おまえ)のような ふとどきものは[NL]
 //せいさいを くわえる![PAU][B8]<$19><$B1><$00>[END]
@@ -3615,12 +3465,12 @@ is an entrance to the[NL]
 underground.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C48E)//C53F
+#WRITE(B2Ptr, $2C48E)//C53F///!!
 //おや? (サザビ-)さんのような ひとがいる[B2]<$20>[END]
 !C53F[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C490)//C540
+#WRITE(B2Ptr, $2C490)//C540//!!
 //ええ みんな こまっています <$FF>
 !C540[END]
 
@@ -3650,12 +3500,12 @@ with a key went there...[END]
 (Lovely) bloom again! Yea![END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C496)//C543
+#WRITE(B2Ptr, $2C496)//C543//!!
 //いわのわれめを けとばすと くだけてしまった![B4]<$01>[BA00][END]
 !C543[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C498)//C544
+#WRITE(B2Ptr, $2C498)//C544//!!
 //けんじゃ (サザビ-)のかきおきがあった[PAU][CL]
 //ワシはこれから やまにいく にどと もどらぬかも[NL]
 //しれぬので あとのことは よろしくたのむ[NL]
