@@ -1202,7 +1202,7 @@ Risky Weed[END]
 
 #W16($28116)//C083
 //ル-ジュのくすり[END]
-Mega E(the)r[END]
+Mega (Ether)[END]
 
 #W16($28118)//C084
 //ちからのくすり[END]
@@ -2450,8 +2450,8 @@ it now.[END]
 #W16($283B0)//C1D0
 //よろしいですか[NL]
 //[C1]<$D4>[END]
-// Okay?[NL]
-//[C1]<$D4>[END]
+ Okay?[NL]
+[C1]<$D4>[END]
 
 #W16($283B2)//C1D1
 //いいですか?[NL]
@@ -2543,11 +2543,11 @@ Rejected, ouch.[END]
 
 #W16($283D4)//C1E2
 //(テレポ-ト)(を つかった.)[END]
-Used teleport.[END]
+Used Teleport.[END]
 
 #W16($283D6)//C1E3
 //(エスケ-プ)(を つかった.)[END]
-Used escape.[END]
+Used Escape.[END]
 
 #W16($283D8)//C1E4
 //どこに にげるきですか?[END]
@@ -2605,7 +2605,7 @@ Intellegence[B0]
 //(げんきそう)(を つかった.)[NL]
 //すばやさが[B0]<$22><$9F>
 //#EMBSET(9)
-[NAME]( used )(the )(Hermes Herb)[NL]
+[NAME]( used )(the )(Herb)[NL]
 Speed[B0]
 #EMBSET(11)
 
