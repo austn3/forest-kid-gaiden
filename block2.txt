@@ -3080,17 +3080,17 @@ somewhere in (the )city.[END]
 [B1]<$1B>
 #EMBSET(263)
 //ナ-ゴ [END]
-Neargo[END]
+((Meow))[END]
 
 #EMBWRITE(263)
 [AF]<$6A>
 #EMBSET(29)
 //ナ-ゴ [END]
-Neargo[END]
+((Meow))[END]
 
 #EMBWRITE(29)
 //フ-![B4]<$01>[END]
-Foo-![END]
+((His-!))[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C450)//C520//!!gale old man w
@@ -3481,10 +3481,9 @@ is an entrance to the[NL]
 underground.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C48E)//C53F///!!
+#WRITE(B2Ptr, $2C48E)//C53F//!!
 //おや? (サザビ-)さんのような ひとがいる[B2]<$20>[END]
-Oh? There's a guy like[NL]
-(Sazabi) here.[B2]<$20>[END]
+Oh? That looks like (Sazabi).[B2]<$20>[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C490)//C540//!!
