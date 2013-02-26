@@ -40,9 +40,6 @@
 #W16($284E6)//C26B
 fix[END]
 
-#W16($281EC)//C0EE
-#W16($281EE)//C0EF
-#W16($282F8)//C174
 #W16($282FA)//C175
 #W16($282FC)//C176
 #W16($282FE)//C177
@@ -157,6 +154,9 @@ Welcome[END]
 
 #W16($281D4)//C0E2
 right[END]
+
+#W16($281EE)//C0EF
+mountain[END]
 
 #W16($283F8)//C1F4
 ower[END]
@@ -411,6 +411,55 @@ If you need (the )boat again[NL]
 just say so.[B4]<$01>[END]
 
 //----------------------------------------------------
+#W16($281EC)//C0EE
+//#WRITE(B2Ptr, $2C406)//C4FB//sphinx
+//(わたし)はスフィンクス (わたし)の しつもんにただしく[NL]
+//こたえることが できたら とおしてやろう[PAU][CL]
+//(おまえ)はつよいか?[NL]
+//   つよい   よわい
+I am (the )(Sphinx). Answer my[NL]
+questions correctly and (you)[NL]
+may pass.[PAU][CL]
+Are (you) strong?[NL]
+[A2]<$03>Yes[A2]<$03>No
+
+[B6]<$02><$08>
+#EMBSET(507)
+#EMBWRITE(507)
+[CL]
+
+//つぎ! (わたし)はつよいか?[NL]
+//   よわい  つよい
+Next! Am I strong?[NL]
+[A2]<$03>Yes[A2]<$03>No
+
+[B6]<$02><$08>
+#EMBSET(508)
+#EMBWRITE(508)
+[CL]
+
+//では(おまえ)と(わたし) どちらがつよい?[NL]
+//  スフィンクス  [NAME]
+Then who is stronger?[NL]
+[A2]<$02>(Sphinx)[A2]<$03>[NAME]
+
+[B6]<$01><$09>
+#EMBSET(509)
+[CL]
+
+//キサマ! こころにも ないことを!え-い![PAU][B4]<$02>
+Bastard! Don't say things[NL]
+(you) don't mean![PAU][B4]<$02>
+[B8]<$10><$F3><$00>[END]
+
+#EMBWRITE(509)
+[CL]
+//おのれのちからも しらぬやつに ようはない[NL]
+//さっさと いくがいい[B4]<$01>[BA00][END]
+There is no use for someone[NL]
+who doesn't know their own[NL]
+power. Hurry up and go.[B4]<$01>[BA00][END]
+
 //----------------------------------------------------
 #W16($28408)//C1FC
 #EMBWRITE(403)
@@ -475,8 +524,8 @@ That's all I know.[NL]
 Take care.[END]
 
 //----------------------------------------------------
-//#WRITE(B2Ptr, $2C4A2)//C549//ryujin-maru prologue
 #W16($281BA)//C0D5
+//#WRITE(B2Ptr, $2C4A2)//C549//ryujin-maru prologue
 //(わたし)は (りゅうじんまる) (ワタル)とともに[NL]
 //(ドアクダー)と たたかっている もうすぐ (ドアクダー)の[NL]
 //もとにたどりつく というときに とつぜん[PAU][CL]
@@ -517,6 +566,46 @@ Will (you) (fight) with me?[NL]
 trouble, (you) can call me[NL]
 with (this) sword.[END]
 
+//----------------------------------------------------
+#W16($282F8)//C174
+//#WRITE(B2Ptr, $2C4A6)//C54B//lynx in the cave
+[B1]<$E3>
+#EMBSET(275)
+//[NAME]! ワシじゃ! (りンクス)じゃ![NL]
+[NAME]! It's me (Lynx)![NL]
+
+[B1]<$28>
+#EMBSET(276)
+//(おまえ)は (くうじんまる)に あっていないようだな[NL]
+//それならば ここを とおすわけにいかぬ (おまえ)を[PAU][CL]
+//みすみす しにおいやるようなものだ[NL]
+//(ひょうげん)のとうに (ワタル)とともにいって[NL]
+//そこで (くうじんまる)に あってくるがよい[END]
+You haven't met (Kujin-Maru).[NL]
+If I let you pass I'd be[NL]
+sending you to your death.[PAU][CL]
+Take (Wataru) to the east[NL]
+(Icefield) Tower. There you[NL]
+should meet (Kujin-Maru).
+
+#EMBWRITE(276)
+//(くうじんまる)を たすけたのか ならば (おまえ)の[NL]
+//(りゅうじんまる)は さいごのたたかいに そなえて[PAU][CL]
+//りゅうおうまるに なっているはず[NL]
+[PAU][CL]
+If (Kujin-Maru) gave you his[NL]
+help, then your (Ryujin-Maru)[NL]
+has fought his last.[PAU][CL]
+But look! He's become[NL] 
+(Ryuou-Maru)!
+
+#EMBWRITE(275)
+//いくがいい![NAME]よ[B2]<$E3>[END]
+[PAU][CL]
+Your ready now [NAME]![B2]<$E3>[END]
+
+
+//----------------------------------------------------
 //----------------------------------------------------
 #W16($28010)//C000
 [AD]<$20><$04><$02><$03>[END]
@@ -787,7 +876,7 @@ no (magic)[NL] to use.[END]
 //ひょんなことから ちゅう2かいそうという[NL]
 //しらないせかいに まぎれこんでしまった......[END]
 [BB][AE]<$03><$00><$1C><$0F>[A4]<$04>
-(Sokaizan) (the )mountain of [NL]
+(Sokaizan) (the )(mountain) of [NL]
 (the )gods was conqured by [NL]
 an evil emperor (Dakdar).  [NL]
 Darkness fell on (the )l(and)[NL]
@@ -801,7 +890,7 @@ he fought to save (Sokaizan).[NL]
 Until s(omething) strange  [NL]
 happened, (the)y were      [NL]
 transported to an unknown[NL]
-part of (the )mountain...[END]
+part of (the )(mountain)...[END]
 
 #W16($2806C)//C02E
 //[A4]<$02>おぬし まちがえたな.[END]
@@ -2998,7 +3087,7 @@ You('re )always welcome.
 
 //あと [C1]<$AF>で [C1]<$AE>です.[NL]
 //がんばってください.[END]
-Lvl Up [C1]<$AF>Exp. Keep at it.[END]
+Lvl Up in [C1]<$AF> Exp.[END]
 
 #W16($28488)//C23C
 //は [AB]<$0F>ダメ-ジを うけない![END]
@@ -3109,21 +3198,21 @@ meet peace will have[NL]
 returned to Sokaizan.[BD]<$40>[CL]
 Until then, this is goodbye![BD]<$40>[END]
 
-#W16($2849E)//C247
+#W16($2849E)//C247//shibaraku ending "well done"
 //[C2]<$40>[A2]<$04>[C0]<$1D>ど[BE10]の[BE0F] よ
 //[BE10]く[BE11]や[BE0F]っ[BE10]て[BE0F]く
 //[BE10]れ[BE11]た[BE0F]![BD]<$40>[NL][END]
-[C2]<$40>[A2]<$04>
+[C2]<$40>[A2]<$05>
 [C0]<$1D>, [BE10]w[BE11]e[BE0F]l[BE10]l
  [BE0F]d[BE10]o[BE11]n[BE10]e[BE0F]!
 [BD]<$40>[NL][END]
 
-#W16($284A0)//C248
+#W16($284A0)//C248//himiko ending "amazing"
 //[C2]<$40>[A2]<$02>[C0]<$1D>は[BE0C] エ[BE0D]ラ
 //[BE0E]い[BE0C]の[BE0D]だ[BE0C]!い[BE0D]い
 //[BE0C]コ[BE0E] [BE0C]い[BE0E]い[BE0D]コ
 //[BE0C]![BD]<$40>[END]
-[C2]<$40>[A2]<$02>
+[C2]<$40>[A2]<$03>
 [C0]<$1D> [BE0C]i[BE0D]s [BE0E]a[BE0C]m[BE0D]a[BE0C]z
 [BE0E]i[BE0C]n[BE0D]g[BE0C]! [BE0E]Y[BE0D]e[BE0E]a!
 [BD]<$40>[END]
@@ -3210,30 +3299,29 @@ take me to (the )altar at[NL]
 found (# coins).[BD]<$20>[END]
 
 #W16($284D2)//C261
-[C2]<$64>[B0]<$8B><$AC>
+[C2]<$64>[B0]
 #EMBSET(10)
 [END]
 
 #W16($284D4)//C262
-[C2]<$64>[C2]<$65>[C2]<$66>[END]
+[C2]<$64>gained [C2]<$65>.[BD]<$20>[END]
 
 #W16($284D6)//C263
 //[C2]<$64>えるものが なにもなかった.[END]
 [C2]<$64>didn't find (anything).[END]
 
 #W16($284D8)//C264
-//[CL]
-//[NAME]は [END]
-[CL]
-[NAME] [END]
+//[CL][NAME]は [END]
+[CL][NAME] [END]
 
 #W16($284DA)//C265
 //[AD]<$EB><$63><$03><$06>ポイントの けいけんち[END]
-[AD]<$EB><$63><$03><$06> Exp[END]
+(#exp) Exp[END]
 
 #W16($284DC)//C266
 //を [AB]<$08>てにいれた.[BD]<$20>[END]
-[AB]<$08>found[BD]<$20>[END]
+//[AB]<$08>found[BD]<$20>[END]
+!C266[END]
 
 #W16($284DE)//C267
 //[NL]

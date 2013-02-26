@@ -663,7 +663,7 @@ B2[END]
 
 #WRITE(B2Ptr, $2C0D2)//C361
 //デザ-ト ウェイ[END]
-Desert Way[END]
+Desert[NL]Way[END]
 
 #WRITE(B2Ptr, $2C0D4)//C362//!!
 //ダンプ ロ-ド[END]
@@ -889,7 +889,7 @@ st(and)ing watch.[END]
 //やまに いったらしいけど[END]
 I heard (Sazabi) disappeared[NL]
 again. Went to (the)[NL]
-mountains (the)y say.[END]
+(mountain)s (the)y say.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C2F2)//C471//nomad entrance guy
@@ -910,7 +910,7 @@ p(ower) of (Sazabi)('s )(magic).[END]
 [NAME], (Sazabi) left a message[NL]
 for (you). He said (the )secret[NL]
 to breaking (Wataru)('s )curse[PAU][CL]
-is in (the )mountain temple.[END]
+is in (the )(mountain) temple.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C2F4)//C472//nomad girl outside the tent
@@ -933,7 +933,7 @@ suffer at (the )h(and)s of[NL]
 //むかわれたのです [NAME]さんが きてくれることを[NL]
 //のぞんで いらしたようですよ[END]
 (Sazabi) went alone to (the)[NL]
-mountain temple. He wanted[NL]
+(mountain) temple. He wanted[NL]
 (you) to come too.[END]
 
 //----------------------------------------------------
@@ -1531,7 +1531,7 @@ north.[END]
 #EMBWRITE(218)
 //(サザビ-)さまは やまに いってしまわれたんだ[END]
 (Sazabi) went into (the)[NL]
-mountains.[END]
+(mountain)s.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C336)//C493//passage house guy
@@ -2256,7 +2256,7 @@ undeground passage.[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3B6)//C4D3//isola inn
 //きずをおってちゃ たたかえないよ[BF0106]
-(You)('re )injured. You[NL]
+If (you)('re )hurt you[NL]
 shouldn't fight.[BF0106]
 
 //----------------------------------------------------
@@ -2527,8 +2527,7 @@ He's really a demon![END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3E8)//C4EC//sea inn
 //うちはただの(やどや)です[BF0107]
-(This is )just[NL]
-an inn.[BF0107]
+(This is )just an inn.[NL][BF0107]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3EA)//C4ED//oasis house inn
@@ -2554,10 +2553,10 @@ is a spell that can summon[NL]
 lightning.[END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3F2)//C4F1//!!last stop shop
+#WRITE(B2Ptr, $2C3F2)//C4F1//jungle spring ...spell
 //みずのなかに ふるぼけた (まどうしょ)があった!
-This old spell was in[NL]
-(the )water!
+There's an old spell[NL]
+in (the )water!
 [B5]<$6B>
 #EMBSET(405)
 [B2]<$14>[END]
@@ -2583,8 +2582,8 @@ something is there.[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3FA)//C4F5//gale inn
 //とまってきな[BF0109]
-Take a break for[NL]
-awhile.[BF0109]
+Stop and rest[NL]
+for a while.[BF0109]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3FC)//C4F6//pyramid guardian
@@ -2713,55 +2712,6 @@ people of (Isola).[END]
 Well done![END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C406)//C4FB//sphinx
-//(わたし)はスフィンクス (わたし)の しつもんにただしく[NL]
-//こたえることが できたら とおしてやろう[PAU][CL]
-//(おまえ)はつよいか?[NL]
-//   つよい   よわい
-I am (the )(Sphinx). Answer my[NL]
-questions correctly and (you)[NL]
-may pass.[PAU][CL]
-Are (you) strong?[NL]
-[A2]<$03>Yes[A2]<$03>No
-
-[B6]<$02><$08>
-#EMBSET(507)
-#EMBWRITE(507)
-[CL]
-
-//つぎ! (わたし)はつよいか?[NL]
-//   よわい  つよい
-Next! Am I strong?[NL]
-[A2]<$03>Yes[A2]<$03>No
-
-[B6]<$02><$08>
-#EMBSET(508)
-#EMBWRITE(508)
-[CL]
-
-//では(おまえ)と(わたし) どちらがつよい?[NL]
-//  スフィンクス  [NAME]
-Then who is stronger?[NL]
-[A2]<$02>(Sphinx)[A2]<$03>[NAME]
-
-[B6]<$01><$09>
-#EMBSET(509)
-[CL]
-
-//キサマ! こころにも ないことを!え-い![PAU][B4]<$02>
-Bastard! Don't say things[NL]
-(you) don't mean![PAU][B4]<$02>
-[B8]<$10><$F3><$00>[END]
-
-#EMBWRITE(509)
-[CL]
-//おのれのちからも しらぬやつに ようはない[NL]
-//さっさと いくがいい[B4]<$01>[BA00][END]
-There is no use for someone[NL]
-who doesn't know their own[NL]
-power. Hurry up and go.[B4]<$01>[BA00][END]
-
-//----------------------------------------------------
 #WRITE(B2Ptr, $2C408)//C4FC//icefield bridge noise
 //ピキッ![B4]<$01>[END]
 ((crack))[B4]<$01>[END]
@@ -2817,7 +2767,7 @@ his power more than ever.[END]
 #EMBWRITE(510)
 [CL]
 //そんなこといわないでさ おねがい![B4]<$02>[END]
-Please, I'm begging you.B4]<$02>[END]
+Please, I'm begging you.[B4]<$02>[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C40E)//C4FF//gale well gate
@@ -3103,7 +3053,7 @@ But I can't say it's safe.[B4]<$01>[BA00][END]
 //むかった (りンクス)という けんじゃも そうだったんだ[B2]<$29>[END]
 (You) can use (magic) too. Old[NL]
 Sage (Lynx) just came through[NL]
-his way to (the )mountains.[B2]<$29>[END]
+his way to (the )(mountain)s.[B2]<$29>[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C448)//C51C//!!
@@ -3441,7 +3391,7 @@ Take this (Odd Ladder).[B2]<$21>[B4]<$01>
 #EMBWRITE(34)
 //[NAME]よ やまの(しんでん)に むかってくれ![END]
 [NAME], please go to the[NL]
-mountain shrine![END]
+(mountain) shrine![END]
 
 #EMBWRITE(268)
 //よくやった! きをつけて いくのだぞ[END]
@@ -3573,15 +3523,15 @@ The rock cracked and[NL]
 crumbled to pieces![B4]<$01>[BA00][END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C498)//C544//!!
+#WRITE(B2Ptr, $2C498)//C544//sazabi's will cursed spring
 //けんじゃ (サザビ-)のかきおきがあった[PAU][CL]
 //ワシはこれから やまにいく にどと もどらぬかも[NL]
 //しれぬので あとのことは よろしくたのむ[NL]
 //(......)そう かいてあった[END]
 It's old (Sazabi)('s )will.[PAU][CL]
-'I'm going to the mountains[NL]
+"I'm off to the (mountain)s[NL]
 probably never to return.[NL]
-please take care of...'[END]
+please take care of..."[PAU][END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C49A)//C545//dakdar escape
@@ -3633,8 +3583,8 @@ business in (Icefield)?[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C4A0)//C548//icefield inn
 //だいぶ おつかれですね?[BF010C]
-(You)('re )really tired[NL]
-aren't (you)?[BF010C]
+(You)('re )really[NL]
+tired aren't (you)?[BF010C]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C4A4)//C54A//gale well monster
@@ -3651,43 +3601,6 @@ there is nothing (you) can[NL]
 do, because I'm going to[NL]
 kill (you).[PAU]
 [B8]<$26><$E0><$00>[END]
-
-//----------------------------------------------------
-#WRITE(B2Ptr, $2C4A6)//C54B//lynx in the cave
-[B1]<$E3>
-#EMBSET(275)
-//[NAME]! ワシじゃ! (りンクス)じゃ![NL]
-[NAME]! It's me (Lynx)![NL]
-
-[B1]<$28>
-#EMBSET(276)
-//(おまえ)は (くうじんまる)に あっていないようだな[NL]
-//それならば ここを とおすわけにいかぬ (おまえ)を[PAU][CL]
-//みすみす しにおいやるようなものだ[NL]
-//(ひょうげん)のとうに (ワタル)とともにいって[NL]
-//そこで (くうじんまる)に あってくるがよい[END]
-You haven't met (Kujin-Maru).[NL]
-If I let you pass I'd be[NL]
-sending you to your death.[PAU][CL]
-Take (Wataru) to the east[NL]
-(Icefield) Tower. There you[NL]
-should meet (Kujin-Maru).
-
-#EMBWRITE(276)
-//(くうじんまる)を たすけたのか ならば (おまえ)の[NL]
-//(りゅうじんまる)は さいごのたたかいに そなえて[PAU][CL]
-//りゅうおうまるに なっているはず[NL]
-[PAU][CL]
-If (Kujin-Maru) gave you his[NL]
-help, then your (Ryujin-Maru)[NL]
-has fought his last.[PAU][CL]
-But look! He's become[NL] 
-(Ryuou-Maru)!
-
-#EMBWRITE(275)
-//いくがいい![NAME]よ[B2]<$E3>[END]
-[PAU][CL]
-Your ready now [NAME]![B2]<$E3>[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C4A8)//C54C//spectrum red long house

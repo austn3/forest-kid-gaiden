@@ -1,7 +1,10 @@
 ; script block changes
 
+; sphinx
+$159AA:  FB C4  ->  EE C0
+
 ; merchanton old man
-$16410:  C478  ->  C0 DE
+$16410:  C4 78  ->  C0 DE
 
 ; spectrum king
 $164C8:  C4 98  ->  C1 FB
@@ -17,6 +20,9 @@ $1662D:  C4 DC  ->  C0 DD
 
 ; ryujin-maru prologue
 $1AD78:  C5 49  ->  C0 D5
+
+; lynx in cave
+$16869:  C5 4B  ->  C1 74
 
 ; relocate pointer to death graphic
 $206C5: 88  ->  B8
