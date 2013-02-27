@@ -883,7 +883,7 @@ no (magic)[NL] to use.[END]
 //とりもどそうと たたかっていたのだが   [NL]
 //ひょんなことから ちゅう2かいそうという[NL]
 //しらないせかいに まぎれこんでしまった......[END]
-[BB][AE]<$03><$00><$1C><$0F>[A4]<$04>
+[BB][AE]<$03><$00><$1D><$0F>[A4]<$04>
 (Sokaizan) (the )(mountain) of [NL]
 (the )gods was conqured by [NL]
 an evil emperor (Dakdar).  [NL]
@@ -898,7 +898,8 @@ he fought to save (Sokaizan).[NL]
 Until s(omething) strange  [NL]
 happened, (the)y were      [NL]
 transported to an unknown[NL]
-part of (the )(mountain)...[END]
+part of (the )(mountain)...
+[NL][NL][NL][NL][END]
 
 #W16($2806C)//C02E
 //[A4]<$02>おぬし まちがえたな.[END]
@@ -3109,12 +3110,16 @@ didn't take [AB]<$0A>any damage![END]
 //には [AB]<$0F>きかなかった![END]
  wasn't [AB]<$09>affected![END]
 
+//----------------------------------------------------
+//                     Ending
+//---------------------------------------------------- 
 #W16($2848E)//C23F
 #W16($28490)//C240
-[AE]<$03><$0B><$1B><$03>[CL]
+[AE]<$03><$0B><$1B><$02>[CL]
 [BB][A4]<$08>[BD]<$10>[END]
 
-#W16($28492)//C241
+//----------------------------------------------------
+#W16($28492)//C241//wataru thinkin of you
 //[C2]<$40>[A2]<$05>[C0]<$1D> こ[BE01]の[BE00]さ[BE02]き
 //[BE00]の[BE02]た[BE01]た[BE00]か[BE01]い[BE02]で[BE00][NL]
 //く[BE01]じ[BE02]け[BE00]そ[BE01]う[BE00][BE04]に[BE01]
@@ -3132,16 +3137,25 @@ didn't take [AB]<$0A>any damage![END]
 //お[BE01]も[BE00]い[BE01]だ[BE02]し[BE00]て[BE01] [BE00]が[BE01]
 //[BE04]ん[BE00][BE05]ば[BE02][BE04]る[BE00][BE03]よ[BD]<$40>[END]
 
+[C2]<$40>
+In future battles when I'm[NL]
+[A2]<$05>close to defeat,[BD]<$40>[CL]
+I'll remember your bravery[NL]
+[A2]<$04>and I'll fight on.[BD]<$40>[END]
 
-
-#W16($28494)//C242//!!ryujin-maru ending
+//----------------------------------------------------
+#W16($28494)//C242//ryujin-maru ending
 //[C2]<$40>[A2]<$04>[NAME] きみのゆうき そして[NL]
 //[A2]<$04>へいわをあいする こころを[BD]<$40>[CL]
 //[A2]<$05>わたしたちは わすれない[NL]
 //[A2]<$02>きっと そのきもちに こたえてみせよう[BD]<$40>[END]
-!C242[END]
+[C2]<$40>
+ [NAME], your courage and[NL]
+[A2]<$06>peaceful heart,[BD]<$40>[CL]
+[A2]<$03>we will never forget.[BD]<$40>[END]
 
-#W16($28496)//C243
+//----------------------------------------------------
+#W16($28496)//C243//wataru defeat dakdar
 //[C2]<$40>ボ[BE01]ク[BE02]た[BE00]ち[BE01]は[BE00] [BE01]こ
 //[BE00]れ[BE02]か[BE00]ら[BE02]ド[BE01]ア[BE00]ク[BE01]ダ[BE02]-
 //[BE00]の[BE01] [BE00]と[BE01]こ[BE00]ろ[BE02]に[BE00]い[BE02]く
@@ -3158,13 +3172,13 @@ didn't take [AB]<$0A>any damage![END]
 //[BE00] [BE04] [BE05] [BE04] [BE03][BD]<$40>[END]
 
 [C2]<$40>
-[A2]<$02>
 We are going after Dakdar.[BD]<$40>[CL]
-We must stop him at once and[NL]
+ We must defeat him and[NL]
 restore peace to Sokaizan.
-[BD]<$40>[END]
+[BE00] [BE04] [BE05] [BE04] [BE03][BD]<$40>[END]
 
-#W16($28498)//C244
+//----------------------------------------------------
+#W16($28498)//C244//shibaraku saved us
 //[C2]<$40>[A2]<$04>せ[BE10]わ[BE11]に[BE0F]な
 //[BE10]っ[BE11]た[BE0F]! [C0]<$1D>ど[BE10]の
 //[BE0F]![BD]<$40>[END]
@@ -3172,7 +3186,8 @@ restore peace to Sokaizan.
 You saved us [C0]<$1D>!
 [BD]<$40>[END]
 
-#W16($2849A)//C245
+//----------------------------------------------------
+#W16($2849A)//C245//himiko bye!
 //[C2]<$40>[A2]<$02>バ[BE0D]イ[BE0E]バ[BE0D]-イ
 //[BE0C]! [C0]<$1D> ま[BE0D]た[BE0E]あ[BE0C]お
 //[BE0D]う[BE0E]ね[BE0C]![BD]<$40>[END]
@@ -3180,7 +3195,8 @@ You saved us [C0]<$1D>!
 Bye bye! See you again!
 [BD]<$40>[END]
 
-#W16($2849C)//C246
+//----------------------------------------------------
+#W16($2849C)//C246//wataru meet again
 //[C2]<$40>[A2]<$03>そ[BE07]れ[BE08]じ[BE06]ゃ[BE07] [BE06]
 //[C0]<$1D> こ[BE07]ん[BE06]ど[BE08][BE0A]あ[BE06][BE0B]う[BE08]
 //[BE0A]と[BE07][BE09]き[BE06]は[BE07][NL]
@@ -3191,13 +3207,14 @@ Bye bye! See you again!
 //[BE08][BE0B]な[BE06][BE0A]ら[BE09]! ま[BE07]た[BE08] [BE06]ど
 //[BE07]こ[BE06]か[BE07]で[BE06][BE0A]あ[BE08][BE0B]お[BE06]
 //[BE0A]う[BE09]!....[BD]<$40>[END]
-[C2]<$40>[A2]<$02>
-Well [C0]<$1D>, next time we[NL]
-meet peace will have[NL]
-returned to Sokaizan.[BD]<$40>[CL]
-Until then, this is goodbye![NL]
-We'll meet again somewhere![BD]<$40>[END]
+[C2]<$40>
+Well [C0]<$1D> next time we meet[BD]<$40>[CL]
+ peace will have returned[NL]
+[A2]<$07>to Sokaizan.[BD]<$40>[CL]
+Until then this is goodbye.[NL]
+We'll meet again somewhere![BD]<$60>[END]
 
+//----------------------------------------------------
 #W16($2849E)//C247//shibaraku ending "well done"
 //[C2]<$40>[A2]<$04>[C0]<$1D>ど[BE10]の[BE0F] よ
 //[BE10]く[BE11]や[BE0F]っ[BE10]て[BE0F]く
@@ -3207,6 +3224,7 @@ We'll meet again somewhere![BD]<$40>[END]
  [BE0F]d[BE10]o[BE11]n[BE10]e[BE0F]!
 [BD]<$40>[NL][END]
 
+//----------------------------------------------------
 #W16($284A0)//C248//himiko ending "amazing"
 //[C2]<$40>[A2]<$02>[C0]<$1D>は[BE0C] エ[BE0D]ラ
 //[BE0E]い[BE0C]の[BE0D]だ[BE0C]!い[BE0D]い
@@ -3217,11 +3235,13 @@ We'll meet again somewhere![BD]<$40>[END]
 [BE0E]i[BE0C]n[BE0D]g[BE0C]! [BE0E]Y[BE0D]e[BE0E]a!
 [BD]<$40>[END]
 
+//----------------------------------------------------
 #W16($284A2)//C249
-[AE]<$07><$01><$1C><$03>[CL]
+[AE]<$02><$01><$1C><$03>[CL]
 [BB][A4]<$08>[END]
 
-#W16($284A4)//C24A//!!ending conclusion
+//----------------------------------------------------
+#W16($284A4)//C24A//ending conclusion
 //[C2]<$49>この そうかいざん ちゅう2かいそうの[NL]
 //へいわも すこしづつだが もどりはじめていた[BD]<$40>[CL]
 //かれはてていた はなも よみがえり[NL]
@@ -3230,48 +3250,69 @@ We'll meet again somewhere![BD]<$40>[END]
 //ひとびとのこころにも ふたたび[NL]
 //へいわが よみがえろうとしていた[BD]<$80>[CL]
 //[NL][NL][NL][END]
-!C24A[END]
+[C2]<$49>
+ Little by little peace[NL]
+ began to return to the[NL]
+ second layer of (Sokaizan).[BD]<$40>[CL]
+ Dead flowers were reborn,[NL]
+ the land was washed clean,[NL]
+ the (Mashin)s went away,[BD]<$40>[CL]
+ and once again, peace[NL]
+ returned to the hearts[NL]
+ of the people.[BD]<$80>[CL]
+[END]
 
-#W16($284A6)//C24B//!!more ending
+//----------------------------------------------------
+#W16($284A6)//C24B//more ending
 //[C2]<$49>ワタルのことばが よみがえる[BD]<$40>[NL]
 //さようなら! [BD]<$10>また どこかであおう!......[END]
-!C24B[END]
+[C2]<$49>
+[NAME] recalled (Wataru)('s )words[BD]<$40>[NL]
+[A2]<$08>"Goodbye."[NL][BD]<$10>
+[A2]<$04>"again somewhere"...[END]
 
+//----------------------------------------------------
 #W16($284A8)//C24C
-[AE]<$04><$0B><$1A><$02>[CL]
+[AE]<$04><$0B><$1B><$03>[CL]
 [BB][A4]<$06>[END]
 
-#W16($284AA)//C24D//ending off to defeat dakdar
+//----------------------------------------------------
+#W16($284AA)//C24D//wataru conclusion
 //[C2]<$4C>ワタルたちいっこうは ドアクダ-をたおすため[NL]
 //たびだっていった
 //[BD]<$FF>[CL][NL][NL][END]
 [C2]<$4C>
-(Wataru) and his friends[NL]
-set out on their journey to[NL]
-defeat (Dakdar).
+ (Wataru) and his friends[NL]
+set out on their journey[NL]
+[A2]<$04>to defeat (Dakdar)
 [BD]<$FF>[CL][NL][NL][END]
 
-#W16($284AC)//C24E//ending marry the princess
+//----------------------------------------------------
+#W16($284AC)//C24E//princess conclusion
 //[C2]<$4C>そして [NAME]は にじのくにのおひめさまと[NL]
 //すえながく くらしたそうな......[BD]<$FF>[CL]
 //[NL][NL][END]
-[C2]<$4C>[NAME] and the (Spectrum)
-princess lived hapily ever[NL]
-after...[BD]<$FF>[CL]
+[C2]<$4C>
+[A2]<$03>and [NAME] and the[NL]
+(Spectrum) princess lived[NL]
+  hapily ever after...[BD]<$FF>[CL]
 [NL][NL][END]
 
-#W16($284AE)//C24F//more ending
+//----------------------------------------------------
+#W16($284AE)//C24F//adventure conclusion
 //[C2]<$4C>[A2]<$03>そして [NAME]もまた[NL]
 //[A2]<$03>あらたなぼうけんへとたびだった.....
 //[BD]<$FF>[CL][NL][NL][END]
-[C2]<$4C>[A2]<$03>
-And [NAME] set off again[NL]
-for a new adventure...
+[C2]<$4C>
+and [NAME] set off again[NL]
+  for a new adventure...
 [BD]<$FF>[CL][NL][NL][END]
 
+//----------------------------------------------------
 #W16($284B0)//C250
 [BB][A4]<$06>[END]
 
+//----------------------------------------------------
 #W16($284B4)//C252//wataru out of the bottle
 //[C2]<$50>ありがとう...... [NAME][BD]<$40>[NL]
 //ほんとうに どうおれいを いったらいいのか[NL]
@@ -3280,20 +3321,26 @@ for a new adventure...
 Truly (I'm )at a loss for[NL]
 words.[END]
 
+//----------------------------------------------------
 #W16($284B6)//C253//himiko ending
 //[C2]<$50>ワタル![END]
 [C2]<$50>(Wataru)![END]
 
+//----------------------------------------------------
 #W16($284B8)//C254//himiko ending
 //[C2]<$50>ワタル ワタルぅ-![END]
 [C2]<$50>(Wataru) (Wataru)uu![END]
 
+//----------------------------------------------------
 #W16($284BA)//C255//wataru dakdar defeated
 //[C2]<$50>やった!  それじゃ [NAME] ぼくを[NL]
 //かいだんの うえの さいだんに はこんでよ![END]
 [C2]<$50>Yea! Now [NAME],[NL]
 take me to (the )altar at[NL]
 (the )top of (the )stairs![END]
+
+//----------------------------------------------------
+//----------------------------------------------------
 
 #W16($284C4)//C25A
 #W16($284C6)//C25B
