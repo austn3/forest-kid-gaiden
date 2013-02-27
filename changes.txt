@@ -18,6 +18,9 @@ $1653D:  C4 94  ->  C0 DF
 ; lynx sage's house
 $1662D:  C4 DC  ->  C0 DD
 
+; sazabi mountain dungeon
+$16817:  C5 37  ->  C1 5F
+
 ; ryujin-maru prologue
 $1AD78:  C5 49  ->  C0 D5
 

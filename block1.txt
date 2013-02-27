@@ -39,7 +39,6 @@
 #W16($284E6)//C26B
 fix[END]
 
-#W16($282CE)//C15F
 #W16($28302)//C179
 #W16($2830E)//C17F
 #W16($2842C)//C20E
@@ -182,6 +181,13 @@ Please [END]
 
 #W16($28412)//C201
 oney[END]
+
+//----------------------------------------------------
+#W16($28408)//C1FC
+#EMBWRITE(403)
+#EMBWRITE(464)
+#EMBWRITE(466)
+[PAU][CL]I('ll )wait for (you) to[NL]make room.[END]
 
 //----------------------------------------------------
 #W16($281CC)//C0DE
@@ -464,15 +470,9 @@ Bastard! Don't say things[NL]
 [CL]
 //おのれのちからも しらぬやつに ようはない[NL]
 //さっさと いくがいい[B4]<$01>[BA00][END]
-There is no use for someone[NL]
+(There is )no use for someone[NL]
 who doesn't know their own[NL]
 power. Hurry up and go.[B4]<$01>[BA00][END]
-
-//----------------------------------------------------
-#W16($28408)//C1FC
-#EMBWRITE(403)
-#EMBWRITE(464)
-[PAU][CL]I('ll )wait for you to[NL]make room.[END]
 
 //----------------------------------------------------
 #W16($281CA)//C0DD
@@ -489,7 +489,7 @@ sage around here.[PAU][CL]
 //いくがいい[PAU][CL]
 If (you) want to save (Wataru)[NL]
 (you) must find (the )4 (dragon)[NL]
-treasures,[PAU][CL]
+(treasure)s,[PAU][CL]
 and take them to (the )[NL]
 (Dragon)('s )Room in[NL]
 (the )sea.[PAU][CL]
@@ -575,6 +575,51 @@ trouble, (you) can call me[NL]
 with (this) sword.[END]
 
 //----------------------------------------------------
+#W16($282CE)//C15F
+//#WRITE(B2Ptr, $2C47E)//C537//sazabi mountain dungeon
+[B1]<$25>
+#EMBSET(268)
+[B1]<$21>
+#EMBSET(269)
+
+//(おお)(おまえ)は [NAME][PAU][NL]
+//わしもここまで きたのだが[NL]
+//このいわが こわせんのじゃ みなみの かいだんを[PAU][CL]
+//おりたところに (まどうしょ)が あるはずじゃ[NL]
+//それをとって トロッコで だっしゅつするがいい[NL]
+//(おまえ)が きてくれると おもってな いわを[PAU][CL]
+//パワ-の(まほう)で うごかしておいたぞ[PAU][CL]
+Oh! You're [NAME].[PAU][NL]
+I came this far too, but[NL]
+this rock is in the way.[PAU][CL]
+(There is )supposed to be a[NL]
+spell if you go up the[NL]
+(south) (stairs).[PAU][CL]
+You (should) take that rail[NL]
+car to get out.[PAU][CL]
+
+#EMBWRITE(269)
+[AF]<$6D>
+#EMBSET(34)
+
+//この ふしぎなハシゴを もってゆけ[B2]<$21>[B4]<$01>
+You'll need this[NL]
+(Odd Ladder) too.[B2]<$21>[B4]<$01>
+
+[B5]<$6D>
+#EMBSET(466)
+[END]
+
+#EMBWRITE(34)
+//[NAME]よ やまの(しんでん)に むかってくれ![END]
+[NAME], please go to the[NL]
+(mountain) shrine![END]
+
+#EMBWRITE(268)
+//よくやった! きをつけて いくのだぞ[END]
+Good job! Be careful.[END]
+
+//----------------------------------------------------
 #W16($282F8)//C174
 //#WRITE(B2Ptr, $2C4A6)//C54B//lynx in the cave
 [B1]<$E3>
@@ -589,11 +634,11 @@ with (this) sword.[END]
 //みすみす しにおいやるようなものだ[NL]
 //(ひょうげん)のとうに (ワタル)とともにいって[NL]
 //そこで (くうじんまる)に あってくるがよい[END]
-You haven't met (Kujin-Maru).[NL]
+You have(n't )met (Kujin-Maru).[NL]
 If I let you pass I'd be[NL]
-sending you to your death.[PAU][CL]
+sending you to (your) death.[PAU][CL]
 Take (Wataru) to the east[NL]
-(Icefield) Tower. There you[NL]
+(Icefield) Tower. (There) (you)[NL]
 should meet (Kujin-Maru).
 
 #EMBWRITE(276)
@@ -3044,7 +3089,7 @@ water from[NL]
 //----------------------------------------------------
 #W16($28470)//C230
 //どうぞ あちらで おやすみください.[END]
-Please rest over there.[END]
+Please rest over (there).[END]
 
 #W16($28472)//C231
 //たびのつかれを いやしてくださいネ.[END]
