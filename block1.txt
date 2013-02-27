@@ -25,7 +25,6 @@
 //(まほう) その15[END]
 #W16($2812E)//C08F
 //デバッグよう[END]
-#W16($282CE)//C15F
 #W16($28304)//C17A
 #W16($2836C)//C1AE
 //(Level) アップ[END]
@@ -40,10 +39,7 @@
 #W16($284E6)//C26B
 fix[END]
 
-#W16($282FA)//C175
-#W16($282FC)//C176
-#W16($282FE)//C177
-#W16($28300)//C178
+#W16($282CE)//C15F
 #W16($28302)//C179
 #W16($2830E)//C17F
 #W16($2842C)//C20E
@@ -157,6 +153,18 @@ right[END]
 
 #W16($281EE)//C0EF
 mountain[END]
+
+#W16($282FA)//C175
+It('s )[END]
+
+#W16($282FC)//C176
+I'm [END]
+
+#W16($282FE)//C177
+heard[END]
+
+#W16($28300)//C178
+south[END]
 
 #W16($283F8)//C1F4
 ower[END]
@@ -470,7 +478,7 @@ power. Hurry up and go.[B4]<$01>[BA00][END]
 #W16($281CA)//C0DD
 //#WRITE(B2Ptr, $2C3C8)//C4DC//lynx sages house
 //わしは けんじゃをやってる (りンクス)というものじゃ[PAU][CL]
-I'm (Lynx). I'm sort of a[NL]
+(I'm )(Lynx). (I'm )sort of a[NL]
 sage around here.[PAU][CL]
 
 [B3]<$01>
@@ -480,10 +488,10 @@ sage around here.[PAU][CL]
 //ひほうをあつめ うみにある (ドラゴン)のへやに[NL]
 //いくがいい[PAU][CL]
 If (you) want to save (Wataru)[NL]
-(you) must find (the )4 dragon[NL]
+(you) must find (the )4 (dragon)[NL]
 treasures,[PAU][CL]
 and take them to (the )[NL]
-Dragon('s )Room in[NL]
+(Dragon)('s )Room in[NL]
 (the )sea.[PAU][CL]
 
 //ひとつは さばくに のこりのみっつは しっちと うみ[NL]
@@ -572,7 +580,7 @@ with (this) sword.[END]
 [B1]<$E3>
 #EMBSET(275)
 //[NAME]! ワシじゃ! (りンクス)じゃ![NL]
-[NAME]! It's me (Lynx)![NL]
+[NAME]! (It's )me (Lynx)![NL]
 
 [B1]<$28>
 #EMBSET(276)
@@ -723,7 +731,7 @@ Make up your mind...[NL]
 #EMBSET(1)
 
 #W16($28036)//C013
-Um... I'm sorry.[NL]
+Um... (I'm )sorry.[NL]
 That's not enough.[END]
 
 #W16($28038)//C014
@@ -1361,7 +1369,7 @@ Long Sword[END]
 
 #W16($2813A)//C095
 //せいりゅうけん[END]
-Dragon Blade[END]
+(Dragon) Blade[END]
 
 #W16($2813C)//C096
 //きあいの(たんけん)[END]
@@ -2147,7 +2155,7 @@ can't use![END]
 
 #W16($2831A)//C185
 //いま みをまもっても しょうがないでしょう-[END]
-It's no use defending[NL]
+(It's )no use defending[NL]
 yourself now.[END]
 
 #W16($2831C)//C186
@@ -2219,7 +2227,7 @@ No way![END]
 //[A4]<$05>コケコッコ- [NL]
 //[A2]<$04>あさ だよぉ-ん.[END]
 [A4]<$05>((Cock-a-doodle-doo))[NL]
-[A2]<$04>It's morning.[END]
+[A2]<$04>(It's )morning.[END]
 
 #W16($28338)//C194
 //が ここではつかえないようだ.[END]
@@ -2721,12 +2729,12 @@ be saved.[END]
 #W16($283F4)//C1F2//warp shop cancel
 //いま きげんがわるいんだよ![NL]
 //はやくでていきな[END]
-I'm in a bad mood now![NL]
+(I'm )in a bad mood now![NL]
 Hurry up and get out![END]
 
 #W16($283F6)//C1F3//warp shop cancel
 //ひさびさのおきゃくだったのになぁ-[END]
-It's been so long since[NL]
+(It's )been so long since[NL]
 we've had a customer...[END]
 
 #W16($283FA)//C1F5
@@ -3124,16 +3132,7 @@ didn't take [AB]<$0A>any damage![END]
 //お[BE01]も[BE00]い[BE01]だ[BE02]し[BE00]て[BE01] [BE00]が[BE01]
 //[BE04]ん[BE00][BE05]ば[BE02][BE04]る[BE00][BE03]よ[BD]<$40>[END]
 
-[C2]<$40>[C0]<$1D>, i[BE01]n[BE00] t[BE02]h[BE00]e [BE02]b
-[BE01]a[BE00]t[BE01]t[BE02]l[BE00]e[BE01]s[BE00] [BE02]a
-[BE01]h[BE00]e[BE01]a[BE02]d[BE00][NL]
-w[BE01]h[BE02]e[BE00]n [BE01]I'[BE00][BE04]m [BE01][BE05]c
-[BE02][BE04]l[BE00][BE03]o[BE01]s[BE02]e [BE00]t[BE01]o [BE00]d
-[BE02]e[BE01]f[BE00]e[BE01]a[BE01]t[BE01][BE00][BD]<$40>[CL]
-I[BE01]'l[BE02]l[BE00] r[BE01]e[BE00]m[BE01]e[BE00]m[BE02]b
-[BE00]e[BE02]r [BE01]t[BE00]he risk you[NL]
-took saving me (and) Sokaizan[BE00][BD]<$40>[CL]
-[A2]<$03>(and) I('ll )fight on.[BD]<$40>[END]
+
 
 #W16($28494)//C242//!!ryujin-maru ending
 //[C2]<$40>[A2]<$04>[NAME] きみのゆうき そして[NL]
@@ -3159,8 +3158,8 @@ took saving me (and) Sokaizan[BE00][BD]<$40>[CL]
 //[BE00] [BE04] [BE05] [BE04] [BE03][BD]<$40>[END]
 
 [C2]<$40>
-[A2]<$02>We will continue to[NL]
-[A2]<$03>pursue Dakdar.[BD]<$40>[CL]
+[A2]<$02>
+We are going after Dakdar.[BD]<$40>[CL]
 We must stop him at once and[NL]
 restore peace to Sokaizan.
 [BD]<$40>[END]
@@ -3196,7 +3195,8 @@ Bye bye! See you again!
 Well [C0]<$1D>, next time we[NL]
 meet peace will have[NL]
 returned to Sokaizan.[BD]<$40>[CL]
-Until then, this is goodbye![BD]<$40>[END]
+Until then, this is goodbye![NL]
+We'll meet again somewhere![BD]<$40>[END]
 
 #W16($2849E)//C247//shibaraku ending "well done"
 //[C2]<$40>[A2]<$04>[C0]<$1D>ど[BE10]の[BE0F] よ
@@ -3241,17 +3241,24 @@ Until then, this is goodbye![BD]<$40>[END]
 [AE]<$04><$0B><$1A><$02>[CL]
 [BB][A4]<$06>[END]
 
-#W16($284AA)//C24D//!!more ending
+#W16($284AA)//C24D//ending off to defeat dakdar
 //[C2]<$4C>ワタルたちいっこうは ドアクダ-をたおすため[NL]
 //たびだっていった
 //[BD]<$FF>[CL][NL][NL][END]
-!C24D[END]
+[C2]<$4C>
+(Wataru) and his friends[NL]
+set out on their journey to[NL]
+defeat (Dakdar).
+[BD]<$FF>[CL][NL][NL][END]
 
-#W16($284AC)//C24E//!!more ending
+#W16($284AC)//C24E//ending marry the princess
 //[C2]<$4C>そして [NAME]は にじのくにのおひめさまと[NL]
 //すえながく くらしたそうな......[BD]<$FF>[CL]
 //[NL][NL][END]
-!C24E[END]
+[C2]<$4C>[NAME] and the (Spectrum)
+princess lived hapily ever[NL]
+after...[BD]<$FF>[CL]
+[NL][NL][END]
 
 #W16($284AE)//C24F//more ending
 //[C2]<$4C>[A2]<$03>そして [NAME]もまた[NL]
@@ -3270,7 +3277,7 @@ for a new adventure...
 //ほんとうに どうおれいを いったらいいのか[NL]
 //わからないよ[END]
 [C2]<$50>[NAME], thank you...[BD]<$40>[NL]
-Truly I'm at a loss for[NL]
+Truly (I'm )at a loss for[NL]
 words.[END]
 
 #W16($284B6)//C253//himiko ending
