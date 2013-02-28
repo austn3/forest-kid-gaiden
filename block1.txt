@@ -160,7 +160,7 @@ It('s )[END]
 I'm [END]
 
 #W16($282FE)//C177
-heard[END]
+I heard [END]
 
 #W16($28300)//C178
 south[END]
@@ -282,7 +282,7 @@ of (the )gate.[B4]<$01>[END]
 //おぬし ちと つめたすぎるのではないか?(......)[B4]<$04>[END]
 What!?[NL]
 Sir, don't (you) think[NL]
-that's a little cold[NL]
+(that)('s )a little cold[NL]
 hearted?[B4]<$04>[END]
 
 #EMBWRITE(221)
@@ -1545,19 +1545,23 @@ Demon Ring[END]
 
 #W16($28192)//C0C1
 //せんじん テレカ[END]
-Senjin Cell[END]
+//Senjin Cell
+!C0C1[END]
 
 #W16($28194)//C0C2
 //げんじんのほしくず[END]
-Genjin Dust[END]
+//Genjin Dust
+!C0C2[END]
 
 #W16($28196)//C0C3
 //パワ-ぜんかい[END]
-Ultra Power[END]
+//Ultra Power
+!C0C3[END]
 
 #W16($28198)//C0C4
 //しらない テレカ[END]
-Unknown Cell[END]
+//Unknown Cell
+!C0C4[END]
 
 #W16($281B0)//C0D0
 //たぬきっぱ[END]
@@ -2322,8 +2326,9 @@ Not enough (Magic).[END]
 #W16($2834A)//C19D
 //(せんじん テレカ)(を つかった.)[NL]
 //これで (せんじんまる)でもたたかえるよ-ん.[END]
-[NAME] called (Senjin-Maru)[NL]
-to join (the )fight.[END]
+//[NAME] called (Senjin-Maru)[NL]
+//to join (the )fight.[END]
+!C19D[END]
 
 #W16($2834C)//C19E
 //(たいりょく)は いっぱいなのにキュアを つかうなんて[NL]
@@ -2447,13 +2452,16 @@ Do you need any more m(oney)?[END]
 #W16($28378)//C1B4
 //(げんじんのほしくず)を あわせた.[NL]
 //(げんじんまる)が まいおりてきた.[END]
-[NAME] scattered (the )dust.[NL]
-(Genjin-Maru) swooped[NL]
-down from (the )sky.[END]
+//[NAME] scattered (the )dust.[NL]
+//(Genjin-Maru) swooped[NL]
+//down from (the )sky.
+!C1B4[END]
 
 #W16($2837A)//C1B5
 //(パワ-ぜんかい)(を つかった.)[NL]
 //りゅう-おぉ-まるぅ- オ--[END]
+//Used total power.[NL]
+//Ryu-Ooo-MARU!
 !C1B5[END]
 
 #W16($2837C)//C1B6
@@ -2473,7 +2481,7 @@ Good Morning [NAME].[C2]<$37>[END]
 //[NAME] おはようさん.[C2]<$37>[END]
 Mornin' [NAME].[C2]<$37>[END]
 
-#W16($28386)//C1BB
+#W16($28386)//C1BB//!!
 //なにかいいことがあるとおもったでしょうが[NL]
 //せけんは そんなにあまくはない.[PAU][NL]
 //さかさによめば つかうな あぶない[NL]
@@ -2522,7 +2530,7 @@ your journey.[END]
 //ここでは つかえません.[END]
 You can't use it (here).[END]
 
-#W16($28396)//C1C3
+#W16($28396)//C1C3//!!
 //ちょっと おくとこ ちがうんでね-の.[END]
 !C1C3[END]
 
@@ -2534,7 +2542,7 @@ W(here) are you headed?[END]
 //を おいた.[AC]<$1E>[A601][END]
 placed.[AC]<$1E>[A601][END]
 
-#W16($2839C)//C1C6
+#W16($2839C)//C1C6//!!
 //[NAME]のみみに (ドラゴン)のなきごえが[NL]
 //きこえたようなきがした.[NL]
 //そのとき[BD]<$40>[END]
@@ -2567,28 +2575,34 @@ turned into a (Gold Bar)![END]
 //ブ--ッ[END]
 Boo![END]
 
-#W16($283A8)//C1CC
+#W16($283A8)//C1CC//!!
 //あなたは なんてうんがわるいのっ[NL]
 //256ぶんの1の かくりつではずれをひいてしまた.[NL]
 //では [C0]<$75> ひかせてもらう![END]
 !C1CC[END]
 
-#W16($283AA)//C1CD//!!serpent tear in the well
+#W16($283AA)//C1CD//serpent tear in the well
 //(サ-ぺントのなみだ)を いどへおとした.[NL]
 //ここちよいねいろが あたりをつつみこみ[NL]
 //まばゆいばかりのひかりをはなった.[BD]<$30>[END]
-!C1CD[END]
+The (Serpent Tear) fell[NL]
+into the well and a spectacular[NL]
+display of light shot out.[BD]<$30>[END]
 
 #W16($283AC)//C1CE//serpent tear not by well
 //いまつかってもしょうがないとおもいます.[END]
 Probably shouldn't use[NL]
-it now.[END]
+(that) now.[END]
 
-#W16($283AE)//C1CF//!!serpent tear int the well
+#W16($283AE)//C1CF//serpent tear int the well
 //かれはてていた このちに うるおいがもどり[NL]
 //むらじゅうのくさばなが いっせいに はなをさかせた.[NL]
 //ほんらいの うつくしむらに もどったのである.[END]
-!C1CF[END]
+Dead plants sprang to life[NL]
+and all through the village[NL]
+flowers bloomed.[PAU][CL]
+Lovely was once again truly[NL]
+a beautiful village.[END] 
 
 #W16($283B0)//C1D0
 //よろしいですか[NL]
@@ -2643,15 +2657,15 @@ Thanks.
 #EMBWRITE(7)
 S(omething) else?[END]
 
-#W16($283C2)//C1D9
+#W16($283C2)//C1D9//!!
 //たびのひと パッとかいな![END]
 !C1D9[END]
 
-#W16($283C4)//C1DA
+#W16($283C4)//C1DA//!!
 //[NAME]さん やすくしとくよ.[END]
 !C1DA[END]
 
-#W16($283C6)//C1DB
+#W16($283C6)//C1DB//!!
 //き-つけて たびしてけろ.[END]
 !C1DB[END]
 
@@ -2681,8 +2695,7 @@ Can't teleport (here).[END]
 #W16($283D2)//C1E1
 //(テレポ-ト) しっぱい!![NL]
 //はじきかえされた   いてっ[END]
-Teleport failed![NL]
-Rejected, ouch.[END]
+Teleport failed! Ow-![END]
 
 #W16($283D4)//C1E2
 //(テレポ-ト)(を つかった.)[END]
@@ -2706,24 +2719,23 @@ Used Power (magic).[END]
 //しゅぎょうぶそくだな.[END]
 It won't move.[END]
 
-#W16($283DE)//C1E7
+#W16($283DE)//C1E7//!!
 //これいじょうこうげきりょくは あがらない[END]
 !C1E7[END]
 
 #W16($283E0)//C1E8
 //[C1]<$E5>[NL]
 //こうげきりょくが[C0]<$4C>あがった![END]
-!C1E8[END]
+[C1]<$E5>[NL]
+Attack power up [C0]<$4C>![END]
 
-#W16($283E2)//C1E9//!!escape worked
-//[NL]
-//にげのいって.  おぼえてやがれ-っ[END]
-!C1E9[END]
+#W16($283E2)//C1E9//escape worked
+//[NL]にげのいって.  おぼえてやがれ-っ[END]
+[NL][NAME] got away safe.[END]
 
-#W16($283E4)//C1EA//!!escape failed
-//[NL]
-//にげのいって.  しかししっぱい[END]
-!C1EA[END]
+#W16($283E4)//C1EA//escape failed
+//[NL]にげのいって.  しかししっぱい[END]
+[NL]But it failed![END]
 
 #W16($283E6)//C1EB
 //[C0]<$8A>(を のんだ.)[NL]
@@ -2752,13 +2764,13 @@ Intellegence[B0]
 Speed[B0]
 #EMBSET(11)
 
-#W16($283EC)//C1EE
+#W16($283EC)//C1EE//!!
 //[NL]
 //[NAME]は たからばこを よ-くしらべてみた.[NL]
 //するとなかには [C0]<$1D>が [AB]<$09>はいっていた.[PAU][END]
 !C1EE[END]
 
-#W16($283EE)//C1EF
+#W16($283EE)//C1EF//!!
 //[NL]
 //しかし これいじょうもてないのであきらめた.[PAU][END]
 !C1EF[END]
@@ -2791,9 +2803,9 @@ Life is now full.[END]
 
 #W16($283FC)//C1F6
 //(たいりょく)は マックスだったのに-[END]
-!C1f6[END]
+But (Life) was (already) full...[END]
 
-#W16($283FE)//C1F7
+#W16($283FE)//C1F7//!!
 //(つかいわすれたオンガク)(を つかった.)[NL]
 //ようきなおんがくが ながれだした[END]
 !C1f7[END]
@@ -2802,7 +2814,7 @@ Life is now full.[END]
 //ではまいるぞ![BC][END]
 Come again![BC][END]
 
-#W16($28414)//C202
+#W16($28414)//C202//!!
 //しょうがない! デバッグようだから[NL]
 //(たいりょく)を 999 (まほう)を 999[NL]
 //(クレジット)を 999999に[NL]
@@ -2817,7 +2829,7 @@ Life[END]
 //まほう[END]
 Magic[END]
 
-#W16($2841A)//C205
+#W16($2841A)//C205//!!
 //なにか やなよかんがする.[END]
 !C205[END]
 
@@ -3091,7 +3103,7 @@ water from[NL]
 //どうぞ あちらで おやすみください.[END]
 Please rest over (there).[END]
 
-#W16($28472)//C231
+#W16($28472)//C231//!!
 //たびのつかれを いやしてくださいネ.[END]
 !C231[END]
 
@@ -3104,9 +3116,9 @@ Please rest over (there).[END]
 Our beds are a little[NL]
 different![END]
 
-#W16($28478)//C234
+#W16($28478)//C234//!!
 //1ばんべッドで おやすみください.[END]
-!C234 [END]
+!C234[END]
 
 #W16($2847A)//C235//inn morning level stats
 //よくねむれましたか?[C2]<$37>[END]
@@ -3183,10 +3195,15 @@ didn't take [AB]<$0A>any damage![END]
 //[BE04]ん[BE00][BE05]ば[BE02][BE04]る[BE00][BE03]よ[BD]<$40>[END]
 
 [C2]<$40>
-In future battles when I'm[NL]
-[A2]<$05>close to defeat,[BD]<$40>[CL]
-I'll remember your bravery[NL]
-[A2]<$04>and I'll fight on.[BD]<$40>[END]
+I[BE01]n [BE00]fu[BE02]tu[BE00]re [BE02]ba[BE01]tt[BE00]le
+[BE01]s [BE02]wh[BE00]e[BE01]n [BE02]I'[BE00]m[NL]
+[A2]<$05>c[BE01]lo[BE02]s[BE01]e [BE00][BE04]to [BE01][BE05]d
+e[BE00][BE04]f[BE01]ea[BE02][BE03]t,[BE00][BD]<$40>[CL]
+I'[BE01]ll [BE02]re[BE00]me[BE01]m[BE00]b[BE01]er[BE00] [BE02]y
+[BE00]ou[BE02]r [BE01]b[BE04]r[BE00][BE05]a[BE04][BE01]v[BE03]e
+[BE02]r[BE00]y[NL]
+[A2]<$04>[BE01]an[BE00]d [BE01]I'[BE00]ll [BE02]fi[BE00]gh
+[BE01]t [BE00]o[BE02]n[BE00].[BD]<$40>[END]
 
 //----------------------------------------------------
 #W16($28494)//C242//ryujin-maru ending
@@ -3217,10 +3234,14 @@ I'll remember your bravery[NL]
 //[BE00] [BE04] [BE05] [BE04] [BE03][BD]<$40>[END]
 
 [C2]<$40>
-We are going after Dakdar.[BD]<$40>[CL]
- We must defeat him and[NL]
-restore peace to Sokaizan.
-[BE00] [BE04] [BE05] [BE04] [BE03][BD]<$40>[END]
+W[BE01]e [BE02]a[BE00]re [BE01]g[BE00]o[BE02]in[BE00]g [BE02]af
+[BE01]te[BE00]r [BE01]D[BE02]a[BE00][BE04]k[BE01][BE05]d[BE04]a
+[BE03][BE00]r.[BD]<$40>[CL]
+ W[BE01]e [BE02]mu[BE00]st [BE01]de[BE02]fe[BE00]a[BE01]t [BE00]h
+[BE00]i[BE02]m[BE04] [BE01][BE05]a[BE04]n[BE00][BE03]d[NL]
+[BE01]re[BE00]st[BE02]o[BE00]re [BE01]pe[BE00]ac[BE01]e [BE00]t
+[BE01]o [BE00]So[BE01]k[BE00]ai[BE02]za[BE01]n.
+[BE00][BE04][BE05][BE04][BE03][BD]<$40>[END]
 
 //----------------------------------------------------
 #W16($28498)//C244//shibaraku saved us
@@ -3228,7 +3249,8 @@ restore peace to Sokaizan.
 //[BE10]っ[BE11]た[BE0F]! [C0]<$1D>ど[BE10]の
 //[BE0F]![BD]<$40>[END]
 [C2]<$40>[A2]<$04>
-You saved us [C0]<$1D>!
+Y[BE10]ou [BE11]sa[BE0F]ve[BE10]d [BE11]u
+[BE0F]s [BE10][C0]<$1D>[BE0F]!
 [BD]<$40>[END]
 
 //----------------------------------------------------
@@ -3237,7 +3259,8 @@ You saved us [C0]<$1D>!
 //[BE0C]! [C0]<$1D> ま[BE0D]た[BE0E]あ[BE0C]お
 //[BE0D]う[BE0E]ね[BE0C]![BD]<$40>[END]
 [C2]<$40>[A2]<$02>
-Bye bye! See you again!
+B[BE0D]ye [BE0E]b[BE0D]ye[BE0C]! S[BE0D]ee [BE0E]y
+[BE0C]ou [BE0D]a[BE0E]ga[BE0D]in[BE0C]!
 [BD]<$40>[END]
 
 //----------------------------------------------------
@@ -3253,11 +3276,19 @@ Bye bye! See you again!
 //[BE07]こ[BE06]か[BE07]で[BE06][BE0A]あ[BE08][BE0B]お[BE06]
 //[BE0A]う[BE09]!....[BD]<$40>[END]
 [C2]<$40>
-Well [C0]<$1D> next time we meet[BD]<$40>[CL]
- peace will have returned[NL]
-[A2]<$07>to Sokaizan.[BD]<$40>[CL]
-Until then this is goodbye.[NL]
-We'll meet again somewhere![BD]<$60>[END]
+We[BE07]ll [BE06][C0]<$1D> [BE08]ne[BE06]xt [BE07]ti
+[BE06]me [BE07]we [BE06]m[BE0A]e[BE08][BE0B]e[BE0A][BE06]t
+[BE09][BD]<$40>[CL]
+ [BE06]pea[BE08]ce [BE07]wi[BE06]ll [BE07]ha[BE06]ve [BE07]re
+[BE08]tu[BE07]r[BE06]n[BE07]ed[NL]
+[A2]<$07>[BE06]t[BE07]o [BE08]So[BE06]ka[BE07]i[BE06]za
+[BE07]n.[BE06][BD]<$40>[CL]
+[BE07]Un[BE08]ti[BE06]l [BE07]the[BE07]n [BE06][BE0A]t
+[BE0B]h[BE06][BE0A]i[BE08][BE09]s [BE06]is [BE07]g[BE08]oo
+[BE06]d[BE07]b[BE06]ye[BE07].[NL]
+[BE06]We[BE07]'l[BE08]l [BE06]me[BE08]e[BE06]t [BE07]a
+[BE08]ga[BE07]i[BE06]n [BE07]so[BE06]me[BE07]wh[BE06]
+[BE0A]e[BE0B]r[BE07][BE0A]e[BE09][BE06]![BD]<$60>[END]
 
 //----------------------------------------------------
 #W16($2849E)//C247//shibaraku ending "well done"
@@ -3265,8 +3296,7 @@ We'll meet again somewhere![BD]<$60>[END]
 //[BE10]く[BE11]や[BE0F]っ[BE10]て[BE0F]く
 //[BE10]れ[BE11]た[BE0F]![BD]<$40>[NL][END]
 [C2]<$40>[A2]<$05>
-[C0]<$1D>, [BE10]w[BE11]e[BE0F]l[BE10]l
- [BE0F]d[BE10]o[BE11]n[BE10]e[BE0F]!
+[C0]<$1D>, [BE10]we[BE0F]ll [BE10]do[BE11]ne[BE0F]!
 [BD]<$40>[NL][END]
 
 //----------------------------------------------------
@@ -3276,8 +3306,8 @@ We'll meet again somewhere![BD]<$60>[END]
 //[BE0C]コ[BE0E] [BE0C]い[BE0E]い[BE0D]コ
 //[BE0C]![BD]<$40>[END]
 [C2]<$40>[A2]<$03>
-[C0]<$1D> [BE0C]i[BE0D]s [BE0E]a[BE0C]m[BE0D]a[BE0C]z
-[BE0E]i[BE0C]n[BE0D]g[BE0C]! [BE0E]Y[BE0D]e[BE0E]a!
+[C0]<$1D> [BE0C]i[BE0D]s [BE0E]a[BE0C]ma[BE0D]zi[BE0C]n
+[BE0D]g[BE0C]! [BE0D]Ye[BE0C]a[BE0E]!
 [BD]<$40>[END]
 
 //----------------------------------------------------
@@ -3349,7 +3379,7 @@ set out on their journey[NL]
 //[A2]<$03>あらたなぼうけんへとたびだった.....
 //[BD]<$FF>[CL][NL][NL][END]
 [C2]<$4C>
-and [NAME] set off again[NL]
+ and [NAME] set off again[NL]
   for a new adventure...
 [BD]<$FF>[CL][NL][NL][END]
 
@@ -3417,12 +3447,12 @@ found (# coins).[BD]<$20>[END]
 //[AD]<$EB><$63><$03><$06>ポイントの けいけんち[END]
 (#exp) Exp[END]
 
-#W16($284DC)//C266
+#W16($284DC)//C266//!!
 //を [AB]<$08>てにいれた.[BD]<$20>[END]
 //[AB]<$08>found[BD]<$20>[END]
 !C266[END]
 
-#W16($284DE)//C267
+#W16($284DE)//C267//!!
 //[NL]
 //さらに [C2]<$68>[NL]
 //ラッキ-![END]
