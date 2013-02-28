@@ -327,7 +327,7 @@ Zanami[NL]Coast[END]
 
 #WRITE(B2Ptr, $2C016)//C303
 //カガサス ジャングル[END]
-Kagasas[NL]Jungle[END]
+Kagasas[NL](Jungle)[END]
 
 #WRITE(B2Ptr, $2C018)//C304
 //ツキノさばく[END]
@@ -754,7 +754,7 @@ Ending[END]
 
 #WRITE(B2Ptr, $2C0FC)//C376
 //(ジャングル)ロ-ド[END]
-Jungle[NL]Road[END]
+(Jungle)[NL]Road[END]
 
 #WRITE(B2Ptr, $2C1F0)//C3F0
 //(ゆうぼくみん)[NL](ワ-プショップ)[END]
@@ -2015,7 +2015,7 @@ helped me out back in[NL]
 (Icefield).[PAU][CL]
 Our friend (Himiko) is[NL]
 still on (Wataru)('s ) trail[NL]
-in the Jungle.[END]
+in the (Jungle).[END]
 
 #EMBWRITE(231)
 [B1]<$E3>
@@ -2160,7 +2160,7 @@ boy is grown, even more[NL]
 //カギは (あなた)が おつかいください みなみの(ほうに)[NL]
 //(ジャングル)への つうろが あったはずです[END]
 Supposedly (there)('s )a path[NL]
-in the (south)( to )(the) Jungle[NL]
+in the (south)( to )(the) (Jungle)[NL]
 where (you)( can) use the key.[END]
 
 //----------------------------------------------------
@@ -2495,7 +2495,7 @@ to (the )west desert.[NL]
 //(しょくりょう)ちょぞうこが あるの[PAU][CL]
 //そこからたべものを もってくることが できたら[NL]
 //みんな げんきに なるのに(......)[END]
-Somewhere in (this) jungle[NL]
+Somewhere in (this) (Jungle)[NL]
 (there) is an old food[NL]
 storehouse.[PAU][CL]
 If (you) brought back food[NL]
@@ -3182,7 +3182,7 @@ Thanks( to )(you) we( can) see[NL]
 (Lovely)('s )fl(ower)s again.
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C46C)//C52E//!!old man lovely shop 2F
+#WRITE(B2Ptr, $2C46C)//C52E//old man lovely shop 2F
 [B3]<$01>
 #EMBSET(318)
 //(ゆうしゃ)[NAME] (ドラゴン)のとうは ごぞんじかな[NL]
@@ -3193,11 +3193,23 @@ Thanks( to )(you) we( can) see[NL]
 //(りンクス)さまに きくがいい[PAU][CL]
 //そこの ゆかは (りンクス)さまが ワ-プの(まほう)を[NL]
 //かけてくれてある ちょっといって みるのもよかろう[B2]<$1A>[B4]<$01>[END]
+Brave [NAME], you know of[NL]
+the Dragon Tower don't you?[PAU][CL]
+The dragon lives in a tower[NL]
+sunk in the middle of the[NL]
+sea.[PAU][CL]
+How you get (there), I don't[NL]
+know, but (you) (should) ask[NL]
+Sage (Lynx) in the (Jungle).[PAU][CL]
+(There) he('s )created floors[NL]
+with warp (magic). (You) (should)[NL]
+see for (yourself).[B2]<$1A>[B4]<$01>[END]
 
 #EMBWRITE(318)
 //ん? なんじゃ?[NL]
 //そうなんども はなすことはないぞ[END]
-!C52E[END]
+Eh? What?[NL]
+There's no need to[NL]repeat it.[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C46E)//C52F//random forest guy
