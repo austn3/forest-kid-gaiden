@@ -39,9 +39,6 @@
 #W16($284E6)//C26B
 fix[END]
 
-#W16($28302)//C179
-#W16($2830E)//C17F
-#W16($2842C)//C20E
 #W16($28448)//C21C
 #W16($2844A)//C21D
 #W16($2844C)//C21E
@@ -184,8 +181,12 @@ oney[END]
 
 //----------------------------------------------------
 #W16($28408)//C1FC
+//#WRITE(B2Ptr, $2C3A8)//C4CC
+//もてないなら せいりするまで まっているぞ[END]
 #EMBWRITE(403)
+#EMBWRITE(463)
 #EMBWRITE(464)
+#EMBWRITE(465)
 #EMBWRITE(466)
 [PAU][CL]I('ll )wait for (you) to[NL]make room.[END]
 
@@ -193,7 +194,7 @@ oney[END]
 #W16($281CC)//C0DE
 //#WRITE(B2Ptr, $2C300)//C478//merchanton old man
 [AF]<$61>
-#EMBSET(33)
+#EMBSET(533)
 [B1]<$03>
 #EMBSET(896)
 
@@ -233,7 +234,7 @@ Oh? (You) can't hold (anything)[NL]
 else? Well come back later[NL]
 (the)n.[END]
 
-#EMBWRITE(33)
+#EMBWRITE(533)
 #EMBWRITE(896)
 //(ありがとう)(ござい)(ました)[NL]
 //みな ぶじにくらすことが できます[END]
@@ -425,54 +426,29 @@ If you need (the )boat again[NL]
 just say so.[B4]<$01>[END]
 
 //----------------------------------------------------
-#W16($281EC)//C0EE
-//#WRITE(B2Ptr, $2C406)//C4FB//sphinx
-//(わたし)はスフィンクス (わたし)の しつもんにただしく[NL]
-//こたえることが できたら とおしてやろう[PAU][CL]
-//(おまえ)はつよいか?[NL]
-//   つよい   よわい
-I am (the )(Sphinx). Answer my[NL]
-questions correctly and (you)[NL]
-may pass.[PAU][CL]
-Are (you) strong?[NL]
-[A2]<$03>Yes[A2]<$03>No
+#W16($28302)//C179
+//#WRITE(B2Ptr, $2C37E)//C4B7//serpent in the sea
+[AF]<$68>
+#EMBSET(17)
+[B3]<$01>
+#EMBSET(307)
+#EMBWRITE(307)
 
-[B6]<$02><$08>
-#EMBSET(507)
-#EMBWRITE(507)
-[CL]
+//よくきたな [NAME]よ さあ この[NL]
+//(サ-ぺント)のなみだを もってゆくがいい[B4]<$01>
+(It's )good you came [NAME].[NL]
+You( can) take this[NL]
+(Serpent Tear).[B4]<$01>
 
-//つぎ! (わたし)はつよいか?[NL]
-//   よわい  つよい
-Next! Am I strong?[NL]
-[A2]<$03>Yes[A2]<$03>No
+[B5]<$68>
+#EMBSET(463)
+[END]
 
-[B6]<$02><$08>
-#EMBSET(508)
-#EMBWRITE(508)
-[CL]
-
-//では(おまえ)と(わたし) どちらがつよい?[NL]
-//  スフィンクス  [NAME]
-Then who is stronger?[NL]
-[A2]<$02>(Sphinx)[A2]<$03>[NAME]
-
-[B6]<$01><$09>
-#EMBSET(509)
-[CL]
-
-//キサマ! こころにも ないことを!え-い![PAU][B4]<$02>
-Bastard! Don't say things[NL]
-(you) don't mean![PAU][B4]<$02>
-[B8]<$10><$F3><$00>[END]
-
-#EMBWRITE(509)
-[CL]
-//おのれのちからも しらぬやつに ようはない[NL]
-//さっさと いくがいい[B4]<$01>[BA00][END]
-(There is )no use for someone[NL]
-who doesn't know their own[NL]
-power. Hurry up and go.[B4]<$01>[BA00][END]
+#EMBWRITE(17)
+//どうした?はやくゆけ いっこくも はやくはなを[NL]
+//さかせてやるのだ[END]
+What are you doing? Hurry[NL]
+and make the (flower)s bloom.[END]
 
 //----------------------------------------------------
 #W16($281CA)//C0DD
@@ -532,47 +508,137 @@ That's all I know.[NL]
 Take care.[END]
 
 //----------------------------------------------------
-#W16($281BA)//C0D5
-//#WRITE(B2Ptr, $2C4A2)//C549//ryujin-maru prologue
-//(わたし)は (りゅうじんまる) (ワタル)とともに[NL]
-//(ドアクダー)と たたかっている もうすぐ (ドアクダー)の[NL]
-//もとにたどりつく というときに とつぜん[PAU][CL]
-I am (Ryujin-Maru). I (fight)[NL]
-with (Wataru) to (protect)[NL]
-(Sokaizan) from (Dakdar).[PAU][CL]
+#W16($2830E)//C17F
+//#WRITE(B2Ptr, $2C404)//C4FA//boy food storehouse
+[B1]<$E2>
+#EMBSET(247)
+[AF]<$69>
+#EMBSET(27)
+[B3]<$01>
+#EMBSET(315)
 
-//このかいそうに とばされて しまったのだ[NL]
-//(わたし)と (ワタル)が ひきはなされた スキをついて[NL]
-//(ワタル)は (ドアクダー)に とらえられて しまったのだ[PAU][CL]
-We just about had him[NL]
-when suddenly, we were[NL]
-thrown into (this) (world).[PAU][CL]
-We were separated[NL]
-(and) (Wataru) has been[NL]
-captured.[PAU][CL]
+//(おお)(かくれざと)から きたのか? だれも[NL]
+//こなくなってから ずいぶんたつから しんぱい[NL]
+//だったんだ[PAU][CL]
+//とにかく 
+Oh, (you) came from (Isola)?[NL]
+(It's )been so long since[NL]
+anyone has come.[PAU][CL]
+I was worried.[NL]
+anyway...[PAU][CL]
 
-//そこで キミにてつだって ほしいのだ (ワタル)を[NL]
-//そしてこの そうかいざんの ききを すくうために
-[NAME], I need your help to[NL]
-save (Wataru)( and )(Sokaizan)[NL]
-from peril.
-#EMBWRITE(513)
-[PAU][CL]
+#EMBWRITE(315)
+//(しょくりょう)を もっていくんだ[B4]<$01>
+(Please )take (the )food.[B4]<$01>
 
-//いっしょに たたかって くれないだろうか?[NL]
-//   ひきうける  ことわる
-Will (you) (fight) with me?[NL]
-  Yes![A2]<$04>Umm...
-[B6]<$01><$09>
-#EMBSET(513)
+[B5]<$69>
+#EMBSET(465)[END]
+
+#EMBWRITE(27)
+//はやくいって (かくれざと)の みんなをたすけてこい[END]
+Hurry and go help the[NL]
+people of (Isola).[END]
+
+#EMBWRITE(247)
+//よくやったぞ[END]
+Well done![END]
+
+//----------------------------------------------------
+#W16($281EC)//C0EE
+//#WRITE(B2Ptr, $2C406)//C4FB//sphinx
+//(わたし)はスフィンクス (わたし)の しつもんにただしく[NL]
+//こたえることが できたら とおしてやろう[PAU][CL]
+//(おまえ)はつよいか?[NL]
+//   つよい   よわい
+I am (the )(Sphinx). Answer my[NL]
+questions correctly and (you)[NL]
+may pass.[PAU][CL]
+Are (you) strong?[NL]
+[A2]<$03>Yes[A2]<$03>No
+
+[B6]<$02><$08>
+#EMBSET(507)
+#EMBWRITE(507)
 [CL]
 
-//(ありがとう) もしたたかいに なったら[NL]
-//このつるぎで (わたし)を よんでほしい[NL]
-//たのむぞ![NAME]![END]
-(Thank you). If (you) are in[NL]
-trouble, (you) can call me[NL]
-with (this) sword.[END]
+//つぎ! (わたし)はつよいか?[NL]
+//   よわい  つよい
+Next! Am I strong?[NL]
+[A2]<$03>Yes[A2]<$03>No
+
+[B6]<$02><$08>
+#EMBSET(508)
+#EMBWRITE(508)
+[CL]
+
+//では(おまえ)と(わたし) どちらがつよい?[NL]
+//  スフィンクス  [NAME]
+Then who is stronger?[NL]
+[A2]<$02>(Sphinx)[A2]<$03>[NAME]
+
+[B6]<$01><$09>
+#EMBSET(509)
+[CL]
+
+//キサマ! こころにも ないことを!え-い![PAU][B4]<$02>
+Bastard! Don't say things[NL]
+(you) don't mean![PAU][B4]<$02>
+[B8]<$10><$F3><$00>[END]
+
+#EMBWRITE(509)
+[CL]
+//おのれのちからも しらぬやつに ようはない[NL]
+//さっさと いくがいい[B4]<$01>[BA00][END]
+(There is )no use for someone[NL]
+who doesn't know their own[NL]
+power. Hurry up and go.[B4]<$01>[BA00][END]
+
+//----------------------------------------------------
+#W16($2842C)//C20E
+//#WRITE(B2Ptr, $2C478)//C534//desert 3 palms guy
+//このさばくの どこかに ざいほうが あるはずなんだ[NL]
+//ずいぶんまえから さがしては いるんだが(......)
+(There)('s )supposed( to )be a[NL]
+(treasure) in this desert.[NL]
+I've looked everywhere...
+
+[AF]<$66>
+#EMBSET(31)
+[AF]<$74>
+#EMBSET(32)
+[END]
+
+#EMBWRITE(31)
+[PAU][CL]
+//その(ドラゴン)のキバと おなじようなモノが[NL]
+//(ゆうぼくみん)のむらの ちかくに かくされている[NL]
+//というはなしを きいたことがある
+(I heard )(there) is something[NL]
+like (that) (Dragon Fang) near[NL]
+the (Nomad) Camp. 
+
+[AF]<$74>
+#EMBSET(932)
+[END]
+
+#EMBWRITE(32)
+#EMBWRITE(932)
+[PAU][CL]
+//サンダ-はいわを くだいてくれる それがあれば[NL]
+//(ジャングル)を ぬけることができる
+Thunder lets you break[NL]
+rocks. Whih (that) you( can)[NL]
+escape the Jungle.
+
+[AF]<$66>
+#EMBSET(33)
+[END]
+
+#EMBWRITE(33)
+[PAU][CL]
+//ぜんぶ とられてしまったワケか トホホ(......)[END]
+You found everything?[NL]
+Waaah...[END]
 
 //----------------------------------------------------
 #W16($282CE)//C15F
@@ -618,6 +684,49 @@ You'll need this[NL]
 #EMBWRITE(268)
 //よくやった! きをつけて いくのだぞ[END]
 Good job! Be careful.[END]
+
+//----------------------------------------------------
+#W16($281BA)//C0D5
+//#WRITE(B2Ptr, $2C4A2)//C549//ryujin-maru prologue
+//(わたし)は (りゅうじんまる) (ワタル)とともに[NL]
+//(ドアクダー)と たたかっている もうすぐ (ドアクダー)の[NL]
+//もとにたどりつく というときに とつぜん[PAU][CL]
+I am (Ryujin-Maru). I (fight)[NL]
+with (Wataru) to (protect)[NL]
+(Sokaizan) from (Dakdar).[PAU][CL]
+
+//このかいそうに とばされて しまったのだ[NL]
+//(わたし)と (ワタル)が ひきはなされた スキをついて[NL]
+//(ワタル)は (ドアクダー)に とらえられて しまったのだ[PAU][CL]
+We just about had him[NL]
+when suddenly, we were[NL]
+thrown into (this) (world).[PAU][CL]
+We were separated[NL]
+(and) (Wataru) has been[NL]
+captured.[PAU][CL]
+
+//そこで キミにてつだって ほしいのだ (ワタル)を[NL]
+//そしてこの そうかいざんの ききを すくうために
+[NAME], I need your help to[NL]
+save (Wataru)( and )(Sokaizan)[NL]
+from peril.
+#EMBWRITE(513)
+[PAU][CL]
+
+//いっしょに たたかって くれないだろうか?[NL]
+//   ひきうける  ことわる
+Will (you) (fight) with me?[NL]
+  Yes![A2]<$04>Umm...
+[B6]<$01><$09>
+#EMBSET(513)
+[CL]
+
+//(ありがとう) もしたたかいに なったら[NL]
+//このつるぎで (わたし)を よんでほしい[NL]
+//たのむぞ![NAME]![END]
+(Thank you). If (you) are in[NL]
+trouble, (you) can call me[NL]
+with (this) sword.[END]
 
 //----------------------------------------------------
 #W16($282F8)//C174

@@ -3,6 +3,12 @@
 ; sphinx
 $159AA:  FB C4  ->  EE C0
 
+; food storehouse guy
+$163B5:  C4 B7  ->  C1 79
+
+; desert palm guy
+$163C5:  C5 34  ->  C2 0E
+
 ; merchanton old man
 $16410:  C4 78  ->  C0 DE
 
@@ -17,6 +23,9 @@ $1653D:  C4 94  ->  C0 DF
 
 ; lynx sage's house
 $1662D:  C4 DC  ->  C0 DD
+
+; serpent in the sea
+$166B3:  C4 F7  ->  C1 7F
 
 ; sazabi mountain dungeon
 $16817:  C5 37  ->  C1 5F
