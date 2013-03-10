@@ -1674,7 +1674,7 @@ Demon Ring[END]
 
 #W16($281B0)//C0D0
 //たぬきっぱ[END]
-Tanuki Paw[END]
+Tanuki Leaf[END]
 
 #W16($281B2)//C0D1
 //1000ゴ-ルド[END]
@@ -2670,13 +2670,13 @@ Better check outside.[BD]<$40>[END]
 #W16($283A2)//C1C9
 //おおぉっ (たぬきっぱ)が[NL]
 //(1000ゴ-ルド)になったぞ![END]
-Ooo (the )(Tanuki Paw)[NL]
+Ooo (the )(Tanuki Leaf)[NL]
 turned into a (Gold Bar)![END]
 
 #W16($283A4)//C1CA
 //(たぬきっぱ)(を つかった.)[NL]
 //[C0]<$75>ふえた. ありがたや ありがたや.[END]
-[NAME] used (Tanuki Paw)[NL]
+[NAME] used (Tanuki Leaf)[NL]
 [C0]<$75> (appeared).[NL]
 (Thank you)![END]
 

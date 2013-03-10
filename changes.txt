@@ -30,11 +30,11 @@ $166B3:  C4 F7  ->  C1 7F
 ; sazabi mountain dungeon
 $16817:  C5 37  ->  C1 5F
 
-; ryujin-maru prologue
-$1AD78:  C5 49  ->  C0 D5
-
 ; lynx in cave
 $16869:  C5 4B  ->  C1 74
+
+; ryujin-maru prologue
+$3B750:  49 C5  ->  D5 C0
 
 ; relocate pointer to death graphic
 $206C5: 88  ->  B8
