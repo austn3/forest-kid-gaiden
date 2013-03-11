@@ -1278,7 +1278,7 @@ Do (you) (have )a (Gate Pass)?[NL]
 //ばれたら (ブりキントン)のヤツに ころされるぞ![NL]
 //かえれっ![END]
 If anyone slips in without[NL]
-a pass, (the)y('ll )be kiilled[NL]
+a pass, (the)y('ll )be killed[NL]
 by (that) (Tinbot) guy.[PAU][CL]
 Get out of (here)![END]
 
@@ -1629,7 +1629,7 @@ enough I bet. Ahem![END]
 //いくことを おすすめするよ[END]
 (This is )(Spectrum). Since (the)[NL]
 (Tinbot) showed up, (the)y're[NL]
-only leting merchants in.[PAU][CL]
+only letting merchants in.[PAU][CL]
 If (you) want in, (you) better[NL]
 go west to (Merchanton)[NL]
 first.[END]
@@ -2175,7 +2175,7 @@ How( can) I help (you)?[BF0007]
 //たいせつなカギを みどりの はなのところに[NL]
 //うめたのですが (......)[B4]<$01>[END]
 An important key is[NL]
-burried near a green[NL]
+buried near a green[NL]
 (flower)...[B4]<$01>[END]
 
 #EMBWRITE(234)
@@ -2253,8 +2253,7 @@ Town once and on an island[NL]
 #EMBSET(237)
 
 //(サ-ぺント)を たすけてくれんか?(......)[END]
-(You) rescued the (Serpent)?[NL]
-...[END]
+Did (you) help the (Serpent)?...[END]
 
 #EMBWRITE(237)
 //かれたはなを さかせるには (サ-ぺント)の[NL]
