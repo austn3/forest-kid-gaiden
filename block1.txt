@@ -1890,7 +1890,7 @@ Ice (Tinbot)[END]
 
 #W16($2823A)//C115
 //ブル-(スケルバット)[END]
-Blue (Skull)[END]
+Snow (Skull)[END]
 
 #W16($2823C)//C116
 //コ-ルド(ハングりオン)[END]
@@ -3212,9 +3212,10 @@ water from[NL]
 //どうぞ あちらで おやすみください.[END]
 Please rest over (there).[END]
 
-#W16($28472)//C231//!!
+#W16($28472)//C231//port town inn
 //たびのつかれを いやしてくださいネ.[END]
-!C231[END]
+You must be tired from[NL]
+your journey.[END]
 
 #W16($28474)//C232
 //え-っ あっちで ねてくださいませ.[END]
@@ -3225,9 +3226,9 @@ Please rest over (there).[END]
 Our beds are a little[NL]
 different![END]
 
-#W16($28478)//C234//!!
+#W16($28478)//C234//spectrum inn
 //1ばんべッドで おやすみください.[END]
-!C234[END]
+Please take the first bed.[END]
 
 #W16($2847A)//C235//inn morning level stats
 //よくねむれましたか?[C2]<$37>[END]
