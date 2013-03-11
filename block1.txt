@@ -39,7 +39,6 @@
 #W16($284E6)//C26B
 fix[END]
 
-#W16($28448)//C21C
 #W16($2844A)//C21D
 #W16($2844C)//C21E
 #W16($2844E)//C21F
@@ -594,6 +593,36 @@ who doesn't know their own[NL]
 power. Hurry up and go.[B4]<$01>[BA00][END]
 
 //----------------------------------------------------
+#W16($28448)//C21C
+//#WRITE(B2Ptr, $2C46C)//C52E//old man lovely shop 2F
+[B3]<$01>
+#EMBSET(318)
+//(ゆうしゃ)[NAME] (ドラゴン)のとうは ごぞんじかな[NL]
+//このうみの ちゅうおうにあり (ドラゴン)がすんでおる[NL]
+//ただし とうはみずの そこにしずんで しまっておる[PAU][CL]
+//どうしたら とうに いけるかまでは わしにもわからん[NL]
+//くわしいことは (ジャングル)にすんでいる けんじゃ[NL]
+//(りンクス)さまに きくがいい[PAU][CL]
+//そこの ゆかは (りンクス)さまが ワ-プの(まほう)を[NL]
+//かけてくれてある ちょっといって みるのもよかろう[B2]<$1A>[B4]<$01>[END]
+Brave [NAME], (you) know of[NL]
+the (Dragon) Tower do(n't )(you)?[PAU][CL]
+(The )dragon lives in a tower[NL]
+sunk in the middle of the[NL]
+sea.[PAU][CL]
+How you get (there), I don't[NL]
+know, but (you) (should) ask[NL]
+Sage (Lynx) in the (Jungle).[PAU][CL]
+(There) he('s )created floors[NL]
+with warp (magic). (You) (should)[NL]
+see for (yourself).[B2]<$1A>[B4]<$01>[END]
+
+#EMBWRITE(318)
+//ん? なんじゃ?[NL]
+//そうなんども はなすことはないぞ[END]
+Eh? What?[NL]
+There's no need to[NL]repeat it.[END]
+//----------------------------------------------------
 #W16($2842C)//C20E
 //#WRITE(B2Ptr, $2C478)//C534//desert 3 palms guy
 //このさばくの どこかに ざいほうが あるはずなんだ[NL]
@@ -1052,8 +1081,7 @@ he fought to save (Sokaizan).[NL]
 Until s(omething) strange  [NL]
 happened, (the)y were      [NL]
 transported to an unknown[NL]
-part of (the )(mountain)...
-[NL][NL][NL][NL][END]
+part of (the )(mountain)...[END]
 
 #W16($2806C)//C02E
 //[A4]<$02>おぬし まちがえたな.[END]

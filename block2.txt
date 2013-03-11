@@ -16,10 +16,6 @@
 //                      Unused???
 //----------------------------------------------------
 
-#WRITE(B2Ptr, $2C248)//C41C
-//しょくりょう[END]
-#WRITE(B2Ptr, $2C24C)//C41E
-//さばく[END]
 #WRITE(B2Ptr, $2C24E)//C41F
 //しかし[END]
 #WRITE(B2Ptr, $2C250)//C420
@@ -294,6 +290,12 @@ Hahaha! If (you) want a[NL]new (Mashin), fight me.[PAU][END]
 
 #WRITE(B2Ptr, $2C246)//C41B//ござい[END]
  to [END]
+
+#WRITE(B2Ptr, $2C248)//C41C//しょくりょう[END]
+really [END]
+
+#WRITE(B2Ptr, $2C24C)//C41E//さばく[END]
+again[END]
 
 #WRITE(B2Ptr, $2C2BA)//C455//いずみ[END]
 pring[END]
@@ -912,7 +914,7 @@ st(and)ing watch.[END]
 //(サザビ-)さまが いなくなっちゃったんだ なんでも[NL]
 //やまに いったらしいけど[END]
 (I heard )(Sazabi) disappeared[NL]
-again. Went( to )(the)[NL]
+(again). Went( to )(the)[NL]
 (mountain)s (the)y say.[END]
 
 //----------------------------------------------------
@@ -1410,7 +1412,7 @@ it on the ground.[END]
 //もう そとに よういしてある すきにつかって[NL]
 //くだせい[B4]<$01>[B2]<$DF>[END]
 You want( to )take the (boat)[NL]
-[NAME]? (It's )(already) ready[NL]
+[NAME]? (It's )waiting[NL]
 outside. Go when you like.
 [B4]<$01>[B2]<$DF>[END]
 
@@ -2175,7 +2177,7 @@ Never (have )we had (this) few[NL]
 (flower)s. Since the well[NL]
 dried up they all died.[PAU][CL]
 Soon they wo(n't )ever[NL]
-bloom again...[B4]<$02>[END]
+bloom (again)...[B4]<$02>[END]
 
 #EMBWRITE(235)
 //みどりのはなは ごらんになり(ました)?[END]
@@ -2223,14 +2225,15 @@ Town once and on an island[NL]
 #EMBSET(237)
 
 //(サ-ぺント)を たすけてくれんか?(......)[END]
-Did (you) help the (Serpent)?...[END]
+Will (you) help the (Serpent)?[NL]
+...[END]
 
 #EMBWRITE(237)
 //かれたはなを さかせるには (サ-ぺント)の[NL]
 //なみだがひつようなんだ (みなとまち)の ふなのりが[NL]
 //ちからになって くれるはずだ[B2]<$12>[END]
 To make the wi(there)d[NL]
-(flower)s bloom again we[NL]
+(flower)s bloom (again) we[NL]
 need a (Serpent Tear).[PAU][CL]
 (You)('ll )need help from the[NL]
 (boat)men in (Port Town).[B2]<$12>[END]
@@ -2439,7 +2442,7 @@ too much food, everyone is[NL]
 starving.[PAU][CL]
 If (you) bring back more food[NL]
 I('ll )give (you) something[NL]
-really nice.[END]
+(really )nice.[END]
 
 #EMBWRITE(25)
 //[NAME] よくやったのだ おれいに あちしの[NL]
@@ -2481,7 +2484,7 @@ to (the )(north).[END]
 #EMBWRITE(242)
 //たびを つづけるのでしたら にしの (さばく)には[NL]
 //いかないほうが いいですよ あぶないですから(......)[END]
-(You) really (should)(n't )go[NL]
+(You) (really )(should)(n't )go[NL]
 to (the )west desert.[NL]
 (It's )dangerous...[END]
 
@@ -2515,7 +2518,7 @@ rocks.[END]
 //スフィンクスって しってる?[NL]
 //けっこう あまのじゃくなんだぜ[END]
 Do (you) know (the )(Sphinx)?[NL]
-He('s )really a demon![END]
+He('s )(really )a demon![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3E8)//C4EC//sea inn
@@ -3178,37 +3181,7 @@ beautiful...[END]
 //(ありがとう)よ おかげでまた (うつくしむら)のはなが[NL]
 //みれますよって[END]
 Thanks( to )(you) we( can) see[NL]
-(Lovely)('s )fl(ower)s again.
-
-//----------------------------------------------------
-#WRITE(B2Ptr, $2C46C)//C52E//old man lovely shop 2F
-[B3]<$01>
-#EMBSET(318)
-//(ゆうしゃ)[NAME] (ドラゴン)のとうは ごぞんじかな[NL]
-//このうみの ちゅうおうにあり (ドラゴン)がすんでおる[NL]
-//ただし とうはみずの そこにしずんで しまっておる[PAU][CL]
-//どうしたら とうに いけるかまでは わしにもわからん[NL]
-//くわしいことは (ジャングル)にすんでいる けんじゃ[NL]
-//(りンクス)さまに きくがいい[PAU][CL]
-//そこの ゆかは (りンクス)さまが ワ-プの(まほう)を[NL]
-//かけてくれてある ちょっといって みるのもよかろう[B2]<$1A>[B4]<$01>[END]
-Brave [NAME], you know of[NL]
-the Dragon Tower don't you?[PAU][CL]
-The dragon lives in a tower[NL]
-sunk in the middle of the[NL]
-sea.[PAU][CL]
-How you get (there), I don't[NL]
-know, but (you) (should) ask[NL]
-Sage (Lynx) in the (Jungle).[PAU][CL]
-(There) he('s )created floors[NL]
-with warp (magic). (You) (should)[NL]
-see for (yourself).[B2]<$1A>[B4]<$01>[END]
-
-#EMBWRITE(318)
-//ん? なんじゃ?[NL]
-//そうなんども はなすことはないぞ[END]
-Eh? What?[NL]
-There's no need to[NL]repeat it.[END]
+(Lovely)('s )fl(ower)s (again).
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C46E)//C52F//random forest guy
@@ -3461,7 +3434,7 @@ with a key went (there)...[END]
 //(あんた) (うつくしむら)のはなを さかせたのか![NL]
 //えらいッ! えらいぞッ![END]
 (You) made (the )(flower)s in[NL]
-(Lovely) bloom again! Yea![END]
+(Lovely) bloom (again)! Yea![END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C496)//C543//!!
@@ -3530,7 +3503,7 @@ business in (Icefield)?[END]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C4A0)//C548//icefield inn
 //だいぶ おつかれですね?[BF010C]
-(You)('re )really[NL]
+(You)('re )(really )[NL]
 tired are(n't )(you)?[BF010C]
 
 //----------------------------------------------------

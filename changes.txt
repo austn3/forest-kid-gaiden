@@ -24,8 +24,8 @@ $1653D:  C4 94  ->  C0 DF
 ; lynx sage's house
 $1662D:  C4 DC  ->  C0 DD
 
-; serpent in the sea
-$166B3:  C4 F7  ->  C1 7F
+; old man lovely shop 2f
+$16807:  C5 2E  ->  C2 1C
 
 ; sazabi mountain dungeon
 $16817:  C5 37  ->  C1 5F
@@ -35,6 +35,9 @@ $16869:  C5 4B  ->  C1 74
 
 ; ryujin-maru prologue
 $3B750:  49 C5  ->  D5 C0
+
+; serpent in the sea
+$3B908:  F7 C4  ->  79 C1
 
 ; relocate pointer to death graphic
 $206C5: 88  ->  B8
