@@ -107,7 +107,7 @@ Skull[END]
 #W16($281A2)//C0C9
 already[END]
 
-#W16($281AA)//C0CD//for battle don't change
+#W16($281AA)//C0CD//for battle do(n't )change
  and [END]
 
 #W16($281A4)//C0CA
@@ -123,10 +123,10 @@ Mountain[END]
 coins[END]
 
 #W16($281BC)//C0D6
-[NAME]( used )(the )[END]
+([NAME] used )(the )[END]
 
 #W16($281BE)//C0D7
- is (already) full.[NL]What a waste...[END]
+ is (already) full.[NL]What a( was)te...[END]
 
 #W16($281C0)//C0D8//(# coins)
 [AD]<$E8><$63><$03><$06> (coins)[END]
@@ -208,7 +208,7 @@ been leaving his dungeon.[PAU][CL]
 //[NAME]さん (あなた)の つよいところを[NL]
 //みせてもらえま(せんか?)[END]
 Everyone is scared. We[NL]
-don't know what to do.[NL]
+do(n't )know what to do.[NL]
 [NAME], please help us![END]
 
 #EMBWRITE(204)
@@ -229,8 +229,8 @@ What?[NL]
 [PAU][CL]
 //おや?それいじょう なにも もてないようじゃ[NL]
 //また あとにしま(しょう)[END]
-Oh? (You) can't hold (anything)[NL]
-else? Well come back later[NL]
+Oh? (You) ca(n't )hold (anything)[NL]
+else? (Well )come back later[NL]
 (the)n.[END]
 
 #EMBWRITE(533)
@@ -253,7 +253,7 @@ Now we can live in peace.[END]
 //(せっしゃ) (シバラク) ともうすもの (ワタル)が ここに[NL]
 //いるときいたので きてみたら つれさられて いたのだ[PAU][CL]
 I am called (Shibaraku).[NL]
-I heard (Wataru) was being[NL]
+I heard (Wataru)( was) being[NL]
 held (here).[PAU][CL]
 But he had (already) been[NL]
 taken away when I arrived.[PAU][CL]
@@ -264,7 +264,7 @@ taken away when I arrived.[PAU][CL]
 //   てつだう   ことわる
 What('s )worse, I've been[NL]
 locked up (here).[PAU][CL]
-Won't (you) help me open[NL]
+Wo(n't )(you) help me open[NL]
 (this) gate?[NL]
 [A2]<$03>Help[A2]<$03>Don't
 
@@ -281,7 +281,7 @@ of (the )gate.[B4]<$01>[END]
 //そんなっっ![NL]
 //おぬし ちと つめたすぎるのではないか?(......)[B4]<$04>[END]
 What!?[NL]
-Sir, don't (you) think[NL]
+Sir, do(n't )(you) think[NL]
 (that)('s )a little cold[NL]
 hearted?[B4]<$04>[END]
 
@@ -327,7 +327,7 @@ huge mistake...[END]
 [CL]
 //おお! よくやってくれた [NAME]よ[NL]
 //では れいとして (まどうしょ)を さずけよう
-Oh! Well done [NAME]![NL]
+Oh! (Well )done [NAME]![NL]
 (Please )accept (this) (Spell)[NL]
 as a token of our thanks.
 
@@ -348,7 +348,7 @@ And as I promised, won't[NL]
 //そうか!では[NAME]よ[NL]
 //たびがおわりしだい (けっこん)しきを[NL]
 //おこなう きをつけていくがいい[B2]<$0A>[END]
-Well (the)n! We('ll )hold (the)[NL]
+(Well )(the)n! We('ll )hold (the)[NL]
 wedding when (you)r journey[NL]
 is over. Be careful![B2]<$0A>[END]
 
@@ -375,7 +375,7 @@ Take care.[END]
 #EMBSET(227)
 
 //だめだめ そうかんたんには ふねにのせないよ//[PAU]
-Woah t(here). (You) can't just[NL]
+Woah t(here). (You) ca(n't )just[NL]
 take (the )boat like (that).[PAU]
 
 [B1]<$E1>
@@ -408,9 +408,9 @@ too? A guy named (Shibaraku)[NL]
 //(ワタル)を さがすといっていたが(......)[PAU][CL]
 //たいへんなようだから このフネに のせてやるよ[B4]<$01>[END]
 What? (Shibaraku)('s )(already)[NL]
-gone. I was hoping to find[NL]
+gone. I( was) hoping to find[NL]
 (Wataru) too...[PAU][CL]
-Well considering the[NL]
+(Well )considering the[NL]
 situation, you can take[NL]
 (the )boat.[B4]<$01>[END]
 
@@ -523,7 +523,7 @@ Take care.[END]
 Oh, (you) came from (Isola)?[NL]
 (It's )been so long since[NL]
 anyone has come.[PAU][CL]
-I was worried.[NL]
+I( was) worried.[NL]
 anyway...[PAU][CL]
 
 #EMBWRITE(315)
@@ -540,7 +540,7 @@ people of (Isola).[END]
 
 #EMBWRITE(247)
 //よくやったぞ[END]
-Well done![END]
+(Well )done![END]
 
 //----------------------------------------------------
 #W16($281EC)//C0EE
@@ -580,8 +580,8 @@ Then who is stronger?[NL]
 [CL]
 
 //キサマ! こころにも ないことを!え-い![PAU][B4]<$02>
-Bastard! Don't say things[NL]
-(you) don't mean![PAU][B4]<$02>
+Bastard! Do(n't )say things[NL]
+(you) do(n't )mean![PAU][B4]<$02>
 [B8]<$10><$F3><$00>[END]
 
 #EMBWRITE(509)
@@ -589,7 +589,7 @@ Bastard! Don't say things[NL]
 //おのれのちからも しらぬやつに ようはない[NL]
 //さっさと いくがいい[B4]<$01>[BA00][END]
 (There is )no use for someone[NL]
-who doesn't know their own[NL]
+who does(n't )know their own[NL]
 power. Hurry up and go.[B4]<$01>[BA00][END]
 
 //----------------------------------------------------
@@ -834,7 +834,7 @@ Quit (the )game?[A4]<$00>[NL]
 //(キュア)(を つかった.)[NL]
 //(たいりょく)が いっぱいになった.[NL]
 //ん- っ げんき ゲンキ.[END]
-[NAME]( used )cure.[NL]
+([NAME] used )(Cure).[NL]
 (Life) is now full.[NL]
 Mmm feels great![END]
 
@@ -1068,7 +1068,7 @@ no (magic)[NL] to use.[END]
 //しらないせかいに まぎれこんでしまった......[END]
 [BB][AE]<$03><$00><$1D><$0F>[A4]<$04>
 (Sokaizan) (the )(mountain) of [NL]
-(the )gods was conqured by [NL]
+(the )gods( was) conqured by [NL]
 an evil emperor (Dakdar).  [NL]
 Darkness fell on (the )l(and)[NL]
 (and) (the )joy( and )laughter [NL]
@@ -1409,7 +1409,7 @@ thrown to (the )ground.[BD]<$30>[NL]
 //[NAME] は うんよく とうりすがりのひとにたすけられた.[NL]
 //あなたは ラッキ-[NL]
 //この うん をいかして もういちどチャェンジ[END]
-Luckily [NAME] was helped by[NL]
+Luckily [NAME]( was) helped by[NL]
 a passer by.[PAU][CL]
 You were lucky.[NL]
 Take advanantage of it (and)[NL]
@@ -1434,7 +1434,7 @@ try again.[END]
 //きあいを いれて よんだ.[NL]
 //きあい いっぱつ [END]
 [NL]
-(and) was filled with its[NL]
+(and)( was) filled with its[NL]
 power.[PAU][CL][END]
 
 #W16($28106)//C07B
@@ -2370,7 +2370,7 @@ Right (this) way.[END]
 //(たいりょく)は いっぱいだったのに.[NL]
 //(まほう)を たいせつにしましょう.[END]
 (Life) is (already) full.[NL]
-Don't waste your (Magic)![END]
+Don't( was)te your (Magic)![END]
 
 #W16($28326)//C18B
 //ざんねんながら マシンは きてくれませんでした.[END]
@@ -2418,7 +2418,7 @@ No way![END]
 
 #W16($28338)//C194
 //が ここではつかえないようだ.[END]
-can't be used (here).[END]
+can't be( used )(here).[END]
 
 #W16($2833A)//C195
 //さぁ-てと ゲ-ムを やめよ-っと.[END]
@@ -2470,8 +2470,9 @@ Not enough (Magic).[END]
 #W16($2834C)//C19E
 //(たいりょく)は いっぱいなのにキュアを つかうなんて[NL]
 //まぁ- ごりっぱ.[END]
-[NAME] used (Cure), but (Life)[NL]
-was full. Just great...[END]
+([NAME] used )(Cure) but[NL]
+(Life)( was) (already) full.[NL]
+Just great...[END]
 
 #W16($2834E)//C19F
 //[AE]<$0B><$01><$12><$03>[CL][NL]
@@ -2633,7 +2634,7 @@ Mornin' [NAME].[C2]<$37>[END]
 1000 (coins) (appeared)![NL]
 (Life) (and) (Magic) up to 999.[NL]
 (Level) increased 10![PAU][NL]
-Oh... It was just talking[NL]
+Oh... It( was) just talking[NL]
 to itself.[END]
 
 #W16($2838A)//C1BD
@@ -2646,7 +2647,7 @@ Max (Life) up [C0]<$4C>.[END]
 #W16($2838C)//C1BE
 //(まきもの)(を つかった.)[NL]
 //(まほう)のマックスが[C0]<$4C>ふえた.[END]
-[NAME]( used )(the )(Sage Scroll)[NL]
+([NAME] used )(the )(Sage Scroll)[NL]
 Max (Magic) up [C0]<$4C>.[END]
 
 #W16($2838E)//C1BF
@@ -2704,7 +2705,7 @@ turned into a (Gold Bar)![END]
 #W16($283A4)//C1CA
 //(たぬきっぱ)(を つかった.)[NL]
 //[C0]<$75>ふえた. ありがたや ありがたや.[END]
-[NAME] used (Tanuki Leaf)[NL]
+([NAME] used the )(Tanuki Leaf)[NL]
 [C0]<$75> (appeared).[NL]
 (Thank you)![END]
 
@@ -2738,7 +2739,7 @@ Probably shouldn't use[NL]
 Dead plants sprang to life[NL]
 and all through the village[NL]
 flowers bloomed.[PAU][CL]
-Lovely was once again truly[NL]
+Lovely( was) once again truly[NL]
 a beautiful village.[END] 
 
 #W16($283B0)//C1D0
@@ -2827,7 +2828,7 @@ Take care.[END]
 
 #W16($283D0)//C1E0
 //ここでは (テレポ-ト)はつかえない.[END]
-Can't teleport (here).[END]
+Ca(n't )teleport (here).[END]
 
 #W16($283D2)//C1E1
 //(テレポ-ト) しっぱい!![NL]
@@ -2854,7 +2855,7 @@ Used Power (magic).[END]
 #W16($283DC)//C1E6
 //う- ん  うごかない[NL]
 //しゅぎょうぶそくだな.[END]
-It won't move.[END]
+It wo(n't )move.[END]
 
 #W16($283DE)//C1E7//!!
 //これいじょうこうげきりょくは あがらない[END]
@@ -2897,7 +2898,7 @@ Intellegence[B0]
 //(げんきそう)(を つかった.)[NL]
 //すばやさが[B0]<$22><$9F>
 //#EMBSET(9)
-[NAME]( used )(the )(Herb)[NL]
+([NAME] used the )(Herb)[NL]
 Speed[B0]
 #EMBSET(11)
 
@@ -2940,7 +2941,7 @@ Life is now full.[END]
 
 #W16($283FC)//C1F6
 //(たいりょく)は マックスだったのに-[END]
-But (Life) was (already) full...[END]
+But (Life)( was) (already) full...[END]
 
 #W16($283FE)//C1F7//!!
 //(つかいわすれたオンガク)(を つかった.)[NL]
@@ -2976,16 +2977,16 @@ Seems like it should move.[END]
 
 #W16($2841E)//C207
 //かぎがなければ あきそうもない.[END]
-It won't open without[NL]
+It wo(n't )open without[NL]
 a key.[END]
 
 #W16($28420)//C208
 //(サンダ-)(を つかった.)[END]
-[NAME] used (Thunder).[END]
+([NAME] used )(Thunder).[END]
 
 #W16($28422)//C209
 //(サンダ-フラッシュ)(を つかった.)[END]
-[NAME] used (Lightning).[END]
+([NAME] used )(Lightning).[END]
 
 #W16($28424)//C20A
 //[AE]<$01><$01><$1F><$0E><$05> いどう (まほう)
@@ -3295,15 +3296,15 @@ Lvl Up in [C1]<$AF> Exp.[END]
 
 #W16($28488)//C23C
 //は [AB]<$0F>ダメ-ジを うけない![END]
-didn't take [AB]<$0A>any damage![END]
+did(n't )take [AB]<$0A>any damage![END]
 
 #W16($2848A)//C23D
 //[MASHIN]は ダメ-ジを うけない![END]
-[MASHIN] didn't take[NL]any damage![END]
+[MASHIN] did(n't )take[NL]any damage![END]
 
 #W16($2848C)//C23E
 //には [AB]<$0F>きかなかった![END]
- wasn't [AB]<$09>affected![END]
+( was)(n't )[AB]<$09>affected![END]
 
 //----------------------------------------------------
 //                     Ending
@@ -3468,7 +3469,7 @@ We[BE07]ll [BE06][C0]<$1D> [BE08]ne[BE06]xt [BE07]ti
  began to return to the[NL]
  second layer of (Sokaizan).[BD]<$40>[CL]
  Dead flowers were reborn,[NL]
- the land was washed clean,[NL]
+ the land( was)( was)hed clean,[NL]
  the (Mashin)s went away,[BD]<$40>[CL]
  and once again, peace[NL]
  returned to the hearts[NL]
@@ -3575,7 +3576,7 @@ found (# coins).[BD]<$20>[END]
 
 #W16($284D6)//C263
 //[C2]<$64>えるものが なにもなかった.[END]
-[C2]<$64>didn't find (anything).[END]
+[C2]<$64>did(n't )find (anything).[END]
 
 #W16($284D8)//C264
 //[CL][NAME]は [END]
