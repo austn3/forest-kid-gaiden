@@ -1914,7 +1914,7 @@ Ice (Metron)[END]
 
 #W16($28238)//C114
 //ブりキンフり-ザ-[END]
-Ice (Tinbot)[END]
+Slickbot[END]
 
 #W16($2823A)//C115
 //ブル-(スケルバット)[END]
@@ -1942,7 +1942,7 @@ Head Golem[END]
 
 #W16($28246)//C11B
 //ゲッぺルン[END]
-Tanky[END]
+Tanktron[END]
 
 #W16($28248)//C11C
 //ブりキンマ-マン[END]
@@ -2029,7 +2029,7 @@ Hell Copter[END]
 
 #W16($28272)//C131
 //ゲパルトン[END]
-Ultra Tanky[END]
+Ultra (Tanktron)[END]
 
 #W16($28274)//C132
 //ゾンビ-[END]
@@ -2151,7 +2151,7 @@ Super (Combot)[END]
 
 #W16($282AE)//C14F
 //レオパルドン[END]
-Leo Tanky[END]
+Leo (Tanktron)[END]
 
 #W16($282B0)//C150
 //キルライガ-[END]
@@ -2722,8 +2722,8 @@ Boo![END]
 //(サ-ぺントのなみだ)を いどへおとした.[NL]
 //ここちよいねいろが あたりをつつみこみ[NL]
 //まばゆいばかりのひかりをはなった.[BD]<$30>[END]
-The (Serpent Tear) fell[NL]
-into the well and a spectacular[NL]
+The (Serpent Tear) fell into[NL]
+the well and a spectacular[NL]
 display of light shot out.[BD]<$30>[END]
 
 #W16($283AC)//C1CE//serpent tear not by well
@@ -2794,17 +2794,17 @@ Thanks.
 #EMBWRITE(7)
 S(omething) else?[END]
 
-#W16($283C2)//C1D9//!!
+#W16($283C2)//C1D9
 //たびのひと パッとかいな![END]
-!C1D9[END]
+Suddenly so many visitors![END]
 
-#W16($283C4)//C1DA//!!
+#W16($283C4)//C1DA
 //[NAME]さん やすくしとくよ.[END]
-!C1DA[END]
+Our prices are cheap![END]
 
-#W16($283C6)//C1DB//!!
+#W16($283C6)//C1DB
 //き-つけて たびしてけろ.[END]
-!C1DB[END]
+Careful on your journey.[END]
 
 #W16($283C8)//C1DC
 //ほしいものが あったら またおいで.[END]

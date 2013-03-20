@@ -1673,7 +1673,7 @@ So smooth, so great![END]
 (south) with an underground[NL]
 passage.[PAU][CL]
 It seems like (the )waves[NL]
-are comming from (the)re.[END]
+are coming from (the)re.[END]
 
 #EMBWRITE(225)
 //(ありがとう)(ござい)(ました) (サ-ぺント)もきっと[NL]
@@ -3042,7 +3042,7 @@ his way( to )(the )(mountain)s.[B2]<$29>[END]
 //(かぜのくに)を こんなにした ガスは どうも[NL]
 //まちの どこかから ふきあげてるようなんだが[END]
 (Gale) is like (this) because[NL]
-of (the )gas comming up from[NL]
+of (the )gas coming up from[NL]
 somewhere in (the )city.[END]
 
 //----------------------------------------------------
@@ -3181,7 +3181,7 @@ beautiful...[END]
 //(ありがとう)よ おかげでまた (うつくしむら)のはなが[NL]
 //みれますよって[END]
 Thanks( to )(you) we( can) see[NL]
-(Lovely)('s )fl(ower)s (again).
+(Lovely)('s )fl(ower)s (again).[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C46E)//C52F//random forest guy

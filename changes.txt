@@ -24,6 +24,9 @@ $1653D:  C4 94  ->  C0 DF
 ; lynx sage's house
 $1662D:  C4 DC  ->  C0 DD
 
+; food storehouse boy
+$16740:  C4 FA  ->  C1 7F
+
 ; old man lovely shop 2f
 $16807:  C5 2E  ->  C2 1C
 
