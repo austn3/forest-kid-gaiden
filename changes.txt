@@ -31,7 +31,7 @@ $16740:  C4 FA  ->  C1 7F
 $16807:  C5 2E  ->  C2 1C
 
 ; sazabi mountain dungeon
-$16817:  C5 37  ->  C1 5F
+$16817:  C5 37  ->  C2 1D
 
 ; lynx in cave
 $16869:  C5 4B  ->  C1 74

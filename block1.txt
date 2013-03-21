@@ -39,7 +39,6 @@
 #W16($284E6)//C26B
 fix[END]
 
-#W16($2844A)//C21D
 #W16($2844C)//C21E
 #W16($2844E)//C21F
 #W16($28468)//C220
@@ -531,7 +530,8 @@ anyway...[PAU][CL]
 (Please )take (the )food.[B4]<$01>
 
 [B5]<$69>
-#EMBSET(465)[END]
+#EMBSET(465)
+[END]
 
 #EMBWRITE(27)
 //はやくいって (かくれざと)の みんなをたすけてこい[END]
@@ -607,7 +607,7 @@ power. Hurry up and go.[B4]<$01>[BA00][END]
 //かけてくれてある ちょっといって みるのもよかろう[B2]<$1A>[B4]<$01>[END]
 Brave [NAME], (you) know of[NL]
 the (Dragon) Tower do(n't )(you)?[PAU][CL]
-(The )dragon lives in a tower[NL]
+(The )(dragon) lives in a tower[NL]
 sunk in the middle of the[NL]
 sea.[PAU][CL]
 How you get (there), I don't[NL]
@@ -670,7 +670,7 @@ You found everything?[NL]
 Waaah...[END]
 
 //----------------------------------------------------
-#W16($282CE)//C15F
+#W16($2844A)//C21D
 //#WRITE(B2Ptr, $2C47E)//C537//sazabi mountain dungeon
 [B1]<$25>
 #EMBSET(268)
@@ -1168,8 +1168,8 @@ You don't have enough.[END]
 #W16($2808C)//C03E
 //このせかいの おかねのたんいは[NL]
 //(クレジット)なんだけどなぁ-[END]
-But (the )m(oney) in (this)[NL]
-(world) is called.[END]
+Sure is shiny, but everyone[NL]
+here just wants money.[END]
 
 #W16($2808E)//C03F
  <$05>[A7]<$0B><$06><$07><$05>[A7]<$0F><$06><$07>[NL]
@@ -1978,7 +1978,7 @@ Aqua (Alien)[END]
 
 #W16($2825A)//C125
 //べイ(フランケ-ン)[END]
-Bay (Franken)[END]
+Deadhead[END]
 
 #W16($2825C)//C126
 //アイアンドりル[END]
@@ -2212,6 +2212,9 @@ Hell Wolf[END]
 #W16($282CC)//C15E
 //キング(ブロブ)[END]
 King (Blob)[END]
+
+#W16($282CE)//C15F
+(Dragon)[END]
 
 #W16($282D0)//C160
 //ブりキンマスタ-[END]
@@ -2647,7 +2650,7 @@ Max (Life) up [C0]<$4C>.[END]
 #W16($2838C)//C1BE
 //(まきもの)(を つかった.)[NL]
 //(まほう)のマックスが[C0]<$4C>ふえた.[END]
-([NAME] used )(the )(Sage Scroll)[NL]
+([NAME] used the )(Sage Scroll)[NL]
 Max (Magic) up [C0]<$4C>.[END]
 
 #W16($2838E)//C1BF
@@ -2668,9 +2671,9 @@ your journey.[END]
 //ここでは つかえません.[END]
 You can't use it (here).[END]
 
-#W16($28396)//C1C3//!!
+#W16($28396)//C1C3
 //ちょっと おくとこ ちがうんでね-の.[END]
-!C1C3[END]
+Doesn't quite fit.[END]
 
 #W16($28398)//C1C4
 //どこ むいてるの?[END]
@@ -2678,13 +2681,15 @@ W(here) are you headed?[END]
 
 #W16($2839A)//C1C5
 //を おいた.[AC]<$1E>[A601][END]
-placed.[AC]<$1E>[A601][END]
+ fit into[NL]
+the carving.[AC]<$1E>[A601][END]
 
-#W16($2839C)//C1C6//!!
+#W16($2839C)//C1C6
 //[NAME]のみみに (ドラゴン)のなきごえが[NL]
 //きこえたようなきがした.[NL]
 //そのとき[BD]<$40>[END]
-!C1C6[END]
+[NAME] heard a dragon's cry,[NL]
+and then...[BD]<$40>[END]
 
 #W16($2839E)//C1C7
 //なにかが おこったのだろう?[NL]
@@ -2831,7 +2836,7 @@ Take care.[END]
 Ca(n't )teleport (here).[END]
 
 #W16($283D2)//C1E1
-//(テレポ-ト) しっぱい!![NL]
+//(テレポ-ト) しっぱい![NL]
 //はじきかえされた   いてっ[END]
 Teleport failed! Ow-![END]
 
@@ -2902,16 +2907,20 @@ Intellegence[B0]
 Speed[B0]
 #EMBSET(11)
 
-#W16($283EC)//C1EE//!!
+#W16($283EC)//C1EE
 //[NL]
 //[NAME]は たからばこを よ-くしらべてみた.[NL]
 //するとなかには [C0]<$1D>が [AB]<$09>はいっていた.[PAU][END]
-!C1EE[END]
+[NL]
+[NAME] examined the chest[NL]
+carefully and found [AB]<$09>.[PAU][END]
 
-#W16($283EE)//C1EF//!!
+#W16($283EE)//C1EF
 //[NL]
 //しかし これいじょうもてないのであきらめた.[PAU][END]
-!C1EF[END]
+[NL]
+But [NAME] couldn't carry[NL]
+any more.[END]
 
 #W16($283F0)//C1F0
 //また おいで[END]
@@ -2936,7 +2945,7 @@ we've had a customer...[END]
 #W16($283FA)//C1F5
 //(いのちのくすり)(を のんだ.)[NL]
 //(たいりょく)が マックスになった[END]
-[NAME] drank the (Life Tonic).
+[NAME] drank the (Life Tonic).[NL]
 Life is now full.[END]
 
 #W16($283FC)//C1F6
@@ -3586,10 +3595,10 @@ found (# coins).[BD]<$20>[END]
 //[AD]<$EB><$63><$03><$06>ポイントの けいけんち[END]
 (#exp) Exp[END]
 
-#W16($284DC)//C266//!!
+#W16($284DC)//C266
 //を [AB]<$08>てにいれた.[BD]<$20>[END]
-//[AB]<$08>found[BD]<$20>[END]
-!C266[END]
+[AB]<$08>found[BD]<$20>[END]
+
 
 #W16($284DE)//C267//!!
 //[NL]

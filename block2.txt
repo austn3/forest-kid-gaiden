@@ -2116,9 +2116,9 @@ Please make some room.[END]
 #WRITE(B2Ptr, $2C3A6)//C4CB
 #EMBWRITE(404)
 #EMBWRITE(405)
-//#EMBWRITE(406)
-//#EMBWRITE(407)
-//#EMBWRITE(408)
+#EMBWRITE(406)
+#EMBWRITE(407)
+#EMBWRITE(408)
 #EMBWRITE(409)
 #EMBWRITE(410)
 #EMBWRITE(411)
@@ -2547,7 +2547,7 @@ He('s )(really )a demon![END]
 #WRITE(B2Ptr, $2C3F0)//C4F0//oasis house girl
 //にしにある (ピラミッド)には  いなずまをよぶ[NL]
 //(まどうしょ)が あるそうよ[END]
-I (the )west pyramid (there)[NL]
+In (the )west pyramid (there)[NL]
 is a spell (that)( can) summon[NL]
 lightning.[END]
 
@@ -2713,7 +2713,7 @@ trapped in this bottle by[NL]
 #EMBWRITE(316)
 //ぼくを つれていってくれないかな[NL]
 //   つれていく  おいてく
-Will you take me with you?
+Will you take me with you?[NL]
 [A2]<$03>Take[A2]<$03>Do(n't )
 [B6]<$02><$09>
 #EMBSET(510)
@@ -2726,7 +2726,7 @@ Will you take me with you?
 //パワ-をだせるんだ[B4]<$01>[END]
 Thank you. My being shrunk[NL]
 has made (Ryujin-Maru) show[NL]
-his power more than ever.[END]
+his power more than ever.[B4]<$01>[END]
 
 #EMBWRITE(510)
 [CL]
@@ -2922,7 +2922,7 @@ coming from (the )well.[PAU][CL]
 //おかげでみんな いえにはいれなくなって(......)[END]
 (The )gas made all (the )(house)s[NL]
 shrink. Now no one( can) go[NL]
-insdie...[END]
+inside...[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C434)//C512//gale red girl sw
