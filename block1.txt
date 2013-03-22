@@ -2711,7 +2711,7 @@ turned into a (Gold Bar)![END]
 //(たぬきっぱ)(を つかった.)[NL]
 //[C0]<$75>ふえた. ありがたや ありがたや.[END]
 ([NAME] used the )(Tanuki Leaf)[NL]
-[C0]<$75> (appeared).[NL]
+and (# coins) (appeared).[NL]
 (Thank you)![END]
 
 #W16($283A6)//C1CB
