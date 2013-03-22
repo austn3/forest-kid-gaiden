@@ -2913,7 +2913,8 @@ Speed[B0]
 //するとなかには [C0]<$1D>が [AB]<$09>はいっていた.[PAU][END]
 [NL]
 [NAME] examined the chest[NL]
-carefully and found [AB]<$09>.[PAU][END]
+carefully and found [C0]<$1D>[NL]
+inside[AB]<$09>.[PAU][END]
 
 #W16($283EE)//C1EF
 //[NL]

@@ -1,3 +1,6 @@
+; remove senjin treasure box
+$15CDC:  04  ->  80
+
 ; script block changes
 
 ; sphinx
