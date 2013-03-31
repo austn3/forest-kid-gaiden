@@ -1489,8 +1489,8 @@ for sure now.[END]
 (I'm )(Kujin-Maru)...[NL]
 I've become a spirit.[PAU][CL]
 (Please )take me with you.[NL]
-I will surely be of some use[NL]
-to you.[B4]<$01>[END]
+I will surely be of some[NL]
+use to you.[B4]<$01>[END]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C330)//C490//!!
@@ -1571,7 +1571,7 @@ No need( to )hang around[NL]
 
 //ボクは (サザビ-)さまから キミみたいな コドモを[NL]
 //とおすなって もうしつけられているんだ[NL]
-I've been orderd by (Sazabi)[NL]
+I've been ordered by (Sazabi)[NL]
 not( to )let kids like (you)[NL]
 through.
 [AF]<$70>
@@ -2888,14 +2888,14 @@ Clan (Warp Shop).[BF020B]
 //とおくのまちほど おねだんは たかくなります(......)[PAU][CL]
 Suddenly from nowhere[NL]
 [NAME] hears a voice.[PAU][CL]
-[A2]<$04>"Welcome first time[NL]
-[A2]<$08>(Warp Shop) user."[PAU][CL]
-"From (the )(Warp Shop) (you)[NL]
+[A2]<$04>Welcome first time[NL]
+[A2]<$06>(Warp Shop) user.[PAU][CL]
+From (the )(Warp Shop) (you)[NL]
 can travel( to )any town[NL]
-(that) (you)( can) remember."[PAU][CL]
-"However please be aware,[NL]
+(that) (you)( can) remember.[PAU][CL]
+However please be aware,[NL]
 (the )greater (the )distance[NL]
-(the )higher (the )price..."[PAU][CL]
+(the )higher (the )price...[PAU][CL]
 [B2]<$22>[END]
 
 //----------------------------------------------------
@@ -3021,8 +3021,8 @@ to (the )swamp from (there).[NL]
 #EMBWRITE(262)
 //キミも(まほう)が つかえるようだね このまえ やまに[NL]
 //むかった (りンクス)という けんじゃも そうだったんだ[B2]<$29>[END]
-(You)( can) use (magic) too. Old[NL]
-Sage (Lynx) just came through[NL]
+(You)( can) use (magic) too. Sage[NL]
+(Lynx) just came through on[NL]
 his way( to )(the )(mountain)s.[B2]<$29>[END]
 
 //----------------------------------------------------
@@ -3229,7 +3229,7 @@ Be careful, kid.[END]
 //(あんた)も ちょうじょうの (しんでん)に いくのかい?[NL]
 //   もちろん  そんなことない
 Are you going( to )the temple[NL]
-on the peak too?
+on the peak too?[NL]
   Of course[A2]<$03>Nope
 
 [B6]<$01><$0D>
@@ -3243,7 +3243,8 @@ If so tell me all about it.[NL]
 To get up( to )there you need[NL]
 the (Odd Ladder).[PAU][NL]
 But a guy called (Sazabi)[NL]
-just took it.[B4]<$01>[END]
+just took it into the[NL]
+mines.[B4]<$01>[END]
 
 #EMBWRITE(512)
 [CL]

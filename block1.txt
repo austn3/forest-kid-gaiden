@@ -588,9 +588,9 @@ Bastard! Do(n't )say things[NL]
 [CL]
 //おのれのちからも しらぬやつに ようはない[NL]
 //さっさと いくがいい[B4]<$01>[BA00][END]
-(There is )no use for someone[NL]
-who does(n't )know their own[NL]
-power. Hurry up and go.[B4]<$01>[BA00][END]
+One who doesn't know their[NL]
+own power is useless.[NL]
+You may pass.[B4]<$01>[BA00][END]
 
 //----------------------------------------------------
 #W16($28448)//C21C
@@ -684,11 +684,11 @@ Waaah...[END]
 //それをとって トロッコで だっしゅつするがいい[NL]
 //(おまえ)が きてくれると おもってな いわを[PAU][CL]
 //パワ-の(まほう)で うごかしておいたぞ[PAU][CL]
-Oh! You're [NAME].[PAU][NL]
-I came this far too, but[NL]
-this rock is in the way.[PAU][CL]
-(There is )supposed to be a[NL]
-spell if you go up the[NL]
+Oh! (You)('re )[NAME].[PAU][NL]
+I came (this) far too, but[NL]
+(this) rock is in the way.[PAU][CL]
+(There) (should) be a (spell) to[NL]
+help if you go down the[NL]
 (south) (stairs).[PAU][CL]
 You (should) take that rail[NL]
 car to get out.[PAU][CL]
@@ -777,7 +777,7 @@ If I let you pass I'd be[NL]
 sending you to (your) death.[PAU][CL]
 Take (Wataru) to the east[NL]
 (Icefield) Tower. (There) (you)[NL]
-should meet (Kujin-Maru).
+should meet (Kujin-Maru).[END]
 
 #EMBWRITE(276)
 //(くうじんまる)を たすけたのか ならば (おまえ)の[NL]
@@ -788,11 +788,10 @@ If (Kujin-Maru) gave you his[NL]
 help, then your (Ryujin-Maru)[NL]
 has fought his last.[PAU][CL]
 But look! He's become[NL] 
-(Ryuou-Maru)!
+(Ryuou-Maru)![PAU][CL]
 
 #EMBWRITE(275)
 //いくがいい![NAME]よ[B2]<$E3>[END]
-[PAU][CL]
 Your ready now [NAME]![B2]<$E3>[END]
 
 
@@ -1758,7 +1757,7 @@ Small Collar[END]
 
 #W16($281E8)//C0EC
 //ようまのこびん[END]
-Ghost Bottle[END]
+Cursed Vase[END]
 
 #W16($281EA)//C0ED
 //ふしぎなハシゴ[END]
@@ -2183,7 +2182,7 @@ Queen (Blob)[END]
 
 #W16($282BE)//C157
 //(ジャクロ-)グり-ン[END]
-Mega (Drake)[END]
+Dive (Drake)[END]
 
 #W16($282C0)//C158
 //クライマ-ガイスト[END]
@@ -2191,7 +2190,7 @@ Little Spirit[END]
 
 #W16($282C2)//C159
 //マグマクラッシャ-[END]
-Magma Molebot[END]
+Miner Molebot[END]
 
 #W16($282C4)//C15A
 //デスライガ-[END]
@@ -2545,7 +2544,7 @@ Okay?[NL]
 
 #W16($28360)//C1A8
 //(クレジット)がたりませんよ.[END]
-That's not enough m(oney).
+That's not enough m(oney).[END]
 
 #W16($28362)//C1A9
 //あぁ3あ ぼるら よっぱらっちゃったら.[END]
@@ -2913,15 +2912,15 @@ Speed[B0]
 //するとなかには [C0]<$1D>が [AB]<$09>はいっていた.[PAU][END]
 [NL]
 [NAME] examined the chest[NL]
-carefully and found [C0]<$1D>[NL]
-inside[AB]<$09>.[PAU][END]
+carefully and found a[NL]
+[C0]<$1D> inside.[PAU][END]
 
 #W16($283EE)//C1EF
 //[NL]
 //しかし これいじょうもてないのであきらめた.[PAU][END]
 [NL]
 But [NAME] couldn't carry[NL]
-any more.[END]
+anything else.[END]
 
 #W16($283F0)//C1F0
 //また おいで[END]
@@ -3519,7 +3518,7 @@ set out on their journey[NL]
 [C2]<$4C>
 [A2]<$03>and [NAME] and the[NL]
 (Spectrum) princess lived[NL]
-  hapily ever after...[BD]<$FF>[CL]
+  happily ever after...[BD]<$FF>[CL]
 [NL][NL][END]
 
 //----------------------------------------------------
