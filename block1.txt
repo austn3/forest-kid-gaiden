@@ -2698,7 +2698,7 @@ Better check outside.[BD]<$40>[END]
 
 #W16($283A0)//C1C8
 //[A8]<$01><$01>つかえるものが ありません[END]
-[A8]<$01><$01>No(thing) to use.[END]
+[A8]<$04><$00>No(thing)[NL][A2]<$04>to use.[END]
 
 #W16($283A2)//C1C9
 //おおぉっ (たぬきっぱ)が[NL]
@@ -2721,7 +2721,9 @@ Boo![END]
 //あなたは なんてうんがわるいのっ[NL]
 //256ぶんの1の かくりつではずれをひいてしまた.[NL]
 //では [C0]<$75> ひかせてもらう![END]
-!C1CC[END]
+You drew a one in 256[NL]
+chance of bad luck.[NL]
+Well, you lose (# coins).[END]
 
 #W16($283AA)//C1CD//serpent tear in the well
 //(サ-ぺントのなみだ)を いどへおとした.[NL]
@@ -2863,7 +2865,7 @@ It wo(n't )move.[END]
 
 #W16($283DE)//C1E7//!!
 //これいじょうこうげきりょくは あがらない[END]
-!C1E7[END]
+Life can't increase more.[END]
 
 #W16($283E0)//C1E8
 //[C1]<$E5>[NL]
@@ -2955,7 +2957,8 @@ But (Life)( was) (already) full...[END]
 #W16($283FE)//C1F7//!!
 //(つかいわすれたオンガク)(を つかった.)[NL]
 //ようきなおんがくが ながれだした[END]
-!C1f7[END]
+The (Music Box) played[NL]
+a ghostly tune.[END]
 
 #W16($28410)//C200
 //ではまいるぞ![BC][END]
@@ -2978,7 +2981,7 @@ Magic[END]
 
 #W16($2841A)//C205//!!
 //なにか やなよかんがする.[END]
-!C205[END]
+Got a bad feeling.[END]
 
 #W16($2841C)//C206
 //おや! うごきそうだぞ.[END]
@@ -3600,11 +3603,12 @@ found (# coins).[BD]<$20>[END]
 [AB]<$08>found[BD]<$20>[END]
 
 
-#W16($284DE)//C267//!!
-//[NL]
+#W16($284DE)//C267
+[NL]
 //さらに [C2]<$68>[NL]
 //ラッキ-![END]
-!C267[END]
+Also (# coins) on[NL]
+the ground. Lucky![END]
 
 #W16($284E0)//C268
 #EMBWRITE(10)

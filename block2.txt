@@ -1872,7 +1872,7 @@ an inn.!C4A9[BF0104]
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C366)//C4AB//port town shop
 //かねがあるなら だいかんげい[BF0005]
-Do (you) (have )money?[BF0005]
+Can you pay?[BF0005]
 
 //----------------------------------------------------
 //      Prologue
@@ -2019,7 +2019,7 @@ Oh, you('re )[NAME]. (You)[NL]
 helped me out back in[NL]
 (Icefield).[PAU][CL]
 Our friend (Himiko) is[NL]
-still on (Wataru)('s ) trail[NL]
+still on (Wataru)('s )trail[NL]
 in the (Jungle).[END]
 
 #EMBWRITE(231)
@@ -2534,9 +2534,9 @@ He('s )(really )a demon![END]
 (Please )take a rest.[NL][BF0108]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C3EC)//C4EE//!!
+#WRITE(B2Ptr, $2C3EC)//C4EE//gale shop
 //(いらっしゃい)[BF000B]
-(Welcome) !C4EE.[BF000B]
+(Welcome).[BF000B]
 
 //----------------------------------------------------
 #WRITE(B2Ptr, $2C3EE)//C4EF//food storehouse floor
@@ -3071,8 +3071,8 @@ somewhere in (the )city.[END]
 //そこにいくには おしろを とおらなければ[NL]
 //いけないんだよ もっとも おしろが あれじゃぁね[END]
 To the (north) is a place[NL]
-surounded by rocks.[PAU][CL]
-(You) must pass though the[NL]
+surrounded by rocks.[PAU][CL]
+(You) must pass through the[NL]
 castle( to )get there.[PAU][CL]
 I guess that's why it's[NL]
 there, huh?[END]
@@ -3158,7 +3158,7 @@ Great job! (Gale) is back[NL]
 to normal![END]
 
 //----------------------------------------------------
-#WRITE(B2Ptr, $2C468)//C52C//!!
+#WRITE(B2Ptr, $2C468)//C52C//dragon
 //(おまえ)か! (ワタル)をたすけると いってるヤツは![PAU][NL]
 //わらわせるな! (おまえ)のような ふとどきものは[NL]
 //せいさいを くわえる![PAU][B8]<$19><$B1><$00>[END]
